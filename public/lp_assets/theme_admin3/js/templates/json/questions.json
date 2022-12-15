@@ -1,0 +1,790 @@
+{
+    "address": {
+        "active": 0,
+        "label": "Address",
+        "icon": "address",
+        "section": "more-questions",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {}
+    },
+    "birthday": {
+        "active": 0,
+        "label": "Birthday",
+        "icon": "birthday",
+        "section": "more-questions",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {}
+    },
+    "cta-message": {
+        "active": 0,
+        "label": "cta message",
+        "icon": "cta-message",
+        "section": "more-questions",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {}
+    },
+    "date-picker": {
+        "active": 1,
+        "label": "Date Picker",
+        "icon": "date-picker",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {
+            "rel": "Alternate short name",
+            "question": "Date question here",
+            "required": 1,
+            "scrollbar": "0",
+            "cta-button": 1,
+            "data-field": "variable-name",
+            "button-text": "Continue",
+            "description": "",
+            "show-question": 1,
+            "show-description": 0
+        }
+    },
+    "dropdown": {
+        "active": 1,
+        "label": "Dropdown",
+        "icon": "dropdown",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {
+            "add-other-option" : 0,
+            "alphabetize" : 0,
+            "automatic-progress" : 0,
+            "button-text" : "Continue",
+            "cta-button" : 0,
+            "data-field" : "officername",
+            "description" : "",
+            "fields" : [],
+            "include-none" : 0,
+            "question" : "What's the name of the Loan Officer you're working with?",
+            "rel" : "Loan Officer Name",
+            "required" : 1,
+            "scrollbar" : "0",
+            "select-multiple" : 0,
+            "show-description" : 0,
+            "show-question" : 1
+        }
+    },
+    "hidden-field": {
+        "active": 0,
+        "label": "Hidden Field",
+        "icon": "hidden-field",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {}
+    },
+    "menu": {
+        "active": 1,
+        "label": "Menu",
+        "icon": "menu",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {
+            "rel":"Alternate Short Name",
+            "fields":[
+                "Option A",
+                "Option B",
+                "Option C",
+                "Option D"
+            ],
+            "question":"Question Statement here",
+            "required":1,
+            "scrollbar":"0",
+            "cta-button":0,
+            "data-field":"",
+            "alphabetize":0,
+            "button-text":"Continue",
+            "description":"",
+            "include-none":0,
+            "show-question":1,
+            "select-multiple":0,
+            "add-other-option":0,
+            "show-description":0,
+            "automatic-progress":1,
+            "search":0
+        }
+    },
+    "number": {
+        "active": 0,
+        "label": "number",
+        "icon": "number",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {}
+    },
+    "group": {
+        "active": 0,
+        "label": "Question Group",
+        "icon": "group",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {}
+    },
+    "slider": {
+        "active": 1,
+        "label": "Slider",
+        "icon": "slider",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {
+            "rel": "Estimated Value",
+            "question": "Please estimate the value of the property.",
+            "data-field": "estimatedvalue",
+            "description": "",
+            "show-question": 1,
+            "slider-numeric": {
+                "value": 1,
+                "one-puck": {
+                    "unit": "$",
+                    "range": [
+                        {
+                            "by": "5000",
+                            "end": "100000",
+                            "start": "80000"
+                        },
+                        {
+                            "by": "20000",
+                            "end": "1000000",
+                            "start": "100000"
+                        },
+                        {
+                            "by": "100000",
+                            "end": "2000000",
+                            "start": "1000000"
+                        }
+                    ],
+                    "value": 1,
+                    "required": 0,
+                    "cta-button": 1,
+                    "range-type": "subrange",
+                    "button-text": "Continue",
+                    "starting-number-ends": "1",
+                    "slider-starting-point": {
+                        "value": 1,
+                        "starting-value": "240000"
+                    },
+                    "customize-slider-labels": {
+                        "left": "$80,000 or less",
+                        "right": "Over $2,000,000",
+                        "value": 1
+                    }
+                },
+                "two-puck": {
+                    "unit": "$",
+                    "range": [],
+                    "value": 0,
+                    "required": 0,
+                    "cta-button": 1,
+                    "range-type": "increment",
+                    "button-text": "Continue",
+                    "starting-number-ends": "0",
+                    "slider-starting-point": {
+                        "value": 1,
+                        "ending-value": "",
+                        "starting-value": ""
+                    },
+                    "customize-slider-labels": []
+                }
+            },
+            "show-description": 0,
+            "slider-non-numeric": {
+                "range": [],
+                "value": 0,
+                "required": 1,
+                "cta-button": 1,
+                "button-text": "Continue",
+                "slider-starting-point": {
+                    "value": 0,
+                    "starting-value": ""
+                },
+                "customize-slider-labels": {
+                    "left": "",
+                    "right": "",
+                    "value": 0
+                }
+            }
+        }
+    },
+    "text-field": {
+        "active": 1,
+        "label": "Text Field",
+        "icon": "text-field",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {
+            "rel": "Alternate short name",
+            "question": "Date question here",
+            "required": 1,
+            "scrollbar": "0",
+            "cta-button": 1,
+            "data-field": "variable-name",
+            "button-text": "Continue",
+            "description": "",
+            "show-question": 1,
+            "show-description": 0
+        }
+    },
+    "time-picker": {
+        "active": 0,
+        "label": "Time Picker",
+        "icon": "time-picker",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {}
+    },
+    "zip-code": {
+        "active": 1,
+        "label": "Zip Code",
+        "icon": "zip-code",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {
+            "rel": "Zip Code:",
+            "zip-label": "Zip Code:",
+            "show-question": 0,
+            "question": "Zip Code",
+            "cta-button": 1,
+            "button-text": "Go!",
+            "show-description": 0,
+            "description": "",
+            "data-field": "enteryourzipcode",
+            "zip-city": 0,
+            "autocomplete": 1,
+            "required-us-zip": 1,
+            "required": 1
+        }
+    },
+    "contact": {
+        "active": 1,
+        "label": "Contact",
+        "icon": "contact",
+        "section": "popular",
+        "attributes": {
+            "conditional-logic": 1,
+            "edit": 1,
+            "duplicate": 1,
+            "move": 1,
+            "delete": 1
+        },
+        "options": {
+            "activesteptype": 3,
+            "all-step-types": [
+                {
+                    "fields": [
+                        {
+                            "attributes": {
+                                "value": 0,
+                                "required": 1,
+                                "data-field": "fullname",
+                                "validation": "fullname",
+                                "field-label": "Enter first and last name"
+                            },
+                            "question-type": "fullname"
+                        },
+                        {
+                            "attributes": {
+                                "value": 0,
+                                "required": 1,
+                                "data-field": "first-name",
+                                "validation": "firstname",
+                                "field-label": "Enter first name"
+                            },
+                            "question-type": "first-name"
+                        },
+                        {
+                            "attributes": {
+                                "value": 0,
+                                "required": 1,
+                                "data-field": "last-name",
+                                "validation": "lastname",
+                                "field-label": "Enter last name"
+                            },
+                            "question-type": "last-name"
+                        },
+                        {
+                            "attributes": {
+                                "value": 0,
+                                "required": 1,
+                                "data-field": "only-first-name",
+                                "validation": "firstname",
+                                "field-label": "Enter first name"
+                            },
+                            "question-type": "only-first-name"
+                        },
+                        {
+                            "attributes": {
+                                "value": 1,
+                                "required": 1,
+                                "data-field": "primaryemail",
+                                "validation": "email",
+                                "field-label": "name@email.com"
+                            },
+                            "question-type": "email"
+                        },
+                        {
+                            "attributes": {
+                                "value": 1,
+                                "required": 1,
+                                "data-field": "primaryphone",
+                                "validation": "phone",
+                                "field-label": "(xxx) xxx-xxxx"
+                            },
+                            "question-type": "phone"
+                        }
+                    ],
+                    "question": "",
+                    "step-type": "one-step",
+                    "cta-button": 1,
+                    "button-text": "Continue",
+                    "description": "",
+                    "field-order": [
+                        0
+                    ],
+                    "show-question": 1,
+                    "show-description": 0
+                },
+                {
+                    "steps": [
+                        {
+                            "fields": [
+                                {
+                                    "attributes": {
+                                        "value": 1,
+                                        "required": 1,
+                                        "data-field": "fullname-1",
+                                        "validation": "fullname",
+                                        "field-label": "Enter first and last name"
+                                    },
+                                    "question-type": "fullname"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "last-name",
+                                        "validation": "lastname",
+                                        "field-label": "Enter last name"
+                                    },
+                                    "question-type": "last-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "only-first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "only-first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "primaryemail",
+                                        "validation": "email",
+                                        "field-label": "name@email.com"
+                                    },
+                                    "question-type": "email"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "primaryphone",
+                                        "validation": "phone",
+                                        "field-label": "(xxx) xxx-xxxx"
+                                    },
+                                    "question-type": "phone"
+                                }
+                            ],
+                            "question": "What is your full name?",
+                            "cta-button": 1,
+                            "button-text": "Continue",
+                            "field-order": [
+                                0
+                            ]
+                        },
+                        {
+                            "fields": [
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "fullname",
+                                        "validation": "fullname",
+                                        "field-label": "Enter first and last name"
+                                    },
+                                    "question-type": "fullname"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "last-name",
+                                        "validation": "lastname",
+                                        "field-label": "Enter last name"
+                                    },
+                                    "question-type": "last-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "only-first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "only-first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 1,
+                                        "required": 1,
+                                        "data-field": "primaryemail",
+                                        "validation": "email",
+                                        "field-label": "name@email.com"
+                                    },
+                                    "question-type": "email"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 1,
+                                        "required": 1,
+                                        "data-field": "primaryphone",
+                                        "validation": "phone",
+                                        "field-label": "(xxx) xxx-xxxx"
+                                    },
+                                    "question-type": "phone"
+                                }
+                            ],
+                            "question": "What is your email address?",
+                            "cta-button": 1,
+                            "button-text": "Continue",
+                            "field-order": [
+                                3,
+                                4
+                            ]
+                        }
+                    ],
+                    "step-type": "two-step"
+                },
+                {
+                    "steps": [
+                        {
+                            "fields": [
+                                {
+                                    "attributes": {
+                                        "value": 1,
+                                        "required": 1,
+                                        "data-field": "fullname",
+                                        "validation": "fullname",
+                                        "field-label": "Enter first and last name"
+                                    },
+                                    "question-type": "fullname"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "last-name",
+                                        "validation": "lastname",
+                                        "field-label": "Enter last name"
+                                    },
+                                    "question-type": "last-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "only-first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "only-first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "primaryemail",
+                                        "validation": "email",
+                                        "field-label": "name@email.com"
+                                    },
+                                    "question-type": "email"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "primaryphone",
+                                        "validation": "phone",
+                                        "field-label": "(xxx) xxx-xxxx"
+                                    },
+                                    "question-type": "phone"
+                                }
+                            ],
+                            "question": "What is your full name?",
+                            "cta-button": 1,
+                            "button-text": "Continue",
+                            "field-order": [
+                                0
+                            ]
+                        },
+                        {
+                            "fields": [
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "fullname",
+                                        "validation": "fullname",
+                                        "field-label": "Enter first and last name"
+                                    },
+                                    "question-type": "fullname"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "last-name",
+                                        "validation": "lastname",
+                                        "field-label": "Enter last name"
+                                    },
+                                    "question-type": "last-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "only-first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "only-first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 1,
+                                        "required": 1,
+                                        "data-field": "primaryemail",
+                                        "validation": "email",
+                                        "field-label": "name@email.com"
+                                    },
+                                    "question-type": "email"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "primaryphone",
+                                        "validation": "phone",
+                                        "field-label": "(xxx) xxx-xxxx"
+                                    },
+                                    "question-type": "phone"
+                                }
+                            ],
+                            "question": "What is your email address?",
+                            "cta-button": 1,
+                            "button-text": "Continue",
+                            "field-order": [
+                                4
+                            ]
+                        },
+                        {
+                            "fields": [
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "fullname",
+                                        "validation": "fullname",
+                                        "field-label": "Enter first and last name"
+                                    },
+                                    "question-type": "fullname"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "last-name",
+                                        "validation": "lastname",
+                                        "field-label": "Enter last name"
+                                    },
+                                    "question-type": "last-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "only-first-name",
+                                        "validation": "firstname",
+                                        "field-label": "Enter first name"
+                                    },
+                                    "question-type": "only-first-name"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 0,
+                                        "required": 1,
+                                        "data-field": "primaryemail",
+                                        "validation": "email",
+                                        "field-label": "name@email.com"
+                                    },
+                                    "question-type": "email"
+                                },
+                                {
+                                    "attributes": {
+                                        "value": 1,
+                                        "required": 1,
+                                        "data-field": "primaryphone",
+                                        "validation": "phone",
+                                        "field-label": "(xxx) xxx-xxxx"
+                                    },
+                                    "question-type": "phone"
+                                }
+                            ],
+                            "question": "What is your phone number?",
+                            "cta-button": 1,
+                            "button-text": "Continue",
+                            "field-order": [
+                                5
+                            ]
+                        }
+                    ],
+                    "step-type": "three-step"
+                }
+            ]
+        }
+    }
+}

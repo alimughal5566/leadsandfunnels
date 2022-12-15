@@ -1,0 +1,197 @@
+
+/*lp-msg-box*/
+
+/**{*/
+/*margin:0;*/
+/*padding:0;*/
+/*}*/
+/*body{*/
+/*font-family:arial,sans-serif;*/
+/*font-size:100%;*/
+/*margin:1em;*/
+/*background:#666;*/
+/*color:#fff;*/
+/*}*/
+/*h2,p{*/
+/*font-size:100%;*/
+/*font-weight:normal;*/
+/*}*/
+ul.lp-noteBox,li.lp_noteBox__li{
+    list-style:none;
+}
+ul.lp-noteBox{
+    overflow:hidden;
+    padding:30px;
+    margin-top: -90px;
+}
+ul.lp-noteBox li.lp_noteBox__li a{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height: 180px;
+    width: 240px;
+    padding: 29px;
+    text-align: left;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.4);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.4);
+    -moz-transition:-moz-transform .15s linear;
+    -o-transition:-o-transform .15s linear;
+    -webkit-transition:-webkit-transform .15s linear;
+}
+ul.lp-noteBox li.lp_noteBox__li{
+    margin:1em;
+    /*float:left;*/
+}
+ul.lp-noteBox li.lp_noteBox__li h2{
+    font-size:27px;
+    font-weight:bold;
+    /*padding-bottom:10px;*/
+    margin: 0;
+    font-family: Courgette;
+}
+ul.lp-noteBox li.lp_noteBox__li p{
+    font-family:"Reenie Beanie",arial,sans-serif;
+    font-size:180%;
+}
+ul.lp-noteBox li.lp_noteBox__li a{
+    -webkit-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+}
+ul.lp-noteBox li:nth-child(even) a{
+    -o-transform:rotate(4deg);
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    position:relative;
+    top:5px;
+    background:#cfc;
+}
+ul.lp-noteBox li:nth-child(3n) a{
+    -o-transform:rotate(-3deg);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    position:relative;
+    top:-5px;
+    background:#ccf;
+}
+ul.lp-noteBox li:nth-child(5n) a{
+    -o-transform:rotate(5deg);
+    -webkit-transform:rotate(5deg);
+    -moz-transform:rotate(5deg);
+    position:relative;
+    top:-10px;
+}
+ul.lp-noteBox li.lp_noteBox__li a:hover,ul.lp-noteBox li.lp_noteBox__li a:focus{
+    box-shadow:10px 10px 7px rgba(0,0,0,.3);
+    -moz-box-shadow:10px 10px 7px rgba(0,0,0,.3);
+    -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.3);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    position:relative;
+    z-index:5;
+}
+/*ol{text-align:center;}*/
+/*ol li{display:inline;padding-right:1em;}*/
+/*ol li a{color:#fff;}*/
+
+.header__h3{
+    text-align: left;
+}
+.header__h2{
+    text-align: left;
+    margin-left: 30px;
+}
+#msgNote .modal-content{
+    border:10px solid rgba(49, 59, 64, .77);
+    border-radius:14px;
+}
+#msgNote .modal-content .modal-body{
+    padding: 100px;
+}
+
+.msgNote__p{
+    line-height: 20px;
+    color: #000;
+}
+
+@media (max-width:1030px){
+    ul.lp-noteBox li.lp_noteBox__li h2 {
+            font-size: 18px;
+    }
+    ul.lp-noteBox li.lp_noteBox__li a{
+        height: 140px;
+        width: 185px;
+    }
+}
+@media (max-width:892px){
+    ul.lp-noteBox li.lp_noteBox__li h2 {
+        font-size: 16px;
+    }
+    ul.lp-noteBox li.lp_noteBox__li a{
+        height: 135px;
+        width: 165px;
+        padding: 25px;
+    }
+}
+@media (max-width:768px) {
+    .header__h2,.header__h3{
+        text-align: center;
+    }
+    .header__h2{
+        margin-left: 0;
+    }
+    ul.lp-noteBox{
+        padding: 2em;
+    }
+    ul.lp-noteBox li.lp_noteBox__li a {
+        margin: 0 auto;
+    }
+    #msgNote .modal-content{
+        margin-right: 20px;
+    }
+}
+
+/*Animation*/
+.pulse {
+    /*margin:100px;*/
+    display: block;
+    width: 22px;
+    height: 22px;
+    /*border-radius: 50%;*/
+    background: rgba(0,0,0, 0.1);
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(0,0,0, 0.1);
+    animation: pulse 1.5s infinite;
+}
+.pulse:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0,0,0, 0.1);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(0,0,0, 0.1);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0,0,0, 0.1);
+    }
+}
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(0,0,0, 0.1);
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0.1);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(0,0,0, 0.1);
+        box-shadow: 0 0 0 10px rgba(0,0,0, 0.1);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(0,0,0, 0.1);
+        box-shadow: 0 0 0 0 rgba(0,0,0, 0.1);
+    }
+}

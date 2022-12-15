@@ -1,0 +1,278 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.progress-bar-page .lp-panel_tabs .lp-panel__head .col-left, .progress-bar-page .lp-panel_tabs .lp-panel__head .col-right {
+  margin: 4px 0 0; }
+  .progress-bar-page .lp-panel_tabs .lp-panel__head .col-left .action__item:first-child, .progress-bar-page .lp-panel_tabs .lp-panel__head .col-right .action__item:first-child {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #85969f; }
+
+.progress-bar-page .clr-elm__wrapper.clr-elm__wrapper_button .col-clr .inner__block {
+  display: flex;
+  position: relative; }
+
+.progress-bar-page .clr-elm__wrapper.clr-elm__wrapper_button .col-clr .my-own__colorpicker {
+  display: none; }
+
+.progress-bar-page .form-group label {
+  margin: 0 30px 0 0; }
+
+.progress-bar-page [type="radio"] + label {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #95a4ac; }
+  .progress-bar-page [type="radio"] + label:before {
+    top: 1px; }
+  .progress-bar-page [type="radio"] + label:after {
+    top: 6px; }
+
+.progress-bar-page [type="radio"]:checked + label {
+  color: #58666e; }
+
+.progress-bar-page .horizontal-bar .slider .tooltip-inner {
+  background: #01c6f7; }
+
+.progress-bar-page .horizontal-bar .slider .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #01c6f7; }
+
+.progress-bar-page .nav__tab {
+  margin: 0 -18px; }
+
+.progress-bar-page .lp-panel {
+  padding-bottom: 25px; }
+
+.progress-bar-page .col-clr label {
+  margin: 0 18px 0 0; }
+
+.progress-bar-page .clr-elm__wrapper {
+  margin: 0; }
+
+.progress-bar-page .clr-elm__wrapper.clr-elm__wrapper_button .col-clr {
+  margin: 0 20px 0 0; }
+  @media (min-width: 1600px) {
+    .progress-bar-page .clr-elm__wrapper.clr-elm__wrapper_button .col-clr {
+      margin: 0 73px 0 0; } }
+
+.progress-bar-page .col-clr .last-selected {
+  width: 120px; }
+  @media (min-width: 1600px) {
+    .progress-bar-page .col-clr .last-selected {
+      width: 155px; } }
+
+.progress-bar-page .last-selected {
+  z-index: 999 !important; }
+
+.progress-bar-page .header .info-bar {
+  z-index: 100; }
+
+.bar_style {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 26px;
+  width: 100%; }
+
+.bar_style span {
+  font-weight: 400; }
+
+.lp-panel-circle-bar {
+  display: none; }
+
+.progress-bar__wrapper {
+  padding: 25px 0;
+  height: 118px;
+  position: relative;
+  border: 1px solid #f2f3f3; }
+  .progress-bar__wrapper:after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #eaeaea;
+    right: 0;
+    top: 49%;
+    bottom: 47%;
+    left: 0; }
+
+.progress {
+  border: 2px solid #ebeff2;
+  max-width: 221px;
+  width: 100%;
+  height: 66px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: #fff;
+  border-radius: 50px;
+  overflow: visible;
+  position: absolute;
+  box-shadow: 3px 9px 10px -3px rgba(201, 211, 223, 0.75); }
+  .progress.steps {
+    max-width: 246px; }
+  .progress .sign-steps {
+    display: none; }
+
+.progress__wrapper {
+  width: 100%;
+  height: 66px;
+  position: relative; }
+
+.progress__text {
+  font-size: 16px;
+  color: #b2b1be;
+  text-align: center;
+  position: absolute;
+  top: 47%;
+  left: 21px;
+  transform: translateY(-50%);
+  font-weight: bold; }
+
+.progress__text--percentage {
+  width: 100%;
+  left: 0;
+  top: 32px;
+  text-align: center;
+  color: #6a51d2; }
+
+.progress__progress_meter {
+  position: absolute;
+  top: -1px;
+  right: 0; }
+
+.progress svg {
+  height: 64px;
+  width: 64px;
+  overflow: visible !important; }
+
+.progress__progress_bar {
+  fill: none;
+  stroke-width: 4;
+  stroke: #ebeff2; }
+
+.progress__js_progress {
+  fill: none;
+  stroke: #6a51d2;
+  stroke-width: 4;
+  stroke-dasharray: 100px 100px;
+  visibility: hidden; }
+
+.progress__overlay {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background: #70dd8d;
+  border-radius: 50%;
+  transform: scale(0);
+  overflow: hidden;
+  top: -1;
+  left: -1; }
+
+.progress__overlay i {
+  text-align: center;
+  position: relative;
+  font-size: 32px;
+  color: #fff;
+  line-height: 68px;
+  width: 68px;
+  display: block;
+  font-weight: normal; }
+
+.progress__overlay i .progress__overlay_icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #70dd8d; }
+
+.horizontal-bar {
+  height: 120px;
+  background-color: #f6f8f8;
+  border: 1px solid #f2f3f3; }
+  .horizontal-bar .tooltip {
+    top: 17px !important; }
+  .horizontal-bar-bg {
+    background-color: #fff;
+    padding: 0 8px; }
+  .horizontal-bar__wrapper {
+    padding: 0 85px;
+    position: relative;
+    margin: 0 13px -8px; }
+    @media (max-width: 1600px) {
+      .horizontal-bar__wrapper {
+        padding: 0 25px; } }
+  .horizontal-bar .slider-horizontal {
+    width: 100%;
+    height: 22px; }
+  .horizontal-bar .slider-handle {
+    display: none; }
+  .horizontal-bar .slider-track {
+    border: none;
+    background: #ebebeb;
+    box-shadow: none;
+    height: 4px !important;
+    border-radius: 0;
+    margin-top: -2px !important; }
+  .horizontal-bar .slider .slider-selection {
+    background: #01c6f7; }
+  .horizontal-bar .slider .tooltip {
+    transform: translate(-40px, 5px); }
+    .horizontal-bar .slider .tooltip-arrow {
+      top: -5px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      margin-left: -5px;
+      position: absolute;
+      border-style: solid;
+      border-width: 0 5px 5px;
+      border-color: transparent; }
+    .horizontal-bar .slider .tooltip.bottom .tooltip-arrow {
+      border-bottom-color: #000; }
+    .horizontal-bar .slider .tooltip-inner {
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 700;
+      width: 67px;
+      height: 27px;
+      background: #073146;
+      padding: 0;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }

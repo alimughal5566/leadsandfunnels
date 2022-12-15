@@ -1,0 +1,2561 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+#domainbutton a:hover,
+#id280designbutton a:hover,
+#id282contentbutton a:hover  {
+ background-position: -203px 0%;
+}
+/* goose */
+#gabutton a:hover  {
+ background-position: -125px 0%;
+}
+#gabutton a  {
+/*   background: url(/images/profilemedia/paymentsbutton.gif) no-repeat 0% 0px; */
+ display: block;
+ height: 11px;
+ width: 125px;
+ font-size: 11px;
+ line-height: 11px;
+}
+#gabutton  {
+ visibility: visible;
+ position: absolute;
+ left: 43px;
+ top: 120px;
+ z-index: 3;
+ width: 125px;
+ height: 11px;
+}
+#adbuilderbutton a {
+ background-repeat: no-repeat;
+ display: block;
+ height: 9px;
+ background-position: 0% 0px;
+ font-size: 9px;
+ line-height: 9px;
+}
+#adbuilderbutton a:hover  {
+ background-position: -125px 0%;
+}
+#adbuilderbutton a  {
+ width: 125px;
+/*   background-image: url(/images/profilemedia/profilebutton.gif); */
+}
+#adbuilderbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 44px;
+ top: 143px;
+ z-index: 3;
+ width: 125px;
+ height: 9px;
+}
+#emailbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 9px;
+ background-position: 0% 0px;
+ font-size: 9px;
+ line-height: 9px;
+}
+#emailbutton a:hover  {
+ background-position: -78px 0%;
+}
+#emailbutton a  {
+ width: 125px;
+/*    background-image: url(/images/profilemedia/leadcontactsbutton.gif); */
+}
+#emailbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 44px;
+ top: 165px;
+ z-index: 3;
+ width: 125px;
+ height: 9px;
+}
+
+/* goose */
+#paymentsbutton a:hover  {
+ background-position: -53px 0%;
+}
+#paymentsbutton a  {
+ background: url(/images/profilemedia/paymentsbutton.gif) no-repeat 0% 0px;
+ display: block;
+ height: 11px;
+ width: 53px;
+ font-size: 11px;
+ line-height: 11px;
+}
+#paymentsbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 43px;
+ top: 120px;
+ z-index: 3;
+ width: 53px;
+ height: 11px;
+}
+#profilebutton a {
+ background-repeat: no-repeat;
+ display: block;
+ height: 9px;
+ background-position: 0% 0px;
+ font-size: 9px;
+ line-height: 9px;
+}
+#profilebutton a:hover  {
+ background-position: -34px 0%;
+}
+#profilebutton a  {
+ width: 34px;
+ background-image: url(/images/profilemedia/profilebutton.gif);
+}
+#profilebutton  {
+ visibility: visible;
+ position: absolute;
+ left: 44px;
+ top: 143px;
+ z-index: 3;
+ width: 34px;
+ height: 9px;
+}
+#leadcontactsbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 9px;
+ background-position: 0% 0px;
+ font-size: 9px;
+ line-height: 9px;
+}
+#leadcontactsbutton a:hover  {
+ background-position: -78px 0%;
+}
+#leadcontactsbutton a  {
+ width: 78px;
+ background-image: url(/images/profilemedia/leadcontactsbutton.gif);
+}
+.pageinfo {
+ font: 14px/17px Arial;
+ margin: 0px;
+ color: #ffffff;
+ text-align: left;
+}
+#infobutton a {
+ background: url(/images/tourbutton.png) no-repeat 0% 0px;
+ display: block;
+ height: 28px;
+ width: 27px;
+ font-size: 28px;
+ line-height: 28px;
+}
+#infobutton a:hover  {
+ background-position: -27px 0%;
+}
+#infobutton  {
+ width: 27px;
+ height: 28px;
+ display: none;
+ position: absolute;
+ left: 671px;
+ top: 56px;
+ z-index: 10;
+}
+.leftfifteen {
+ margin-left: -15px !important;
+}
+.lefttwenty {
+ margin-left: -12px  !important;
+}
+.topdog {
+ font: 14px/17px Arial;
+ margin: 0px;
+ color: #525252;
+ text-align: left;
+}
+.leadselected {
+ background-color: #4083AB !important;
+}
+.blueregular {
+ font: 14px/17px Arial;
+ margin: 0px;
+ color: #4083AB;
+ text-align: left;
+}
+.bluetextheadaccount {
+ font: 16px/17px Arial;
+ margin: 0px;
+ color: #4083AB;
+ text-align: center;
+ font-weight: bold;
+}
+.bluesmaller {
+ font: 14px/14px Arial;
+ margin: 0px;
+ color: #4083AB;
+ text-align: center;
+}
+.bluetable {
+ font: 14px/17px Arial;
+ margin: 0px;
+ color: #4083AB;
+ text-align: left;
+}
+.bluetexthead {
+ font: 14px/17px Arial;
+ margin: 0px;
+ color: #4083AB;
+ text-align: center;
+ font-weight: bold;
+}
+.bluetextheadleft {
+ font: 14px/17px Arial !important;
+ margin: 0px !important;
+ color: #4083AB !important;
+ text-align: left !important;
+ font-weight: bold !important;
+}
+.bluetextheadleftsmall {
+ font: 13px/15px Arial !important;
+ margin: 0px !important;
+ color: #4083AB !important;
+ text-align: left !important;
+ font-weight: bold !important;
+}
+.bluetextheadcenter {
+ font: 13px/15px Arial !important;
+ margin: 0px !important;
+ color: #4083AB !important;
+ text-align: center !important;
+ font-weight: bold !important;
+}
+.bluetextheadcenter {
+ font: 14px/17px Arial !important;
+ margin: 0px !important;
+ color: #4083AB !important;
+ text-align: center !important;
+ font-weight: bold !important;
+}
+.bluetextheadbig {
+ font: 18px/22px Arial;
+ margin: 0px;
+ color: #4083AB;
+ text-align: left;
+ font-weight: bold;
+}
+.salesman {
+ font: 14px/17px Arial;
+ margin: 0px;
+ color: #4083AB;
+ text-align: left;
+ font-weight: bold;
+}
+.smallsalesman a {
+ font: 12px/14px Arial;
+ margin: 0px;
+ color: #4083AB;
+ text-align: left;
+}
+.skinnierlabel {
+ font-family: arial,sans-serif,verdana,helvetica;
+ font-size:12px;
+ color:#999999;
+ width: 55px;
+ float: left;
+ text-align: right;
+ margin-right: 3px;
+ display: block;
+ margin-top: 3px;
+ font-weight: bold;
+}
+.labelprofile {
+ font-family: arial,sans-serif,verdana,helvetica;
+ font-size:12px;
+ color:#999999;
+ width: 175px;
+ float: left;
+ text-align: right;
+ margin-right: 5px;
+ display: block;
+ margin-top: 3px;
+ font-weight: bold;
+}
+.inputprofile {
+ background:transparent url(/images/inputsmall.png) no-repeat scroll 0 0;
+ padding: 0 0 0 4px;
+ height: 25px;
+ border: none;
+ font-family: arial,sans-serif,verdana,helvetica;
+ font-size:12px !important;
+ width: 225px;
+ margin-left: 5px;
+ margin-top: 0px;
+}
+.inputpayment {
+ background:transparent url(/images/inputsmall.png) no-repeat scroll 0 0;
+ padding: 0 0 0 4px;
+ height: 25px;
+ border: none;
+ font-family: arial,sans-serif,verdana,helvetica;
+ font-size:12px !important;
+ width: 175px;
+ margin-left: 5px;
+ margin-top: 0px;
+}
+.themodal {
+ font-size: 14px;
+ font-family: verdana, arial, sans;
+}
+.smallheader {
+ font-size: 12px;
+ font-family: verdana, arial, sans;
+}
+.mediumtextbold {
+ text-align: center;
+ font-family: ariel, helvetica, verdana, sans-serif;
+ font-size: 16px;
+}
+#browserdiv {
+ overflow: auto;
+ margin-left: 35px;
+ margin-top: 45px;
+ width: 90%;
+ height: 89%;
+}
+#browserdivcontacts {
+ overflow: auto;
+ left: 3px;
+ top: 37px;
+ width: 96%;
+ height: 93%;
+ position: absolute;
+}
+#browserdivpopadmin {
+ z-index: 1500;
+ overflow: auto;
+ left: 1px;
+ top: 3px;
+ width: 126px;
+ height: 93%;
+ position: absolute;
+}
+#browserdivside {
+ position: relative;
+ overflow: auto;
+ margin-left: 1px;
+ margin-top: 1px;
+ width: 130px;
+ height: 89%;
+}
+#browserdivsidehome {
+ position: relative;
+ overflow: auto;
+ margin-left: 102px;
+ margin-top: 71px;
+ width: 285px;
+ height: 83%;
+}
+.homepagemetrics {
+ position: relative;
+ left: 85px;
+ top: 5px;
+ font-family: ariel, helvetica, verdana, sans-serif;
+}
+a  {
+ text-decoration: none;
+ color: #000000;
+}
+a ins  {
+ text-decoration: none;
+}
+#i3rdpartyurlbutton a:hover,
+#infovaultbutton a:hover,
+#chooseschemebutton a:hover,
+#privacypolicybutton a:hover,
+#descriptionbutton a:hover,
+#termsofusebutton a:hover,
+#thankyoubutton a:hover,
+#mainmessagebutton a:hover,
+#editimagebutton a:hover,
+#id358overviewbutton a:hover,
+#id365overviewbutton a:hover,
+#id388overviewbutton a:hover,
+#editlogobutton a:hover,
+#id302overviewbutton a:hover,
+#id311overviewbutton a:hover,
+#id320overviewbutton a:hover,
+#contactusbutton a:hover,
+#aboutusbutton a:hover,
+#licensinginfobutton a:hover,
+#disclosuresbutton a:hover,
+#editinfobutton a:hover,
+#imagesbutton a:hover,
+#id338editbutton a:hover  {
+ background-position: -123px 0%;
+}
+#id338editbutton a,
+#licensinginfobutton a,
+#infovaultbutton a,
+#id358overviewbutton a,
+#id365overviewbutton a,
+#id388overviewbutton a,
+#id302overviewbutton a,
+#id311overviewbutton a,
+#id320overviewbutton a,
+#termsofusebutton a,
+#aboutusbutton a,
+#contactusbutton a,
+#disclosuresbutton a,
+#privacypolicybutton a,
+#i3rdpartyurlbutton a,
+#editimagebutton a,
+#mainmessagebutton a,
+#edittagsbutton a,
+#thankyoubutton a,
+#descriptionbutton a,
+#editinfobutton a,
+#editlogobutton a,
+#chooseschemebutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 26px;
+ width: 123px;
+ background-position: 0% 0px;
+ font-size: 26px;
+ line-height: 26px;
+}
+#shape12copy137,
+
+#shape12copy136,
+
+#shape12copy135,
+
+#id37ordersummarycopy,
+
+#shape12copy134,
+
+#shape12copy139,
+
+#shape12copy138,
+
+#shape12copy148,
+
+#shape12copy147,
+
+#shape12copy146,
+
+#shape12copy145,
+
+#id66ordersummary,
+
+#shape12copy144,
+
+#shape12copy143,
+
+#shape12copy142,
+
+#shape12copy156,
+
+#shape12copy141,
+
+#shape12copy140,
+
+#shape12copy133,
+
+#shape12copy132,
+
+#shape12copy131,
+
+#shape12copy130  {
+ background: url(/images/reviewordermedia/shape12copy156.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ z-index: 4;
+ width: 444px;
+ height: 29px;
+}
+#pid20shoppops,
+#pid22login,
+#domain,
+#pid7customize,
+#pid10colorscheme,
+#pid3account,
+#contactus,
+#pid12images,
+#pid11logos,
+#pid6leadcontacts,
+#pid14footer,
+#pid16submission,
+#pid1home,
+#pid18contact,
+#pid4payments,
+#pid13homepage,
+#pid2myleads,
+#pid19seo,
+#pid9design,
+#pid17i3rdpartyurl,
+#pid21revieworder,
+#pid5profile  {
+ margin: 0px auto 0px auto;
+ width: 989px;
+ position: relative;
+}
+#wbutton a,
+#fbutton a,
+#xbutton a,
+#kbutton a,
+#rbutton a,
+#lbutton a,
+
+#ybutton a,
+
+#hbutton a,
+
+#sbutton a,
+
+#bbutton a,
+
+#mbutton a,
+
+#tbutton a,
+
+#gbutton a,
+
+#pbutton a,
+
+#cbutton a,
+
+#ubutton a,
+
+#dbutton a,
+
+#ibutton a,
+
+#zbutton a,
+
+#ebutton a,
+
+#nbutton a,
+
+#qbutton a,
+
+#obutton a,
+
+#vbutton a,
+
+#abutton a,
+
+#jbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 20px;
+ width: 21px;
+ background-position: 0% 0px;
+ font-size: 20px;
+ line-height: 20px;
+}
+#id547excelbutton a,
+
+#id486searchbutton a,
+
+#id548pdfbutton a,
+
+#id480deletebutton a,
+
+#id476pdfbutton a,
+
+#id475excelbutton a,
+
+#id551deletebutton a,
+
+#id478emailbutton a,
+
+#id546wordbutton a,
+
+#id549printbutton a,
+
+#outlookbutton a,
+
+#id474wordbutton a,
+
+#id477printbutton a,
+
+#id550emailbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 29px;
+ background-position: 0% 0px;
+ font-size: 29px;
+ line-height: 29px;
+}
+#shape12copy109,
+#shape12copy108,
+#shape12copy107,
+#shape12copy113,
+#shape12copy106,
+#shape12copy112,
+#shape12copy105,
+#shape12copy111,
+#shape12copy104,
+#shape12copy110,
+#shape12copy103,
+#shape12copy117,
+#shape12copy116,
+#shape12copy115,
+#shape12copy114,
+#shape12copybob,
+#shape12copy118  {
+ background: url(/images/profilemedia/shape12copy118.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 307px;
+ z-index: 4;
+ width: 457px;
+ height: 29px;
+}
+#adddomainbutton a,
+#addbuyunlimited a, /* bob added */
+#id266statusbutton a,
+#id272statusbutton a,
+
+#id264savebutton a,
+#id441searchbutton a,
+#id434savebutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 19px;
+ width: 112px;
+ background-position: 0% 0px;
+ font-size: 19px;
+ line-height: 19px;
+}
+#id268verifybutton a {
+ background-repeat: no-repeat;
+ display: block;
+ height: 19px;
+ width: 76px;
+ background-position: 0% 0px;
+ font-size: 19px;
+ line-height: 19px;
+}
+
+/*#id262verifybutton a {
+   background-repeat: no-repeat;
+   display: block;
+   height: 21px;
+   width: 149px;
+   background-position: 0% 0px;
+   font-size: 21px;
+   line-height: 19px;
+}*/
+#id262verifybutton a {
+ background-position: 0 0;
+ background-repeat: no-repeat;
+ display: block;
+ font-size: 21px;
+ height: 19px;
+ line-height: 19px;
+ width: 75px;
+}
+#id262verifybutton a:hover {
+ background-position: -76px 0;
+}
+#display,
+
+#displaycopy,
+
+#displaycopy2,
+
+#shape55copy19,
+
+#shape55copy20,
+
+#shape55copy12,
+
+#shape55copy9,
+
+#shape55copy11,
+
+#shape55copy10,
+
+#shape55copy15,
+
+#shape55copy14  {
+ background: url(/images/submissionmedia/display.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 223px;
+ z-index: 5;
+ width: 676px;
+ height: 33px;
+}
+#selecttextcopy p,
+
+#id136selecttext p,
+
+#entertext p,
+
+#entertextcopy p,
+
+#id185selecttext p,
+
+#homepagetext p,
+
+#maxtext p,
+
+#privacypolicytext p,
+
+#enterhtmltext p  {
+ font: 14px/17px Arial;
+ margin: 0px;
+ color: #00AEFF;
+ text-align: left;
+}
+#id201bgmain,
+
+#id121bgmain,
+
+#id236bgmain,
+
+#id224windowmain,
+
+#id154bgmain,
+
+#id216windowmain,
+
+#id175bgmain,
+
+#id127bgmain,
+
+#windowmaincopy  {
+ background: url(/images/submissionmedia/id154bgmain.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 159px;
+ top: 137px;
+ z-index: 3;
+ width: 809px;
+ height: 569px;
+}
+#bgmaincopy {
+ visibility: visible;
+ position: absolute;
+ left: 159px;
+ top: 137px;
+ z-index: 3;
+ width: 809px;
+ height: 569px;
+}
+#contentmodifyyourleadpopfromthedefaultvalues,
+
+#domainsetormodifyyourleadpopdomain,
+
+#designmodifyyourleadpopfromthedefaultlook  {
+ visibility: visible;
+ position: absolute;
+ top: 394px;
+ z-index: 4;
+ width: 237px;
+ height: 175px;
+ background-repeat: no-repeat;
+}
+#id92termsconditionsbutton a,
+#id81addtoorderbutton a,
+#unlimiteddomainsbutton a,
+#submitbutton a,
+#editorderbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 41px;
+ width: 459px;
+ background-position: 0% 0px;
+ font-size: 41px;
+ line-height: 41px;
+}
+#id177savebutton a,
+#savebuttoncopy a,
+#id128savebutton a,
+#savebuttoncopy2 a,
+#loginbutton a,
+#id156savebutton a  {
+ background: url(/images/submissionmedia/id156savebutton.gif) no-repeat 0% 0px;
+ display: block;
+ height: 44px;
+ width: 254px;
+ font-size: 44px;
+ line-height: 44px;
+}
+#marketingbutton a:hover  {
+ background-position: -126px 0%;
+}
+#marketingbutton a  {
+ line-height: 31px;
+ font-size: 31px;
+ width: 126px;
+ height: 31px;
+ display: block;
+ background-repeat: no-repeat;
+ background-image: url(/images/sg_marketingbutton_media/marketingbutton.png);
+}
+#marketingbutton  {
+ height: 31px;
+ width: 126px;
+ z-index: 3;
+ top: 58px;
+ left: 393px;
+ position: absolute;
+}
+#shoppopsbutton a,
+#accountbutton a,
+#homebutton a,
+#myleadsbutton a,
+#customizebutton a,
+#logoutbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 31px;
+ background-position: 0% 0px;
+ font-size: 31px;
+ line-height: 31px;
+}
+#accountbutton a:hover,
+#customizebutton a:hover,
+#shoppopsbutton a:hover,
+#logoutbutton a:hover  {
+ background-position: -126px 0%;
+}
+#shape12copy69   {
+ display: none;
+ position: absolute;
+ left: 558px;
+ top: 390px;
+ z-index: 4;
+ width: 289px;
+ height: 24px;
+ background-repeat: no-repeat;
+ background-image: url(/images/homemedia/shape12copy36.gif);
+}
+#shape12copy37,
+#shape12copy36,
+#shape12copy66,
+#shape12copy35,
+#shape12copy39,
+#shape12copy38  {
+ visibility: visible;
+ position: absolute;
+ left: 558px;
+ z-index: 4;
+ width: 289px;
+ height: 24px;
+ background-repeat: no-repeat;
+}
+#shape12copy123,
+#shape12copy122,
+#shape12copy121,
+#shape12copy125,
+#shape12copy124  {
+ background: url(/images/domainmedia/shape12copy125.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ z-index: 5;
+ width: 361px;
+ height: 29px;
+}
+#step1banner,
+#currentorderbanner,
+#purchasedforbanner,
+#step2banner  {
+ visibility: visible;
+ position: absolute;
+ top: 106px;
+ z-index: 3;
+ width: 451px;
+ height: 38px;
+ background-repeat: no-repeat;
+}
+#id311overviewbutton,
+#id302overviewbutton,
+#id320overviewbutton  {
+ visibility: hidden;
+ position: absolute;
+ top: 131px;
+ z-index: 5;
+ width: 123px;
+ height: 26px;
+}
+#shape12copy98,
+
+#shape12copy100,
+
+#shape12copy96,
+
+#shape12copy95  {
+ background: url(/images/leadcontactsmedia/shape12copy100.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 752px;
+ z-index: 4;
+ width: 211px;
+ height: 29px;
+}
+#id231savenewbutton a,
+
+#id123savebutton a,
+
+#id205savebutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 37px;
+ background-position: 0% 0px;
+ font-size: 37px;
+ line-height: 37px;
+}
+#id296contentbutton a,
+#id294designbutton a,
+#domainsbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 50px;
+ background-position: 0% 0px;
+ font-size: 50px;
+ line-height: 50px;
+}
+#id282contentbutton a,
+#id280designbutton a,
+#domainbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 98px;
+ width: 203px;
+ background-position: 0% 0px;
+ font-size: 98px;
+ line-height: 98px;
+}
+#id241uploadbutton a,
+#id228uploadbutton a,
+#allbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 39px;
+ background-position: 0% 0px;
+ font-size: 39px;
+ line-height: 39px;
+}
+#id272statusbutton,
+
+#id268verifybutton,
+
+#addbuyunlimited  {
+ visibility: visible;
+ position: absolute;
+ top: 341px;
+ z-index: 4;
+ width: 112px;
+ height: 19px;
+}
+#adddomainbutton  {
+ visibility: visible;
+ position: absolute;
+ top: 341px;
+ z-index: 4;
+ width: 112px;
+ height: 19px;
+}
+#id266statusbutton,
+
+#id262verifybutton,
+
+#id264savebutton  {
+ visibility: visible;
+ position: absolute;
+ top: 378px;
+ z-index: 4;
+ width: 112px;
+ height: 19px;
+}
+#editlogobutton,
+
+#chooseschemebutton,
+
+#editimagebutton  {
+ visibility: hidden;
+ position: absolute;
+ top: 157px;
+ z-index: 6;
+ width: 123px;
+ height: 26px;
+}
+#id282contentbutton,
+#domainbutton,
+#id280designbutton  {
+ visibility: visible;
+ position: absolute;
+ top: 280px;
+ z-index: 4;
+ width: 203px;
+ height: 98px;
+}
+#id128savebutton,
+#id156savebutton,
+#id177savebutton  {
+ visibility: visible;
+ position: absolute;
+ left: 646px;
+ z-index: 4;
+ width: 254px;
+ height: 44px;
+}
+#id2bgmain,
+#layer17copy,
+#id556bg,
+#layer17copy2  {
+ visibility: visible;
+ position: absolute;
+ left: 13px;
+ top: 92px;
+ z-index: 2;
+ width: 962px;
+ height: 657px;
+ background-repeat: no-repeat;
+}
+#contactbutton a:hover,
+#submissionbutton a:hover  {
+ background-position: -117px 0%;
+}
+.thedate {
+ color: #525252;
+ font-family : arial, helvetica, verdana, sans-serif;
+ font-size: 12px;
+ font-weight: normal;
+}
+#welcomeheadingdiv  {
+
+/* background: url(/images/submissionmedia/id593welcomebobshueywednesd.gif) no-repeat;*/
+ color: #525252;
+ font-weight: bold;
+ visibility: visible;
+ position: absolute;
+ left: 630px;
+ top: 13px;
+ z-index: 3;
+ width: 386px;
+ height: 11px;
+}
+#profileicon,
+
+#leadcontactsicon,
+
+#paymenticon  {
+ visibility: visible;
+ position: absolute;
+ left: 24px;
+ z-index: 3;
+ width: 15px;
+ height: 15px;
+ background-repeat: no-repeat;
+}
+#contentmodifyyourleadpopfromthedefaultvalues  {
+ background-image: url(/images/customizemedia/id287contentmodifyyourleadp.gif);
+ left: 680px;
+}
+#designmodifyyourleadpopfromthedefaultlook  {
+ background-image: url(/images/customizemedia/id286designmodifyyourleadpo.gif);
+ left: 437px;
+}
+#id466editbutton a,
+#id465deletebutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 17px;
+ width: 15px;
+ background-position: 0% 0px;
+ font-size: 17px;
+ line-height: 17px;
+}
+#infovaultbutton,
+#id358overviewbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 392px;
+ z-index: 11;
+ width: 123px;
+ height: 26px;
+}
+#bgcopy3,
+
+#id179bg,
+
+#id158bg,
+
+#bgcopy4  {
+ background: url(/images/submissionmedia/id158bg.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 220px;
+ top: 166px;
+ z-index: 4;
+ width: 682px;
+ height: 39px;
+}
+#contactbutton a,
+
+#submissionbutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ width: 117px;
+ height: 32px;
+ background-position: 0% 0px;
+}
+#id466editbutton,
+#id465deletebutton  {
+ visibility: visible;
+ position: absolute;
+ top: 210px;
+ z-index: 4;
+ width: 15px;
+ height: 17px;
+}
+#domainsetormodifyyourleadpopdomain  {
+ background-image: url(/images/customizemedia/id285domainsetormodifyyourl.gif);
+ left: 195px;
+}
+#savebuttoncopy,
+
+#savebuttoncopy2  {
+ visibility: visible;
+ position: absolute;
+ left: 651px;
+ z-index: 4;
+ width: 254px;
+ height: 44px;
+}
+#shape12copy120,
+
+#shape12copy119  {
+ background: url(/images/domainmedia/shape12copy120.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 161px;
+ z-index: 4;
+ width: 804px;
+ height: 29px;
+}
+#shape12copy102,
+
+#shape12copy101  {
+ background: url(/images/paymentsmedia/shape12copy102.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 161px;
+ z-index: 4;
+ width: 802px;
+ height: 29px;
+}
+#id92termsconditionsbutton a  {
+ background-image: url(/images/shoppopsmedia/id92termsconditionsbutton.gif);
+}
+#shape15copy3,
+
+#shape15copy2  {
+ background: url(/images/submissionmedia/shape15copy3.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 141px;
+ top: 89px;
+ z-index: 3;
+ width: 17px;
+ height: 627px;
+}
+#schemedisplay,
+
+#logodisplay  {
+ visibility: visible;
+ position: absolute;
+ left: 164px;
+ top: 142px;
+ z-index: 4;
+ height: 558px;
+ background-repeat: no-repeat;
+}
+#autoresponderbutton a:hover  {
+ background-position: -142px 0%;
+}
+#id296contentbutton a:hover  {
+ background-position: -47px 0%;
+}
+#id73bg,
+
+#bgcopy2,
+
+#bgcopy5  {
+ background: url(/images/reviewordermedia/bgcopy5.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 28px;
+ z-index: 3;
+ width: 450px;
+ height: 35px;
+}
+#colorschemebutton a:hover  {
+ background-position: -127px 0%;
+}
+#id294designbutton a:hover  {
+ background-position: -42px 0%;
+}
+#entertextcopy,
+
+#entertext  {
+ visibility: visible;
+ position: absolute;
+ left: 234px;
+ top: 176px;
+ z-index: 6;
+ width: 226px;
+}
+#unlimiteddomainsbutton a  {
+ background-image: url(/images/shoppopsmedia/unlimiteddomainsbutton.gif);
+}
+#homepagebutton a:hover  {
+ background-position: -155px 0%;
+}
+#edittagsbutton a:hover  {
+ background-position: -68px 0%;
+}
+#id81addtoorderbutton a  {
+ background-image: url(/images/shoppopsmedia/id81addtoorderbutton.gif);
+}
+#privacypolicybutton a  {
+ background-image: url(/images/submissionmedia/privacypolicybutton.gif);
+}
+#id311overviewbutton a  {
+ background-image: url(/images/logosmedia/id302overviewbutton.gif);
+}
+#id320overviewbutton a  {
+ background-image: url(/images/logosmedia/id320overviewbutton.gif);
+}
+#myleadsbutton a:hover  {
+ background-position: -130px 0%;
+}
+#id302overviewbutton a  {
+ background-image: url(/images/logosmedia/id302overviewbutton.gif);
+}
+#id358overviewbutton a  {
+ background-image: url(/images/submissionmedia/id365overviewbutton.gif);
+}
+#id365overviewbutton a  {
+ background-image: url(/images/submissionmedia/id365overviewbutton.gif);
+}
+#id388overviewbutton a  {
+ background-image: url(/images/submissionmedia/id388overviewbutton.gif);
+}
+#autoresponderbutton a  {
+ background: url(/images/submissionmedia/autoresponderbutton.gif) no-repeat 0% 0px;
+ display: block;
+ width: 142px;
+ height: 32px;
+}
+#id37ordersummarycopy  {
+ top: 149px;
+ left: 31px;
+ background-image: url(/images/reviewordermedia/id37ordersummarycopy.gif);
+}
+#id282contentbutton a  {
+ background-image: url(/images/customizemedia/id10contentbutton.png);
+}
+#id296contentbutton a  {
+ width: 47px;
+ background-image: url(/images/submissionmedia/id296contentbutton.gif);
+}
+#footerbutton a:hover  {
+ background-position: -85px 0%;
+}
+#id231savenewbutton a  {
+ width: 371px;
+ background-image: url(/images/logosmedia/id231savenewbutton.gif);
+}
+#chooseschemebutton a  {
+ background-image: url(/images/logosmedia/chooseschemebutton.gif);
+}
+#id486searchbutton a  {
+ width: 61px;
+ background-image: url(/images/myleadsmedia/id486searchbutton.gif);
+}
+#privacypolicybutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 291px;
+ top: 156px;
+ z-index: 14;
+ width: 123px;
+ height: 26px;
+}
+#id320overviewbutton  {
+ left: 160px;
+}
+#colorschemebutton a  {
+ background: url(/images/logosmedia/colorschemebutton.gif) no-repeat 0% 0px;
+ display: block;
+ width: 127px;
+ height: 32px;
+}
+#id441searchbutton a  {
+ width: 76px;
+ background-image: url(/images/paymentsmedia/id441searchbutton.gif);
+}
+#id268verifybutton a  {
+
+   /*background-image: url(/images/domainmedia/id268verifybutton.gif);*/
+ background-image: url(/images/domainmedia/verifyopensave.png);
+}
+#id358overviewbutton  {
+ top: 130px;
+}
+#id311overviewbutton  {
+ left: 285px;
+}
+#id266statusbutton a  {
+ background-image: url(/images/domainmedia/id272statusbutton.gif);
+}
+#logosbutton a:hover  {
+ background-position: -125px 0%;
+}
+#mainmessagebutton a  {
+ background-image: url(/images/submissionmedia/mainmessagebutton.gif);
+}
+#id302overviewbutton  {
+ left: 410px;
+}
+#autoresponderbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 632px;
+ top: 98px;
+ z-index: 8;
+ width: 142px;
+ height: 32px;
+}
+#id388overviewbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 160px;
+ top: 130px;
+ z-index: 8;
+ width: 123px;
+ height: 26px;
+}
+#id272statusbutton a  {
+ background-image: url(/images/domainmedia/id272statusbutton.gif);
+}
+#licensinginfobutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 291px;
+ top: 234px;
+ z-index: 17;
+ width: 123px;
+ height: 26px;
+}
+#id294designbutton a  {
+ width: 42px;
+ background-image: url(/images/submissionmedia/id294designbutton.gif);
+}
+#id280designbutton a  {
+ background-image: url(/images/customizemedia/id6designbutton.png);
+}
+#id262verifybutton a  {
+/*   background-image: url(/images/domainmedia/id262verifybutton.gif); */
+ background-image: url(/images/domainmedia/verifyopensave.png);
+}
+#id228uploadbutton a  {
+ width: 371px;
+ background-image: url(/images/logosmedia/id228uploadbutton.gif);
+}
+#id365overviewbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 291px;
+ top: 130px;
+ z-index: 13;
+ width: 123px;
+ height: 26px;
+}
+#id241uploadbutton a  {
+ width: 366px;
+ background-image: url(/images/imagesmedia/id241uploadbutton.gif);
+}
+#id551deletebutton a  {
+ width: 31px;
+ background-image: url(/images/myleadsmedia/id551deletebutton.gif);
+}
+#id480deletebutton a  {
+ width: 52px;
+ background-image: url(/images/myleadsmedia/id480deletebutton.gif);
+}
+#id465deletebutton a  {
+ background-image: url(/images/leadcontactsmedia/id465deletebutton.gif);
+}
+#currentorderbanner  {
+ background-image: url(/images/reviewordermedia/currentorderbanner.gif);
+ left: 28px;
+}
+#id282contentbutton  {
+ left: 699px;
+}
+#id549printbutton a  {
+ width: 53px;
+ background-image: url(/images/myleadsmedia/id549printbutton.gif);
+}
+#id296contentbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 926px;
+ top: 92px;
+ z-index: 7;
+ width: 47px;
+ height: 50px;
+}
+#id475excelbutton a  {
+ width: 77px;
+ background-image: url(/images/myleadsmedia/id475excelbutton.gif);
+}
+#id550emailbutton a  {
+ width: 42px;
+ background-image: url(/images/myleadsmedia/id550emailbutton.gif);
+}
+#id547excelbutton a  {
+ width: 57px;
+ background-image: url(/images/myleadsmedia/id547excelbutton.gif);
+}
+#id478emailbutton a  {
+ width: 67px;
+ background-image: url(/images/myleadsmedia/id478emailbutton.gif);
+}
+#submissionbutton a  {
+ background-image: url(/images/submissionmedia/submissionbutton.gif);
+}
+#chooseschemebutton  {
+ left: 160px;
+}
+#purchasedforbanner  {
+ background-image: url(/images/reviewordermedia/purchasedforbanner.gif);
+ left: 510px;
+}
+#homebutton a:hover  {
+ background-position: -28px 0%;
+}
+#i3rdpartyurlbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 392px;
+ top: 182px;
+ z-index: 12;
+ width: 123px;
+ height: 26px;
+}
+#id477printbutton a  {
+ width: 81px;
+ background-image: url(/images/myleadsmedia/id477printbutton.gif);
+}
+#id262verifybutton  {
+ left: 190px;
+}
+#disclosuresbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 291px;
+ top: 208px;
+ z-index: 16;
+ width: 123px;
+ height: 26px;
+}
+#id280designbutton  {
+ left: 456px;
+}
+#mainmessagebutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 160px;
+ top: 156px;
+ z-index: 7;
+ width: 123px;
+ height: 26px;
+}
+#id546wordbutton a  {
+ width: 53px;
+ background-image: url(/images/myleadsmedia/id546wordbutton.gif);
+}
+#id465deletebutton  {
+ left: 710px;
+}
+#descriptionbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 160px;
+ top: 182px;
+ z-index: 6;
+ width: 123px;
+ height: 26px;
+}
+#id466editbutton a  {
+ background-image: url(/images/leadcontactsmedia/id466editbutton.gif);
+}
+#id474wordbutton a  {
+ width: 78px;
+ background-image: url(/images/myleadsmedia/id474wordbutton.gif);
+}
+#customizebutton a  {
+ width: 126px;
+ background-image: url(/images/submissionmedia/customizebutton.gif);
+}
+#colorschemebutton  {
+ visibility: visible;
+ position: absolute;
+ left: 158px;
+ top: 98px;
+ z-index: 9;
+ width: 127px;
+ height: 32px;
+}
+#id294designbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 884px;
+ top: 92px;
+ z-index: 6;
+ width: 42px;
+ height: 50px;
+}
+#id434savebutton a  {
+ width: 76px;
+ background-image: url(/images/profilemedia/id434savebutton.gif);
+}
+#id123savebutton a  {
+ width: 745px;
+ background-image: url(/images/seomedia/id123savebutton.gif);
+}
+#adddomainbutton a  {
+ background-image: url(/images/domainmedia/adddomainbutton.gif);
+}
+#addbuyunlimited a  {
+ background-image: url(/images/domainmedia/adddomainbutton.gif);
+}
+#id264savebutton a  {
+ background-image: url(/images/domainmedia/id264savebutton.gif);
+}
+#purchasedbybanner  {
+ background: url(/images/reviewordermedia/purchasedbybanner.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 510px;
+ top: 277px;
+ z-index: 3;
+ width: 451px;
+ height: 38px;
+}
+#id268verifybutton  {
+ left: 570px;
+}
+#seobutton a:hover  {
+ background-position: -67px 0%;
+}
+#id266statusbutton  {
+ left: 439px;
+}
+#id338editbutton a  {
+ background-image: url(/images/submissionmedia/id338editbutton.gif);
+}
+#editorderbutton a  {
+ background-image: url(/images/reviewordermedia/editorderbutton.gif);
+}
+#contactusbutton a  {
+ background-image: url(/images/submissionmedia/contactusbutton.gif);
+}
+#editimagebutton a  {
+ background-image: url(/images/logosmedia/editimagebutton.gif);
+}
+#id272statusbutton  {
+ left: 684px;
+}
+#id205savebutton a  {
+ width: 250px;
+ background-image: url(/images/homepagemedia/id205savebutton.gif);
+}
+#id548pdfbutton a  {
+ width: 53px;
+ background-image: url(/images/myleadsmedia/id548pdfbutton.gif);
+}
+#submissionbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 398px;
+ top: 98px;
+ z-index: 12;
+ width: 117px;
+ height: 32px;
+}
+#editinfobutton a  {
+ background-image: url(/images/submissionmedia/editinfobutton.gif);
+}
+#homepagebutton a  {
+ background: url(/images/submissionmedia/homepagebutton.gif) no-repeat 0% 0px;
+ display: block;
+ width: 155px;
+ height: 32px;
+}
+#thankyoubutton a  {
+ background-image: url(/images/submissionmedia/thankyoubutton.gif);
+}
+#id66ordersummary  {
+ top: 488px;
+ left: 31px;
+ background-image: url(/images/reviewordermedia/id37ordersummarycopy.gif);
+}
+#shoppopsbutton a  {
+ width: 126px;
+ background-image: url(/images/submissionmedia/shoppopsbutton.gif);
+}
+#termsofusebutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 291px;
+ top: 182px;
+ z-index: 15;
+ width: 123px;
+ height: 26px;
+}
+#leadcontactsicon  {
+ background-image: url(/images/profilemedia/leadcontactsicon.gif);
+ top: 161px;
+}
+#edittagsbutton a  {
+ width: 68px;
+ background-image: url(/images/submissionmedia/edittagsbutton.gif);
+}
+#id54bg,
+
+#bgcopy8  {
+ visibility: visible;
+ position: absolute;
+ left: 28px;
+ top: 146px;
+ z-index: 3;
+ width: 450px;
+ background-repeat: no-repeat;
+}
+#editlogobutton a  {
+ background-image: url(/images/logosmedia/editlogobutton.gif);
+}
+#bgcopy7,
+
+#id99bg  {
+ visibility: visible;
+ position: absolute;
+ left: 510px;
+ top: 146px;
+ z-index: 3;
+ width: 450px;
+ background-repeat: no-repeat;
+}
+#id476pdfbutton a  {
+ width: 72px;
+ background-image: url(/images/myleadsmedia/id476pdfbutton.gif);
+}
+#infovaultbutton  {
+ top: 182px;
+}
+#adddomainbutton  {
+ left: 819px;
+}
+#addbuyunlimited  {
+ left: 819px;
+}
+#contactusbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 291px;
+ top: 286px;
+ z-index: 19;
+ width: 123px;
+ height: 26px;
+}
+#id156savebutton  {
+ top: 599px;
+}
+#id177savebutton  {
+ top: 654px;
+}
+#outlookbutton a  {
+ width: 81px;
+ background-image: url(/images/myleadsmedia/outlookbutton.gif);
+}
+#savebuttoncopy2  {
+ top: 282px;
+}
+#editimagebutton  {
+ left: 410px;
+}
+#id264savebutton  {
+ left: 315px;
+}
+#myleadsbutton a  {
+ width: 130px;
+ background-image: url(/images/submissionmedia/myleadsbutton.gif);
+}
+#accountbutton a  {
+ width: 126px;
+ background-image: url(/images/submissionmedia/accountbutton.gif);
+}
+#id338editbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 643px;
+ top: 130px;
+ z-index: 5;
+ width: 123px;
+ height: 26px;
+}
+#customizebutton  {
+ visibility: visible;
+ position: absolute;
+ left: 141px;
+ top: 58px;
+ z-index: 8;
+ width: 126px;
+ height: 31px;
+}
+#currentleadpops  {
+ background: url(/images/homemedia/currentleadpops.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 64px;
+ top: 121px;
+ z-index: 4;
+ width: 428px;
+ height: 496px;
+}
+#corpclients  {
+ visibility: visible;
+ position: absolute;
+ left: 64px;
+ top: 103px;
+ z-index: 4;
+ width: 861px;
+ height: 531px;
+}
+#domainsbutton a  {
+ width: 44px;
+ background-image: url(/images/submissionmedia/domainsbutton.gif);
+}
+#id128savebutton  {
+ top: 633px;
+}
+#contactbutton a  {
+ background-image: url(/images/submissionmedia/contactbutton.gif);
+}
+#aboutusbutton a  {
+ background-image: url(/images/submissionmedia/aboutusbutton.gif);
+}
+#id466editbutton  {
+ left: 678px;
+}
+#shape12copy139  {
+ top: 666px;
+ left: 31px;
+}
+#edittagsbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 773px;
+ top: 130px;
+ z-index: 6;
+ width: 68px;
+ height: 26px;
+}
+#shape12copy148  {
+ top: 419px;
+ left: 513px;
+}
+#shape12copy111  {
+ top: 389px;
+}
+#shape12copy136  {
+ top: 329px;
+ left: 31px;
+}
+#shape12copy121  {
+ top: 271px;
+ left: 189px;
+}
+#shape12copy109  {
+ top: 323px;
+}
+#shape12copy134  {
+ top: 269px;
+ left: 31px;
+}
+#shape12copy103  {
+ top: 128px;
+}
+#shape12copy138  {
+ top: 149px;
+ left: 513px;
+}
+#footerbutton a  {
+ background: url(/images/submissionmedia/footerbutton.gif) no-repeat 0% 0px;
+ display: block;
+ width: 85px;
+ height: 32px;
+}
+#shape12copy107  {
+ top: 258px;
+}
+#imagesbutton a  {
+ background: url(/images/logosmedia/imagesbutton.gif) no-repeat 0% 0px;
+ display: block;
+ width: 123px;
+ height: 32px;
+}
+#shape12copy113  {
+ top: 453px;
+}
+#shape12copy104  {
+ top: 160px;
+}
+#shape12copy135  {
+ top: 299px;
+ left: 31px;
+}
+#shape12copy110  {
+ top: 357px;
+}
+#shape12copy108  {
+ top: 291px;
+}
+#shape12copy120  {
+ top: 179px;
+}
+#shape12copy147  {
+ top: 389px;
+ left: 513px;
+}
+#shape12copy106  {
+ top: 225px;
+}
+#leadpopmetrics  {
+ background: url(/images/homemedia/leadpopmetrics.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 488px;
+ top: 121px;
+ z-index: 3;
+ width: 431px;
+ height: 496px;
+}
+#shape12copy119  {
+ top: 141px;
+}
+#shape12copy137  {
+ top: 367px;
+ left: 31px;
+}
+#shape12copy132  {
+ top: 209px;
+ left: 31px;
+}
+#shape12copy123  {
+ top: 337px;
+ left: 189px;
+}
+#shape12copy124  {
+ top: 271px;
+ left: 569px;
+}
+#shape12copy130  {
+ top: 149px;
+ left: 31px;
+}
+#shape12copy118  {
+ top: 615px;
+}
+#shape12copybob  {
+ top: 647px;
+}
+#shape12copy125  {
+ top: 304px;
+ left: 569px;
+}
+#shape12copy131  {
+ top: 179px;
+ left: 31px;
+}
+#shape12copy122  {
+ top: 304px;
+ left: 189px;
+}
+#shape12copy143  {
+ top: 269px;
+ left: 513px;
+}
+#shape12copy142  {
+ top: 239px;
+ left: 513px;
+}
+#shape12copy144  {
+ top: 299px;
+ left: 513px;
+}
+#shape12copy146  {
+ top: 359px;
+ left: 513px;
+}
+#shape12copy145  {
+ top: 329px;
+ left: 513px;
+}
+#shape12copy156  {
+ top: 419px;
+ left: 31px;
+}
+#shape12copy133  {
+ top: 239px;
+ left: 31px;
+}
+#shape12copy112  {
+ top: 421px;
+}
+#shape12copy105  {
+ top: 193px;
+}
+#shape12copy141  {
+ top: 209px;
+ left: 513px;
+}
+#shape12copy140  {
+ top: 179px;
+ left: 513px;
+}
+#shape12copy114  {
+ top: 485px;
+}
+#editlogobutton  {
+ left: 285px;
+}
+#logoutbutton a  {
+ width: 126px;
+ background-image: url(/images/submissionmedia/logoutbutton.gif);
+}
+#shape12copy100  {
+ top: 237px;
+}
+#shape12copy116  {
+ top: 551px;
+}
+#shape12copy101  {
+ top: 134px;
+}
+#shape12copy115  {
+ top: 518px;
+}
+#thankyoubutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 392px;
+ top: 156px;
+ z-index: 10;
+ width: 123px;
+ height: 26px;
+}
+#shoppopsbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 520px;
+ top: 58px;
+ z-index: 6;
+ width: 126px;
+ height: 31px;
+}
+#homepagebutton  {
+ visibility: visible;
+ position: absolute;
+ left: 158px;
+ top: 98px;
+ z-index: 15;
+ width: 155px;
+ height: 32px;
+}
+#savebuttoncopy  {
+ top: 249px;
+}
+#homepagetext p  {
+ font-family: "Arial Black";
+}
+#domainbutton a  {
+ background-image: url(/images/customizemedia/domainsbutton.png);
+}
+#submitbutton a  {
+ background-image: url(/images/reviewordermedia/submitbutton.gif);
+}
+#editinfobutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 515px;
+ top: 130px;
+ z-index: 9;
+ width: 123px;
+ height: 26px;
+}
+#shape12copy102  {
+ top: 103px;
+}
+#shape12copy117  {
+ top: 583px;
+}
+#shape12copy38  {
+ background-image: url(/images/homemedia/shape12copy38.gif);
+ top: 292px;
+}
+#logosbutton a  {
+ background: url(/images/logosmedia/logosbutton.gif) no-repeat 0% 0px;
+ display: block;
+ width: 125px;
+ height: 32px;
+}
+#shape55copy19  {
+ top: 177px;
+}
+#shape12copy66  {
+ background-image: url(/images/homemedia/shape12copy66.gif);
+ top: 346px;
+}
+#corp  {
+ visibility: visible;
+ position: absolute;
+ left: 558px;
+ z-index: 4;
+ width: 289px;
+ height: 24px;
+ background-repeat: no-repeat;
+ background-image: url(/images/homemedia/shape12copy66.gif);
+ top: 450px;
+}
+#aboutusbutton  {
+ visibility: hidden;
+ position: absolute;
+ left: 291px;
+ top: 260px;
+ z-index: 18;
+ width: 123px;
+ height: 26px;
+}
+#shape12copy96  {
+ top: 268px;
+}
+#shape12copy35  {
+ background-image: url(/images/homemedia/shape12copy35.gif);
+ top: 211px;
+}
+#schemedisplay  {
+ background-image: url(/images/colorschememedia/schemedisplay.gif);
+ width: 439px;
+}
+#myleadsbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 11px;
+ top: 58px;
+ z-index: 9;
+ width: 130px;
+ height: 31px;
+}
+#shape55copy14  {
+ top: 239px;
+}
+#loginbutton a  {
+ width: 346px;
+ background-image: url(/images/loginmedia/loginbutton.gif);
+}
+#contactbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 515px;
+ top: 98px;
+ z-index: 10;
+ width: 117px;
+ height: 32px;
+}
+#shape55copy10  {
+ top: 169px;
+}
+#shape55copy20  {
+ top: 213px;
+}
+#shape55copy12  {
+ top: 174px;
+}
+#shape12copy37  {
+ background-image: url(/images/homemedia/shape12copy37.gif);
+ top: 265px;
+}
+#shape55copy15  {
+ top: 244px;
+}
+#shape12copy36  {
+ background-image: url(/images/homemedia/shape12copy36.gif);
+ top: 238px;
+}
+#domainsbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 840px;
+ top: 92px;
+ z-index: 5;
+ width: 44px;
+ height: 50px;
+}
+#accountbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 267px;
+ top: 58px;
+ z-index: 7;
+ width: 126px;
+ height: 31px;
+}
+#shape12copy98  {
+ top: 175px;
+}
+#shape55copy11  {
+ top: 209px;
+}
+#shape12copy95  {
+ top: 206px;
+}
+#shape12copy39  {
+ background-image: url(/images/homemedia/shape12copy39.gif);
+ top: 319px;
+}
+#layer17copy2  {
+ background-image: url(/images/submissionmedia/layer17copy2.gif);
+}
+#shape55copy9  {
+ top: 204px;
+}
+#imagesbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 410px;
+ top: 98px;
+ z-index: 7;
+ width: 123px;
+ height: 32px;
+}
+#displaycopy2  {
+ top: 210px;
+}
+#footerbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 313px;
+ top: 98px;
+ z-index: 14;
+ width: 85px;
+ height: 32px;
+}
+#logoutbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 646px;
+ top: 58px;
+ z-index: 5;
+ width: 126px;
+ height: 31px;
+}
+#domainbutton  {
+ left: 214px;
+}
+#homebutton a  {
+ width: 28px;
+ background-image: url(/images/submissionmedia/homebutton.gif);
+}
+#thinbarimage  {
+ background: url(/images/submissionmedia/thinbarimage.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 0px;
+ top: 82px;
+ z-index: 3;
+ width: 989px;
+ height: 7px;
+}
+#displaycopy  {
+ top: 169px;
+}
+#allbutton a  {
+ width: 36px;
+ background-image: url(/images/myleadsmedia/allbutton.gif);
+}
+#profileicon  {
+ background-image: url(/images/profilemedia/profileicon.gif);
+ top: 139px;
+}
+#paymenticon  {
+ background-image: url(/images/profilemedia/paymenticon.gif);
+ top: 117px;
+}
+#logosbutton  {
+ visibility: visible;
+ position: absolute;
+ left: 285px;
+ top: 98px;
+ z-index: 8;
+ width: 125px;
+ height: 32px;
+}
+#id574header  {
+ background: url(/images/submissionmedia/id574header.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ z-index: 2;
+ width: 989px;
+ height: 85px;
+}
+#step1banner  {
+ background-image: url(/images/shoppopsmedia/step1banner.gif);
+ left: 28px;
+}
+#logodisplay  {
+ background-image: url(/images/logosmedia/logodisplay.gif);
+ width: 432px;
+}
+#seobutton a  {
+ background: url(/images/submissionmedia/seobutton.gif) no-repeat 0% 0px;
+ display: block;
+ width: 67px;
+ height: 32px;
+}
+#layer17copy  {
+ background-image: url(/images/profilemedia/layer17copy.gif);
+}
+#step2banner  {
+ background-image: url(/images/shoppopsmedia/step2banner.gif);
+ left: 510px;
+}
+#linedetail  {
+ background: url(/images/submissionmedia/linedetail.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 156px;
+ top: 100px;
+ z-index: 4;
+ width: 684px;
+ height: 41px;
+}
+#homebutton  {
+ visibility: visible;
+ position: absolute;
+ left: 772px;
+ top: 58px;
+ z-index: 4;
+ width: 28px;
+ height: 31px;
+}
+#bbutton a  {
+ background-image: url(/images/myleadsmedia/bbutton.gif);
+}
+#vbutton a  {
+ background-image: url(/images/myleadsmedia/vbutton.gif);
+}
+#xbutton a  {
+ background-image: url(/images/myleadsmedia/xbutton.gif);
+}
+#fbutton a  {
+ background-image: url(/images/myleadsmedia/fbutton.gif);
+}
+#ibutton a  {
+ background-image: url(/images/myleadsmedia/ibutton.gif);
+}
+#rbutton a  {
+ background-image: url(/images/myleadsmedia/rbutton.gif);
+}
+#mbutton a  {
+ background-image: url(/images/myleadsmedia/mbutton.gif);
+}
+#sbutton a  {
+ background-image: url(/images/myleadsmedia/sbutton.gif);
+}
+#pbutton a  {
+ background-image: url(/images/myleadsmedia/pbutton.gif);
+}
+#abutton a  {
+ background-image: url(/images/myleadsmedia/abutton.gif);
+}
+#obutton a  {
+ background-image: url(/images/myleadsmedia/obutton.gif);
+}
+#id2bgmain  {
+ background-image: url(/images/reviewordermedia/id2bgmain.gif);
+}
+#qbutton a  {
+ background-image: url(/images/myleadsmedia/qbutton.gif);
+}
+#jbutton a  {
+ background-image: url(/images/myleadsmedia/jbutton.gif);
+}
+#zbutton a  {
+ background-image: url(/images/myleadsmedia/zbutton.gif);
+}
+#lbutton a  {
+ background-image: url(/images/myleadsmedia/lbutton.gif);
+}
+#hbutton a  {
+ background-image: url(/images/myleadsmedia/hbutton.gif);
+}
+#tbutton a  {
+ background-image: url(/images/myleadsmedia/tbutton.gif);
+}
+#seobutton  {
+ visibility: visible;
+ position: absolute;
+ left: 774px;
+ top: 98px;
+ z-index: 7;
+ width: 67px;
+ height: 32px;
+}
+#ubutton a  {
+ background-image: url(/images/myleadsmedia/ubutton.gif);
+}
+#wbutton a  {
+ background-image: url(/images/myleadsmedia/wbutton.gif);
+}
+#nbutton a  {
+ background-image: url(/images/myleadsmedia/nbutton.gif);
+}
+#dbutton a  {
+ background-image: url(/images/myleadsmedia/dbutton.gif);
+}
+#kbutton a  {
+ background-image: url(/images/myleadsmedia/kbutton.gif);
+}
+#gbutton a  {
+ background-image: url(/images/myleadsmedia/gbutton.gif);
+}
+#cbutton a  {
+ background-image: url(/images/myleadsmedia/cbutton.gif);
+}
+#ebutton a  {
+ background-image: url(/images/myleadsmedia/ebutton.gif);
+}
+#ybutton a  {
+ background-image: url(/images/myleadsmedia/ybutton.gif);
+}
+#bgcopy12  {
+ background: url(/images/contactusmedia/bgcopy12.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 220px;
+ top: 171px;
+ z-index: 4;
+ width: 682px;
+ height: 109px;
+}
+#popscopy  {
+ background: url(/images/submissionmedia/popscopy.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 64px;
+ top: 4px;
+ z-index: 4;
+ width: 92px;
+ height: 51px;
+}
+#id179bg  {
+ height: 109px;
+ background-image: url(/images/contactusmedia/bgcopy12.gif);
+}
+#bgcopy7  {
+ background-image: url(/images/reviewordermedia/bgcopy7.gif);
+ height: 129px;
+}
+#bgcopy2  {
+ top: 663px;
+}
+#bgcopy8  {
+ background-image: url(/images/reviewordermedia/bgcopy8.gif);
+ height: 268px;
+}
+#bgcopy5  {
+ top: 416px;
+}
+#id556bg  {
+ background-image: url(/images/homemedia/id556bg.gif);
+ height: 590px;
+}
+#bgcopy4  {
+ top: 207px;
+}
+#display  {
+ top: 169px;
+}
+#id54bg  {
+ background-image: url(/images/shoppopsmedia/id54bg.gif);
+ height: 215px;
+}
+#navbar  {
+ background: url(/images/logosmedia/navbar.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 533px;
+ top: 98px;
+ z-index: 6;
+ width: 307px;
+ height: 32px;
+}
+#id73bg  {
+ top: 364px;
+}
+#id99bg  {
+ background-image: url(/images/shoppopsmedia/id99bg.gif);
+ height: 305px;
+}
+#admin  {
+ background: url(/images/submissionmedia/admin.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 162px;
+ top: 33px;
+ z-index: 3;
+ width: 59px;
+ height: 13px;
+}
+#id0bg  {
+ visibility: visible;
+ position: absolute;
+ left: 0px;
+ top: 82px;
+ z-index: 1;
+ width: 989px;
+ height: 684px;
+}
+#id0bgz  {
+/*   background: url(/images/submissionmedia/id0bg.gif) no-repeat !important; */
+ visibility: visible;
+ position: absolute;
+ left: -131px !important;
+ top: 94px !important;
+ z-index: 1;
+ width: 1265px;
+ height: 684px;
+ overflow: auto !important;
+}
+#lead  {
+ background: url(/images/submissionmedia/lead.gif) no-repeat;
+ visibility: visible;
+ position: absolute;
+ left: 11px;
+ top: 21px;
+ z-index: 3;
+ width: 60px;
+ height: 31px;
+}
+#deactivateimagebutton a,
+#activateimagebutton a  {
+ background-repeat: no-repeat;
+ display: block;
+ height: 36px;
+ background-position: 0% 0px;
+ font-size: 36px;
+ line-height: 36px;
+}
+#activateimagebutton  {
+ visibility: visible;
+ position: absolute;
+ left: -39px;
+ top: -13px;
+ z-index: 1;
+ width: 179px;
+ height: 36px;
+}
+#activateimagebutton a  {
+ width: 179px;
+ background-image: url(/images/myleadsimagesbuttonsmedia/activateimagebutton.png);
+}
+#activateimagebutton a:hover  {
+ background-position: -179px 0%;
+}
+#deactivateimagebutton a:hover  {
+ background-position: -187px 0%;
+}
+#deactivateimagebutton a  {
+ width: 187px;
+ background-image: url(/images/myleadsimagesbuttonsmedia/deactivateimagebutton.png);
+}
+#deactivateimagebutton  {
+ visibility: visible;
+ position: absolute;
+ left: 138px;
+ top: -13px;
+ z-index: 1;
+ width: 187px;
+ height: 36px;
+}
+#usingimage  {
+ visibility: visible;
+ position: absolute;
+ left: -37px;
+ z-index: 1;
+ width: 359px;
+ top: 29px;
+ height: 60px;
+ background-repeat: no-repeat;
+}
+#llc {
+ visibility: visible;
+ position: absolute;
+ width: 170px;
+ height: 30px;
+ left: 399px;
+ top: 623px;
+ z-index: 50000;
+ background-image: url(/images/pb.png);
+}
+#llc2 {
+ visibility: visible;
+ position: absolute;
+ width: 170px;
+ height: 30px;
+ left: 399px;
+ top: 557px;
+ z-index: 50000;
+ background-image: url(/images/pb.png);
+}
+.newheader {
+ background: #2a3033;
+ width: 100%;
+ height: 83px;
+ position: absolute;
+ top: 0px;
+ left: 0px;
+}
+.leadpopsinc {
+ position:fixed;
+ bottom:0px;
+ width:100%;
+ height:50px;
+}
+html, body {
+ background: #f0f3f4;
+ font:75%/120% Lato,sans-serif;
+ margin: 0px 10px 10px;
+}
+ul.navigation > li > ul {
+ left: 0 !important;
+ top: 31px !important;
+}
+#newheadercontent > div:last-child {
+ margin-top: -28px  !important;
+}
+.ui-dialog {
+ z-index: 5001 !important;
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <title>leadPops™ Admin - index</title>
+    <!-- include the site stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/external/select2js/select2.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-toggle.min.css">
+    <link rel="stylesheet" href="assets/external/froala-editor/css/froala_editor.pkgd.min.css">
+    <link rel="stylesheet" href="assets/external/color-picker/colorpicker.css">
+    <link rel="stylesheet" href="assets/external/bootstrap-slider/bootstrap-slider.css">
+    <link rel="stylesheet" href="assets/external/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/external/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/external/tooltipster/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="assets/external/custom-scrollbar/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- include external stylesheet -->
+</head>
+<body class="sticky-active">
+<!-- main container of all the page elements -->
+<div id="wrapper">
+    <!-- contain main informative part of the site -->
+    <main class="main">
+
+    </main>
+    <!-- sticky pop of the page -->
+    <div class="sticky-pop">
+        <!-- stikcy sidebar of the page -->
+        <aside class="sticky-side">
+            <div class="sticky-side__wrap">
+                <div class="sticky-side__holder">
+                    <div class="msg" id="msg" style="display: none;">
+                        <div class="alert alert-success lp-sticky-bar__alert">
+                            <button type="button" class="sticky-side__close close">×</button>
+                            <strong>Success:</strong> <span class="msg-text">Sticky Bar has been updated.</span>
+                        </div>
+                    </div>
+                    <header class="sticky-side__head">
+                        <h1>Sticky Bar Builder<a href="#" data-target="#instrucation-modal" data-toggle="modal" class="sticky-side__instructions"><span class="tooltipster no-bg" data-container="sticky-side__head" data-toggle="tooltip" title="INSTRUCTIONS" data-html="true" data-placement="top"><i class="ico ico-document"></i></span></a></h1>
+                        <label class="switcher-checkbox">
+                            <input type="checkbox">
+                            <span class="fake-check">
+                                <span class="inactive-text">inactive</span>
+                                <span class="active-text">active</span>
+                            </span>
+                        </label>
+                    </header>
+                    <hr class="sticky-line">
+                    <ul class="sticky-side__list">
+                        <li class="sticky-side__list__li">
+                            <a data-lp-wistia-title="Sticky Bar Builder" data-lp-wistia-key="tb54at5r97" class="sticky-side__list__link video-link lp-wistia-video" href="#" data-toggle="modal" data-target="#lp-video-modal"><i class="ico ico-video"></i>how-to video</a>
+                        </li>
+                    </ul>
+                    <hr class="sticky-line">
+                </div>
+                <div class="owl-carousel">
+                    <div class="slide">
+                        <div class="scroll-holder">
+                            <div class="sticky-side__holder">
+                                <div class="sticky-side__field-wrap">
+                                    <label for="sticky-text">What should your Sticky Bar say? </label>
+                                    <div class="sticky-side__field">
+                                        <input type="text" id="sticky-text" class="form-control" value="Want to buy a home in a rural area for $0 down? A USDA loan can help">
+                                    </div>
+                                </div>
+                                <hr class="sticky-line">
+                                <div class="checker-number-wrap">
+                                    <span class="checkbox-number">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="fake-label">
+                                                <i class="icon"></i>
+                                                Phone Number
+                                            </span>
+                                        </label>
+                                    </span>
+                                    <div class="number-slide">
+                                        <div class="sticky-side__field-wrap">
+                                            <label for="tel01">Get a Call or Text
+                                                <span class="tooltipster sticky-tooltip" data-container="body" data-toggle="tooltip"
+                                                      title="When Phone Number is checked, the CTA button becomes a click-to-call/text link to the phone number listed below instead of linking to your Lead Funnel." data-html="true" data-placement="top">
+                                                          <i class="ico ico-question"></i>
+                                                  </span>
+                                            </label>
+                                            <div class="sticky-side__field">
+                                                <input type="tel" id="tel01" class="form-control phone" placeholder="(___) ___-____">
+                                            </div>
+                                        </div>
+                                        <hr class="sticky-line">
+                                    </div>
+                                    <div class="sticky-side__field-wrap">
+                                        <label for="sticky-btn">What should the CTA button say?</label>
+                                        <div class="sticky-side__field">
+                                            <input type="text" id="sticky-btn" class="form-control" value="See if I'm Eligible!">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="sticky-line">
+                                <div class="sticky-side__field-wrap">
+                                    <label for="url">What URL do you want to put the Sticky Bar on?</label>
+                                    <div class="sticky-side__field">
+                                        <label class="url" for="url"><i class="ico-link"></i></label>
+                                        <div class="sticky-side__field">
+                                            <label class="url" for="url"><i class="ico-link"></i></label>
+                                            <input type="text" id="url" class="form-control input-url" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="sticky-line">
+                                <div class="switcher-area">
+                                    <ul class="sb-list-radio radio-switcher">
+                                        <li class="sb-list-radio__li">
+                                            <label class="radio-label">
+                                                <input type="radio" name="web-radio" checked>
+                                                <span class="fake-radio"><i class="icon"></i>Entire Website</span>
+                                            </label>
+                                        </li>
+                                        <li class="sb-list-radio__li">
+                                            <label class="radio-label">
+                                                <input type="radio" name="web-radio">
+                                                <span class="fake-radio"><i class="icon"></i>Specific URL(s)</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <div class="slide">
+                                        <div class="switcher-area__wrap">
+                                            <a href="#" class="switcher__link">add url path</a>
+                                            <span class="tooltipster sticky-tooltip" data-container="body" data-toggle="tooltip"
+                                                  title="Add URL Path" data-html="true" data-placement="top">
+                                            <i class="ico ico-question"></i>
+                                             </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="sticky-line">
+                                <div class="sticky-side__field-wrap p-0">
+                                    <div class="setting-open-close">
+                                        <a href="#" class="setting-open-close__opener">Advanced Settings</a>
+                                        <div class="setting-open-close__slide">
+                                            <div class="advance-info">
+                                                <strong class="advance-info__title">Pin to:</strong>
+                                                <ul class="sb-list-radio radio-switcher pb-0">
+                                                    <li class="sb-list-radio__li">
+                                                        <label class="radio-label">
+                                                            <input type="radio" name="web-radio03" class="sticky-position-handler" checked>
+                                                            <span class="fake-radio"><i class="icon"></i>Top</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="sb-list-radio__li">
+                                                        <label class="radio-label">
+                                                            <input type="radio" name="web-radio03" class="sticky-position-handler bottom-controller">
+                                                            <span class="fake-radio"><i class="icon"></i>Bottom</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr class="sticky-line">
+                                            <div class="advance-info">
+                                                <strong class="advance-info__title">Size:</strong>
+                                                <ul class="sb-list-radio radio-switcher">
+                                                    <li class="sb-list-radio__li">
+                                                        <label class="radio-label">
+                                                            <input type="radio" name="web-radio01" value="f" class="sticky-size-handler" checked>
+                                                            <span class="fake-radio"><i class="icon"></i>Full</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="sb-list-radio__li">
+                                                        <label class="radio-label">
+                                                            <input type="radio" name="web-radio01" value="m" class="sticky-size-handler">
+                                                            <span class="fake-radio"><i class="icon"></i>Medium</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="sb-list-radio__li">
+                                                        <label class="radio-label">
+                                                            <input type="radio" name="web-radio01" value="s" class="sticky-size-handler">
+                                                            <span class="fake-radio"><i class="icon"></i>Slim</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr class="sticky-line">
+                                            <div class="advance-info">
+                                                <strong class="advance-info__title">Show "Hide" Option (X):</strong>
+                                                <ul class="sb-list-radio radio-switcher">
+                                                    <li class="sb-list-radio__li">
+                                                        <label class="radio-label">
+                                                            <input type="radio" name="web-radio02" class="sticky-close-toggle">
+                                                            <span class="fake-radio"><i class="icon"></i>No</span>
+                                                        </label>
+                                                    </li>
+                                                    <li class="sb-list-radio__li">
+                                                        <label class="radio-label">
+                                                            <input type="radio" name="web-radio02" class="sticky-close-toggle" checked>
+                                                            <span class="fake-radio"><i class="icon"></i>Yes</span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <hr class="sticky-line">
+                                            <div class="setting-open-close__wrap">
+                                                <span class="title">Stack Order
+                                                     <span class="tooltipster sticky-tooltip" data-container="body" data-toggle="tooltip"
+                                                           title="<p>The Stack Order (z-index) property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.</p><p>If you're unsure, leave this setting on ''Default''. If you're using a specific website provider, choose ''Website Provider'' and select the correct option from the drop down menu.</p>" data-html="true" data-placement="top">
+                                                              <i class="ico ico-question"></i>
+                                                      </span>
+                                                </span>
+
+                                                <div class="inner-slide-area">
+                                                    <ul class="sb-list-radio sb-radio-options">
+                                                        <li class="sb-list-radio__li">
+                                                            <label class="radio-label">
+                                                                <input type="radio" name="settings-radio" checked data-title="default">
+                                                                <span class="fake-radio"><i class="icon"></i>Default</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="sb-list-radio__li">
+                                                            <label class="radio-label">
+                                                                <input type="radio" name="settings-radio" data-title="custom">
+                                                                <span class="fake-radio"><i class="icon"></i>Custom</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="sb-list-radio__li">
+                                                            <label class="radio-label">
+                                                                <input type="radio" name="settings-radio" data-title="website">
+                                                                <span class="fake-radio"><i class="icon"></i>Website Provider</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content">
+                                                        <div id="default" class="list-tab-item"></div>
+                                                        <div id="custom" class="list-tab-item">
+                                                            <div class="range-slider-wrap">
+                                                                <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="400"/>
+                                                                <div id="slider-val"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div id="website" class="list-tab-item">
+                                                            <div class="select-holder funnel-type select-parent1">
+                                                                <select class="select-default1">
+                                                                    <option>Select One</option>
+                                                                    <option>Boomtown</option>
+                                                                    <option>Commissions Inc. (CINC)</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="sticky-line">
+                                <div class="sticky-side__field-wrap">
+                                    <label for="site">Where should the button link to?
+                                        <span class="tooltipster sticky-tooltip" data-container="body" data-toggle="tooltip"
+                                              title="The Funnel URL below is where we'll take users that click your CTA button." data-html="true" data-placement="top">
+                                            <i class="ico ico-question"></i>
+                                        </span>
+                                    </label>
+                                    <input type="text" id="site" class="form-control" value="conv-hybrid-7000.secure-clix.com" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sticky-side__holder">
+                            <hr class="sticky-line">
+                            <ul class="list-btns">
+                                <li class="list-btns__li"><a href="#" class="button button-cancel">close</a></li>
+                                <li class="list-btns__li"><a href="#" class="button button-primary owl__btn-next">Save &amp; Continue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="scroll-holder">
+                            <div class="sticky-side__holder">
+                                <div class="lp-code-block">
+                                    <h2 class="lp-code-block__h2">OK, now give me the code!</h2>
+                                    <p class="lp-sticky-bar__p">To install the Sticky Bar, copy and paste the following code from below right before your closing &lt;/body> tag </p>
+                                    <div class="copy-code" id="code-block">
+                                        &lt;!---------leadPops Sticky Bar Code Starts Here---------><br ><br >
+                                        &lt;sript type=”text/javascript” src=”https://dev2itclix.com/c475a0c0ebf80d88ac.js”> &lt;/script><br ><br >
+                                        &lt;!---------leadPops Sticky Bar Code Ends Here--------->
+                                    </div>
+                                    <hr class="sticky-line">
+                                    <div class="code-switcher">
+                                        <span class="copy-code__title">View code without script tags </span>
+                                        <label class="switcher-checkbox check-switcher">
+                                            <input type="checkbox">
+                                            <span class="fake-check">
+                                                <span class="inactive-text">off</span>
+                                                <span class="active-text">on</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sticky-side__holder">
+                            <hr class="sticky-line">
+                            <div class="d-flex align-items-center justify-content-between lp-sticky__footer-btns">
+                                <a href="#" class="lp-sticky__btn-back">go back</a>
+                                <ul class="list-btns pt-0">
+                                    <li class="list-btns__li"><a href="#" class="button button-cancel">close</a></li>
+                                    <li class="list-btns__li"><a href="#" class="button button-primary btn-copy">COPY TO CLIPBOARD</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="url-slide">
+                <div class="url-slide__wrap">
+                    <div class="url-slide__detail">
+                        <strong class="title">Sticky Bar Builder
+                            <span class="sub-text">(Add Url Path)</span>
+                            <span class="tooltipster sticky-tooltip" data-container="body" data-toggle="tooltip"
+                                  title="Add Url Path" data-html="true" data-placement="top">
+                                        <i class="ico ico-question"></i>
+                                </span>
+                        </strong>
+                        <div class="website-checkbox-wrap">
+                            <span class="checkbox-website">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="fake-label">
+                                        <i class="icon"></i>
+                                        www.mywebsite.com <span class="sub">(homepage)</span>
+                                    </span>
+                                </label>
+                            </span>
+                        </div>
+                        <div class="url-fields-wrap">
+                            <div class="url-add-field">
+                                <div class="field">
+                                    <label for="url03"><i class="ico-link"></i></label>
+                                    <input id="url03" class="form-control input-url-path" type="text" placeholder="/url-path-goes-here">
+                                    <a href="#" class="close-field"><i class="ico-cross"></i></a>
+                                    <span class="error-message">Please Enter a valid Path</span>
+                                </div>
+                                <div class="url-message">
+                                    <span class="text">Are you sure you want to delete this path?</span>
+                                    <ul class="url-option">
+                                        <li><a href="#" class="remove-url">YES</a></li>
+                                        <li><a href="#" class="active-url">NO</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="#" class="button add-url-btn">Add new path</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between lp-sticky__footer-btns">
+                            <a href="#" class="lp-sticky__btn-back back-url">go back</a>
+                            <ul class="list-btns pt-0">
+                                <li class="list-btns__li"><a href="#" class="button button-cancel">close</a></li>
+                                <li class="list-btns__li"><a href="#" class="button button-primary">Save &amp; Continue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aside-loader">
+                <div class="lp-sticky-bar__loader">
+                    <div class="lp-sticky-bar__loader__wrap">
+                        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+                        <div class="lp-sticky-bar__text-loader">LOADING... </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <div class="sticky-content">
+            <div class="sticky-bar">
+                <p class="sticky-bar__p" id="sticky-bar__p">Want to buy a home in a rural area for $0 down? A USDA loan can help!</p>
+                <a href="#" class="button button-primary" id="sticky-bar__btn">See if I'm Eligible!</a>
+                <a href="#" class="sticky-bar__close"><i class="fa fa-times"></i></a>
+            </div>
+            <div class="preview-area">
+                <div class="lp-sticky-bar__loader">
+                    <div class="lp-sticky-bar__loader__wrap">
+                        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
+                        <div class="lp-sticky-bar__text-loader" id="loader-text">ADD URL TO SEE PREVIEW... </div>
+                    </div>
+                </div>
+                <div class="lp-sb__image">
+                    <img src="assets/images/iframe-fullpage-funnels.png" alt="funnels">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Instruction Modal -->
+    <div class="modal fade instrucation-modal" id="instrucation-modal" tabindex="-1" role="dialog" aria-labelledby="instrucation-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="ico-cross"></i>
+                </button>
+                <div class="modal-body">
+                    <strong class="modal-body__heading">leadPops Sticky Bar Installation&nbsp;Instructions</strong>
+                    <div class="modal-body__text-area">
+                        <strong class="modal-body__title">Entire Website:</strong>
+                        <ol>
+                            <li>If desired, customize the field for, “What should your Sticky Bar&nbsp;say?”</li>
+                            <li>If desired, customize the field for, “What should the CTA button&nbsp;say?”</li>
+                            <li>Enter the website URL you want to place the Sticky Bar&nbsp;on.</li>
+                            <li>Flip the toggle switch to “Active” then click “Save&nbsp;&&nbsp;Continue”</li>
+                            <li>Click “Copy to&nbsp;Clipboard”</li>
+                            <li>Install the code right before your closing &lt;/body> tag of the website, or if the website has an area for custom Javascript, add it&nbsp;there.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-body__text-area">
+                        <strong class="modal-body__title">Wordpress Example:</strong>
+                        <p>Some Wordpress websites have the ability to add custom Javascript that will be added to every page of the website. If that’s an option for your website, paste the code into that&nbsp;area.</p>
+                        <p>Many Themes have this option in the “Appearance” section, under “Theme&nbsp;Options”</p>
+                        <p>If your Wordpress website does not have that feature, your next option is to add the code to the&nbsp;FOOTER.</p>
+                        <p>To customize the Footer on Wordpress, Click “Appearance” then “Widgets”. Your options here may vary. If a footer widget allows you to add HTML code, you can simply paste the code for the Sticky Bar into one of these&nbsp;modules.</p>
+                        <p>You may also see an option on your screen that says “Custom HTML”. You can add this widget, name it, and paste the Sticky Bar code into that area and&nbsp;save.</p>
+                        <p>Here’s a video that shows you how this works --<a target="_blank" href="https://myleads.leadpops.com/lp/index#">Click Here to Watch the Video</a> (coming&nbsp;soon)</p>
+                        <p>These instructions are for Wordpress, but this is going to be pretty universal for any website you’re going to be installing the Sticky Bar&nbsp;on.</p>
+                    </div>
+                    <div class="modal-body__text-area">
+                        <strong class="modal-body__title">Specific URL(s):</strong>
+                        <ol>
+                            <li>If desired, customize the field for, “What should your Sticky Bar&nbsp;say?”</li>
+                            <li>If desired, customize the field for, “What should the CTA button&nbsp;say?”</li>
+                            <li>Enter the top-level domain of the website you want to place the Sticky Bar&nbsp;on.</li>
+                            <li>Click “Add URL Path” -- if you want to include the homepage, check the box at the&nbsp;top.<br>Otherwise, click the “+” button, and copy and paste the URL SLUG into the field (everything after “.com” or “.net”, etc.). Add however many pages you’d like to include by using the “+” button and pasting in additional URL slugs on the same top-level&nbsp;domain.</li>
+                            <li>Click “Save” then “Go&nbsp;Back”</li>
+                            <li>Flip the toggle switch to “Active” the click “Save&nbsp;&&nbsp;Continue”</li>
+                            <li>Click “Copy to&nbsp;Clipboard”</li>
+                            <li>Install the code right before your closing tag of the SPECIFIC PAGES of the website you’ve selected to add the Sticky Bar to, or if the website pages have an area for custom Javascript, add it&nbsp;there.</li>
+                        </ol>
+                    </div>
+                    <div class="modal-body__text-area">
+                        <strong class="modal-body__title">Single Property Websites (Total&nbsp;Expert&nbsp;Example):</strong>
+                        <ol>
+                            <li>Once you’ve customized the Sticky Bar how you want it, Activate it, and enter the top level domain of the Single Property&nbsp;Website</li>
+                            <li>Choose “Specific URL(s)” and then “Add&nbsp;URL&nbsp;Path”</li>
+                            <li>Click the “+” button then copy and paste the slug of the specific page you want to feature the Sticky Bar on. Click “Save” and then “Go&nbsp;Back”</li>
+                            <li>Click “Save & Continue” then on the next step, “Copy&nbsp;to&nbsp;Clipboard”</li>
+                            <li>Paste the Javascript code into the “Custom Javascript” area of the single property website and&nbsp;Save.</li>
+                        </ol>
+                        <p>You can add the same Sticky Bar/Funnel to as many single property websites that you want, as long as they’re on the same top-level domain&nbsp;name.</p>
+                        <p>Here’s a video that shows you how this works -- <a target="_blank" href="https://myleads.leadpops.com/lp/index#">Click Here to Watch the&nbsp;Video</a></p>
+                        <p>If you prefer, you can also use a dedicated Sticky Bar/Funnel for each single property&nbsp;website.</p>
+                        <p>An example of why you may want to do this if you want to track leads that are coming from a specific SPW and have a dedicated Funnel for each. This also allows you to share leads with specific Realtors (listing agents) vs. all the single property websites sharing the same Sticky Bar and&nbsp;Funnel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start Modal -->
+
+    <div class="modal fade add_recipient video-modal" id="lp-video-modal" tabindex="-1" role="dialog" aria-labelledby="lp-video-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How To Video:  Account Settings</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="ifram-wrapper" style="background-image: url('assets/images/videoph.png')">
+                        <div class="video">
+                            <div class="video__youtube" data-wistia="wistia-video">
+                                <button class="video__button"
+                                        data-video-title="title"
+                                        data-wistia-button="uneyp2xgwm"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="action">
+                        <ul class="action__list">
+                            <li class="action__item">
+                                <button type="button" class="button button-cancel lp-btn-cancel" data-dismiss="modal">Close</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- include jQuery library -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/external/jquery-waypoint/jquery.waypoints.min.js"></script>
+<!-- include external Js -->
+<!-- include custom JavaScript -->
+<script src="assets/external/owlcarousel/owl.carousel.min.js"></script>
+<script src="assets/external/select2js/select2.min.js"></script>
+<script src="assets/external/bootstrap-slider/bootstrap-slider.js"></script>
+<script src="assets/external/tooltipster/tooltipster.bundle.min.js"></script>
+<script src="assets/external/custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+<script src="assets/external/input-mask/inputmask.bundle.min.js"></script>
+<script src="//fast.wistia.com/assets/external/E-v1.js>" charset="ISO-8859-1"></script>
+<script src="assets/external/wista/wista-player.js"></script>
+<script src="assets/js/sticky.js"></script>
+</body>
+</html>

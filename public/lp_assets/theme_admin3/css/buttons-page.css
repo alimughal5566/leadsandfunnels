@@ -1,0 +1,71 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.buttons-page .preview-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  min-height: 428px; }
+  @media (max-width: 1400px) {
+    .buttons-page .preview-wrapper {
+      min-height: 400px; } }
+
+.buttons-page .button-code-area .custom-accordion__list:first-child .custom-accordion__opener {
+  padding-top: 0; }
+  .buttons-page .button-code-area .custom-accordion__list:first-child .custom-accordion__opener .ico {
+    top: 5px; }
+
+@media (min-width: 1600px) {
+  .buttons-page .nav__tab .nav-item .nav-link .ico-Mobile {
+    font-size: 30px !important; } }
+
+.button-cta {
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  min-width: 229px;
+  padding: 20px 16px;
+  text-align: center;
+  position: relative;
+  font-family: Roboto;
+  background-color: #01c6f7;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 20px 13px -10px rgba(0, 0, 0, 0.2); }

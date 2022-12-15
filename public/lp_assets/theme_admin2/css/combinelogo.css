@@ -1,0 +1,78 @@
+    .image-upload > input {
+      display: none;
+    }
+    .inner-page-body .upload-logo-left {
+        background-color: #fff;
+        height: auto; 
+        margin: 30px auto;
+    }
+    .logo-wrapper {
+        height: auto;
+        overflow: hidden;
+        padding: 20px 0;
+    }
+    .image-upload {
+        display: inline-block;
+    }
+
+    .image-upload img {
+        vertical-align: middle;
+        width: 270px;
+        /*max-height: 119px !important;*/
+        cursor: pointer;
+    }
+    .image-upload label {
+        margin: 0;
+    }
+
+    .image-divider {
+        display: inline-block;
+        width: 1px;
+        background-color: #D3D3D3;
+        height: 100px;
+        margin: 0 10px;
+        vertical-align: middle;
+    }
+    .slider-wrapper {
+        text-align: center;
+        padding: 10px 0;
+    }
+    .slider::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        right: 10px;
+        color: #fff;
+        font-size: 13px;
+    }
+
+    #comb-logo-wrapper .comb-logo-inner-wrapper {
+        width: auto;
+        /*border: 2px solid #ccc;*/
+        display: inline-block;
+    }
+
+    .logo-main-wrapper #combinelogo {
+        padding: 10px 30px 10px 30px;
+        border: 0 none;
+        background-color: #02abec; 
+    }
+    .logo-main-wrapper .col-md-4 {
+        padding: 0;
+        height: 289px;
+    }
+    .sub-logo-wrapper {
+        border-right: 1px solid #f2f2f3;
+        height: 259px;
+        position: relative;
+    }
+    #glogowrap {
+        margin: 20px 0 30px;
+        position: absolute;
+        bottom: 0;
+        left: 123px;
+    }
+    #glogowrap.combinelogo-wrapper {
+        margin: 20px 0 30px;
+        position: static;
+    }

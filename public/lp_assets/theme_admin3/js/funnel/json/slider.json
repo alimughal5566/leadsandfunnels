@@ -1,0 +1,115 @@
+{
+    "options": {
+        "show-question": 1,
+        "question-title": "Great, what is the minimum and maximum price range?",
+        "question": "&lt;p&gt;Great, what is the minimum and maximum price range?&lt;&#x2F;p&gt;",
+        "show-description": 0,
+        "description": "",
+        "slider-numeric": {
+            "value": 1,
+            "one-puck": {
+                "value": 1,
+                "unit": "$",
+                "range-type": "subrange",
+                "starting-number-ends": "0",
+                "range": [
+                    {
+                        "by": "5000",
+                        "end": "100000",
+                        "start": "80000"
+                    },
+                    {
+                        "by": "20000",
+                        "end": "1000000",
+                        "start": "100000"
+                    },
+                    {
+                        "by": "100000",
+                        "end": "2000000",
+                        "start": "1000000"
+                    }
+                ],
+                "customize-slider-labels": {
+                    "value": 1,
+                    "left": "$80,000 or less",
+                    "right": "Over $2,000,000",
+                    "left_label": "$80K",
+                    "right_label": "$2M+"
+                },
+                "slider-starting-point": {
+                    "value": 1,
+                    "starting-value": 11
+                }
+            },
+            "two-puck": {
+                "value": 0,
+                "unit": "$",
+                "range": [
+                    {
+                    "by": "250",
+                    "end": "9750",
+                    "start": "500"
+                    }
+                ],
+                "range-type": "increment",
+                "starting-number-ends": "0",
+                "slider-starting-point": {
+                    "value": 1,
+                    "starting-value": 8,
+                    "ending-value": 14
+                },
+                "customize-slider-labels": {
+                    "value": 1,
+                    "left": "Less Than $500",
+                    "right": "$10,000+",
+                    "left_label": "$500",
+                    "right_label": "$10k+"
+                }
+            }
+        },
+        "slider-non-numeric": {
+            "value": 0,
+            "range": [
+                "Option 1",
+                "Option 2",
+                "Option 3"
+            ],
+            "slider-starting-point": {
+                "value": 1,
+                "starting-value": "Option 2"
+            },
+            "customize-slider-labels": {
+                "value": 0,
+                "left": "",
+                "right": "",
+                "left_label": "",
+                "right_label": ""
+            }
+        },
+        "cta-button": 1,
+        "button-text": "Continue",
+        "cta-button-settings" : {
+            "font-size" : 20,
+            "enable-hide-until-answer" : 0,
+            "enable-button-icon" : 0,
+            "button-icon" : "arrow-thick-right",
+            "button-icon-color" : "#ffffff",
+            "button-icon-position" : "LEFT",
+            "button-icon-size" : 20
+        },
+        "enable-security-message" : 0,
+        "security-message-id" : 0,
+        "enable-additional-content" : 0,
+        "additional-content" : "",
+        "data-field": "fieldname",
+        "unique-variable-name": "fieldname",
+        "required": 1,
+        "show-formats": {
+            "thousands": 0,
+            "millions": 0,
+            "billions": 0
+        },
+        "rel" : "<span class='off-text'>Question N/A</span>"
+    },
+    "question-type": "slider"
+}

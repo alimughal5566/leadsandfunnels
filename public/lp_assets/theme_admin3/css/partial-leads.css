@@ -1,0 +1,87 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.lp-panel_partial-leads {
+  padding: 20px 30px; }
+  .lp-panel_partial-leads .lp-panel__content {
+    display: flex;
+    height: 207px;
+    padding: 12px 0 0;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+    border-top: solid 1px #f2f3f3; }
+    .lp-panel_partial-leads .lp-panel__content p {
+      font-size: 19px;
+      line-height: 22px;
+      font-weight: 400;
+      color: #707d84;
+      margin: 0 0 22px;
+      text-align: center; }
+      .lp-panel_partial-leads .lp-panel__content p:last-child {
+        margin: 0; }
+  .lp-panel_partial-leads .lp-panel__checkbox {
+    height: 189px;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center; }
+    .lp-panel_partial-leads .lp-panel__checkbox p {
+      font-size: 20px;
+      line-height: 25px;
+      font-weight: 700;
+      color: #445158;
+      margin: 0 0 30px; }
+    .lp-panel_partial-leads .lp-panel__checkbox .radio__item {
+      margin: 0 40px 0 0; }
+      .lp-panel_partial-leads .lp-panel__checkbox .radio__item:last-child {
+        margin: 0; }
+    .lp-panel_partial-leads .lp-panel__checkbox [type="radio"] + label {
+      color: #85969f;
+      padding-left: 50px;
+      font-size: 24px;
+      line-height: 30px; }
+      .lp-panel_partial-leads .lp-panel__checkbox [type="radio"] + label:before {
+        top: 0;
+        height: 34px;
+        width: 34px; }
+      .lp-panel_partial-leads .lp-panel__checkbox [type="radio"] + label:after {
+        top: 7px;
+        left: 7px;
+        width: 20px;
+        height: 20px; }
+    .lp-panel_partial-leads .lp-panel__checkbox [type="radio"]:checked + label {
+      color: #58666e; }

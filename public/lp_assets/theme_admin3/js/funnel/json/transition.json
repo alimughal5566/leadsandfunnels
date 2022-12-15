@@ -1,0 +1,23 @@
+{
+    "short-transition": {
+        "active": 1,
+        "label": "Short transition",
+        "icon": "transition",
+        "section": "more-questions",
+        "options": {}
+    },
+    "circle-loader": {
+        "active": 1,
+        "label": "Circle loader",
+        "icon": "transition",
+        "section": "more-questions",
+        "options": {}
+    },
+    "3-dots": {
+        "active": 1,
+        "label": "3 Dots",
+        "icon": "transition",
+        "section": "more-questions",
+        "options": {}
+    }
+}

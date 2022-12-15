@@ -1,0 +1,48 @@
+{
+    "options": {
+        "show-question": 1,
+        "question-title": "",
+        "question": "",
+        "show-description": 0,
+        "description": "",
+        "enable-field-label" : 1,
+        "field-label" : "select an option",
+        "fields": [
+            "Option 1",
+            "Option 2",
+            "Option 3"
+        ],
+        "extra_options": {
+            "other": "Other",
+            "none": "None"
+        },
+        "select-multiple": 0,
+        "include-none": 0,
+        "cta-button": 0,
+        "button-text": "Continue",
+        "cta-button-settings" : {
+            "font-size" : 20,
+            "enable-hide-until-answer" : 0,
+            "enable-button-icon" : 0,
+            "button-icon" : "arrow-thick-right",
+            "button-icon-color" : "#ffffff",
+            "button-icon-position" : "LEFT",
+            "button-icon-size" : 20
+        },
+        "enable-security-message" : 0,
+        "security-message-id" : 0,
+        "enable-additional-content" : 0,
+        "additional-content" : "",
+        "data-field": "dropdown",
+        "unique-variable-name": "dropdown",
+        "required": 0,
+        "alphabetize": 0,
+        "randomize": 0,
+        "searchable": 0,
+        "automatic-progress": 1,
+        "add-other-option": 0,
+        "scrollbar": "0",
+        "rel" : "<span class='off-text'>Question N/A</span>"
+    },
+    "question-type": "dropdown"
+}

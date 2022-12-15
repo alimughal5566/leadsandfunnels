@@ -1,0 +1,807 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/* TCA messages page style */
+.tcpa-message-content {
+  /* tcpa message content style */ }
+  .tcpa-message-content .theme__body {
+    position: relative; }
+  .tcpa-message-content .fr-view img.fr-dii {
+    max-width: calc(100% - (2*5px)); }
+  @media (min-width: 1800px) {
+    .tcpa-message-content .main-content__head .col-left,
+    .tcpa-message-content .main-content__head .col-right {
+      margin: 26px 0 0; } }
+  @media (min-width: 1800px) {
+    .tcpa-message-content .main-content__head .title {
+      font-size: 32px; } }
+  .tcpa-message-content .main-content__head .button {
+    font-weight: 700; }
+  .tcpa-message-content .back-link {
+    font-weight: 700; }
+    .tcpa-message-content .back-link .icon.icon-back {
+      margin: 0 6px 0 0; }
+  .tcpa-message-content .lp-panel {
+    padding: 12px 30px 8px; }
+    @media (max-width: 1600px) {
+      .tcpa-message-content .lp-panel {
+        padding: 12px 20px 8px; } }
+  .tcpa-message-content .lp-panel__head {
+    margin: 0;
+    padding: 0 0 15px; }
+    .tcpa-message-content .lp-panel__head .col-left,
+    .tcpa-message-content .lp-panel__head .col-right {
+      margin: 0; }
+  .tcpa-message-content .question-mark.el-tooltip {
+    margin: -1px 0 0 1px; }
+  .tcpa-message-content .lp-table__item {
+    height: 58px; }
+    .tcpa-message-content .lp-table__item .text-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
+    .tcpa-message-content .lp-table__item:nth-child(2) {
+      justify-content: center;
+      margin: 0 0 0 37px; }
+      .tcpa-message-content .lp-table__item:nth-child(2) .text-wrap {
+        width: 150px;
+        text-transform: capitalize; }
+  .tcpa-message-content .lp-table__head .lp-table__item {
+    font-size: 18px;
+    line-height: 22px; }
+  .tcpa-message-content .lp-table__head .lp-table__list {
+    border-bottom: none; }
+  .tcpa-message-content .lp-panel__body {
+    padding: 0; }
+  .tcpa-message-content .sorting-opener-wrap {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    margin: 0 0 0 7px; }
+    .tcpa-message-content .sorting-opener-wrap .sort-down,
+    .tcpa-message-content .sorting-opener-wrap .sort-up {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-style: solid;
+      z-index: 3; }
+    .tcpa-message-content .sorting-opener-wrap .sort-up {
+      border-width: 0 5px 5px;
+      border-color: transparent transparent #9fa8ad; }
+      .tcpa-message-content .sorting-opener-wrap .sort-up.active {
+        border-color: transparent transparent #02abec; }
+    .tcpa-message-content .sorting-opener-wrap .sort-down {
+      top: 8px;
+      border-width: 5px 5px 0;
+      border-color: #9fa8ad transparent transparent; }
+      .tcpa-message-content .sorting-opener-wrap .sort-down.active {
+        border-color: #02abec transparent transparent; }
+  .tcpa-message-content .lp-table__list:hover .options-btns, .tcpa-message-content .lp-table__list.hover .options-btns {
+    opacity: 1;
+    visibility: visible; }
+  .tcpa-message-content .action {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+  .tcpa-message-content .action-wrap {
+    position: relative; }
+  .tcpa-message-content .options-btns {
+    background: #fff;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    right: -3px;
+    top: -4px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden; }
+    .tcpa-message-content .options-btns li {
+      position: relative;
+      margin: 0 0 0 10px; }
+    .tcpa-message-content .options-btns a {
+      position: relative;
+      color: #9fa8ad;
+      display: block; }
+      .tcpa-message-content .options-btns a i {
+        display: block; }
+      .tcpa-message-content .options-btns a:hover {
+        color: #02abec; }
+  .tcpa-message-content .action__list .action__item {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 6px;
+    color: #c7d4df; }
+    .tcpa-message-content .action__list .action__item i {
+      margin: 0 1px;
+      display: block; }
+  .tcpa-message-content .tcpa-radio-btn {
+    position: relative;
+    border-left: 1px solid #f2f3f3;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 20px; }
+    .tcpa-message-content .tcpa-radio-btn .radio-label {
+      width: 92px;
+      height: 30px;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0; }
+    .tcpa-message-content .tcpa-radio-btn .radio-area {
+      font-size: 11px;
+      line-height: 30px;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: #ec394a;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: #fff;
+      cursor: pointer; }
+      .tcpa-message-content .tcpa-radio-btn .radio-area:before {
+        transition: all 0.3s ease-in-out;
+        content: 'active';
+        text-transform: uppercase;
+        position: absolute;
+        right: -40px;
+        top: 0;
+        bottom: 0; }
+      .tcpa-message-content .tcpa-radio-btn .radio-area:after {
+        transition: all 0.3s ease-in-out;
+        content: 'inactive';
+        text-transform: uppercase;
+        position: absolute;
+        left: 7px;
+        top: 0;
+        bottom: 0; }
+      .tcpa-message-content .tcpa-radio-btn .radio-area .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: #fff;
+        width: 27px;
+        z-index: 2; }
+    .tcpa-message-content .tcpa-radio-btn .field-label:checked + .radio-area {
+      background: #27c24c; }
+      .tcpa-message-content .tcpa-radio-btn .field-label:checked + .radio-area:before {
+        right: 13px; }
+      .tcpa-message-content .tcpa-radio-btn .field-label:checked + .radio-area:after {
+        left: -55px; }
+      .tcpa-message-content .tcpa-radio-btn .field-label:checked + .radio-area .handle {
+        right: 63px; }
+  .tcpa-message-content .tcpa-checkbox-btn {
+    position: relative; }
+    .tcpa-message-content .tcpa-checkbox-btn .checkbox-label {
+      width: 126px;
+      height: 43px;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0; }
+    .tcpa-message-content .tcpa-checkbox-btn .checkbox-area {
+      font-size: 13px;
+      line-height: 43px;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: #ec394a;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: #fff;
+      cursor: pointer; }
+      .tcpa-message-content .tcpa-checkbox-btn .checkbox-area:before {
+        transition: all 0.3s ease-in-out;
+        content: 'active';
+        text-transform: uppercase;
+        position: absolute;
+        right: -50px;
+        top: 0;
+        bottom: 0; }
+      .tcpa-message-content .tcpa-checkbox-btn .checkbox-area:after {
+        transition: all 0.3s ease-in-out;
+        content: 'inactive';
+        text-transform: uppercase;
+        position: absolute;
+        left: 12px;
+        top: 0;
+        bottom: 0; }
+      .tcpa-message-content .tcpa-checkbox-btn .checkbox-area .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: #fff;
+        width: 39px;
+        z-index: 2; }
+    .tcpa-message-content .tcpa-checkbox-btn .field-label:checked + .checkbox-area {
+      background: #27c24c; }
+      .tcpa-message-content .tcpa-checkbox-btn .field-label:checked + .checkbox-area:before {
+        right: 20px; }
+      .tcpa-message-content .tcpa-checkbox-btn .field-label:checked + .checkbox-area:after {
+        left: -65px; }
+      .tcpa-message-content .tcpa-checkbox-btn .field-label:checked + .checkbox-area .handle {
+        right: 85px; }
+  .tcpa-message-content .tcpa-checkbox-btn-small {
+    position: relative; }
+    .tcpa-message-content .tcpa-checkbox-btn-small .checkbox-label {
+      width: 72px;
+      height: 30px;
+      position: relative;
+      display: block;
+      margin: 0;
+      overflow: hidden; }
+    .tcpa-message-content .tcpa-checkbox-btn-small .checkbox-area {
+      font-size: 11px;
+      line-height: 30px;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: #c114ed;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: #fff;
+      cursor: pointer; }
+      .tcpa-message-content .tcpa-checkbox-btn-small .checkbox-area:before {
+        transition: all 0.3s ease-in-out;
+        content: 'ON';
+        position: absolute;
+        right: -25px;
+        top: 0;
+        bottom: 0; }
+      .tcpa-message-content .tcpa-checkbox-btn-small .checkbox-area:after {
+        transition: all 0.3s ease-in-out;
+        content: 'OFF';
+        position: absolute;
+        left: 11px;
+        top: 0;
+        bottom: 0; }
+      .tcpa-message-content .tcpa-checkbox-btn-small .checkbox-area .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: #fff;
+        width: 27px;
+        z-index: 2; }
+    .tcpa-message-content .tcpa-checkbox-btn-small .field-label:checked + .checkbox-area {
+      background: #27c24c; }
+      .tcpa-message-content .tcpa-checkbox-btn-small .field-label:checked + .checkbox-area:before {
+        right: 11px; }
+      .tcpa-message-content .tcpa-checkbox-btn-small .field-label:checked + .checkbox-area:after {
+        left: -25px; }
+      .tcpa-message-content .tcpa-checkbox-btn-small .field-label:checked + .checkbox-area .handle {
+        right: 43px; }
+  .tcpa-message-content .tcpa-message-pannel {
+    padding-top: 0;
+    padding-bottom: 0; }
+    .tcpa-message-content .tcpa-message-pannel .lp-panel__body {
+      margin: 0 -15px 0 0; }
+      @media (min-width: 1600px) {
+        .tcpa-message-content .tcpa-message-pannel .lp-panel__body {
+          margin: 0 -30px 0 0; } }
+    .tcpa-message-content .tcpa-message-pannel .lp-panel__head {
+      padding: 8px 0;
+      margin: 0 0 28px; }
+    .tcpa-message-content .tcpa-message-pannel .action-view-list {
+      border-left: 1px solid #f2f3f3;
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0 21px;
+      display: flex;
+      flex-wrap: wrap; }
+      .tcpa-message-content .tcpa-message-pannel .action-view-list li {
+        border-right: 1px solid #f2f3f3;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: #9fa8ad;
+        cursor: pointer;
+        padding: 0 20px;
+        height: 60px; }
+        .tcpa-message-content .tcpa-message-pannel .action-view-list li .ico {
+          font-size: 29px;
+          line-height: 40px;
+          display: block; }
+        .tcpa-message-content .tcpa-message-pannel .action-view-list li .ico-devices {
+          font-size: 38px; }
+        .tcpa-message-content .tcpa-message-pannel .action-view-list li .ico-Mobile:before,
+        .tcpa-message-content .tcpa-message-pannel .action-view-list li .ico-mobile:before {
+          content: "\e945"; }
+        .tcpa-message-content .tcpa-message-pannel .action-view-list li.active {
+          color: #1eb4ee; }
+  .tcpa-message-content .mCustomScrollBox {
+    max-height: inherit !important; }
+  .tcpa-message-content .classic-editor__wrapper.update-version.error {
+    border-color: #cc0b0b !important; }
+  .tcpa-message-content .classic-editor__wrapper.update-version #dropdown-menu-fontFamily-1 .fr-dropdown-wrapper {
+    width: 158px; }
+    @media (min-width: 1600px) {
+      .tcpa-message-content .classic-editor__wrapper.update-version #dropdown-menu-fontFamily-1 .fr-dropdown-wrapper {
+        width: 190px; } }
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-box.fr-basic.fr-top .fr-wrapper {
+    min-height: inherit; }
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-newline {
+    display: none; }
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #bold-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #italic-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #underline-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertHR-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertCTALink-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #starOption-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #color-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertImage-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #textColor-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #backgroundColor-1,
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #html-1 {
+    width: 26px !important; }
+    @media (min-width: 1600px) {
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #bold-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #italic-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #underline-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertHR-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertCTALink-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #starOption-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #color-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertImage-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #textColor-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #backgroundColor-1,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #html-1 {
+        width: 34px !important; } }
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #bold-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #italic-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #underline-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertHR-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertCTALink-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #starOption-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #color-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertImage-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #textColor-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #backgroundColor-1 i,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #html-1 i {
+      margin: 8px 1px; }
+      @media (min-width: 1600px) {
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #bold-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #italic-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #underline-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertHR-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertCTALink-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #starOption-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #color-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #insertImage-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #textColor-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #backgroundColor-1 i,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-toolbar #html-1 i {
+          margin: 8px 5px; } }
+  @media (max-width: 1599px) {
+    .tcpa-message-content .classic-editor__wrapper.update-version #fontSize-1 .fa-text-height,
+    .tcpa-message-content .classic-editor__wrapper.update-version #fontSize-1 .fa-font,
+    .tcpa-message-content .classic-editor__wrapper.update-version #fontFamily-1 .fa-text-height,
+    .tcpa-message-content .classic-editor__wrapper.update-version #fontFamily-1 .fa-font {
+      position: relative;
+      left: -4px; } }
+  .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup {
+    margin: 10px 0 0 -44px;
+    min-width: 150px; }
+    @media (min-width: 1440px) {
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup {
+        margin: 10px 0 0 -70px;
+        min-width: 171px; } }
+    @media (max-width: 1599px) {
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup .fr-layer {
+        width: 240px; } }
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #formatUL-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #align-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #insertLink-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #strikeThrough-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #fontAwesome-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #emoticons-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #undo-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #redo-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #html-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #lineHeight-1,
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #underline-1 {
+      width: 36px !important; }
+      @media (min-width: 1600px) {
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #formatUL-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #align-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #insertLink-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #strikeThrough-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #fontAwesome-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #emoticons-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #undo-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #redo-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #html-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #lineHeight-1,
+        .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #underline-1 {
+          width: 44px !important; } }
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #formatUL-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #align-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #insertLink-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #strikeThrough-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #fontAwesome-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #emoticons-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #undo-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #redo-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #html-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #lineHeight-1 i,
+      .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #underline-1 i {
+        float: none !important;
+        display: block !important;
+        margin: 8px auto !important; }
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup #formatULOptions-1 {
+      width: 16px !important; }
+    .tcpa-message-content .classic-editor__wrapper.update-version .fr-popup:before {
+      display: none; }
+  .tcpa-message-content .classic-editor__wrapper.pop-fontawesome .fr-popup {
+    width: 290px;
+    margin: 10px 0 0; }
+    @media (min-width: 1600px) {
+      .tcpa-message-content .classic-editor__wrapper.pop-fontawesome .fr-popup {
+        width: 372px;
+        margin: 10px 0 0 -50px; } }
+    @media (min-width: 1800px) {
+      .tcpa-message-content .classic-editor__wrapper.pop-fontawesome .fr-popup {
+        width: 372px;
+        margin: 10px 0 0 -10px; } }
+    .tcpa-message-content .classic-editor__wrapper.pop-fontawesome .fr-popup.fr-active {
+      top: 38px !important; }
+  .tcpa-message-content .classic-editor__wrapper.pop-fontawesome .fr-tabs-scroll button {
+    width: 26px !important; }
+    @media (min-width: 1600px) {
+      .tcpa-message-content .classic-editor__wrapper.pop-fontawesome .fr-tabs-scroll button {
+        width: 34px !important; } }
+    .tcpa-message-content .classic-editor__wrapper.pop-fontawesome .fr-tabs-scroll button i {
+      display: block;
+      float: none;
+      margin: 8px auto; }
+  @media (max-width: 1599px) {
+    .tcpa-message-content .classic-editor__wrapper .fr-emoticon-container {
+      min-width: 265px; } }
+
+/* tcpa tooltip style */
+.tcpa-tooltip {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700; }
+
+/* tcpa index page tooltip style */
+.tcpa-page .tooltipster-content {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 14px; }
+
+/* tcpa-message-delete-modal style */
+.tcpa-message-delete-modal .modal-msg_light {
+  margin: 0; }
+
+.tcpa-message-delete-modal .button {
+  font-weight: 700; }
+
+/* tcpa-message-detail style */
+.tcpa-message-detail {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 30px; }
+  .tcpa-message-detail:before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 30px;
+    height: 1px;
+    background: #f2f3f3;
+    width: 342px; }
+    @media (min-width: 1440px) {
+      .tcpa-message-detail:before {
+        width: 367px; } }
+    @media (min-width: 1600px) {
+      .tcpa-message-detail:before {
+        width: 422px;
+        right: 0; } }
+  .tcpa-message-detail .background-detail__area {
+    flex-grow: 1;
+    flex-basis: 0;
+    width: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 0; }
+  .tcpa-message-detail .bg-controls-block {
+    overflow: visible;
+    width: 325px;
+    margin: 0; }
+    @media (min-width: 1440px) {
+      .tcpa-message-detail .bg-controls-block {
+        width: 350px; } }
+    @media (min-width: 1600px) {
+      .tcpa-message-detail .bg-controls-block {
+        width: 420px; } }
+    @media (max-width: 1600px) {
+      .tcpa-message-detail .bg-controls-block {
+        padding: 0 0 0 15px; } }
+    .tcpa-message-detail .bg-controls-block .mCSB_inside > .mCSB_container {
+      margin-right: 0; }
+    @media (max-width: 1600px) {
+      .tcpa-message-detail .bg-controls-block .mCSB_scrollTools {
+        width: 10px; }
+        .tcpa-message-detail .bg-controls-block .mCSB_scrollTools .mCSB_draggerRail {
+          width: 5px; } }
+    @media (max-width: 1600px) {
+      .tcpa-message-detail .bg-controls-block .mCSB_dragger .mCSB_dragger_bar {
+        width: 5px !important; } }
+  .tcpa-message-detail .right-sidebar {
+    position: relative;
+    max-height: 608px; }
+    .tcpa-message-detail .right-sidebar.mCS_no_scrollbar .mCustomScrollBox,
+    .tcpa-message-detail .right-sidebar.mCS_no_scrollbar .mCSB_container {
+      overflow: visible; }
+  .tcpa-message-detail .right-block-holder {
+    position: relative;
+    padding: 0 15px 0 0; }
+    @media (min-width: 1600px) {
+      .tcpa-message-detail .right-block-holder {
+        padding: 0 30px 0 0; } }
+  .tcpa-message-detail .form-group {
+    position: relative;
+    display: block;
+    margin: 0; }
+    .tcpa-message-detail .form-group:first-child .title-holder {
+      padding-top: 0; }
+  .tcpa-message-detail .title-holder {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f3f3; }
+    .tcpa-message-detail .title-holder .title {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      text-transform: capitalize;
+      display: block;
+      color: #707d84; }
+  .tcpa-message-detail .field-holder {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f3f3; }
+  .tcpa-message-detail .form-control {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    font-family: "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    padding: 8px 13px;
+    color: #707d84; }
+    .tcpa-message-detail .form-control::-webkit-input-placeholder {
+      color: #b4bbbc !important; }
+    .tcpa-message-detail .form-control::-moz-placeholder {
+      opacity: 1;
+      color: #b4bbbc !important; }
+    .tcpa-message-detail .form-control:-moz-placeholder {
+      color: #b4bbbc !important; }
+    .tcpa-message-detail .form-control:-ms-input-placeholder {
+      color: #b4bbbc !important; }
+    .tcpa-message-detail .form-control.placeholder {
+      color: #b4bbbc !important; }
+  .tcpa-message-detail .checkbox-area {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+  .tcpa-message-detail .label-text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #707d84;
+    display: block;
+    margin: 0; }
+  .tcpa-message-detail .tcpa-message-froala .fr-toolbar.fr-top {
+    display: flex;
+    justify-content: center; }
+  .tcpa-message-detail .fr-popup .fr-btn-wrap button:nth-child(2) {
+    width: 16px !important; }
+  @media (max-width: 1599px) {
+    .tcpa-message-detail .pop-emotions .fr-tabs-scroll img {
+      width: 22px !important;
+      margin: 8px auto !important; } }
+  .tcpa-message-detail .pop-emotions .fr-popup {
+    left: auto !important;
+    right: 0 !important; }
+    @media (min-width: 1600px) {
+      .tcpa-message-detail .pop-emotions .fr-popup {
+        right: -15px !important; } }
+    .tcpa-message-detail .pop-emotions .fr-popup:before {
+      right: 42px; }
+      @media (max-width: 1600px) {
+        .tcpa-message-detail .pop-emotions .fr-popup:before {
+          right: 38px; } }
+      @media (max-width: 1440px) {
+        .tcpa-message-detail .pop-emotions .fr-popup:before {
+          right: 35px; } }
+    .tcpa-message-detail .pop-emotions .fr-popup.fr-active {
+      top: 38px !important; }
+  .tcpa-message-detail .fr-popup .fr-arrow {
+    display: none !important; }
+  .tcpa-message-detail .fr-popup:before {
+    content: '';
+    position: absolute;
+    right: 52px;
+    top: -11px;
+    border-style: solid;
+    border-width: 0 6px 6px;
+    border-color: transparent transparent #2f3f48; }
+    @media (max-width: 1600px) {
+      .tcpa-message-detail .fr-popup:before {
+        right: 45px; } }
+  .tcpa-message-detail .fr-wrapper ul,
+  .tcpa-message-detail .fr-wrapper ol {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0; }
+  .tcpa-message-detail .fr-wrapper.show-placeholder {
+    min-height: 280px; }
+  .tcpa-message-detail .fr-command.fr-btn.fr-disabled,
+  .tcpa-message-detail .fr-popup .fr-command.fr-btn.fr-disabled {
+    color: #8e8c8c !important; }
+  .tcpa-message-detail .fr-box.fr-basic .fr-element {
+    text-align: center;
+    min-height: 210px; }
+  @media (max-width: 1600px) {
+    .tcpa-message-detail .classic-editor__wrapper .fr-toolbar .fr-command.fr-btn {
+      width: 34px; } }
+  @media (max-width: 1600px) {
+    .tcpa-message-detail .fr-toolbar .fr-command.fr-btn i,
+    .tcpa-message-detail .fr-popup .fr-command.fr-btn i,
+    .tcpa-message-detail .fr-toolbar .fr-command.fr-btn svg,
+    .tcpa-message-detail .fr-popup .fr-command.fr-btn svg {
+      float: none !important;
+      margin: 0 auto; } }
+  .tcpa-message-detail .fr-popup .fr-buttons {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%; }
+  @media (max-width: 1600px) {
+    .tcpa-message-detail #formatUL-1 .fa-list-ul {
+      margin: 12px 0 12px 3px; } }
+  .tcpa-message-detail .fr-wrapper {
+    color: #707d84; }
+    .tcpa-message-detail .fr-wrapper p {
+      color: #707d84; }
+    @media (min-width: 1600px) {
+      .tcpa-message-detail .fr-wrapper {
+        font-size: 14px; } }
+  .tcpa-message-detail .fr-placeholder {
+    color: #b4bbbc !important; }
+  .tcpa-message-detail .fr-box.fr-basic .fr-element,
+  .tcpa-message-detail .fr-wrapper div,
+  .tcpa-message-detail .fr-wrapper h1,
+  .tcpa-message-detail .fr-wrapper h2,
+  .tcpa-message-detail .fr-wrapper h3,
+  .tcpa-message-detail .fr-wrapper h5,
+  .tcpa-message-detail .fr-wrapper h6,
+  .tcpa-message-detail .fr-wrapper p {
+    color: #707d84; }
+  .tcpa-message-detail .classic-editor__wrapper {
+    transition: all 0.15s ease;
+    box-shadow: none;
+    outline: none;
+    text-align: center;
+    border-radius: 3px;
+    min-height: 260px;
+    height: auto; }
+    .tcpa-message-detail .classic-editor__wrapper:focus, .tcpa-message-detail .classic-editor__wrapper.focus {
+      border-color: #02abec !important; }
+
+/* tcpa-iframe-holder style */
+.tcpa-iframe-holder {
+  position: relative;
+  padding: 20px 15px; }
+
+/* tcpa iframe area style */
+.tcpa-iframe-area {
+  position: relative;
+  max-width: 752px;
+  margin: 0 auto; }
+  .tcpa-iframe-area:before, .tcpa-iframe-area:after {
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    height: 50px;
+    width: 50%;
+    max-width: 44.9%;
+    transform: rotate(-2deg);
+    z-index: -1; }
+  .tcpa-iframe-area:after {
+    right: 5%;
+    left: auto;
+    transform: rotate(2deg); }
+
+/* tcpa iframe style */
+.tcpa-iframe {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden; }
+
+/* TCPA update froala version style */
+.froala-editor-update {
+  /* Boamboo icon hide on TCPA page */ }
+  .froala-editor-update .tcpa-message-froala .fr-quick-insert {
+    display: none !important; }
+  .froala-editor-update .tcpa-message-froala .fr-popup .fr-buttons {
+    overflow: visible; }
+  .froala-editor-update.tcpa-inner-page .fa-bamboo-btn-wrap {
+    display: none !important; }
+  .froala-editor-update.tcpa-inner-page .fr-newline ~ .fr-popup {
+    top: 38px !important; }
+
+/* Editor Error message style */
+.editor-error-message {
+  color: #cc0b0b !important;
+  font-size: 13px;
+  margin: 12px 0 0; }
+
+/* tcp-message-data style */
+.lp-table-item.tcp-message-data {
+  border-bottom: 1px solid #f2f3f3; }
+  .lp-table-item.tcp-message-data:first-child {
+    border-top: 1px solid #f2f3f3; }
+  .lp-table-item.tcp-message-data:only-child, .lp-table-item.tcp-message-data:last-child {
+    border-bottom: none; }

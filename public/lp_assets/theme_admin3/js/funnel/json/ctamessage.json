@@ -1,0 +1,35 @@
+{
+    "options": {
+        "show-question": 1,
+        "call-to-action": "&lt;p&gt;Welcome! Let's get this party started.&lt;&#x2F;p&gt;",
+        "question-title": "",
+        "show-description": 1,
+        "description": "&lt;p&gt;Here's your chance to tell your potential clients something awesome.</p> <p>You can also stop them in their tracks if they're not a good fit by turning off the CTA button, or linking it somewhere else (including another Funnel).&lt;&#x2F;p&gt;",
+        "cta-button": 1,
+        "button-text": "Get Started",
+        "cta-button-settings" : {
+            "font-size" : 20,
+            "enable-hide-until-answer" : 0,
+            "enable-button-icon" : 0,
+            "button-icon" : "arrow-thick-right",
+            "button-icon-color" : "#ffffff",
+            "button-icon-position" : "LEFT",
+            "button-icon-size" : 25,
+            "link-destination": "next-step",
+            "leadpops-funnel-name": "Select Funnel",
+            "leadpops-domain-id": "",
+            "outside-url": "",
+            "open-new-tab": 0
+        },
+        "enable-security-message" : 0,
+        "security-message-id" : 0,
+        "enable-additional-content" : 0,
+        "additional-content" : "",
+        "data-field": "fieldname",
+        "unique-variable-name": "fieldname",
+        "enable-auto-progress" : 1,
+        "required": 1,
+        "rel": ""
+    },
+    "question-type": "ctamessage"
+}

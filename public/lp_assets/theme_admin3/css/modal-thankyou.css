@@ -1,0 +1,259 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/**
+*  Funnel Builder: Thank you page CSS
+*/
+.tk-bar {
+  min-height: 63px;
+  border-bottom: 1px solid #e9ecef;
+  padding: 7px 0;
+  display: flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: space-between; }
+  .tk-bar__title {
+    font-family: "Open Sans" , sans-serif;
+    font-size: 22px;
+    color: #707d84;
+    font-weight: 300; }
+  .tk-bar .action__item {
+    margin: 15px 15px 0 0; }
+    .tk-bar .action__item:last-child {
+      margin-right: 0; }
+  .tk-bar .lp-dropdown {
+    max-width: 430px; }
+    .tk-bar .lp-dropdown__item {
+      max-width: 430px; }
+
+.tk-clist {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  display: -ms-flex; }
+  .tk-clist__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+    border-left: 1px solid #e9ecef;
+    height: 60px;
+    display: flex;
+    display: -ms-flex;
+    align-items: center; }
+    .tk-clist__item:last-child {
+      padding-right: 0; }
+  .tk-clist_button .tk-clist__item {
+    padding: 0 16px 0 0;
+    border-left: 0 none; }
+    .tk-clist_button .tk-clist__item:last-child {
+      padding-right: 0; }
+
+.tk-note {
+  border-bottom: 1px solid #e9ecef;
+  height: 94px;
+  padding: 20px 0;
+  display: flex;
+  display: -ms-flex;
+  align-items: center;
+  width: 100%; }
+  .tk-note__description {
+    font-family: "Open Sans" , sans-serif;
+    font-size: 16px;
+    color: #acbdc9;
+    font-weight: 300;
+    line-height: 1.2;
+    width: 100%;
+    margin-bottom: 0; }
+
+.fb-toggle-button {
+  font-family: "Open Sans" , sans-serif;
+  font-size: 14px;
+  color: #707d84;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 22px; }
+  .fb-toggle-button:hover, .fb-toggle-button:active, .fb-toggle-button:focus {
+    color: #707d84; }
+  .fb-toggle-button:before {
+    speak: none;
+    line-height: 1;
+    content: "\e944";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-family: 'icomoon' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 16px;
+    height: 16px;
+    background-position: -155px -312px;
+    position: absolute;
+    left: 0;
+    top: 3px; }
+  .fb-toggle-button_open:before {
+    content: "\e91b"; }
+
+.tk-field-wrap {
+  display: none; }
+
+.tk-field {
+  height: 95px;
+  display: flex;
+  display: -ms-flex;
+  align-items: center;
+  border-bottom: 1px solid #e9ecef; }
+  .tk-field__caption {
+    font-family: "Open Sans" , sans-serif;
+    font-size: 16px;
+    color: #707d84;
+    font-weight: 400;
+    padding-right: 16px; }
+    .tk-field__caption_ptitle {
+      width: 312px; }
+  .tk-field__input {
+    flex-grow: 1;
+    position: relative; }
+    .tk-field__input input[type="text"] {
+      padding-right: 35px; }
+    .tk-field__input:hover .tk-field__reset {
+      opacity: 1;
+      visibility: visible; }
+  .tk-field_detail-page {
+    height: auto;
+    border-bottom: 0 none; }
+    .tk-field_detail-page:first-child {
+      margin-bottom: 22px; }
+  .tk-field__reset {
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    color: #58666e;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease; }
+
+/**
+*  Funnel Builder: Thank You Page Detail
+*/
+.tk-field-detail {
+  padding: 22px 0;
+  border-bottom: 1px solid #e9ecef; }
+
+.tk-page-head {
+  padding: 0 30px;
+  display: flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1; }
+  .tk-page-head__back-link {
+    font-family: "Open Sans" , sans-serif;
+    font-size: 14px;
+    color: #707d84;
+    font-weight: 700; }
+    .tk-page-head__back-link:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 5.5px solid transparent;
+      border-right: 6px solid #7d8b95;
+      border-bottom: 5.5px solid transparent;
+      display: inline-block;
+      margin-right: 10px; }
+    .tk-page-head__back-link:hover, .tk-page-head__back-link:active, .tk-page-head__back-link:focus {
+      color: #707d84; }
+
+.tk-froala-wrap {
+  padding: 22px 0;
+  border-bottom: 1px solid #e9ecef; }
+
+#fb-thank-you .modal-dialog {
+  margin: 50px auto; }
+
+#fb-thank-you-detail .modal-dialog {
+  margin: 50px auto; }
+
+#fb-thank-you-detail .action__item.action__item_en-logo .toggle.btn {
+  width: 155px !important;
+  height: 48px !important; }
+  #fb-thank-you-detail .action__item.action__item_en-logo .toggle.btn .toggle-handle {
+    padding: 0 38px; }
+
+#fb-thank-you-detail .action__item.action__item_en-logo .btn-active,
+#fb-thank-you-detail .action__item.action__item_en-logo .btn-inactive {
+  font-size: 12px; }
+
+#fb-thank-you-detail .fb-modal__body_plr30 {
+  padding: 0; }
+
+#fb-thank-you-detail .tk-bar__control {
+  padding: 12px 0; }
+
+#fb-thank-you-detail .tk-bar-field {
+  position: relative;
+  padding: 0 30px; }
+
+#fb-thank-you-detail .quick-scroll .mCSB_inside > .mCSB_container {
+  margin-right: 0 !important; }
+
+#fb-thank-you-detail .tk-page-head {
+  padding: 0; }
+
+#fb-thank-you-detail .fb-modal__footer {
+  border-top: none; }
+
+#fb-thank-you-detail .close {
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  padding: 0;
+  opacity: 1 !important;
+  text-shadow: none;
+  outline: none !important;
+  box-shadow: none;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 29px; }
+  #fb-thank-you-detail .close:hover, #fb-thank-you-detail .close:focus {
+    color: #fff !important; }
+
+.thankyou-modal-editor.update-version .fr-wrapper p {
+  color: inherit; }

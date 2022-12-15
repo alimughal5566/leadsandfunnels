@@ -1,0 +1,107 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.theme-page .lp-panel__head {
+  padding: 0 0 6px; }
+  .theme-page .lp-panel__head .col-left,
+  .theme-page .lp-panel__head .col-right {
+    margin: 4px 0 0; }
+  .theme-page .lp-panel__head .col-left .action__item:first-child {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #85969f; }
+
+.theme-page .lp-panel__footer {
+  padding: 0;
+  height: 73px;
+  display: flex;
+  align-items: center; }
+
+.theme__selection {
+  display: flex;
+  position: relative;
+  align-items: center; }
+  .theme__selection label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0 32px; }
+  .theme__selection:before {
+    background: #dbe0e2;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px; }
+
+.theme__wrapper {
+  margin: 0 0 30px;
+  overflow: hidden;
+  border-radius: 3px;
+  border: solid 1px #cfdadd; }
+
+.theme__header {
+  height: 41px;
+  display: flex;
+  padding: 0 15px;
+  align-items: center;
+  background-color: #2f3743; }
+  .theme__header .dots {
+    width: 10px;
+    height: 10px;
+    margin: 0 10px 0 0;
+    border-radius: 20px; }
+    .theme__header .dots:nth-child(1) {
+      background-color: #ed412f; }
+    .theme__header .dots:nth-child(2) {
+      background-color: #ffa310; }
+    .theme__header .dots:nth-child(3) {
+      background-color: #71dd2a; }
+
+.theme__overlay {
+  background-color: #8539ed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  opacity: 0.5; }
+
+.theme__desc p {
+  margin: 0; }

@@ -1,0 +1,152 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.card {
+  padding: 0 30px;
+  margin: 0 0 30px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: solid 1px #dde0e1; }
+  .card:last-child {
+    margin: 0; }
+  .card-header {
+    padding: 0;
+    height: 74px;
+    border: none;
+    display: flex;
+    background: #ffffff;
+    align-items: center; }
+  .card-body {
+    border-top: solid 1px #f2f3f3;
+    padding: 0; }
+    .card-body__row {
+      border-bottom: solid 1px #f2f3f3;
+      padding: 30px 0; }
+      .card-body__row:last-child {
+        border: none; }
+  .card-link {
+    display: inline-flex;
+    cursor: pointer; }
+    .card-link.collapsed .card-circle {
+      border-color: #cfdadd; }
+      .card-link.collapsed .card-circle:before {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0); }
+    .card-link .card-circle {
+      height: 34px;
+      width: 34px;
+      position: relative;
+      margin: 0 16px 0 0;
+      border-radius: 100%;
+      background: #ffffff;
+      display: inline-block;
+      border: solid 1px #02abec;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+      .card-link .card-circle:before {
+        content: "";
+        opacity: 1;
+        transform: scale(1);
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        visibility: visible;
+        top: 7px;
+        bottom: 7px;
+        left: 7px;
+        right: 7px;
+        background: #02abec;
+        border-radius: 100%;
+        position: absolute; }
+  .card-title {
+    display: inline-block;
+    margin: 0;
+    color: #85969f; }
+    .card-title span {
+      font-weight: 300; }
+      .card-title span.new {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400;
+        font-style: italic; }
+
+.background-card .card-link-wrap {
+  position: relative; }
+
+.background-card .card-link {
+  margin: 0; }
+  .background-card .card-link .card-circle {
+    border-color: #cfdadd;
+    margin-top: 2px; }
+    .background-card .card-link .card-circle:before {
+      opacity: 0;
+      visibility: hidden; }
+
+.background-card.active .card-link .card-circle {
+  border-color: #02abec; }
+  .background-card.active .card-link .card-circle:before {
+    opacity: 1;
+    visibility: visible; }
+
+.domain-card .card-link-wrap {
+  position: relative; }
+
+.domain-card .card-link {
+  margin: 0; }
+  .domain-card .card-link .card-circle {
+    border-color: #cfdadd;
+    margin-top: 2px; }
+    .domain-card .card-link .card-circle:before {
+      opacity: 0;
+      visibility: hidden; }
+
+.domain-card.active .card-link .card-circle {
+  border-color: #02abec; }
+  .domain-card.active .card-link .card-circle:before {
+    opacity: 1;
+    visibility: visible; }
+
+.background-slide {
+  display: none; }
+
+.domain-slide {
+  display: none; }

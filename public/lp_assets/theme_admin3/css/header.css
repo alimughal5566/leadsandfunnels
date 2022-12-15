@@ -1,0 +1,1624 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/*header style*/
+.home-page .header .info-bar {
+  padding: 0 21px;
+  /* &:before {
+        left: 25px;
+        right: 21px;
+
+        @include min-breakpoint(1440) {
+          left: 30px;
+          right: 38px;
+        }
+
+        @include min-breakpoint(1600) {
+          left: 27px;
+          right: 39px;
+        }
+      }*/ }
+  @media (min-width: 1440px) {
+    .home-page .header .info-bar {
+      padding: 0 38px 0 30px; } }
+  @media (min-width: 1600px) {
+    .home-page .header .info-bar {
+      padding: 0 39px 0 37px; } }
+
+.header {
+  background: #f6f8f8;
+  padding: 72px 0 0; }
+  .header .info-bar {
+    transition: all 0.4s ease;
+    background: #fff;
+    position: fixed;
+    left: 300px;
+    right: 0;
+    top: 0;
+    padding-right: 15px;
+    height: 72px;
+    z-index: 1039; }
+    @media (min-width: 1440px) {
+      .header .info-bar {
+        padding-right: 41px; } }
+    @media (min-width: 1600px) {
+      .header .info-bar {
+        left: 350px; } }
+    .funnel-question-page .header .info-bar {
+      left: 410px; }
+      @media (min-width: 1440px) {
+        .funnel-question-page .header .info-bar {
+          left: 460px; } }
+      @media (min-width: 1600px) {
+        .funnel-question-page .header .info-bar {
+          left: 535px; } }
+    .funnel-question-page.sidebar-inner-active .header .info-bar {
+      left: 550px; }
+      @media (min-width: 1440px) {
+        .funnel-question-page.sidebar-inner-active .header .info-bar {
+          left: 600px; } }
+      @media (min-width: 1600px) {
+        .funnel-question-page.sidebar-inner-active .header .info-bar {
+          left: 700px; } }
+    .funnel-content .header .info-bar {
+      left: 470px; }
+      @media (min-width: 1440px) {
+        .funnel-content .header .info-bar {
+          left: 520px; } }
+      @media (min-width: 1600px) {
+        .funnel-content .header .info-bar {
+          left: 619px; } }
+    .funnel-editor.sidebar-inner-active .header .info-bar {
+      left: 570px; }
+      @media (min-width: 1440px) {
+        .funnel-editor.sidebar-inner-active .header .info-bar {
+          left: 610px; } }
+      @media (min-width: 1600px) {
+        .funnel-editor.sidebar-inner-active .header .info-bar {
+          left: 770px; } }
+    .funnel-editor.panel-aside_closed .header .info-bar {
+      left: 240px; }
+      @media (min-width: 1440px) {
+        .funnel-editor.panel-aside_closed .header .info-bar {
+          left: 240px; } }
+      @media (min-width: 1600px) {
+        .funnel-editor.panel-aside_closed .header .info-bar {
+          left: 280px; } }
+    .funnel-editor.sidebar-inner-active.panel-aside_closed .header .info-bar {
+      left: 340px; }
+      @media (min-width: 1440px) {
+        .funnel-editor.sidebar-inner-active.panel-aside_closed .header .info-bar {
+          left: 340px; } }
+      @media (min-width: 1600px) {
+        .funnel-editor.sidebar-inner-active.panel-aside_closed .header .info-bar {
+          left: 430px; } }
+    .home-page .header .info-bar,
+    .account-page .header .info-bar,
+    .support-page .header .info-bar,
+    .marketing-hub-page .header .info-bar {
+      left: 80px; }
+      @media (min-width: 1600px) {
+        .home-page .header .info-bar,
+        .account-page .header .info-bar,
+        .support-page .header .info-bar,
+        .marketing-hub-page .header .info-bar {
+          left: 100px; } }
+    .home-page.sidebar-active .header .info-bar {
+      left: 220px; }
+      @media (min-width: 1600px) {
+        .home-page.sidebar-active .header .info-bar {
+          left: 280px; } }
+    .header .info-bar:before {
+      background: #eaeced;
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 1px;
+      /* @include min-breakpoint(1440) {
+        right: 30px;
+      }
+
+      @include min-breakpoint(1600) {
+        right: 37px;
+      }*/ }
+  .header .button {
+    transition: all 0.4s ease;
+    text-align: center; }
+    .header .button[disabled] {
+      background: #f6f8f8 !important;
+      color: #b2c0d3 !important;
+      border-color: #f6f8f8 !important;
+      opacity: 1 !important; }
+      .header .button[disabled].saving .spiner:before {
+        border: .3em solid #b2c0d3;
+        border-left-color: transparent; }
+    .header .button .spiner-wrap {
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      transition: all 0.4s ease; }
+    .header .button .spiner {
+      position: absolute;
+      right: 0;
+      top: 1px;
+      opacity: 0;
+      visibility: hidden;
+      width: 1em;
+      height: 1em;
+      transition: all .3s;
+      transition-timing-function: ease-in;
+      animation: ld-spin-fast 1s infinite linear; }
+      .header .button .spiner:before {
+        content: '';
+        width: 2em;
+        height: 2em;
+        display: block;
+        box-sizing: border-box;
+        transform-origin: 0 0;
+        transform: translateZ(0) scale(0.5);
+        backface-visibility: hidden;
+        border-radius: 50%;
+        border: 0.3em solid #fff;
+        border-left-color: transparent; }
+    .header .button.saving .spiner-wrap {
+      padding: 0 24px 0 0; }
+    .header .button.saving .spiner {
+      opacity: 1;
+      visibility: visible; }
+
+@keyframes ld-spin-fast {
+  0% {
+    animation-timing-function: cubic-bezier(0.5856, 0.0703, 0.4143, 0.9297);
+    transform: rotate(0); }
+  100% {
+    transform: rotate(1800deg); } }
+
+/* funnels info style*/
+.funnels-info {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap; }
+  .funnels-info__title {
+    font-size: 20px;
+    line-height: 24px;
+    color: #707d84;
+    padding: 23px 0;
+    margin-right: 15px; }
+    @media (min-width: 1600px) {
+      .funnels-info__title {
+        font-size: 22px;
+        line-height: 26px;
+        margin-right: 20px; } }
+    .account-page .funnels-info__title {
+      position: relative;
+      padding-right: 15px;
+      padding-left: 40px; }
+      .account-page .funnels-info__title:before {
+        background: #e5e9ea;
+        right: 0;
+        content: '';
+        position: absolute;
+        top: 6px;
+        bottom: 6px;
+        width: 1px; }
+      @media (max-width: 1440px) {
+        .account-page .funnels-info__title {
+          padding-left: 20px; } }
+  .funnels-info .search-bar__filter .input-holder .form-control {
+    border: 1px solid #cfdadd;
+    box-shadow: none; }
+  .funnels-info .search-bar__filter .select2-container .select2-selection--multiple {
+    border: solid 1px #cfdadd !important;
+    box-shadow: none; }
+
+/* funnels dropdown style */
+.funnels-dropdown {
+  display: flex;
+  width: 180px;
+  position: relative;
+  margin: 6px 20px 6px 0;
+  flex-flow: row nowrap; }
+  @media (min-width: 1440px) {
+    .funnels-dropdown {
+      width: 210px; } }
+  .funnels-dropdown.open .funnels-dropdown__button {
+    border-left: 1px solid #e5e9ea; }
+    .funnels-dropdown.open .funnels-dropdown__button:after {
+      opacity: 1;
+      visibility: visible; }
+    .funnels-dropdown.open .funnels-dropdown__button .icon {
+      border: solid #e5e9ea;
+      border-width: 0 1px;
+      border-right-color: #fff;
+      color: #707d84; }
+      .funnels-dropdown.open .funnels-dropdown__button .icon:before {
+        transform: rotate(180deg); }
+  .funnels-dropdown__button {
+    font-size: 13px;
+    line-height: 20px;
+    background-color: transparent;
+    border-left: 1px solid #e5e9ea;
+    color: #85969f;
+    position: relative;
+    padding: 20px 18px;
+    display: block;
+    width: 100%;
+    z-index: 2; }
+    .funnels-dropdown__button .funnel-active {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 26px 0 0; }
+    @media (min-width: 1440px) {
+      .funnels-dropdown__button {
+        font-size: 15px; } }
+    .funnels-dropdown__button:hover {
+      color: #85969f; }
+    .funnels-dropdown__button:after {
+      content: '';
+      position: absolute;
+      top: -6px;
+      right: 0;
+      bottom: -6px;
+      left: 0;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: -1; }
+    .funnels-dropdown__button .icon {
+      color: #c114ed;
+      display: flex;
+      align-items: center;
+      border: solid #e5e9ea;
+      border-width: 0 1px;
+      padding: 0 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      transition: all 0.4s ease; }
+      .funnels-dropdown__button .icon:before {
+        transition: all 0.4s ease; }
+  .funnels-dropdown .megamenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 5; }
+    @media (max-height: 680px) {
+      .funnels-dropdown .megamenu {
+        padding: 0 0 10px; } }
+
+/* megamenu style */
+.megamenu {
+  box-shadow: 0 24px 24px 0 rgba(30, 33, 39, 0.2);
+  background-color: #fff;
+  padding: 8px 0 20px;
+  width: 915px;
+  display: block;
+  opacity: 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  /* megamenu__tab-content style */
+  /* megamenu search bar style */
+  /* megamenu funnel message style */ }
+  @media (min-width: 1440px) {
+    .megamenu {
+      width: 1120px; } }
+  @media (min-width: 1600px) {
+    .megamenu {
+      width: 1180px; } }
+  .aside-panel .megamenu {
+    width: 855px; }
+    @media (min-width: 1440px) {
+      .aside-panel .megamenu {
+        width: 1010px; } }
+    @media (min-width: 1600px) {
+      .aside-panel .megamenu {
+        width: 1010px; } }
+  .sidebar-active .megamenu {
+    width: 850px; }
+    @media (min-width: 1440px) {
+      .sidebar-active .megamenu {
+        width: 1010px; } }
+    @media (min-width: 1600px) {
+      .sidebar-active .megamenu {
+        width: 1080px; } }
+  .megamenu .total-funnels {
+    border-bottom: 1px solid #dee5e7;
+    color: #85969f;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 19px 0;
+    letter-spacing: -0.4px;
+    margin: 0 25px; }
+    @media (min-width: 1440px) {
+      .megamenu .total-funnels {
+        margin: 0 31px; } }
+    .megamenu .total-funnels b {
+      font-weight: 700; }
+  .megamenu .search-bar {
+    padding: 20px 0 8px;
+    margin: 0 25px; }
+    @media (min-width: 1440px) {
+      .megamenu .search-bar {
+        margin: 0 31px; } }
+    .megamenu .search-bar__column {
+      margin: 0 0 21px;
+      padding-bottom: 0; }
+      .megamenu .search-bar__column:nth-child(1) {
+        width: 50%;
+        position: relative; }
+        .megamenu .search-bar__column:nth-child(1):before {
+          right: 7px;
+          top: -12px;
+          width: 1px;
+          content: '';
+          bottom: -12px;
+          position: absolute;
+          background: #e9eaeb;
+          display: none; }
+        @media (min-width: 1440px) {
+          .megamenu .search-bar__column:nth-child(1) {
+            width: 22%; } }
+      .megamenu .search-bar__column:nth-child(2) {
+        width: 50%; }
+        @media (min-width: 1440px) {
+          .megamenu .search-bar__column:nth-child(2) {
+            width: 26%; } }
+      .megamenu .search-bar__column:nth-child(3) {
+        width: 50%;
+        flex-grow: 1; }
+      .megamenu .search-bar__column:nth-child(4) {
+        width: 50%; }
+    .megamenu .search-bar__filter {
+      width: 100%; }
+      .megamenu .search-bar__filter.megamenu-show-funnel-tag .search-bar__column:nth-child(1) {
+        width: 50%; }
+        @media (min-width: 1440px) {
+          .megamenu .search-bar__filter.megamenu-show-funnel-tag .search-bar__column:nth-child(1) {
+            width: 22%; } }
+      .megamenu .search-bar__filter.megamenu-show-funnel-tag .search-bar__column:nth-child(2) {
+        width: 50%; }
+        @media (min-width: 1440px) {
+          .megamenu .search-bar__filter.megamenu-show-funnel-tag .search-bar__column:nth-child(2) {
+            width: 28.4%; } }
+      .megamenu .search-bar__filter.megamenu-show-funnel-tag .search-bar__column:nth-child(3) {
+        width: 100%; }
+        @media (min-width: 1440px) {
+          .megamenu .search-bar__filter.megamenu-show-funnel-tag .search-bar__column:nth-child(3) {
+            width: 43.2%; } }
+    .megamenu .search-bar .select2-container.select2-container--open .select2-selection--single {
+      border: none; }
+    .megamenu .search-bar .select2-container .select2-selection--single {
+      /*Abubakar comment this shadow as it was requested */
+      border: 1px solid #cfdadd; }
+      .megamenu .search-bar .select2-container .select2-selection--single .select2-selection__rendered {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400; }
+      .megamenu .search-bar .select2-container .select2-selection--single .select2-selection__arrow b {
+        border-color: #02abec transparent transparent transparent; }
+  .megamenu .megamenu-funnels-msg {
+    display: none; }
+    .megamenu .megamenu-funnels-msg .top-messge {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 0 0 0; }
+
+/* megamenu-funnels style */
+.megamenu-funnels {
+  max-height: 356px; }
+  @media (max-width: 1600px) {
+    .megamenu-funnels {
+      max-height: 264px; } }
+  @media (max-height: 680px) {
+    .megamenu-funnels {
+      max-height: 210px; } }
+  .megamenu-funnels .mCSB_inside > .mCSB_container {
+    margin-right: 0 !important; }
+  .megamenu-funnels .mCSB_scrollTools {
+    right: 6px; }
+    .megamenu-funnels .mCSB_scrollTools .mCSB_draggerRail {
+      background-color: #f0f3f4;
+      opacity: 1;
+      width: 5px; }
+    .megamenu-funnels .mCSB_scrollTools .mCSB_dragger_bar {
+      width: 5px; }
+  .megamenu-funnels__holder {
+    padding: 0 25px; }
+    @media (min-width: 1440px) {
+      .megamenu-funnels__holder {
+        padding: 0 31px; } }
+  .megamenu-funnels__box {
+    border-bottom: 1px solid #dee5e7; }
+    .megamenu-funnels__box:not(:first-child) {
+      padding-top: 6px; }
+      @media (min-width: 1440px) {
+        .megamenu-funnels__box:not(:first-child) {
+          padding: 0; } }
+  .megamenu-funnels__column {
+    padding: 0 15px;
+    position: relative; }
+    .megamenu-funnels__column:nth-child(1) {
+      width: 23.5%; }
+    .megamenu-funnels__column:nth-child(2) {
+      width: 25%; }
+      @media (min-width: 1440px) {
+        .megamenu-funnels__column:nth-child(2) {
+          width: 30.8%; } }
+    .megamenu-funnels__column:nth-child(3) {
+      width: 51%; }
+      @media (min-width: 1440px) {
+        .megamenu-funnels__column:nth-child(3) {
+          width: 45.7%; } }
+  .megamenu-funnels .heading {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    display: block;
+    padding: 15px 0;
+    letter-spacing: 0.4px; }
+    @media (min-width: 1440px) {
+      .megamenu-funnels .heading {
+        font-size: 21px;
+        line-height: 25px; } }
+  .megamenu-funnels .funnel-name, .megamenu-funnels .funnel-link {
+    font-size: 14px;
+    line-height: 17px;
+    color: #304351;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 15px 0;
+    max-width: 190px;
+    display: inline-block; }
+    @media (min-width: 1440px) {
+      .megamenu-funnels .funnel-name, .megamenu-funnels .funnel-link {
+        max-width: 220px; } }
+    @media (min-width: 1600px) {
+      .megamenu-funnels .funnel-name, .megamenu-funnels .funnel-link {
+        font-size: 16px;
+        line-height: 21px;
+        max-width: 250px;
+        margin: 17px 0; } }
+  @media (min-width: 1600px) {
+    .megamenu-funnels .funnel-link {
+      max-width: 220px; } }
+  .megamenu-funnels .tags-holder {
+    position: relative; }
+    .megamenu-funnels .tags-holder .mCSB_inside > .mCSB_container {
+      margin-right: 20px !important; }
+    .megamenu-funnels .tags-holder.hide .more {
+      opacity: 0;
+      visibility: hidden; }
+  .megamenu-funnels .tags-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 32px; }
+  .megamenu-funnels .more {
+    display: block;
+    padding: 13px 0 0 6px; }
+    @media (min-width: 1440px) {
+      .megamenu-funnels .more {
+        padding: 12px 0 0 6px; } }
+    @media (min-width: 1600px) {
+      .megamenu-funnels .more {
+        padding: 12px 0 0 14px; } }
+  .megamenu-funnels .more-tag {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    background: #f6f8f8;
+    transition: all 0.3s ease;
+    padding: 2px 7px 7px;
+    display: block;
+    cursor: pointer;
+    border-radius: 3px; }
+    @media (min-width: 1440px) {
+      .megamenu-funnels .more-tag {
+        padding: 5px 7px 9px; } }
+    @media (min-width: 1600px) {
+      .megamenu-funnels .more-tag {
+        padding: 6px 8px 11px; } }
+  .megamenu-funnels .tags-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px -3px 0; }
+    @media (min-width: 1440px) {
+      .megamenu-funnels .tags-list {
+        margin: 6px -3px 0; } }
+    @media (min-width: 1600px) {
+      .megamenu-funnels .tags-list {
+        margin: 4px -10px 0; } }
+    .megamenu-funnels .tags-list li {
+      padding: 5px 3px; }
+      @media (min-width: 1600px) {
+        .megamenu-funnels .tags-list li {
+          padding: 7px; } }
+      .megamenu-funnels .tags-list li span {
+        font-size: 11px;
+        line-height: 17px;
+        background-color: #f6f8f8;
+        border-radius: 3px;
+        display: block;
+        padding: 4px;
+        transition: all 0.3s ease; }
+        @media (max-width: 1440px) {
+          .sidebar-active .megamenu-funnels .tags-list li span {
+            font-size: 10px; } }
+        @media (min-width: 1440px) {
+          .megamenu-funnels .tags-list li span {
+            font-size: 13px;
+            padding: 7px; } }
+        @media (min-width: 1600px) {
+          .megamenu-funnels .tags-list li span {
+            padding: 9px; } }
+  .megamenu-funnels .tags-popup-wrap {
+    position: fixed;
+    margin: 0;
+    padding: 0 0 4px; }
+  .megamenu-funnels .tags-popup {
+    padding: 10px 12px 12px; }
+
+.tags-popup-wrap {
+  /*.tags-list li span {
+    background-color: #f6f8f8 !important;
+    color: #85969f !important;
+    padding: 8px 12px;
+  }*/ }
+  .tags-popup-wrap .tags-list li {
+    display: block !important; }
+
+.megamenu-funnels__box .tags-holder .mCSB_scrollTools {
+  right: 0; }
+
+.megamenu-funnels__box .tags-popup {
+  padding-right: 3px; }
+
+/* client-setting */
+.client-setting {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 -5px 0 -35px;
+  padding-top: 3px; }
+  .funnel-editor .client-setting {
+    padding-top: 0; }
+  @media (min-width: 1440px) {
+    .client-setting {
+      padding-top: 0;
+      margin: 0 -10px; } }
+  @media (max-width: 1439px) {
+    .responsive-view .client-setting {
+      margin-left: -45px; } }
+  .funnel-editor .client-setting {
+    margin-left: -160px; }
+    @media (max-width: 1800px) {
+      .funnel-editor .client-setting {
+        margin-left: -220px; } }
+  .client-setting__button {
+    padding: 0 5px; }
+    @media (min-width: 1440px) {
+      .client-setting__button {
+        padding: 0 10px; } }
+    @media (max-width: 1600px) {
+      .funnel-editor .client-setting__button {
+        padding: 0 3px; } }
+    @media (max-width: 1440px) {
+      .funnel-editor .client-setting__button {
+        padding: 0; } }
+  .client-setting__profile {
+    padding: 0 10px; }
+    @media (max-width: 1440px) {
+      .funnel-editor .client-setting__profile {
+        padding-right: 0; } }
+
+/* account-setting */
+.account-setting__info {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 6px 15px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden; }
+  @media (min-width: 1600px) {
+    .account-setting__info {
+      padding: 6px 20px; } }
+  .account-setting__info:after, .account-setting__info:before {
+    background: #e5e9ea;
+    content: '';
+    position: absolute;
+    top: 3px;
+    bottom: 0;
+    left: 0;
+    width: 1px; }
+    @media (min-width: 1440px) {
+      .account-setting__info:after, .account-setting__info:before {
+        top: 6px;
+        bottom: 6px; } }
+  .account-setting__info:before {
+    left: auto;
+    right: 0; }
+  .account-setting__info.open {
+    border-color: #fff; }
+    .account-setting__info.open:after {
+      opacity: 1;
+      visibility: visible; }
+    .account-setting__info.open .toggle-link {
+      border-right-color: #fff; }
+  .account-setting__info .user-info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 7px 0;
+    transition: all 0.4s ease;
+    margin: 0;
+    /* margin: 0 -169px 0 0;
+
+      @include breakpoint(1439) {
+        margin: 0 -158px 0 0;
+      }*/
+    /*&:hover {
+
+        .user-detail {
+          width: 185px;
+          height: 43px;
+          padding-left: 14px;
+          visibility: visible;
+
+          @include breakpoint(1440) {
+            width: 160px;
+          }
+
+          .toggle-link {
+            opacity: 1;
+          }
+        }
+      }*/ }
+    .account-setting__info .user-info .user-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      background-color: #f6f8f8;
+      border-radius: 3px;
+      overflow: hidden;
+      min-width: 35px;
+      border: solid 1px #e8e9eb; }
+      @media (min-width: 1440px) {
+        .account-setting__info .user-info .user-image {
+          min-width: 43px;
+          width: 43px;
+          height: 43px; } }
+      .account-setting__info .user-info .user-image.no-image {
+        color: #2fb3f2;
+        background: #e3f8fd;
+        border: solid 1px #a7edfe; }
+      .account-setting__info .user-info .user-image img {
+        display: block;
+        width: 100%; }
+    .account-setting__info .user-info .user-detail {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 0 30px 0 20px;
+      transition: all 0.4s ease; }
+      @media (min-width: 1440px) {
+        .account-setting__info .user-info .user-detail {
+          font-size: 15px;
+          line-height: 19px; } }
+      .account-setting__info .user-info .user-detail .user-name {
+        font-weight: 700;
+        display: block;
+        width: 110px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+        @media (min-width: 1440px) {
+          .account-setting__info .user-info .user-detail .user-name {
+            width: 120px; } }
+      .account-setting__info .user-info .user-detail .user-id {
+        display: block; }
+  .account-setting__info .toggle-link {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    bottom: 6px;
+    border: solid #e5e9ea;
+    border-width: 0 0 0 1px;
+    color: #c114ed;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    width: 25px; }
+    @media (min-width: 1440px) {
+      .account-setting__info .toggle-link {
+        width: 30px; } }
+    @media (min-width: 1600px) {
+      .account-setting__info .toggle-link {
+        width: 35px; } }
+
+.account-setting .settings__dropdown {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 225px;
+  z-index: 2;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  transform: scale(0);
+  transition: all 0.4s ease; }
+  @media (min-width: 1440px) {
+    .account-setting .settings__dropdown {
+      width: 243px; } }
+  @media (min-width: 1600px) {
+    .account-setting .settings__dropdown {
+      width: 252px; } }
+
+.account-setting.open .account-setting__info {
+  border-color: #fff;
+  background: #fff; }
+  .account-setting.open .account-setting__info:after, .account-setting.open .account-setting__info:before {
+    background: #fff;
+    opacity: 1;
+    visibility: visible; }
+  .account-setting.open .account-setting__info .toggle-link {
+    border-right-color: #fff; }
+
+.account-setting:hover .account-setting__info .user-info, .account-setting.hover .account-setting__info .user-info {
+  margin: 0; }
+
+.account-setting:hover .toggle-link, .account-setting.hover .toggle-link {
+  right: 0; }
+
+.account-setting {
+  position: relative; }
+
+/* settings__dropdown style */
+.settings__dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #fff;
+  box-shadow: 0 24px 24px 0 rgba(30, 33, 39, 0.2);
+  padding: 7px 5px;
+  display: none; }
+  @media (min-width: 1440px) {
+    .settings__dropdown {
+      font-size: 16px;
+      line-height: 20px; } }
+  .settings__dropdown__list {
+    border-top: 1px solid #e5e9ea;
+    position: relative; }
+  .settings__dropdown__link {
+    color: #85969f;
+    display: block;
+    padding: 14px 15px 14px 45px; }
+    @media (min-width: 1440px) {
+      .settings__dropdown__link {
+        padding: 16px 15px 16px 52px; } }
+    .settings__dropdown__link:hover {
+      color: #85969f; }
+  .settings__dropdown .icon {
+    font-size: 20px;
+    line-height: 20px;
+    color: #b5c4c9;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%); }
+    @media (min-width: 1200px) {
+      .settings__dropdown .icon {
+        font-size: 22px;
+        line-height: 22px; } }
+    @media (min-width: 1440px) {
+      .settings__dropdown .icon {
+        font-size: 24px;
+        line-height: 24px; } }
+
+.action_dresponsive .action__list {
+  margin: 0;
+  height: 100%;
+  padding: 5px 0; }
+
+.action_dresponsive .action__item {
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-right: solid 1px #e5e9ea;
+  margin: 0; }
+  .action_dresponsive .action__item.active .ico {
+    color: #02abec; }
+  .action_dresponsive .action__item:first-child {
+    border-left: solid 1px #e5e9ea; }
+    .funnel-editor .action_dresponsive .action__item:first-child {
+      border-left: none; }
+  .action_dresponsive .action__item:last-child {
+    border: none;
+    margin: 0 0 0 21px !important; }
+    @media (max-width: 1440px) {
+      .action_dresponsive .action__item:last-child {
+        margin: 0 0 0 10px !important; } }
+  .action_dresponsive .action__item .range-slider .input__wrapper {
+    width: 172px;
+    display: flex; }
+    @media (max-width: 1800px) {
+      .action_dresponsive .action__item .range-slider .input__wrapper {
+        width: 152px; } }
+    .action_dresponsive .action__item .range-slider .input__wrapper .ex1SliderVal {
+      min-width: 40px;
+      margin: 0 0 0 20px;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 400; }
+  .action_dresponsive .action__item .range-slider .slider-track {
+    box-shadow: none;
+    background-image: none;
+    background-color: #e5e9eb; }
+  .action_dresponsive .action__item .range-slider .slider-handle {
+    width: 28px;
+    height: 28px;
+    transform: translate(0, -5px); }
+  .action_dresponsive .action__item .ico {
+    margin: 0;
+    padding: 0 24px;
+    font-size: 33px; }
+    @media (max-width: 1800px) {
+      .funnel-editor .action_dresponsive .action__item .ico {
+        padding: 0 12px; } }
+    @media (max-width: 1440px) {
+      .funnel-editor .action_dresponsive .action__item .ico {
+        padding: 0 8px; } }
+
+.use-as-logo {
+  display: none; }
+  .use-as-logo .checkbox {
+    bottom: 0;
+    position: absolute; }
+    .use-as-logo .checkbox [type="checkbox"] + label {
+      padding-left: 28px;
+      margin: 0 0 4px 3px;
+      font-size: 14px; }
+      .use-as-logo .checkbox [type="checkbox"] + label:before {
+        top: 1px;
+        width: 18px;
+        height: 18px; }
+      .use-as-logo .checkbox [type="checkbox"] + label:after {
+        top: 5px;
+        left: 4px;
+        height: 10px;
+        width: 10px; }
+
+.client-setting__quick {
+  padding: 0 10px;
+  position: relative; }
+  .client-setting__quick:hover .client-setting__opener, .client-setting__quick.hover .client-setting__opener {
+    margin: 0; }
+  .client-setting__quick.quick-active .client-setting__opener {
+    background: #fff;
+    box-shadow: 0 10px 14px 0 rgba(30, 33, 39, 0.2); }
+  .client-setting__quick.quick-active .client-setting__arrow-wrap:after {
+    opacity: 0;
+    visibility: hidden; }
+  .client-setting__quick.quick-active .client-setting__arrow-wrap {
+    color: #808c92; }
+
+.client-setting__arrow-wrap {
+  color: #c114ed;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 0 10px; }
+  @media (max-width: 1440px) {
+    .funnel-editor .client-setting__arrow-wrap {
+      padding: 0 5px; } }
+  .client-setting__arrow-wrap:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    content: '';
+    background: #e5e9ea;
+    width: 1px;
+    height: 61px; }
+
+.client-setting__opener {
+  padding: 29px 55px;
+  display: block;
+  position: relative;
+  color: #85969f;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: all 0.4s ease;
+  margin: 0 -152px 0 0; }
+  @media (min-width: 1400px) {
+    .client-setting__opener {
+      margin: 0; } }
+  @media (max-width: 1440px) {
+    .funnel-editor .client-setting__opener {
+      font-size: 13px;
+      padding: 29px 30px; } }
+  .client-setting__opener:hover {
+    color: #85969f; }
+  .client-setting__opener .ico-order-list {
+    color: #c114ed;
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translate(0, -50%); }
+    @media (max-width: 1440px) {
+      .funnel-editor .client-setting__opener .ico-order-list {
+        left: 7px; } }
+
+.quick-opener-wrap {
+  position: relative;
+  overflow: hidden; }
+  .quick-opener-wrap:after, .quick-opener-wrap:before {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    bottom: 10px;
+    content: '';
+    background: #e5e9ea;
+    width: 1px; }
+  .quick-opener-wrap:after {
+    left: 0; }
+
+.quick-dropdown {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  width: 1180px;
+  background: #fff;
+  z-index: 99;
+  padding: 8px;
+  box-shadow: 0 24px 24px 0 rgba(30, 33, 39, 0.2);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  opacity: 0; }
+  @media (max-width: 1800px) {
+    .quick-dropdown {
+      width: 920px; } }
+  @media (max-width: 1600px) {
+    .quick-dropdown {
+      width: 880px; } }
+  @media (max-width: 1440px) {
+    .quick-dropdown {
+      width: 750px; } }
+
+.quick-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0 22px;
+  margin: 0 22px;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 1px solid #f2f3f3;
+  font-weight: 300;
+  color: #58666e; }
+  .quick-head__heading {
+    font-size: 24px;
+    line-height: 28px; }
+  .quick-head__num {
+    font-weight: 700; }
+
+.quick-scroll {
+  max-height: 555px;
+  overflow: auto; }
+  .quick-scroll .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0 !important; }
+  .quick-scroll .mCSB_inside > .mCSB_container {
+    margin-right: 22px; }
+  .quick-scroll .mCustomScrollbar .mCSB_scrollTools {
+    width: 8px; }
+
+.pixel-quick-scroll .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden,
+.folder-listing .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+  margin-right: 0 !important; }
+
+.pixel-quick-scroll .mCSB_inside > .mCSB_container,
+.folder-listing .mCSB_inside > .mCSB_container {
+  margin-right: 22px; }
+
+.pixel-quick-scroll .mCustomScrollbar .mCSB_scrollTools,
+.folder-listing .mCustomScrollbar .mCSB_scrollTools {
+  width: 8px; }
+
+.quick-links {
+  counter-reset: item;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .quick-links__item {
+    position: relative;
+    border-radius: 2px; }
+    .quick-links__item:after {
+      left: 22px;
+      right: 0;
+      bottom: -1px;
+      content: '';
+      height: 1px;
+      background: #f2f3f3;
+      position: absolute; }
+  .quick-links__link {
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 22px 30px 22px 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #707d84;
+    cursor: pointer;
+    height: 66px;
+    border-radius: 2px; }
+    @media (max-width: 1800px) {
+      .quick-links__link {
+        font-size: 17px; } }
+    @media (max-width: 1600px) {
+      .quick-links__link {
+        font-size: 14px; } }
+    @media (max-width: 1440px) {
+      .quick-links__link {
+        font-size: 15px; } }
+    .quick-links__link:hover {
+      background: #02abec;
+      color: #fff; }
+      .quick-links__link:hover .text,
+      .quick-links__link:hover .off-text,
+      .quick-links__link:hover .fb-step__title,
+      .quick-links__link:hover .fb-step__caption,
+      .quick-links__link:hover .quick-links__heading .ico,
+      .quick-links__link:hover .quick-links__icon {
+        color: #fff; }
+      .quick-links__link:hover .fb-step-label {
+        color: #fff;
+        background: #079bd4;
+        border-color: #079bd4; }
+      .quick-links__link:hover .fb-step__list__item:before {
+        background: #fff; }
+      .quick-links__link:hover .quick-links__item-num:after,
+      .quick-links__link:hover .quick-links__heading:after,
+      .quick-links__link:hover .quick-links__icon:after,
+      .quick-links__link:hover .quick-links__icon:before,
+      .quick-links__link:hover .fb-question-item__col__steps .fb-step:before {
+        background: #35bcf0; }
+      .quick-links__link:hover .fb-question-item__col {
+        border-color: #35bcf0; }
+  .quick-links .fb-step__caption {
+    color: #9aaab3; }
+  .quick-links__item-num {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(0, -50%); }
+    .quick-links__item-num:after {
+      right: -22px;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 1px;
+      content: '';
+      height: 45px;
+      background: #f2f3f3;
+      position: absolute; }
+    .quick-links__item-num:before {
+      content: counters(item, ".") ".";
+      counter-increment: item;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      height: 100%; }
+  .quick-links__heading {
+    float: left;
+    width: 296px;
+    position: relative;
+    padding: 0 10px 0 55px; }
+    @media (max-width: 1800px) {
+      .quick-links__heading {
+        width: 210px; } }
+    @media (max-width: 1600px) {
+      .quick-links__heading {
+        width: 180px; } }
+    @media (max-width: 1440px) {
+      .quick-links__heading {
+        width: 150px;
+        padding: 0 10px 0 45px; } }
+    .quick-links__heading:after {
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 1px;
+      content: '';
+      height: 45px;
+      background: #f2f3f3;
+      position: absolute; }
+    .quick-links__heading .ico {
+      font-size: 24px;
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 26px;
+      text-align: center;
+      color: #7394af; }
+      @media (max-width: 1440px) {
+        .quick-links__heading .ico {
+          left: 8px; } }
+  .quick-links__description {
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 0 0 30px; }
+    @media (max-width: 1800px) {
+      .quick-links__description {
+        padding: 0 0 0 20px; } }
+    .quick-links__description .text {
+      position: relative;
+      display: block;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 730px;
+      color: #9aaab3; }
+      @media (max-width: 1800px) {
+        .quick-links__description .text {
+          max-width: 550px; } }
+      @media (max-width: 1440px) {
+        .quick-links__description .text {
+          max-width: 440px; } }
+    .quick-links__description .off-text {
+      font-weight: 600;
+      font-size: 12px;
+      color: #b4c2c9; }
+      @media (min-width: 1440px) {
+        .quick-links__description .off-text {
+          font-size: 13px; } }
+      @media (min-width: 1600px) {
+        .quick-links__description .off-text {
+          font-size: 14px; } }
+  .quick-links .description-contact-info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 0 0 -14px; }
+    @media (max-width: 1800px) {
+      .quick-links .description-contact-info {
+        margin: 0 -30px 0 -14px; } }
+    .quick-links .description-contact-info .fb-question-item__col {
+      height: 36px; }
+    .quick-links .description-contact-info .fb-question-item__col:first-child {
+      padding: 0 14px;
+      width: 120px;
+      margin: 0; }
+      @media (max-width: 1440px) {
+        .quick-links .description-contact-info .fb-question-item__col:first-child {
+          width: 100px;
+          padding: 0 8px; } }
+    @media (max-width: 1440px) {
+      .quick-links .description-contact-info .fb-step-label {
+        padding: 4px 12px 6px; } }
+    .quick-links .description-contact-info .fb-question-item__col__steps {
+      width: calc(100% - 120px); }
+      @media (max-width: 1800px) {
+        .quick-links .description-contact-info .fb-question-item__col__steps {
+          width: calc(100% - 90px); } }
+      @media (max-width: 1400px) {
+        .quick-links .description-contact-info .fb-question-item__col__steps {
+          width: calc(100% - 100px); } }
+    @media (max-width: 1800px) {
+      .quick-links .description-contact-info .fb-question-item__col__steps .fb-step {
+        padding: 0 15px; } }
+    @media (max-width: 1440px) {
+      .quick-links .description-contact-info .fb-question-item__col__steps .fb-step {
+        padding: 0 8px; } }
+  .quick-links__icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    font-size: 24px;
+    padding: 0 10px;
+    transform: translate(0, -50%);
+    color: #02abec; }
+    .quick-links__icon:after, .quick-links__icon:before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      content: '';
+      background: #f2f3f3;
+      width: 1px;
+      height: 45px; }
+    .quick-links__icon:after {
+      left: auto;
+      right: 0; }
+
+.list-actions {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 30px;
+  line-height: 34px;
+  margin: 0 0 0 -15px; }
+  .list-actions__li {
+    position: relative; }
+    .list-actions__li:before {
+      position: absolute;
+      right: 0;
+      top: -8px;
+      bottom: -8px;
+      width: 1px;
+      background: #e5e9ea;
+      content: ''; }
+  .list-actions__link {
+    position: relative;
+    display: block;
+    color: #b5c4c9; }
+  .list-actions i {
+    padding: 5px 20px;
+    display: block;
+    text-align: center; }
+
+.list-actions_info {
+  margin: 0 10px 0 0; }
+
+.stats-area-slide {
+  display: none; }
+
+.stats-area {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 37px;
+  background: #f6f8f8; }
+  @media (max-width: 1440px) {
+    .stats-area {
+      padding: 20px 21px; } }
+  .stats-area .stats-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 21px;
+    margin: 0 0 25px;
+    border-bottom: 1px solid #e4e8e9; }
+  .stats-area .title-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+  .stats-area__title {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600; }
+    .stats-area__title .icon {
+      color: #b9c7cc;
+      font-size: 25px;
+      line-height: 23px;
+      margin: 0 10px 0 0; }
+  .stats-area .fuunel-video {
+    position: relative;
+    font-size: 19px;
+    line-height: 22px;
+    color: #9fa8ad;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 0 10px; }
+    .stats-area .fuunel-video .ico-video {
+      position: relative;
+      margin: 8px 0 0 10px;
+      display: block; }
+    .stats-area .fuunel-video:hover {
+      color: #02abec; }
+      .stats-area .fuunel-video:hover .icon {
+        color: #02abec; }
+  .stats-area .close-stats {
+    position: relative;
+    text-align: center;
+    color: #b5c4c9;
+    font-size: 22px; }
+    .stats-area .close-stats i {
+      display: block;
+      text-align: center; }
+    .stats-area .close-stats:hover {
+      color: #02abec; }
+
+.stats-box {
+  background: #fff;
+  border-radius: 3px;
+  padding: 17px 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  height: 100%; }
+  @media (max-width: 1800px) {
+    .stats-box {
+      font-size: 17px; } }
+  @media (max-width: 1600px) {
+    .stats-box {
+      padding: 20px;
+      font-size: 16px;
+      line-height: 20px; } }
+  @media (max-width: 1440px) {
+    .stats-box {
+      padding: 20px 7px; } }
+  .stats-box__head {
+    border-bottom: 1px solid #f2f3f4;
+    padding: 0 0 17px;
+    position: relative; }
+  .stats-box__title {
+    padding: 0 25px;
+    display: block; }
+  .stats-box__link-settings {
+    font-size: 22px;
+    line-height: 28px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+    color: #c1ced3; }
+    @media (max-width: 1440px) {
+      .stats-box__link-settings {
+        font-size: 18px;
+        line-height: 22px; } }
+    .stats-box__link-settings:hover, .stats-box__link-settings.active {
+      color: #02abec; }
+  .stats-box__body {
+    padding: 24px 0 10px; }
+  .stats-box__num {
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 800;
+    color: #304351; }
+    @media (max-width: 1440px) {
+      .stats-box__num {
+        font-size: 40px;
+        line-height: 46px; } }
+    .stats-box__num .unit {
+      font-size: 36px;
+      line-height: 40px;
+      font-weight: 400; }
+
+.list-funnels {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .list-funnels__item {
+    padding: 5px 0 5px 35px;
+    position: relative;
+    border-bottom: 1px solid #f2f3f3;
+    min-height: 73px;
+    display: flex;
+    align-items: center; }
+  .list-funnels .checkbox {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 36px; }
+  .list-funnels .input-holder {
+    display: inline-block;
+    vertical-align: middle;
+    width: 63px;
+    margin: 0 8px 0 6px; }
+
+.funnel-type .select2-container.select2-container--open .select2-selection--single, .funnel-category .select2-container.select2-container--open .select2-selection--single, .funnel-tag .select2-container.select2-container--open .select2-selection--single, .heading-bar__sorting-list .select2-container.select2-container--open .select2-selection--single, .megamenu__folder .select2-container.select2-container--open .select2-selection--single, .megamenu__category .select2-container.select2-container--open .select2-selection--single, .megamenu__tag .select2-container.select2-container--open .select2-selection--single, .select2__parent-url-prefix .select2-container.select2-container--open .select2-selection--single, .select2__theme-parent .select2-container.select2-container--open .select2-selection--single, .select2__bgPage-colormode-parent .select2-container.select2-container--open .select2-selection--single, .select2__bgForm-colormode-parent .select2-container.select2-container--open .select2-selection--single, .select2js__horizontal-bar-parent .select2-container.select2-container--open .select2-selection--single, .select2js__linkpage-option-parent .select2-container.select2-container--open .select2-selection--single, .select2__folder-parent .select2-container.select2-container--open .select2-selection--single, .select2__parent-font-size .select2-container.select2-container--open .select2-selection--single, .select2-linehight-mian-msg-parent .select2-container.select2-container--open .select2-selection--single, .select2__parent-font-type .select2-container.select2-container--open .select2-selection--single, .select2__parent-dfont-type .select2-container.select2-container--open .select2-selection--single, .select2__parent-dfont-size .select2-container.select2-container--open .select2-selection--single, .select2-linehight-dsc-msg-parent .select2-container.select2-container--open .select2-selection--single, .select2__parent-button-shape .select2-container.select2-container--open .select2-selection--single, .select2__parent-button-font-type .select2-container.select2-container--open .select2-selection--single, .select2__parent-questions-font-type .select2-container.select2-container--open .select2-selection--single, .select2__parent-dsc-font-type .select2-container.select2-container--open .select2-selection--single, .select2__menufont-type-parent .select2-container.select2-container--open .select2-selection--single, .select2__parent-questions-font-size .select2-container.select2-container--open .select2-selection--single, .select2__parent-dsc-font-size .select2-container.select2-container--open .select2-selection--single, .select2-linehight-question-parent .select2-container.select2-container--open .select2-selection--single, .select2-linehight-answer-parent .select2-container.select2-container--open .select2-selection--single, .select2js__slct-question-parent .select2-container.select2-container--open .select2-selection--single, .select2__zipfont-type-parent .select2-container.select2-container--open .select2-selection--single, .select2__sliderfont-type-parent .select2-container.select2-container--open .select2-selection--single, .select2__txtfieldfont-type-parent .select2-container.select2-container--open .select2-selection--single, .select2__dropdownfont-type-parent .select2-container.select2-container--open .select2-selection--single, .select2__contact-infofont-type-parent .select2-container.select2-container--open .select2-selection--single, .select2js__cell-carrier-parent .select2-container.select2-container--open .select2-selection--single, .select2js__codetype-parent .select2-container.select2-container--open .select2-selection--single, .select2js__pixel_codetype-parent .select2-container.select2-container--open .select2-selection--single, .select2js__pixelplacement-parent .select2-container.select2-container--open .select2-selection--single, .select2__loc-parent .select2-container.select2-container--open .select2-selection--single, .select2js__trackoption-parent .select2-container.select2-container--open .select2-selection--single, .select2js__time-parent .select2-container.select2-container--open .select2-selection--single, .select2top-lvl-domain-parent .select2-container.select2-container--open .select2-selection--single, #funnel-search-by-zapier-parent .select2-container.select2-container--open .select2-selection--single, .funnel-search__category .select2-container.select2-container--open .select2-selection--single, .select2__bgPage-repeat-parent .select2-container.select2-container--open .select2-selection--single, .select2__bgPage-postion-parent .select2-container.select2-container--open .select2-selection--single, .select2__bgPage-cover-parent .select2-container.select2-container--open .select2-selection--single, .select2js__linkpage-option-parent .select2-container.select2-container--open .select2-selection--single, .select2__datatype-parent .select2-container.select2-container--open .select2-selection--single, .subject-select-parent01 .select2-container.select2-container--open .select2-selection--single, .subject-select-parent02 .select2-container.select2-container--open .select2-selection--single, .select2__parent-cell-carrier .select2-container.select2-container--open .select2-selection--single, .select2__parent-state .select2-container.select2-container--open .select2-selection--single, .fb-select-wrap-1 .select2-container.select2-container--open .select2-selection--single, .fb-select-wrap-2 .select2-container.select2-container--open .select2-selection--single, .fb-select-wrap-3 .select2-container.select2-container--open .select2-selection--single, .fb-select-wrap-4 .select2-container.select2-container--open .select2-selection--single, .fb-select-wrap-5 .select2-container.select2-container--open .select2-selection--single, .provider-select-parent .select2-container.select2-container--open .select2-selection--single, .submsg-dynamic-anwser-parent .select2-container.select2-container--open .select2-selection--single, .msgtype-dynamic-anwser-parent .select2-container.select2-container--open .select2-selection--single, .dynamic-anwser-parent .select2-container.select2-container--open .select2-selection--single, .fb-select2-group_url .select2-container.select2-container--open .select2-selection--single, .select2js__transition-duration-parent .select2-container.select2-container--open .select2-selection--single, .select2js__positioning-parent .select2-container.select2-container--open .select2-selection--single, .select2js__size-parent .select2-container.select2-container--open .select2-selection--single, .select2js__lightbox-mode-parent .select2-container.select2-container--open .select2-selection--single, .select2js__height-unit-parent .select2-container.select2-container--open .select2-selection--single, .select2js__width-unit-parent .select2-container.select2-container--open .select2-selection--single, .select2js__open-popun-parent .select2-container.select2-container--open .select2-selection--single, .select2js__folder-parent .select2-container.select2-container--open .select2-selection--single, .select2js__lvl-domain-parent .select2-container.select2-container--open .select2-selection--single, .select2__device-type-parent .select2-container.select2-container--open .select2-selection--single, .select2js__sec-protocol-parent .select2-container.select2-container--open .select2-selection--single, .select2js__question-type-parent .select2-container.select2-container--open .select2-selection--single, .select2-parent .select2-container.select2-container--open .select2-selection--single, .select2js__transition-type-parent .select2-container.select2-container--open .select2-selection--single, .select2__parent-mobile-font-type .select2-container.select2-container--open .select2-selection--single, .select2__parent-email-font-type .select2-container.select2-container--open .select2-selection--single, .select2__parent-phone-font-type .select2-container.select2-container--open .select2-selection--single, .select2__parent-cta-font-type .select2-container.select2-container--open .select2-selection--single, .select2__parent-company-font-type .select2-container.select2-container--open .select2-selection--single, .fb-select_unit-wrap .select2-container.select2-container--open .select2-selection--single, .fb-select_by-wrap .select2-container.select2-container--open .select2-selection--single, .fb-select_start-wrap .select2-container.select2-container--open .select2-selection--single, .fb-select_start-wrap-1 .select2-container.select2-container--open .select2-selection--single, .fb-select_by-wrap-1 .select2-container.select2-container--open .select2-selection--single, .fb-select_unit-wrap-1 .select2-container.select2-container--open .select2-selection--single, .icon-postion__select2js-parent .select2-container.select2-container--open .select2-selection--single, .alphabet__sorting-parent .select2-container.select2-container--open .select2-selection--single, .category__sorting-parent .select2-container.select2-container--open .select2-selection--single, .zip-input-icon-parent .select2-container.select2-container--open .select2-selection--single, .input-message-parent .select2-container.select2-container--open .select2-selection--single, .menu-input-icon-parent .select2-container.select2-container--open .select2-selection--single, .message-parent-menu .select2-container.select2-container--open .select2-selection--single, .num-input-icon-parent .select2-container.select2-container--open .select2-selection--single, .slider-parent-menu .select2-container.select2-container--open .select2-selection--single, .non-slider-parent-menu .select2-container.select2-container--open .select2-selection--single, .non-num-input-icon-parent .select2-container.select2-container--open .select2-selection--single,
+.standard-question-option-parent-group .select2-container.select2-container--open .select2-selection--single {
+  background-color: #fff; }
+
+.funnel-type .select2-container.select2-container--open .select2-dropdown--below, .funnel-category .select2-container.select2-container--open .select2-dropdown--below, .funnel-tag .select2-container.select2-container--open .select2-dropdown--below, .heading-bar__sorting-list .select2-container.select2-container--open .select2-dropdown--below, .megamenu__folder .select2-container.select2-container--open .select2-dropdown--below, .megamenu__category .select2-container.select2-container--open .select2-dropdown--below, .megamenu__tag .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-url-prefix .select2-container.select2-container--open .select2-dropdown--below, .select2__theme-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__bgPage-colormode-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__bgForm-colormode-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__horizontal-bar-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__linkpage-option-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__folder-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-font-size .select2-container.select2-container--open .select2-dropdown--below, .select2-linehight-mian-msg-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-font-type .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-dfont-type .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-dfont-size .select2-container.select2-container--open .select2-dropdown--below, .select2-linehight-dsc-msg-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-button-shape .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-button-font-type .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-questions-font-type .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-dsc-font-type .select2-container.select2-container--open .select2-dropdown--below, .select2__menufont-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-questions-font-size .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-dsc-font-size .select2-container.select2-container--open .select2-dropdown--below, .select2-linehight-question-parent .select2-container.select2-container--open .select2-dropdown--below, .select2-linehight-answer-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__slct-question-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__zipfont-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__sliderfont-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__txtfieldfont-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__dropdownfont-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__contact-infofont-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__cell-carrier-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__codetype-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__pixel_codetype-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__pixelplacement-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__loc-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__trackoption-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__time-parent .select2-container.select2-container--open .select2-dropdown--below, .select2top-lvl-domain-parent .select2-container.select2-container--open .select2-dropdown--below, #funnel-search-by-zapier-parent .select2-container.select2-container--open .select2-dropdown--below, .funnel-search__category .select2-container.select2-container--open .select2-dropdown--below, .select2__bgPage-repeat-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__bgPage-postion-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__bgPage-cover-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__linkpage-option-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__datatype-parent .select2-container.select2-container--open .select2-dropdown--below, .subject-select-parent01 .select2-container.select2-container--open .select2-dropdown--below, .subject-select-parent02 .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-cell-carrier .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-state .select2-container.select2-container--open .select2-dropdown--below, .fb-select-wrap-1 .select2-container.select2-container--open .select2-dropdown--below, .fb-select-wrap-2 .select2-container.select2-container--open .select2-dropdown--below, .fb-select-wrap-3 .select2-container.select2-container--open .select2-dropdown--below, .fb-select-wrap-4 .select2-container.select2-container--open .select2-dropdown--below, .fb-select-wrap-5 .select2-container.select2-container--open .select2-dropdown--below, .provider-select-parent .select2-container.select2-container--open .select2-dropdown--below, .submsg-dynamic-anwser-parent .select2-container.select2-container--open .select2-dropdown--below, .msgtype-dynamic-anwser-parent .select2-container.select2-container--open .select2-dropdown--below, .dynamic-anwser-parent .select2-container.select2-container--open .select2-dropdown--below, .fb-select2-group_url .select2-container.select2-container--open .select2-dropdown--below, .select2js__transition-duration-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__positioning-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__size-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__lightbox-mode-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__height-unit-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__width-unit-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__open-popun-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__folder-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__lvl-domain-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__device-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__sec-protocol-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__question-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2-parent .select2-container.select2-container--open .select2-dropdown--below, .select2js__transition-type-parent .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-mobile-font-type .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-email-font-type .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-phone-font-type .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-cta-font-type .select2-container.select2-container--open .select2-dropdown--below, .select2__parent-company-font-type .select2-container.select2-container--open .select2-dropdown--below, .fb-select_unit-wrap .select2-container.select2-container--open .select2-dropdown--below, .fb-select_by-wrap .select2-container.select2-container--open .select2-dropdown--below, .fb-select_start-wrap .select2-container.select2-container--open .select2-dropdown--below, .fb-select_start-wrap-1 .select2-container.select2-container--open .select2-dropdown--below, .fb-select_by-wrap-1 .select2-container.select2-container--open .select2-dropdown--below, .fb-select_unit-wrap-1 .select2-container.select2-container--open .select2-dropdown--below, .icon-postion__select2js-parent .select2-container.select2-container--open .select2-dropdown--below, .alphabet__sorting-parent .select2-container.select2-container--open .select2-dropdown--below, .category__sorting-parent .select2-container.select2-container--open .select2-dropdown--below, .zip-input-icon-parent .select2-container.select2-container--open .select2-dropdown--below, .input-message-parent .select2-container.select2-container--open .select2-dropdown--below, .menu-input-icon-parent .select2-container.select2-container--open .select2-dropdown--below, .message-parent-menu .select2-container.select2-container--open .select2-dropdown--below, .num-input-icon-parent .select2-container.select2-container--open .select2-dropdown--below, .slider-parent-menu .select2-container.select2-container--open .select2-dropdown--below, .non-slider-parent-menu .select2-container.select2-container--open .select2-dropdown--below, .non-num-input-icon-parent .select2-container.select2-container--open .select2-dropdown--below,
+.standard-question-option-parent-group .select2-container.select2-container--open .select2-dropdown--below {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.funnel-type .select2-container.select2-container--open .select2-dropdown--above, .funnel-category .select2-container.select2-container--open .select2-dropdown--above, .funnel-tag .select2-container.select2-container--open .select2-dropdown--above, .heading-bar__sorting-list .select2-container.select2-container--open .select2-dropdown--above, .megamenu__folder .select2-container.select2-container--open .select2-dropdown--above, .megamenu__category .select2-container.select2-container--open .select2-dropdown--above, .megamenu__tag .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-url-prefix .select2-container.select2-container--open .select2-dropdown--above, .select2__theme-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__bgPage-colormode-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__bgForm-colormode-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__horizontal-bar-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__linkpage-option-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__folder-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-font-size .select2-container.select2-container--open .select2-dropdown--above, .select2-linehight-mian-msg-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-font-type .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-dfont-type .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-dfont-size .select2-container.select2-container--open .select2-dropdown--above, .select2-linehight-dsc-msg-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-button-shape .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-button-font-type .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-questions-font-type .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-dsc-font-type .select2-container.select2-container--open .select2-dropdown--above, .select2__menufont-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-questions-font-size .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-dsc-font-size .select2-container.select2-container--open .select2-dropdown--above, .select2-linehight-question-parent .select2-container.select2-container--open .select2-dropdown--above, .select2-linehight-answer-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__slct-question-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__zipfont-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__sliderfont-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__txtfieldfont-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__dropdownfont-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__contact-infofont-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__cell-carrier-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__codetype-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__pixel_codetype-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__pixelplacement-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__loc-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__trackoption-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__time-parent .select2-container.select2-container--open .select2-dropdown--above, .select2top-lvl-domain-parent .select2-container.select2-container--open .select2-dropdown--above, #funnel-search-by-zapier-parent .select2-container.select2-container--open .select2-dropdown--above, .funnel-search__category .select2-container.select2-container--open .select2-dropdown--above, .select2__bgPage-repeat-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__bgPage-postion-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__bgPage-cover-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__linkpage-option-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__datatype-parent .select2-container.select2-container--open .select2-dropdown--above, .subject-select-parent01 .select2-container.select2-container--open .select2-dropdown--above, .subject-select-parent02 .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-cell-carrier .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-state .select2-container.select2-container--open .select2-dropdown--above, .fb-select-wrap-1 .select2-container.select2-container--open .select2-dropdown--above, .fb-select-wrap-2 .select2-container.select2-container--open .select2-dropdown--above, .fb-select-wrap-3 .select2-container.select2-container--open .select2-dropdown--above, .fb-select-wrap-4 .select2-container.select2-container--open .select2-dropdown--above, .fb-select-wrap-5 .select2-container.select2-container--open .select2-dropdown--above, .provider-select-parent .select2-container.select2-container--open .select2-dropdown--above, .submsg-dynamic-anwser-parent .select2-container.select2-container--open .select2-dropdown--above, .msgtype-dynamic-anwser-parent .select2-container.select2-container--open .select2-dropdown--above, .dynamic-anwser-parent .select2-container.select2-container--open .select2-dropdown--above, .fb-select2-group_url .select2-container.select2-container--open .select2-dropdown--above, .select2js__transition-duration-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__positioning-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__size-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__lightbox-mode-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__height-unit-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__width-unit-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__open-popun-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__folder-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__lvl-domain-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__device-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__sec-protocol-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__question-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2-parent .select2-container.select2-container--open .select2-dropdown--above, .select2js__transition-type-parent .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-mobile-font-type .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-email-font-type .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-phone-font-type .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-cta-font-type .select2-container.select2-container--open .select2-dropdown--above, .select2__parent-company-font-type .select2-container.select2-container--open .select2-dropdown--above, .fb-select_unit-wrap .select2-container.select2-container--open .select2-dropdown--above, .fb-select_by-wrap .select2-container.select2-container--open .select2-dropdown--above, .fb-select_start-wrap .select2-container.select2-container--open .select2-dropdown--above, .fb-select_start-wrap-1 .select2-container.select2-container--open .select2-dropdown--above, .fb-select_by-wrap-1 .select2-container.select2-container--open .select2-dropdown--above, .fb-select_unit-wrap-1 .select2-container.select2-container--open .select2-dropdown--above, .icon-postion__select2js-parent .select2-container.select2-container--open .select2-dropdown--above, .alphabet__sorting-parent .select2-container.select2-container--open .select2-dropdown--above, .category__sorting-parent .select2-container.select2-container--open .select2-dropdown--above, .zip-input-icon-parent .select2-container.select2-container--open .select2-dropdown--above, .input-message-parent .select2-container.select2-container--open .select2-dropdown--above, .menu-input-icon-parent .select2-container.select2-container--open .select2-dropdown--above, .message-parent-menu .select2-container.select2-container--open .select2-dropdown--above, .num-input-icon-parent .select2-container.select2-container--open .select2-dropdown--above, .slider-parent-menu .select2-container.select2-container--open .select2-dropdown--above, .non-slider-parent-menu .select2-container.select2-container--open .select2-dropdown--above, .non-num-input-icon-parent .select2-container.select2-container--open .select2-dropdown--above,
+.standard-question-option-parent-group .select2-container.select2-container--open .select2-dropdown--above {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+.funnel-type .select2-dropdown, .funnel-category .select2-dropdown, .funnel-tag .select2-dropdown, .heading-bar__sorting-list .select2-dropdown, .megamenu__folder .select2-dropdown, .megamenu__category .select2-dropdown, .megamenu__tag .select2-dropdown, .select2__parent-url-prefix .select2-dropdown, .select2__theme-parent .select2-dropdown, .select2__bgPage-colormode-parent .select2-dropdown, .select2__bgForm-colormode-parent .select2-dropdown, .select2js__horizontal-bar-parent .select2-dropdown, .select2js__linkpage-option-parent .select2-dropdown, .select2__folder-parent .select2-dropdown, .select2__parent-font-size .select2-dropdown, .select2-linehight-mian-msg-parent .select2-dropdown, .select2__parent-font-type .select2-dropdown, .select2__parent-dfont-type .select2-dropdown, .select2__parent-dfont-size .select2-dropdown, .select2-linehight-dsc-msg-parent .select2-dropdown, .select2__parent-button-shape .select2-dropdown, .select2__parent-button-font-type .select2-dropdown, .select2__parent-questions-font-type .select2-dropdown, .select2__parent-dsc-font-type .select2-dropdown, .select2__menufont-type-parent .select2-dropdown, .select2__parent-questions-font-size .select2-dropdown, .select2__parent-dsc-font-size .select2-dropdown, .select2-linehight-question-parent .select2-dropdown, .select2-linehight-answer-parent .select2-dropdown, .select2js__slct-question-parent .select2-dropdown, .select2__zipfont-type-parent .select2-dropdown, .select2__sliderfont-type-parent .select2-dropdown, .select2__txtfieldfont-type-parent .select2-dropdown, .select2__dropdownfont-type-parent .select2-dropdown, .select2__contact-infofont-type-parent .select2-dropdown, .select2js__cell-carrier-parent .select2-dropdown, .select2js__codetype-parent .select2-dropdown, .select2js__pixel_codetype-parent .select2-dropdown, .select2js__pixelplacement-parent .select2-dropdown, .select2__loc-parent .select2-dropdown, .select2js__trackoption-parent .select2-dropdown, .select2js__time-parent .select2-dropdown, .select2top-lvl-domain-parent .select2-dropdown, #funnel-search-by-zapier-parent .select2-dropdown, .funnel-search__category .select2-dropdown, .select2__bgPage-repeat-parent .select2-dropdown, .select2__bgPage-postion-parent .select2-dropdown, .select2__bgPage-cover-parent .select2-dropdown, .select2js__linkpage-option-parent .select2-dropdown, .select2__datatype-parent .select2-dropdown, .subject-select-parent01 .select2-dropdown, .subject-select-parent02 .select2-dropdown, .select2__parent-cell-carrier .select2-dropdown, .select2__parent-state .select2-dropdown, .fb-select-wrap-1 .select2-dropdown, .fb-select-wrap-2 .select2-dropdown, .fb-select-wrap-3 .select2-dropdown, .fb-select-wrap-4 .select2-dropdown, .fb-select-wrap-5 .select2-dropdown, .provider-select-parent .select2-dropdown, .submsg-dynamic-anwser-parent .select2-dropdown, .msgtype-dynamic-anwser-parent .select2-dropdown, .dynamic-anwser-parent .select2-dropdown, .fb-select2-group_url .select2-dropdown, .select2js__transition-duration-parent .select2-dropdown, .select2js__positioning-parent .select2-dropdown, .select2js__size-parent .select2-dropdown, .select2js__lightbox-mode-parent .select2-dropdown, .select2js__height-unit-parent .select2-dropdown, .select2js__width-unit-parent .select2-dropdown, .select2js__open-popun-parent .select2-dropdown, .select2js__folder-parent .select2-dropdown, .select2js__lvl-domain-parent .select2-dropdown, .select2__device-type-parent .select2-dropdown, .select2js__sec-protocol-parent .select2-dropdown, .select2js__question-type-parent .select2-dropdown, .select2-parent .select2-dropdown, .select2js__transition-type-parent .select2-dropdown, .select2__parent-mobile-font-type .select2-dropdown, .select2__parent-email-font-type .select2-dropdown, .select2__parent-phone-font-type .select2-dropdown, .select2__parent-cta-font-type .select2-dropdown, .select2__parent-company-font-type .select2-dropdown, .fb-select_unit-wrap .select2-dropdown, .fb-select_by-wrap .select2-dropdown, .fb-select_start-wrap .select2-dropdown, .fb-select_start-wrap-1 .select2-dropdown, .fb-select_by-wrap-1 .select2-dropdown, .fb-select_unit-wrap-1 .select2-dropdown, .icon-postion__select2js-parent .select2-dropdown, .alphabet__sorting-parent .select2-dropdown, .category__sorting-parent .select2-dropdown, .zip-input-icon-parent .select2-dropdown, .input-message-parent .select2-dropdown, .menu-input-icon-parent .select2-dropdown, .message-parent-menu .select2-dropdown, .num-input-icon-parent .select2-dropdown, .slider-parent-menu .select2-dropdown, .non-slider-parent-menu .select2-dropdown, .non-num-input-icon-parent .select2-dropdown,
+.standard-question-option-parent-group .select2-dropdown {
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  z-index: 999; }
+  .funnel-type .select2-dropdown.select2-dropdown--below, .funnel-category .select2-dropdown.select2-dropdown--below, .funnel-tag .select2-dropdown.select2-dropdown--below, .heading-bar__sorting-list .select2-dropdown.select2-dropdown--below, .megamenu__folder .select2-dropdown.select2-dropdown--below, .megamenu__category .select2-dropdown.select2-dropdown--below, .megamenu__tag .select2-dropdown.select2-dropdown--below, .select2__parent-url-prefix .select2-dropdown.select2-dropdown--below, .select2__theme-parent .select2-dropdown.select2-dropdown--below, .select2__bgPage-colormode-parent .select2-dropdown.select2-dropdown--below, .select2__bgForm-colormode-parent .select2-dropdown.select2-dropdown--below, .select2js__horizontal-bar-parent .select2-dropdown.select2-dropdown--below, .select2js__linkpage-option-parent .select2-dropdown.select2-dropdown--below, .select2__folder-parent .select2-dropdown.select2-dropdown--below, .select2__parent-font-size .select2-dropdown.select2-dropdown--below, .select2-linehight-mian-msg-parent .select2-dropdown.select2-dropdown--below, .select2__parent-font-type .select2-dropdown.select2-dropdown--below, .select2__parent-dfont-type .select2-dropdown.select2-dropdown--below, .select2__parent-dfont-size .select2-dropdown.select2-dropdown--below, .select2-linehight-dsc-msg-parent .select2-dropdown.select2-dropdown--below, .select2__parent-button-shape .select2-dropdown.select2-dropdown--below, .select2__parent-button-font-type .select2-dropdown.select2-dropdown--below, .select2__parent-questions-font-type .select2-dropdown.select2-dropdown--below, .select2__parent-dsc-font-type .select2-dropdown.select2-dropdown--below, .select2__menufont-type-parent .select2-dropdown.select2-dropdown--below, .select2__parent-questions-font-size .select2-dropdown.select2-dropdown--below, .select2__parent-dsc-font-size .select2-dropdown.select2-dropdown--below, .select2-linehight-question-parent .select2-dropdown.select2-dropdown--below, .select2-linehight-answer-parent .select2-dropdown.select2-dropdown--below, .select2js__slct-question-parent .select2-dropdown.select2-dropdown--below, .select2__zipfont-type-parent .select2-dropdown.select2-dropdown--below, .select2__sliderfont-type-parent .select2-dropdown.select2-dropdown--below, .select2__txtfieldfont-type-parent .select2-dropdown.select2-dropdown--below, .select2__dropdownfont-type-parent .select2-dropdown.select2-dropdown--below, .select2__contact-infofont-type-parent .select2-dropdown.select2-dropdown--below, .select2js__cell-carrier-parent .select2-dropdown.select2-dropdown--below, .select2js__codetype-parent .select2-dropdown.select2-dropdown--below, .select2js__pixel_codetype-parent .select2-dropdown.select2-dropdown--below, .select2js__pixelplacement-parent .select2-dropdown.select2-dropdown--below, .select2__loc-parent .select2-dropdown.select2-dropdown--below, .select2js__trackoption-parent .select2-dropdown.select2-dropdown--below, .select2js__time-parent .select2-dropdown.select2-dropdown--below, .select2top-lvl-domain-parent .select2-dropdown.select2-dropdown--below, #funnel-search-by-zapier-parent .select2-dropdown.select2-dropdown--below, .funnel-search__category .select2-dropdown.select2-dropdown--below, .select2__bgPage-repeat-parent .select2-dropdown.select2-dropdown--below, .select2__bgPage-postion-parent .select2-dropdown.select2-dropdown--below, .select2__bgPage-cover-parent .select2-dropdown.select2-dropdown--below, .select2js__linkpage-option-parent .select2-dropdown.select2-dropdown--below, .select2__datatype-parent .select2-dropdown.select2-dropdown--below, .subject-select-parent01 .select2-dropdown.select2-dropdown--below, .subject-select-parent02 .select2-dropdown.select2-dropdown--below, .select2__parent-cell-carrier .select2-dropdown.select2-dropdown--below, .select2__parent-state .select2-dropdown.select2-dropdown--below, .fb-select-wrap-1 .select2-dropdown.select2-dropdown--below, .fb-select-wrap-2 .select2-dropdown.select2-dropdown--below, .fb-select-wrap-3 .select2-dropdown.select2-dropdown--below, .fb-select-wrap-4 .select2-dropdown.select2-dropdown--below, .fb-select-wrap-5 .select2-dropdown.select2-dropdown--below, .provider-select-parent .select2-dropdown.select2-dropdown--below, .submsg-dynamic-anwser-parent .select2-dropdown.select2-dropdown--below, .msgtype-dynamic-anwser-parent .select2-dropdown.select2-dropdown--below, .dynamic-anwser-parent .select2-dropdown.select2-dropdown--below, .fb-select2-group_url .select2-dropdown.select2-dropdown--below, .select2js__transition-duration-parent .select2-dropdown.select2-dropdown--below, .select2js__positioning-parent .select2-dropdown.select2-dropdown--below, .select2js__size-parent .select2-dropdown.select2-dropdown--below, .select2js__lightbox-mode-parent .select2-dropdown.select2-dropdown--below, .select2js__height-unit-parent .select2-dropdown.select2-dropdown--below, .select2js__width-unit-parent .select2-dropdown.select2-dropdown--below, .select2js__open-popun-parent .select2-dropdown.select2-dropdown--below, .select2js__folder-parent .select2-dropdown.select2-dropdown--below, .select2js__lvl-domain-parent .select2-dropdown.select2-dropdown--below, .select2__device-type-parent .select2-dropdown.select2-dropdown--below, .select2js__sec-protocol-parent .select2-dropdown.select2-dropdown--below, .select2js__question-type-parent .select2-dropdown.select2-dropdown--below, .select2-parent .select2-dropdown.select2-dropdown--below, .select2js__transition-type-parent .select2-dropdown.select2-dropdown--below, .select2__parent-mobile-font-type .select2-dropdown.select2-dropdown--below, .select2__parent-email-font-type .select2-dropdown.select2-dropdown--below, .select2__parent-phone-font-type .select2-dropdown.select2-dropdown--below, .select2__parent-cta-font-type .select2-dropdown.select2-dropdown--below, .select2__parent-company-font-type .select2-dropdown.select2-dropdown--below, .fb-select_unit-wrap .select2-dropdown.select2-dropdown--below, .fb-select_by-wrap .select2-dropdown.select2-dropdown--below, .fb-select_start-wrap .select2-dropdown.select2-dropdown--below, .fb-select_start-wrap-1 .select2-dropdown.select2-dropdown--below, .fb-select_by-wrap-1 .select2-dropdown.select2-dropdown--below, .fb-select_unit-wrap-1 .select2-dropdown.select2-dropdown--below, .icon-postion__select2js-parent .select2-dropdown.select2-dropdown--below, .alphabet__sorting-parent .select2-dropdown.select2-dropdown--below, .category__sorting-parent .select2-dropdown.select2-dropdown--below, .zip-input-icon-parent .select2-dropdown.select2-dropdown--below, .input-message-parent .select2-dropdown.select2-dropdown--below, .menu-input-icon-parent .select2-dropdown.select2-dropdown--below, .message-parent-menu .select2-dropdown.select2-dropdown--below, .num-input-icon-parent .select2-dropdown.select2-dropdown--below, .slider-parent-menu .select2-dropdown.select2-dropdown--below, .non-slider-parent-menu .select2-dropdown.select2-dropdown--below, .non-num-input-icon-parent .select2-dropdown.select2-dropdown--below,
+  .standard-question-option-parent-group .select2-dropdown.select2-dropdown--below {
+    top: -50px;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0; }
+  .funnel-type .select2-dropdown.select2-dropdown--above, .funnel-category .select2-dropdown.select2-dropdown--above, .funnel-tag .select2-dropdown.select2-dropdown--above, .heading-bar__sorting-list .select2-dropdown.select2-dropdown--above, .megamenu__folder .select2-dropdown.select2-dropdown--above, .megamenu__category .select2-dropdown.select2-dropdown--above, .megamenu__tag .select2-dropdown.select2-dropdown--above, .select2__parent-url-prefix .select2-dropdown.select2-dropdown--above, .select2__theme-parent .select2-dropdown.select2-dropdown--above, .select2__bgPage-colormode-parent .select2-dropdown.select2-dropdown--above, .select2__bgForm-colormode-parent .select2-dropdown.select2-dropdown--above, .select2js__horizontal-bar-parent .select2-dropdown.select2-dropdown--above, .select2js__linkpage-option-parent .select2-dropdown.select2-dropdown--above, .select2__folder-parent .select2-dropdown.select2-dropdown--above, .select2__parent-font-size .select2-dropdown.select2-dropdown--above, .select2-linehight-mian-msg-parent .select2-dropdown.select2-dropdown--above, .select2__parent-font-type .select2-dropdown.select2-dropdown--above, .select2__parent-dfont-type .select2-dropdown.select2-dropdown--above, .select2__parent-dfont-size .select2-dropdown.select2-dropdown--above, .select2-linehight-dsc-msg-parent .select2-dropdown.select2-dropdown--above, .select2__parent-button-shape .select2-dropdown.select2-dropdown--above, .select2__parent-button-font-type .select2-dropdown.select2-dropdown--above, .select2__parent-questions-font-type .select2-dropdown.select2-dropdown--above, .select2__parent-dsc-font-type .select2-dropdown.select2-dropdown--above, .select2__menufont-type-parent .select2-dropdown.select2-dropdown--above, .select2__parent-questions-font-size .select2-dropdown.select2-dropdown--above, .select2__parent-dsc-font-size .select2-dropdown.select2-dropdown--above, .select2-linehight-question-parent .select2-dropdown.select2-dropdown--above, .select2-linehight-answer-parent .select2-dropdown.select2-dropdown--above, .select2js__slct-question-parent .select2-dropdown.select2-dropdown--above, .select2__zipfont-type-parent .select2-dropdown.select2-dropdown--above, .select2__sliderfont-type-parent .select2-dropdown.select2-dropdown--above, .select2__txtfieldfont-type-parent .select2-dropdown.select2-dropdown--above, .select2__dropdownfont-type-parent .select2-dropdown.select2-dropdown--above, .select2__contact-infofont-type-parent .select2-dropdown.select2-dropdown--above, .select2js__cell-carrier-parent .select2-dropdown.select2-dropdown--above, .select2js__codetype-parent .select2-dropdown.select2-dropdown--above, .select2js__pixel_codetype-parent .select2-dropdown.select2-dropdown--above, .select2js__pixelplacement-parent .select2-dropdown.select2-dropdown--above, .select2__loc-parent .select2-dropdown.select2-dropdown--above, .select2js__trackoption-parent .select2-dropdown.select2-dropdown--above, .select2js__time-parent .select2-dropdown.select2-dropdown--above, .select2top-lvl-domain-parent .select2-dropdown.select2-dropdown--above, #funnel-search-by-zapier-parent .select2-dropdown.select2-dropdown--above, .funnel-search__category .select2-dropdown.select2-dropdown--above, .select2__bgPage-repeat-parent .select2-dropdown.select2-dropdown--above, .select2__bgPage-postion-parent .select2-dropdown.select2-dropdown--above, .select2__bgPage-cover-parent .select2-dropdown.select2-dropdown--above, .select2js__linkpage-option-parent .select2-dropdown.select2-dropdown--above, .select2__datatype-parent .select2-dropdown.select2-dropdown--above, .subject-select-parent01 .select2-dropdown.select2-dropdown--above, .subject-select-parent02 .select2-dropdown.select2-dropdown--above, .select2__parent-cell-carrier .select2-dropdown.select2-dropdown--above, .select2__parent-state .select2-dropdown.select2-dropdown--above, .fb-select-wrap-1 .select2-dropdown.select2-dropdown--above, .fb-select-wrap-2 .select2-dropdown.select2-dropdown--above, .fb-select-wrap-3 .select2-dropdown.select2-dropdown--above, .fb-select-wrap-4 .select2-dropdown.select2-dropdown--above, .fb-select-wrap-5 .select2-dropdown.select2-dropdown--above, .provider-select-parent .select2-dropdown.select2-dropdown--above, .submsg-dynamic-anwser-parent .select2-dropdown.select2-dropdown--above, .msgtype-dynamic-anwser-parent .select2-dropdown.select2-dropdown--above, .dynamic-anwser-parent .select2-dropdown.select2-dropdown--above, .fb-select2-group_url .select2-dropdown.select2-dropdown--above, .select2js__transition-duration-parent .select2-dropdown.select2-dropdown--above, .select2js__positioning-parent .select2-dropdown.select2-dropdown--above, .select2js__size-parent .select2-dropdown.select2-dropdown--above, .select2js__lightbox-mode-parent .select2-dropdown.select2-dropdown--above, .select2js__height-unit-parent .select2-dropdown.select2-dropdown--above, .select2js__width-unit-parent .select2-dropdown.select2-dropdown--above, .select2js__open-popun-parent .select2-dropdown.select2-dropdown--above, .select2js__folder-parent .select2-dropdown.select2-dropdown--above, .select2js__lvl-domain-parent .select2-dropdown.select2-dropdown--above, .select2__device-type-parent .select2-dropdown.select2-dropdown--above, .select2js__sec-protocol-parent .select2-dropdown.select2-dropdown--above, .select2js__question-type-parent .select2-dropdown.select2-dropdown--above, .select2-parent .select2-dropdown.select2-dropdown--above, .select2js__transition-type-parent .select2-dropdown.select2-dropdown--above, .select2__parent-mobile-font-type .select2-dropdown.select2-dropdown--above, .select2__parent-email-font-type .select2-dropdown.select2-dropdown--above, .select2__parent-phone-font-type .select2-dropdown.select2-dropdown--above, .select2__parent-cta-font-type .select2-dropdown.select2-dropdown--above, .select2__parent-company-font-type .select2-dropdown.select2-dropdown--above, .fb-select_unit-wrap .select2-dropdown.select2-dropdown--above, .fb-select_by-wrap .select2-dropdown.select2-dropdown--above, .fb-select_start-wrap .select2-dropdown.select2-dropdown--above, .fb-select_start-wrap-1 .select2-dropdown.select2-dropdown--above, .fb-select_by-wrap-1 .select2-dropdown.select2-dropdown--above, .fb-select_unit-wrap-1 .select2-dropdown.select2-dropdown--above, .icon-postion__select2js-parent .select2-dropdown.select2-dropdown--above, .alphabet__sorting-parent .select2-dropdown.select2-dropdown--above, .category__sorting-parent .select2-dropdown.select2-dropdown--above, .zip-input-icon-parent .select2-dropdown.select2-dropdown--above, .input-message-parent .select2-dropdown.select2-dropdown--above, .menu-input-icon-parent .select2-dropdown.select2-dropdown--above, .message-parent-menu .select2-dropdown.select2-dropdown--above, .num-input-icon-parent .select2-dropdown.select2-dropdown--above, .slider-parent-menu .select2-dropdown.select2-dropdown--above, .non-slider-parent-menu .select2-dropdown.select2-dropdown--above, .non-num-input-icon-parent .select2-dropdown.select2-dropdown--above,
+  .standard-question-option-parent-group .select2-dropdown.select2-dropdown--above {
+    top: 48px;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%; }
+  .funnel-type .select2-dropdown .nicescroll-rails-vr, .funnel-category .select2-dropdown .nicescroll-rails-vr, .funnel-tag .select2-dropdown .nicescroll-rails-vr, .heading-bar__sorting-list .select2-dropdown .nicescroll-rails-vr, .megamenu__folder .select2-dropdown .nicescroll-rails-vr, .megamenu__category .select2-dropdown .nicescroll-rails-vr, .megamenu__tag .select2-dropdown .nicescroll-rails-vr, .select2__parent-url-prefix .select2-dropdown .nicescroll-rails-vr, .select2__theme-parent .select2-dropdown .nicescroll-rails-vr, .select2__bgPage-colormode-parent .select2-dropdown .nicescroll-rails-vr, .select2__bgForm-colormode-parent .select2-dropdown .nicescroll-rails-vr, .select2js__horizontal-bar-parent .select2-dropdown .nicescroll-rails-vr, .select2js__linkpage-option-parent .select2-dropdown .nicescroll-rails-vr, .select2__folder-parent .select2-dropdown .nicescroll-rails-vr, .select2__parent-font-size .select2-dropdown .nicescroll-rails-vr, .select2-linehight-mian-msg-parent .select2-dropdown .nicescroll-rails-vr, .select2__parent-font-type .select2-dropdown .nicescroll-rails-vr, .select2__parent-dfont-type .select2-dropdown .nicescroll-rails-vr, .select2__parent-dfont-size .select2-dropdown .nicescroll-rails-vr, .select2-linehight-dsc-msg-parent .select2-dropdown .nicescroll-rails-vr, .select2__parent-button-shape .select2-dropdown .nicescroll-rails-vr, .select2__parent-button-font-type .select2-dropdown .nicescroll-rails-vr, .select2__parent-questions-font-type .select2-dropdown .nicescroll-rails-vr, .select2__parent-dsc-font-type .select2-dropdown .nicescroll-rails-vr, .select2__menufont-type-parent .select2-dropdown .nicescroll-rails-vr, .select2__parent-questions-font-size .select2-dropdown .nicescroll-rails-vr, .select2__parent-dsc-font-size .select2-dropdown .nicescroll-rails-vr, .select2-linehight-question-parent .select2-dropdown .nicescroll-rails-vr, .select2-linehight-answer-parent .select2-dropdown .nicescroll-rails-vr, .select2js__slct-question-parent .select2-dropdown .nicescroll-rails-vr, .select2__zipfont-type-parent .select2-dropdown .nicescroll-rails-vr, .select2__sliderfont-type-parent .select2-dropdown .nicescroll-rails-vr, .select2__txtfieldfont-type-parent .select2-dropdown .nicescroll-rails-vr, .select2__dropdownfont-type-parent .select2-dropdown .nicescroll-rails-vr, .select2__contact-infofont-type-parent .select2-dropdown .nicescroll-rails-vr, .select2js__cell-carrier-parent .select2-dropdown .nicescroll-rails-vr, .select2js__codetype-parent .select2-dropdown .nicescroll-rails-vr, .select2js__pixel_codetype-parent .select2-dropdown .nicescroll-rails-vr, .select2js__pixelplacement-parent .select2-dropdown .nicescroll-rails-vr, .select2__loc-parent .select2-dropdown .nicescroll-rails-vr, .select2js__trackoption-parent .select2-dropdown .nicescroll-rails-vr, .select2js__time-parent .select2-dropdown .nicescroll-rails-vr, .select2top-lvl-domain-parent .select2-dropdown .nicescroll-rails-vr, #funnel-search-by-zapier-parent .select2-dropdown .nicescroll-rails-vr, .funnel-search__category .select2-dropdown .nicescroll-rails-vr, .select2__bgPage-repeat-parent .select2-dropdown .nicescroll-rails-vr, .select2__bgPage-postion-parent .select2-dropdown .nicescroll-rails-vr, .select2__bgPage-cover-parent .select2-dropdown .nicescroll-rails-vr, .select2js__linkpage-option-parent .select2-dropdown .nicescroll-rails-vr, .select2__datatype-parent .select2-dropdown .nicescroll-rails-vr, .subject-select-parent01 .select2-dropdown .nicescroll-rails-vr, .subject-select-parent02 .select2-dropdown .nicescroll-rails-vr, .select2__parent-cell-carrier .select2-dropdown .nicescroll-rails-vr, .select2__parent-state .select2-dropdown .nicescroll-rails-vr, .fb-select-wrap-1 .select2-dropdown .nicescroll-rails-vr, .fb-select-wrap-2 .select2-dropdown .nicescroll-rails-vr, .fb-select-wrap-3 .select2-dropdown .nicescroll-rails-vr, .fb-select-wrap-4 .select2-dropdown .nicescroll-rails-vr, .fb-select-wrap-5 .select2-dropdown .nicescroll-rails-vr, .provider-select-parent .select2-dropdown .nicescroll-rails-vr, .submsg-dynamic-anwser-parent .select2-dropdown .nicescroll-rails-vr, .msgtype-dynamic-anwser-parent .select2-dropdown .nicescroll-rails-vr, .dynamic-anwser-parent .select2-dropdown .nicescroll-rails-vr, .fb-select2-group_url .select2-dropdown .nicescroll-rails-vr, .select2js__transition-duration-parent .select2-dropdown .nicescroll-rails-vr, .select2js__positioning-parent .select2-dropdown .nicescroll-rails-vr, .select2js__size-parent .select2-dropdown .nicescroll-rails-vr, .select2js__lightbox-mode-parent .select2-dropdown .nicescroll-rails-vr, .select2js__height-unit-parent .select2-dropdown .nicescroll-rails-vr, .select2js__width-unit-parent .select2-dropdown .nicescroll-rails-vr, .select2js__open-popun-parent .select2-dropdown .nicescroll-rails-vr, .select2js__folder-parent .select2-dropdown .nicescroll-rails-vr, .select2js__lvl-domain-parent .select2-dropdown .nicescroll-rails-vr, .select2__device-type-parent .select2-dropdown .nicescroll-rails-vr, .select2js__sec-protocol-parent .select2-dropdown .nicescroll-rails-vr, .select2js__question-type-parent .select2-dropdown .nicescroll-rails-vr, .select2-parent .select2-dropdown .nicescroll-rails-vr, .select2js__transition-type-parent .select2-dropdown .nicescroll-rails-vr, .select2__parent-mobile-font-type .select2-dropdown .nicescroll-rails-vr, .select2__parent-email-font-type .select2-dropdown .nicescroll-rails-vr, .select2__parent-phone-font-type .select2-dropdown .nicescroll-rails-vr, .select2__parent-cta-font-type .select2-dropdown .nicescroll-rails-vr, .select2__parent-company-font-type .select2-dropdown .nicescroll-rails-vr, .fb-select_unit-wrap .select2-dropdown .nicescroll-rails-vr, .fb-select_by-wrap .select2-dropdown .nicescroll-rails-vr, .fb-select_start-wrap .select2-dropdown .nicescroll-rails-vr, .fb-select_start-wrap-1 .select2-dropdown .nicescroll-rails-vr, .fb-select_by-wrap-1 .select2-dropdown .nicescroll-rails-vr, .fb-select_unit-wrap-1 .select2-dropdown .nicescroll-rails-vr, .icon-postion__select2js-parent .select2-dropdown .nicescroll-rails-vr, .alphabet__sorting-parent .select2-dropdown .nicescroll-rails-vr, .category__sorting-parent .select2-dropdown .nicescroll-rails-vr, .zip-input-icon-parent .select2-dropdown .nicescroll-rails-vr, .input-message-parent .select2-dropdown .nicescroll-rails-vr, .menu-input-icon-parent .select2-dropdown .nicescroll-rails-vr, .message-parent-menu .select2-dropdown .nicescroll-rails-vr, .num-input-icon-parent .select2-dropdown .nicescroll-rails-vr, .slider-parent-menu .select2-dropdown .nicescroll-rails-vr, .non-slider-parent-menu .select2-dropdown .nicescroll-rails-vr, .non-num-input-icon-parent .select2-dropdown .nicescroll-rails-vr,
+  .standard-question-option-parent-group .select2-dropdown .nicescroll-rails-vr {
+    opacity: 0 !important; }
+  .funnel-type .select2-dropdown .nicescroll-rails-hr, .funnel-category .select2-dropdown .nicescroll-rails-hr, .funnel-tag .select2-dropdown .nicescroll-rails-hr, .heading-bar__sorting-list .select2-dropdown .nicescroll-rails-hr, .megamenu__folder .select2-dropdown .nicescroll-rails-hr, .megamenu__category .select2-dropdown .nicescroll-rails-hr, .megamenu__tag .select2-dropdown .nicescroll-rails-hr, .select2__parent-url-prefix .select2-dropdown .nicescroll-rails-hr, .select2__theme-parent .select2-dropdown .nicescroll-rails-hr, .select2__bgPage-colormode-parent .select2-dropdown .nicescroll-rails-hr, .select2__bgForm-colormode-parent .select2-dropdown .nicescroll-rails-hr, .select2js__horizontal-bar-parent .select2-dropdown .nicescroll-rails-hr, .select2js__linkpage-option-parent .select2-dropdown .nicescroll-rails-hr, .select2__folder-parent .select2-dropdown .nicescroll-rails-hr, .select2__parent-font-size .select2-dropdown .nicescroll-rails-hr, .select2-linehight-mian-msg-parent .select2-dropdown .nicescroll-rails-hr, .select2__parent-font-type .select2-dropdown .nicescroll-rails-hr, .select2__parent-dfont-type .select2-dropdown .nicescroll-rails-hr, .select2__parent-dfont-size .select2-dropdown .nicescroll-rails-hr, .select2-linehight-dsc-msg-parent .select2-dropdown .nicescroll-rails-hr, .select2__parent-button-shape .select2-dropdown .nicescroll-rails-hr, .select2__parent-button-font-type .select2-dropdown .nicescroll-rails-hr, .select2__parent-questions-font-type .select2-dropdown .nicescroll-rails-hr, .select2__parent-dsc-font-type .select2-dropdown .nicescroll-rails-hr, .select2__menufont-type-parent .select2-dropdown .nicescroll-rails-hr, .select2__parent-questions-font-size .select2-dropdown .nicescroll-rails-hr, .select2__parent-dsc-font-size .select2-dropdown .nicescroll-rails-hr, .select2-linehight-question-parent .select2-dropdown .nicescroll-rails-hr, .select2-linehight-answer-parent .select2-dropdown .nicescroll-rails-hr, .select2js__slct-question-parent .select2-dropdown .nicescroll-rails-hr, .select2__zipfont-type-parent .select2-dropdown .nicescroll-rails-hr, .select2__sliderfont-type-parent .select2-dropdown .nicescroll-rails-hr, .select2__txtfieldfont-type-parent .select2-dropdown .nicescroll-rails-hr, .select2__dropdownfont-type-parent .select2-dropdown .nicescroll-rails-hr, .select2__contact-infofont-type-parent .select2-dropdown .nicescroll-rails-hr, .select2js__cell-carrier-parent .select2-dropdown .nicescroll-rails-hr, .select2js__codetype-parent .select2-dropdown .nicescroll-rails-hr, .select2js__pixel_codetype-parent .select2-dropdown .nicescroll-rails-hr, .select2js__pixelplacement-parent .select2-dropdown .nicescroll-rails-hr, .select2__loc-parent .select2-dropdown .nicescroll-rails-hr, .select2js__trackoption-parent .select2-dropdown .nicescroll-rails-hr, .select2js__time-parent .select2-dropdown .nicescroll-rails-hr, .select2top-lvl-domain-parent .select2-dropdown .nicescroll-rails-hr, #funnel-search-by-zapier-parent .select2-dropdown .nicescroll-rails-hr, .funnel-search__category .select2-dropdown .nicescroll-rails-hr, .select2__bgPage-repeat-parent .select2-dropdown .nicescroll-rails-hr, .select2__bgPage-postion-parent .select2-dropdown .nicescroll-rails-hr, .select2__bgPage-cover-parent .select2-dropdown .nicescroll-rails-hr, .select2js__linkpage-option-parent .select2-dropdown .nicescroll-rails-hr, .select2__datatype-parent .select2-dropdown .nicescroll-rails-hr, .subject-select-parent01 .select2-dropdown .nicescroll-rails-hr, .subject-select-parent02 .select2-dropdown .nicescroll-rails-hr, .select2__parent-cell-carrier .select2-dropdown .nicescroll-rails-hr, .select2__parent-state .select2-dropdown .nicescroll-rails-hr, .fb-select-wrap-1 .select2-dropdown .nicescroll-rails-hr, .fb-select-wrap-2 .select2-dropdown .nicescroll-rails-hr, .fb-select-wrap-3 .select2-dropdown .nicescroll-rails-hr, .fb-select-wrap-4 .select2-dropdown .nicescroll-rails-hr, .fb-select-wrap-5 .select2-dropdown .nicescroll-rails-hr, .provider-select-parent .select2-dropdown .nicescroll-rails-hr, .submsg-dynamic-anwser-parent .select2-dropdown .nicescroll-rails-hr, .msgtype-dynamic-anwser-parent .select2-dropdown .nicescroll-rails-hr, .dynamic-anwser-parent .select2-dropdown .nicescroll-rails-hr, .fb-select2-group_url .select2-dropdown .nicescroll-rails-hr, .select2js__transition-duration-parent .select2-dropdown .nicescroll-rails-hr, .select2js__positioning-parent .select2-dropdown .nicescroll-rails-hr, .select2js__size-parent .select2-dropdown .nicescroll-rails-hr, .select2js__lightbox-mode-parent .select2-dropdown .nicescroll-rails-hr, .select2js__height-unit-parent .select2-dropdown .nicescroll-rails-hr, .select2js__width-unit-parent .select2-dropdown .nicescroll-rails-hr, .select2js__open-popun-parent .select2-dropdown .nicescroll-rails-hr, .select2js__folder-parent .select2-dropdown .nicescroll-rails-hr, .select2js__lvl-domain-parent .select2-dropdown .nicescroll-rails-hr, .select2__device-type-parent .select2-dropdown .nicescroll-rails-hr, .select2js__sec-protocol-parent .select2-dropdown .nicescroll-rails-hr, .select2js__question-type-parent .select2-dropdown .nicescroll-rails-hr, .select2-parent .select2-dropdown .nicescroll-rails-hr, .select2js__transition-type-parent .select2-dropdown .nicescroll-rails-hr, .select2__parent-mobile-font-type .select2-dropdown .nicescroll-rails-hr, .select2__parent-email-font-type .select2-dropdown .nicescroll-rails-hr, .select2__parent-phone-font-type .select2-dropdown .nicescroll-rails-hr, .select2__parent-cta-font-type .select2-dropdown .nicescroll-rails-hr, .select2__parent-company-font-type .select2-dropdown .nicescroll-rails-hr, .fb-select_unit-wrap .select2-dropdown .nicescroll-rails-hr, .fb-select_by-wrap .select2-dropdown .nicescroll-rails-hr, .fb-select_start-wrap .select2-dropdown .nicescroll-rails-hr, .fb-select_start-wrap-1 .select2-dropdown .nicescroll-rails-hr, .fb-select_by-wrap-1 .select2-dropdown .nicescroll-rails-hr, .fb-select_unit-wrap-1 .select2-dropdown .nicescroll-rails-hr, .icon-postion__select2js-parent .select2-dropdown .nicescroll-rails-hr, .alphabet__sorting-parent .select2-dropdown .nicescroll-rails-hr, .category__sorting-parent .select2-dropdown .nicescroll-rails-hr, .zip-input-icon-parent .select2-dropdown .nicescroll-rails-hr, .input-message-parent .select2-dropdown .nicescroll-rails-hr, .menu-input-icon-parent .select2-dropdown .nicescroll-rails-hr, .message-parent-menu .select2-dropdown .nicescroll-rails-hr, .num-input-icon-parent .select2-dropdown .nicescroll-rails-hr, .slider-parent-menu .select2-dropdown .nicescroll-rails-hr, .non-slider-parent-menu .select2-dropdown .nicescroll-rails-hr, .non-num-input-icon-parent .select2-dropdown .nicescroll-rails-hr,
+  .standard-question-option-parent-group .select2-dropdown .nicescroll-rails-hr {
+    display: none !important; }
+
+.select2-linehight-mian-msg-parent .select2-container--open .select2-selection--single .select2-selection__arrow, .select2-linehight-dsc-msg-parent .select2-container--open .select2-selection--single .select2-selection__arrow, .select2-linehight-question-parent .select2-container--open .select2-selection--single .select2-selection__arrow, .select2-linehight-answer-parent .select2-container--open .select2-selection--single .select2-selection__arrow {
+  right: -9px; }
+
+.select2__parent-font-type .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__parent-dfont-type .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__parent-button-font-type .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__parent-questions-font-type .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__parent-dsc-font-type .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__menufont-type-parent .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__zipfont-type-parent .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__sliderfont-type-parent .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__txtfieldfont-type-parent .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__dropdownfont-type-parent .select2-container--open .select2-selection--single .select2-selection__arrow, .select2__contact-infofont-type-parent .select2-container--open .select2-selection--single .select2-selection__arrow {
+  display: none; }
+
+.select2__parent-cell-carrier .select2-selection__rendered {
+  display: block !important; }
+
+.select2__parent-cell-carrier .select2-container--open .select2-selection__rendered {
+  display: none !important; }
+
+.select2__parent-state .select2-selection__rendered {
+  display: block !important; }
+
+.select2__parent-state .select2-container--open .select2-selection__rendered {
+  display: none !important; }
+
+.select2__parent-state .nicescroll-rails {
+  left: auto !important;
+  right: 0 !important; }
+
+.select2__parent-cell-carrier .nicescroll-rails {
+  left: auto !important;
+  right: 0 !important; }
+
+.megamenu-hover-wrap {
+  display: inline-block;
+  vertical-align: top; }
+  .megamenu-hover-wrap:hover .funnel-link-name,
+  .megamenu-hover-wrap:hover .funnel-link-url {
+    opacity: 0;
+    visibility: hidden; }
+  .megamenu-hover-wrap:hover .hover-text {
+    opacity: 1;
+    visibility: visible; }
+  .megamenu-hover-wrap.in-active .hover-text {
+    opacity: 0;
+    visibility: hidden; }
+  .megamenu-hover-wrap.in-active .funnel-link {
+    cursor: default;
+    opacity: 1;
+    visibility: visible; }
+
+.funnel-link-name,
+.funnel-link-url {
+  transition: all 0.4s ease; }
+
+.funnel-link-name + .hover-text,
+.funnel-link-url + .hover-text {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  font-weight: 600;
+  color: #707d84;
+  cursor: pointer;
+  padding: 0 0 0 22px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 4; }
+  @media (min-width: 1440px) {
+    .funnel-link-name + .hover-text,
+    .funnel-link-url + .hover-text {
+      font-size: 14px; } }
+  @media (min-width: 1600px) {
+    .funnel-link-name + .hover-text,
+    .funnel-link-url + .hover-text {
+      font-size: 16px; } }
+
+.funnel-link-name + .hover-text:before {
+  background: url("https://images.lp-images1.com/default/app/check-icon.png") no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 13px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  content: ''; }
+
+.funnel-link-url + .hover-text:before {
+  background: url("https://images.lp-images1.com/default/app/tab-icon.png") no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  content: ''; }
+
+.select2__bgPage-postion-parent .nicescroll-rails.nicescroll-rails-vr {
+  opacity: 1 !important;
+  left: auto !important;
+  right: 0 !important; }
+
+/* add this style for sorting button of megamenu */
+.megamenu-funnels__column {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .megamenu-funnels__column .sorting-btns-wrap {
+    margin-top: -2px; }
+
+.megamenu-funnels .tags-wrap {
+  height: auto; }
+
+body:not(.overlay-active) .header .info-bar .col-6 {
+  flex: 0 0 65%;
+  max-width: 65%; }
+
+body:not(.overlay-active) .header .info-bar .col-6:first-child {
+  flex: 0 0 35%;
+  max-width: 35%; }

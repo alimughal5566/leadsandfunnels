@@ -1,0 +1,297 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/* Birthday field wrap question style */
+.funnel-birthday-wrap {
+  font: 18px/1.2 "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  background: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #6e7c81;
+  text-align: center; }
+  .funnel-birthday-wrap * {
+    box-sizing: border-box; }
+  .funnel-birthday-wrap p {
+    margin: 0 0 42px; }
+  .funnel-birthday-wrap.without-heading .dropdown-holder, .funnel-birthday-wrap.without-description .dropdown-holder {
+    top: -50px; }
+
+/* Birthday field question style */
+.question_birthday.cta-message-active .dropdown-holder {
+  top: -175px; }
+
+.question_birthday__fields {
+  position: relative; }
+
+.question_birthday .form-group {
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: center;
+  text-align: left; }
+
+.question_birthday .field-holder {
+  position: relative;
+  width: 123px;
+  padding: 0 5px; }
+  .question_birthday .field-holder.month-holder {
+    width: 176px; }
+  .question_birthday .field-holder.less-years .dropdown-holder {
+    top: -50px !important; }
+
+.question_birthday .select-active .dropdown-holder {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  display: block; }
+
+.question_birthday .dropdown-holder {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -125px;
+  width: 196px;
+  color: #fff;
+  display: none;
+  overflow: hidden;
+  z-index: 5; }
+  .question_birthday .dropdown-holder .dropdown-wrap {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #01c6f7;
+    border-radius: 4px;
+    position: relative;
+    padding: 23px 23px 23px 16px; }
+  .question_birthday .dropdown-holder .icon-cancel {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    position: absolute;
+    cursor: pointer;
+    right: 16px;
+    top: 10px;
+    color: #fff;
+    display: none;
+    z-index: 2; }
+    .question_birthday .dropdown-holder .icon-cancel i {
+      display: block; }
+  .question_birthday .dropdown-holder .title {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0 0 16px;
+    text-transform: uppercase;
+    margin: 0 0 18px 10px;
+    letter-spacing: 1.5px; }
+    .question_birthday .dropdown-holder .title:before {
+      background: rgba(0, 0, 0, 0.06);
+      content: '';
+      position: absolute;
+      right: 3px;
+      left: 0;
+      bottom: 0;
+      height: 1px; }
+
+.question_birthday .list-options {
+  margin: 0;
+  padding: 0 13px 0 0;
+  list-style: none; }
+  .question_birthday .list-options li {
+    margin: 2px 0; }
+  .question_birthday .list-options a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 11px 0 11px 10px;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    font-size: 16px; }
+    .question_birthday .list-options a:before {
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      font-size: 14px;
+      line-height: 18px;
+      transform: translate(0, -50%);
+      content: "\e909";
+      font-family: 'icomoon';
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease; }
+    .question_birthday .list-options a.active {
+      background: #fff;
+      color: #01c6f7;
+      padding: 11px 10px 11px 30px; }
+      .question_birthday .list-options a.active:hover {
+        padding-left: 30px; }
+      .question_birthday .list-options a.active:before {
+        opacity: 1;
+        visibility: visible; }
+    .question_birthday .list-options a:hover {
+      background: #fff;
+      color: #01c6f7; }
+
+.question_birthday .scroll-bar {
+  max-height: 390px; }
+
+.question_birthday .mCSB_scrollTools {
+  background: #01b6e4;
+  visibility: visible !important;
+  right: 3px;
+  width: 3px;
+  opacity: 1; }
+  .question_birthday .mCSB_scrollTools .mCSB_draggerContainer {
+    background: none;
+    border-radius: 0; }
+  .question_birthday .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #fff !important;
+    left: -2px;
+    width: 7px; }
+  .question_birthday .mCSB_scrollTools .mCSB_draggerRail {
+    background: #01b6e4;
+    width: 3px; }
+
+.question_birthday .mCSB_inside > .mCSB_container {
+  margin-right: 0; }
+
+.question_birthday .field-opener {
+  position: relative;
+  background: #01c6f7;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 40px 10px 26px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 100%; }
+  .question_birthday .field-opener.field-active {
+    min-height: 75px; }
+    .question_birthday .field-opener.field-active .selected_text {
+      padding: 5px 0 0; }
+  .question_birthday .field-opener:after {
+    position: absolute;
+    right: 20px;
+    content: "\e921";
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'icomoon';
+    color: #fff;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .question_birthday .field-opener .selected_text {
+    display: block;
+    color: #fff;
+    font-size: 17px;
+    text-transform: none; }
+
+.question_birthday .error-message {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  color: #f00;
+  font-size: 16px;
+  z-index: 2; }
+
+.question_birthday.mobile-view {
+  max-width: 375px;
+  margin: 0 auto; }
+  .question_birthday.mobile-view .error-message {
+    font-size: 14px; }
+  .question_birthday.mobile-view .form-group {
+    display: block;
+    margin-bottom: 12px; }
+  .question_birthday.mobile-view .field-holder.less-years .dropdown-holder {
+    top: 0 !important; }
+  .question_birthday.mobile-view .field-opener {
+    font-size: 12px;
+    padding: 10px 35px 10px 20px;
+    min-height: 56px;
+    color: #fff; }
+    .question_birthday.mobile-view .field-opener.field-active {
+      min-height: 56px; }
+    .question_birthday.mobile-view .field-opener:after {
+      right: 18px; }
+    .question_birthday.mobile-view .field-opener.field-active .label_text {
+      display: none; }
+    .question_birthday.mobile-view .field-opener.field-active .selected_text {
+      text-transform: uppercase;
+      padding: 0; }
+    .question_birthday.mobile-view .field-opener .selected_text {
+      font-size: 13px; }
+  .question_birthday.mobile-view .question_birthday__fields {
+    position: static;
+    max-width: 300px;
+    margin: 0 auto; }
+  .question_birthday.mobile-view .dropdown-holder {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto; }
+    .question_birthday.mobile-view .dropdown-holder .icon-cancel {
+      display: block; }
+    .question_birthday.mobile-view .dropdown-holder .dropdown-wrap {
+      padding: 12px 16px;
+      height: 100%; }
+    .question_birthday.mobile-view .dropdown-holder .title {
+      font-size: 11px;
+      letter-spacing: 1px;
+      padding: 0 0 10px;
+      margin: 0 0 12px; }
+  .question_birthday.mobile-view .list-options a {
+    font-size: 13px;
+    padding: 7px 10px; }
+    .question_birthday.mobile-view .list-options a.active {
+      padding-left: 30px; }
+  .question_birthday.mobile-view .scroll-bar {
+    max-height: calc(100vh - 315px); }
+  .question_birthday.mobile-view .birthday-fields-area {
+    position: relative;
+    max-width: 320px;
+    margin: 0 auto; }
+  .question_birthday.mobile-view .field-holder {
+    width: 100% !important;
+    position: static;
+    margin: 0 0 7px; }
+
+.funnel-iframe-inner-holder:not(.mCS_no_scrollbar) .question_birthday.mobile-view .scroll-bar {
+  max-height: calc(100vh - 145px); }

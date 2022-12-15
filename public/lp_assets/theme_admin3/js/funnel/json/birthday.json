@@ -1,0 +1,34 @@
+{
+    "options": {
+        "show-question": 1,
+        "question-title": "When is your birthday?",
+        "question": "&lt;p&gt;When is your birthday?&lt;&#x2F;p&gt;",
+        "show-description": 0,
+        "description": "",
+        "enable-field-label": "",
+        "field-label": "",
+        "year-start": 100,
+        "minimum-age": 18,
+        "cta-button": 1,
+        "button-text": "Continue",
+        "cta-button-settings" : {
+            "font-size" : 20,
+            "enable-hide-until-answer" : 0,
+            "enable-button-icon" : 0,
+            "button-icon" : "arrow-thick-right",
+            "button-icon-color" : "#ffffff",
+            "button-icon-position" : "LEFT",
+            "button-icon-size" : 20
+        },
+        "enable-security-message" : 0,
+        "security-message-id" : 0,
+        "enable-additional-content" : 0,
+        "additional-content" : "",
+        "data-field": "fieldname",
+        "unique-variable-name": "fieldname",
+        "automatic-progress": 1,
+        "required": 1,
+        "rel": ""
+    },
+    "question-type": "birthday"
+}

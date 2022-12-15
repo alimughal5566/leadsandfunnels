@@ -1,0 +1,94 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/**
+*  Funnel Builder: Slider Segment Grid
+*/
+.segment-grid {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 10px;
+  display: flex; }
+  .segment-grid:last-child {
+    margin-bottom: 0; }
+  .segment-grid:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .segment-grid__item {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .segment-grid__item_17 {
+      width: auto;
+      padding-top: 1px; }
+    .segment-grid__item_41 {
+      width: 41.5%; }
+    .segment-grid__item_43 {
+      width: 48.5%;
+      padding-top: 1px; }
+    .segment-grid__item_56 {
+      width: 56.56%; }
+    .segment-grid__item_94 {
+      width: calc(100% - 30px); }
+    .segment-grid__item_6 {
+      width: 30px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+
+.slider-range-clone__item {
+  padding-top: 20px;
+  position: relative; }
+
+.slider-range-clone__del {
+  position: absolute;
+  right: 0;
+  cursor: pointer; }
+
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  .slider-label:last-child {
+    margin-bottom: 0; }
+  .slider-label:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .slider-label__col-6 {
+    width: 48%; }

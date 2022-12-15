@@ -1,0 +1,6 @@
+Installation:
+https://handlebarsjs.com/installation/
+
+Private CDNs
+https://cdnjs.com/libraries/handlebars.js
+https://www.jsdelivr.com/package/npm/handlebars

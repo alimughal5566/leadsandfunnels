@@ -1,0 +1,38 @@
+{
+    "options": {
+        "rel": "enteryourzipcode",
+        "question-title": "Where are you located?",
+        "question": "&lt;p&gt;Where are you located?&lt;&#x2F;p&gt;",
+        "required": 1,
+        "cta-button": 1,
+        "data-field": "enteryourzipcode",
+        "unique-variable-name": "enteryourzipcode",
+        "description": "",
+        "autocomplete": 1,
+        "show-question": 1,
+        "required-us-zip": 1,
+        "required-canadian-zip": 0,
+        "show-description": 0,
+        "enable-field-label" : 1,
+        "zip-code-only": 1,
+        "city-or-zip-code" : 0,
+        "field-label" : "Zip Code",
+        "button-text": "Continue",
+        "cta-button-settings" : {
+            "font-size" : 20,
+            "enable-hide-until-answer" : 0,
+            "enable-button-icon" : 0,
+            "button-icon" : "arrow-thick-right",
+            "button-icon-color" : "#ffffff",
+            "button-icon-position" : "LEFT",
+            "button-icon-size" : 20
+        },
+        "enable-security-message" : 0,
+        "security-message-id" : 0,
+        "enable-auto-cursor-focus" : 1,
+        "enable-additional-content" : 0,
+        "additional-content" : "",
+        "automatic-progress": 0
+    },
+    "question-type": "zipcode"
+}

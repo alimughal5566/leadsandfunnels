@@ -1,0 +1,61 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.lp-panel .select-holder {
+  max-width: 240px; }
+
+.lp-panel .heading {
+  font-size: 24px; }
+
+.lp-panel .heading-bar__sorting-list.has-border {
+  width: 240px; }
+  .lp-panel .heading-bar__sorting-list.has-border .select2-container .select2-selection--single {
+    border: 1px solid #cfdadd; }
+
+.selection-area {
+  padding: 4px 0 0 5px; }
+
+.list-selection {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .list-selection li {
+    margin: 0 0 4px; }
+  .list-selection [type="checkbox"]:checked + label {
+    font-weight: 600; }
+  .list-selection [type="checkbox"] + label {
+    font-weight: 400;
+    padding-left: 41px; }

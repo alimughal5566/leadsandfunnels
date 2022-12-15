@@ -1,0 +1,11 @@
+{
+    "options": {
+        "field-label": "",
+        "default-value": "",
+        "enable-dynamic-population": 0,
+        "parameter": "",
+        "data-field" : "data_field",
+        "unique-variable-name": "unique_variable_name"
+    },
+    "question-type": "hidden"
+}

@@ -1,0 +1,336 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/* funnel Birthday overlay styling */
+.funnel-birthday-overlay {
+  padding: 0 0 0 420px;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1030; }
+  .funnel-birthday-overlay .panel-aside-wrap-overlay {
+    position: relative;
+    max-height: calc(100vh - 82px); }
+  .funnel-birthday-overlay .year-text.years-active span {
+    display: none; }
+  .funnel-birthday-overlay .panel-aside__head {
+    margin: 0 0 5px; }
+  .funnel-birthday-overlay .panel-aside {
+    width: 420px; }
+    .panel-aside_closed .funnel-birthday-overlay .panel-aside {
+      left: -340px !important; }
+    .funnel-birthday-overlay .panel-aside .fb-modal__option {
+      font-size: 16px; }
+  .funnel-birthday-overlay .panel-aside__body {
+    padding: 0 30px 15px !important; }
+    .funnel-birthday-overlay .panel-aside__body .form-group:last-child {
+      margin-bottom: 0; }
+  .funnel-birthday-overlay .fb-tooltip {
+    margin: 0 8px; }
+  .funnel-birthday-overlay .fb-form__caption .question-mark {
+    margin-left: 0; }
+  .funnel-birthday-overlay .question-mark.el-tooltip {
+    margin-left: 0; }
+  .funnel-birthday-overlay .fb-modal__handler:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 66px;
+    background: transparent; }
+  .funnel-birthday-overlay .fb-modal__handler i {
+    transition: all 0.4s ease;
+    transform: none;
+    color: #c7d4df; }
+  .funnel-birthday-overlay .fb-modal__handler.open > i {
+    transform: rotate(180deg); }
+  .funnel-birthday-overlay .form-group[disabled] {
+    cursor: not-allowed;
+    opacity: 0.7; }
+    .funnel-birthday-overlay .form-group[disabled] .fb-modal__handler {
+      cursor: not-allowed;
+      pointer-events: none; }
+  .funnel-birthday-overlay .toggle[disabled] {
+    background: #f6f8f8;
+    border-color: #f6f8f8; }
+    .funnel-birthday-overlay .toggle[disabled] .toggle-group .btn-off {
+      background: #f6f8f8; }
+    .funnel-birthday-overlay .toggle[disabled] .toggle-group .btn {
+      cursor: not-allowed;
+      color: #b2c0d3; }
+  .funnel-birthday-overlay .fb-form__group .fb-form-control {
+    text-transform: none;
+    font-size: 16px; }
+  .funnel-birthday-overlay .fb-toggle .toggle.btn {
+    width: 72px !important;
+    min-width: 72px !important; }
+  .funnel-birthday-overlay .fb-toggle .toggle-handle {
+    width: 54px; }
+  .funnel-birthday-overlay .fb-toggle .toggle-group .btn {
+    font-size: 11px;
+    padding: 5px 11px 5px 9px; }
+  .funnel-birthday-overlay .classic-editor__wrapper .fr-toolbar {
+    z-index: inherit !important; }
+    .funnel-birthday-overlay .classic-editor__wrapper .fr-toolbar .fr-command.fr-btn {
+      width: 38px; }
+  .funnel-birthday-overlay .hide-checkbox {
+    margin: 20px 0 0; }
+  .funnel-birthday-overlay .slider-track-low,
+  .funnel-birthday-overlay .slider-track-high,
+  .funnel-birthday-overlay .slider-track {
+    border-radius: 10px; }
+  .funnel-birthday-overlay .color-box__panel-wrapper {
+    z-index: 1050; }
+    .funnel-birthday-overlay .color-box__panel-wrapper label {
+      margin: 0 0 14px; }
+  .funnel-birthday-overlay .fb-tab__link {
+    height: 50px;
+    font-size: 15px; }
+    .funnel-birthday-overlay .fb-tab__link.active {
+      color: #707d84; }
+      .funnel-birthday-overlay .fb-tab__link.active:after {
+        border-bottom-color: #01aef0; }
+  .funnel-birthday-overlay .pop-link .fr-popup {
+    left: auto !important;
+    right: -95px; }
+  .funnel-birthday-overlay .fr-popup .fr-btn-wrap button:nth-child(2) {
+    width: 16px !important; }
+  .funnel-birthday-overlay .pop-emotions .fr-popup.fr-active,
+  .funnel-birthday-overlay .pop-fontawesome .fr-popup.fr-active {
+    top: 38px !important; }
+  .funnel-birthday-overlay .fr-wrapper.show-placeholder {
+    min-height: 127px; }
+  .funnel-birthday-overlay .fr-command.fr-btn.fr-disabled,
+  .funnel-birthday-overlay .fr-popup .fr-command.fr-btn.fr-disabled {
+    color: #8e8c8c !important; }
+  .funnel-birthday-overlay .funnel-checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .funnel-birthday-overlay .funnel-checkbox .checkbox-label {
+      width: 72px;
+      height: 30px;
+      position: relative;
+      display: block;
+      margin: 0;
+      overflow: hidden; }
+    .funnel-birthday-overlay .funnel-checkbox .checkbox-area {
+      font-size: 11px;
+      line-height: 30px;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: #c114ed;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: #fff;
+      cursor: pointer; }
+      .funnel-birthday-overlay .funnel-checkbox .checkbox-area:before {
+        transition: all 0.3s ease-in-out;
+        content: 'ON';
+        position: absolute;
+        right: -25px;
+        top: 0;
+        bottom: 0; }
+      .funnel-birthday-overlay .funnel-checkbox .checkbox-area:after {
+        transition: all 0.3s ease-in-out;
+        content: 'OFF';
+        position: absolute;
+        left: 11px;
+        top: 0;
+        bottom: 0; }
+      .funnel-birthday-overlay .funnel-checkbox .checkbox-area .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: #fff;
+        width: 27px;
+        z-index: 2; }
+    .funnel-birthday-overlay .funnel-checkbox .fb-field-label[disabled] + .checkbox-area {
+      background: #f6f8f8;
+      color: #b2c0d3;
+      cursor: not-allowed; }
+    .funnel-birthday-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area {
+      background: #27c24c; }
+      .funnel-birthday-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area:before {
+        right: 11px; }
+      .funnel-birthday-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area:after {
+        left: -25px; }
+      .funnel-birthday-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area .handle {
+        right: 43px; }
+  .funnel-birthday-overlay .classic-editor__wrapper {
+    transition: all 0.15s ease;
+    box-shadow: none;
+    outline: none;
+    text-align: center;
+    border-radius: 3px; }
+    .funnel-birthday-overlay .classic-editor__wrapper:focus, .funnel-birthday-overlay .classic-editor__wrapper.focus {
+      border-color: #02abec !important; }
+  .funnel-birthday-overlay .btn-value-text {
+    text-transform: none !important; }
+  .funnel-birthday-overlay .fb-modal__row {
+    position: relative; }
+  .funnel-birthday-overlay .select2_style {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .funnel-birthday-overlay .advance-options-wrap .data-handler-slide {
+    padding: 0; }
+  .funnel-birthday-overlay .advance-options-wrap.active {
+    border-bottom: none; }
+  .funnel-birthday-overlay .label-field {
+    text-transform: uppercase !important; }
+  .funnel-birthday-overlay .birthday-option-wrap {
+    position: relative;
+    margin: 0 0 10px; }
+    .funnel-birthday-overlay .birthday-option-wrap:last-child {
+      margin-bottom: 0; }
+    .funnel-birthday-overlay .birthday-option-wrap[disabled] {
+      opacity: 0.4; }
+      .funnel-birthday-overlay .birthday-option-wrap[disabled]:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        cursor: not-allowed;
+        z-index: 1; }
+
+.tooltip-answer-message {
+  font-size: 14px;
+  font-weight: 600; }
+
+.birthday-select2js__opener {
+  position: relative;
+  display: block;
+  height: 50px;
+  border: 1px solid #cfdadd;
+  border-radius: 3px;
+  color: #707d84;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 15px 30px 15px 15px; }
+  @media (max-width: 1600px) {
+    .birthday-select2js__opener {
+      font-size: 11px; } }
+  .birthday-select2js__opener:hover {
+    color: #707d84; }
+  .birthday-select2js__opener:before {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    content: '';
+    border-width: 5px 4px 0;
+    border-style: solid;
+    border-color: #707d84 transparent transparent; }
+  .birthday-select2js__opener__text-val {
+    font-weight: 700;
+    pointer-events: none; }
+
+.birthday-select2js.slide-active .birthday-select2js__slide, .birthday-select2js.open .birthday-select2js__slide {
+  transform: none; }
+
+.birthday-select2js__slide {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #02abec;
+  color: #fff;
+  border-radius: 3px;
+  transform: scale(0);
+  transform-origin: 0 0;
+  transition: all 0.4s ease;
+  z-index: 5; }
+  .birthday-select2js__slide__label {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 17px;
+    padding: 15px 15px 10px;
+    cursor: pointer;
+    position: relative; }
+    .birthday-select2js__slide__label:after {
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      background: #03c4f2; }
+  .birthday-select2js__slide__range-wrap {
+    padding: 10px 15px 12px; }
+  .birthday-select2js__slide__info-wrap {
+    padding: 7px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  .birthday-select2js__slide__year {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 0 10px; }
+  .birthday-select2js__slide .range-text-val {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    margin: 0 6px -1px 0; }
+  .birthday-select2js__slide .slider.slider-horizontal {
+    width: 100%; }
+  .birthday-select2js__slide .slider-track {
+    box-shadow: none;
+    background: #029ed9; }
+  .birthday-select2js__slide .slider-selection {
+    background: #07d5fe; }
+  .birthday-select2js__slide .slider-handle {
+    border: none; }
+
+.colorpicker-active .select2-dropdown {
+  z-index: 1050; }

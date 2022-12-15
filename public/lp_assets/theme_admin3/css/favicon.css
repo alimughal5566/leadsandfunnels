@@ -1,0 +1,163 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.lp-browse__section {
+  height: 230px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+  .lp-browse__section p {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #707d84;
+    margin: 0; }
+
+.tab-content .browse__content {
+  border: none; }
+
+.tab-content .browse__desc p {
+  margin: 0; }
+
+.browse__step1, .browse__step2 {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+
+.browse__step2 {
+  padding: 30px 0; }
+
+.browse__content {
+  border-radius: 3px;
+  background: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid #dde0e1; }
+  .browse__content .file__control {
+    position: absolute;
+    max-width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0; }
+    .browse__content .file__control p {
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 600;
+      color: #cc0b0b;
+      margin: 5px 0 0; }
+
+.browse__desc {
+  padding: 83px 30px 63px; }
+  .browse__desc p {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #707d84; }
+
+.browse__footer {
+  border-top: 1px solid #f2f3f3;
+  padding: 28px;
+  width: 100%; }
+  .browse__footer p {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 0; }
+  .browse__footer a {
+    font-weight: 400; }
+
+.browse__bg-image {
+  border: 1px solid #e4e8e9;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 355px; }
+  .browse__bg-image .action {
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; }
+
+.lp-image__browse {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #707d84; }
+
+.lp-image__button {
+  cursor: pointer;
+  color: #02abec;
+  font-weight: 400;
+  position: relative;
+  margin: 0; }
+
+.lp-image__input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden; }
+
+.img-frame__wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .img-frame__wrapper .button-cancel {
+    cursor: not-allowed; }
+
+.img-frame__content {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #e4e8e9;
+  align-items: center;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; }
+
+.img-frame__controls .action {
+  margin: 22px 0 0;
+  justify-content: center; }
+  .img-frame__controls .action__list {
+    justify-content: center; }

@@ -1,0 +1,177 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.lp-branding .bg-controls-block {
+  overflow: visible;
+  margin: 0; }
+
+.lp-branding .custom-scroll-holder .mCSB_scrollTools {
+  right: 0; }
+
+.lp-branding .custom-scroll-holder .form-control {
+  color: rgba(88, 102, 110, 0.45); }
+
+.lp-branding .tcpa-security-preview-iframe {
+  height: 567px;
+  display: block; }
+
+.lp-branding .background-detail__area {
+  flex-grow: 1;
+  flex-basis: 0;
+  width: auto;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 0; }
+  .lp-branding .background-detail__area .theme__header {
+    margin: 0; }
+
+.lp-branding .question-mark {
+  background-color: #f6f8f8; }
+  .lp-branding .question-mark:hover {
+    background-color: #02abec; }
+
+.lp-branding .lp-panel_switch {
+  padding: 0; }
+  .lp-branding .lp-panel_switch .lp-panel__title {
+    font-size: 20px; }
+  .lp-branding .lp-panel_switch .lp-panel__head {
+    border: none;
+    margin-top: 0;
+    padding: 25px 28px; }
+    .lp-branding .lp-panel_switch .lp-panel__head .col-left,
+    .lp-branding .lp-panel_switch .lp-panel__head .col-right {
+      margin: 0; }
+
+.lp-branding .lp-panel_tabs {
+  padding-top: 0; }
+  .lp-branding .lp-panel_tabs .lp-panel__head {
+    margin: 0;
+    padding: 6px 0; }
+  .lp-branding .lp-panel_tabs .nav__tab {
+    margin: 0 0 0 22px; }
+    .lp-branding .lp-panel_tabs .nav__tab .nav-item:before, .lp-branding .lp-panel_tabs .nav__tab .nav-item:after {
+      display: block; }
+
+.lp-branding .logo-upload-option label {
+  color: #707d84;
+  margin: 0 0 12px 0; }
+
+.lp-branding .logo-upload-option .bg-main__dropzone {
+  height: 240px; }
+  .lp-branding .logo-upload-option .bg-main__dropzone .dz-preview .dz-image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; }
+  .lp-branding .logo-upload-option .bg-main__dropzone .dz-preview img {
+    width: auto;
+    height: auto; }
+
+.lp-branding .logo-other-option {
+  display: none;
+  margin: 18px 0 0; }
+  .lp-branding .logo-other-option .form-group {
+    display: flex;
+    margin-bottom: 13px;
+    justify-content: space-between; }
+    .lp-branding .logo-other-option .form-group label {
+      color: #707d84; }
+    .lp-branding .logo-other-option .form-group.image-pos {
+      margin: 30px 0 0;
+      padding: 0 0 20px;
+      border-bottom: 1px solid #f2f3f3; }
+    .lp-branding .logo-other-option .form-group .slider.slider-horizontal {
+      width: 173px;
+      margin: 0 8px 0 0; }
+  .lp-branding .logo-other-option .logo-text {
+    margin: 20px 0 0;
+    padding: 17px 0 0; }
+    .lp-branding .logo-other-option .logo-text .form-group {
+      flex-direction: column;
+      align-items: flex-start; }
+      .lp-branding .logo-other-option .logo-text .form-group:last-child {
+        margin: 0; }
+      .lp-branding .logo-other-option .logo-text .form-group label {
+        margin: 0 0 17px; }
+
+.lp-branding .custom-scroll-holder {
+  max-height: 606px; }
+
+.lp-branding .input-icon {
+  width: 100%;
+  position: relative; }
+  .lp-branding .input-icon input {
+    padding: 0 0 0 55px; }
+  .lp-branding .input-icon span {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 42px;
+    display: flex;
+    color: #b2c0d3;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f8f8; }
+
+.lp-branding [type="radio"] + label {
+  color: #b4c2c9; }
+
+.lp-branding [type="radio"]:checked + label {
+  color: #707d84; }
+
+.lp-branding .switcher-min label.btn {
+  width: auto;
+  color: #fff; }
+
+.lp-branding .switcher-min .toggle.btn {
+  min-height: 30px; }
+  .lp-branding .switcher-min .toggle.btn.btn-inactive {
+    border-color: #c114ed; }
+  .lp-branding .switcher-min .toggle.btn .toggle-handle {
+    padding: 0 26px; }
+
+.lp-branding .switcher-min .toggle-on.btn-active {
+  background: #c114ed; }
+
+.lp-branding .backlink-area {
+  position: relative;
+  margin: 0 0 20px; }
+  .lp-branding .backlink-area .form-group {
+    border-bottom: 1px solid #f2f3f3;
+    padding: 20px 0;
+    margin: 0; }

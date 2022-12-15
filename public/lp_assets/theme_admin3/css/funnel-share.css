@@ -1,0 +1,306 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.funnel-share .form-group label {
+  min-width: 108px; }
+
+.funnel-share .hide-btns .link-swatcher,
+.funnel-share .hide-btns .button {
+  display: none; }
+
+.funnel-share .hide-btns .input__wrapper {
+  margin-right: 0; }
+
+.funnel-share .input__wrapper {
+  flex-grow: 1; }
+
+.funnel-share .input-holder.disable {
+  color: #b3c0c7;
+  border-radius: 3px;
+  position: relative;
+  background: #f6f8f8;
+  cursor: not-allowed; }
+  .funnel-share .input-holder.disable .input-holder_icon span {
+    background: #fff; }
+  .funnel-share .input-holder.disable .form-control {
+    border-color: transparent; }
+  .funnel-share .input-holder.disable span.ico {
+    background: #fff; }
+  .funnel-share .input-holder.disable .lp-controls__item_copy-url {
+    display: block; }
+
+.funnel-share .input-holder_icon span {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  display: flex;
+  color: #b2c0d3;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  background: #f6f8f8;
+  z-index: 3; }
+
+.funnel-share .img-frame__content {
+  height: auto;
+  width: auto; }
+
+.funnel-share .form-control,
+.funnel-share .shortUrl {
+  border-radius: 4px;
+  position: relative; }
+  .funnel-share .form-control:hover .hover-hide,
+  .funnel-share .shortUrl:hover .hover-hide {
+    opacity: 0;
+    visibility: hidden; }
+  .funnel-share .form-control:hover .lp-controls,
+  .funnel-share .shortUrl:hover .lp-controls {
+    opacity: 1;
+    visibility: visible; }
+  .funnel-share .form-control.d-flex,
+  .funnel-share .shortUrl.d-flex {
+    justify-content: space-between;
+    align-items: center; }
+  .funnel-share .form-control .input-holder,
+  .funnel-share .shortUrl .input-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 0 0 60px;
+    border-radius: 4px;
+    border: 1px solid #cfdadd; }
+
+.funnel-share .hover-hide {
+  position: absolute;
+  padding: 14px 0 0;
+  right: 10px;
+  top: 0;
+  bottom: 0; }
+
+.funnel-share .fbi_dots {
+  font-size: 4px; }
+
+.funnel-share .pl-6 {
+  padding-left: 60px; }
+
+.funnel-share .lp-controls {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  bottom: 0; }
+  .funnel-share .lp-controls li {
+    height: 100%;
+    padding: 0; }
+  .funnel-share .lp-controls a {
+    position: relative;
+    padding: 17px 5px 0;
+    display: block;
+    height: 100%; }
+  .funnel-share .lp-controls .ico-copy {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    top: 0.5px; }
+
+.funnel-share .inner-text {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden; }
+
+.funnel-share .url-expand .url-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #58666e; }
+
+.funnel-share .url-expand input.form-control {
+  border-radius: 0;
+  background: none !important;
+  width: 100%;
+  padding: 0;
+  border: none !important;
+  outline: none !important;
+  flex-grow: 1;
+  flex-basis: 0; }
+  .funnel-share .url-expand input.form-control:read-only {
+    background: none;
+    border: none;
+    color: #58666e;
+    cursor: default; }
+  .funnel-share .url-expand input.form-control:focus {
+    border: none; }
+
+.funnel-share .url-expand .pl-6 {
+  padding-left: 173px; }
+
+.funnel-share .url-expand .input-holder_icon span {
+  height: 44px; }
+
+.funnel-share .link-swatcher {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 7px;
+  color: #9fa8ad; }
+  .funnel-share .link-swatcher:hover {
+    color: #02abec; }
+
+.funnel-share .url-expand {
+  padding: 7px 0 0; }
+
+.funnel-share .url-expand {
+  display: none; }
+
+.social-media li {
+  margin-right: 48px; }
+
+.social-share {
+  color: #fff;
+  height: 43px;
+  display: flex;
+  padding: 0 18px;
+  border-radius: 3px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700; }
+  .social-share i {
+    font-size: 16px;
+    margin: 0 15px 0 0; }
+  .social-share.facebook {
+    background-color: #3b5997; }
+  .social-share.twitter {
+    background-color: #29c5f6; }
+  .social-share.linkedin {
+    background-color: #006dc0; }
+  .social-share.buffer {
+    background-color: #363e41; }
+  .social-share.email {
+    background-color: #6759ba; }
+
+.browse__desc p {
+  margin: 0; }
+
+.browse__content_upload-social {
+  border: none; }
+  .browse__content_upload-social .img-frame__preview {
+    max-height: 250px; }
+
+.lp-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 -5px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease; }
+  .lp-controls__item {
+    padding: 0 5px; }
+  .lp-controls__link {
+    color: #9fa8ad; }
+
+.lp-controls__item_copy-url {
+  display: none; }
+  .lp-controls__item_copy-url .ico-copy {
+    display: block;
+    font-size: 14px;
+    margin: 1px 0 0; }
+
+.funnel-share-advance .link-swatcher {
+  cursor: pointer; }
+
+.funnel-share #funnelUrl {
+  color: #b3c0c7;
+  cursor: not-allowed; }
+
+.url-expand .hover-hide {
+  top: 3px; }
+
+.url-expand .lp-controls {
+  top: 3px; }
+
+.shortUrl .option_list {
+  list-style: none;
+  position: absolute;
+  background: #fff;
+  top: 1px;
+  right: 2px;
+  bottom: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden; }
+  .shortUrl .option_list li {
+    position: relative;
+    padding: 0 10px; }
+    .shortUrl .option_list li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      bottom: 1px;
+      width: 1px;
+      background: #cfdadd; }
+    .shortUrl .option_list li:first-child:before {
+      display: none; }
+  .shortUrl .option_list a {
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase; }
+
+.shortUrl.active .option_list {
+  opacity: 1;
+  visibility: visible; }
+
+.shortUrl .input-holder {
+  padding-right: 145px !important; }
+
+@media (max-width: 1440px) {
+  .main-content.funnel-share .button {
+    padding: 0 22px; } }

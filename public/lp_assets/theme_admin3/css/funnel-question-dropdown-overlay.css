@@ -1,0 +1,402 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/* funnel dropdown overlay styling */
+.funnel-dropdown-overlay {
+  padding: 0 0 0 420px;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1030; }
+  .funnel-dropdown-overlay .panel-aside-wrap-overlay {
+    position: relative;
+    max-height: calc(100vh - 82px); }
+  .funnel-dropdown-overlay .panel-aside__head {
+    margin: 0 0 5px; }
+  .funnel-dropdown-overlay .panel-aside {
+    width: 420px; }
+    .panel-aside_closed .funnel-dropdown-overlay .panel-aside {
+      left: -340px !important; }
+    .funnel-dropdown-overlay .panel-aside .fb-modal__option {
+      font-size: 16px; }
+  .funnel-dropdown-overlay .panel-aside__body {
+    padding: 0 30px 15px !important; }
+    .funnel-dropdown-overlay .panel-aside__body .form-group:last-child {
+      margin-bottom: 0; }
+  .funnel-dropdown-overlay .fb-tooltip {
+    margin: 0 8px; }
+  .funnel-dropdown-overlay .fb-form__caption .question-mark {
+    margin-left: 0; }
+  .funnel-dropdown-overlay .question-mark.el-tooltip {
+    margin-left: 0; }
+  .funnel-dropdown-overlay .fb-modal__handler:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 66px;
+    background: transparent; }
+  .funnel-dropdown-overlay .fb-modal__handler i {
+    transition: all 0.4s ease;
+    transform: none;
+    color: #c7d4df; }
+  .funnel-dropdown-overlay .fb-modal__handler.open > i {
+    transform: rotate(180deg); }
+  .funnel-dropdown-overlay .form-group[disabled] {
+    cursor: not-allowed;
+    opacity: 0.7; }
+    .funnel-dropdown-overlay .form-group[disabled] .fb-modal__handler {
+      cursor: not-allowed;
+      pointer-events: none; }
+  .funnel-dropdown-overlay .fb-form__group .fb-form-control {
+    text-transform: none;
+    font-size: 16px; }
+  .funnel-dropdown-overlay .fb-toggle .toggle.btn {
+    width: 72px !important;
+    min-width: 72px !important; }
+  .funnel-dropdown-overlay .fb-toggle .toggle-handle {
+    width: 54px; }
+  .funnel-dropdown-overlay .fb-toggle .toggle-group .btn {
+    font-size: 11px;
+    padding: 5px 11px 5px 9px; }
+  .funnel-dropdown-overlay .classic-editor__wrapper .fr-toolbar {
+    z-index: inherit !important; }
+    .funnel-dropdown-overlay .classic-editor__wrapper .fr-toolbar .fr-command.fr-btn {
+      width: 38px; }
+  .funnel-dropdown-overlay .hide-checkbox {
+    margin: 20px 0 0; }
+  .funnel-dropdown-overlay .slider-track-low,
+  .funnel-dropdown-overlay .slider-track-high,
+  .funnel-dropdown-overlay .slider-track {
+    border-radius: 10px; }
+  .funnel-dropdown-overlay .color-box__panel-wrapper {
+    z-index: 1050; }
+    .funnel-dropdown-overlay .color-box__panel-wrapper label {
+      margin: 0 0 14px; }
+  .funnel-dropdown-overlay .fb-tab__link {
+    height: 50px;
+    font-size: 15px; }
+    .funnel-dropdown-overlay .fb-tab__link.active {
+      color: #707d84; }
+      .funnel-dropdown-overlay .fb-tab__link.active:after {
+        border-bottom-color: #01aef0; }
+  .funnel-dropdown-overlay .pop-link .fr-popup {
+    left: auto !important;
+    right: -95px; }
+  .funnel-dropdown-overlay .fr-popup .fr-btn-wrap button:nth-child(2) {
+    width: 16px !important; }
+  .funnel-dropdown-overlay .pop-emotions .fr-popup.fr-active,
+  .funnel-dropdown-overlay .pop-fontawesome .fr-popup.fr-active {
+    top: 38px !important; }
+  .funnel-dropdown-overlay .fr-wrapper.show-placeholder {
+    min-height: 127px; }
+  .funnel-dropdown-overlay .fr-command.fr-btn.fr-disabled,
+  .funnel-dropdown-overlay .fr-popup .fr-command.fr-btn.fr-disabled {
+    color: #8e8c8c !important; }
+  .funnel-dropdown-overlay .funnel-checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .funnel-dropdown-overlay .funnel-checkbox .checkbox-label {
+      width: 72px;
+      height: 30px;
+      position: relative;
+      display: block;
+      margin: 0;
+      overflow: hidden; }
+    .funnel-dropdown-overlay .funnel-checkbox .checkbox-area {
+      font-size: 11px;
+      line-height: 30px;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: #c114ed;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: #fff;
+      cursor: pointer; }
+      .funnel-dropdown-overlay .funnel-checkbox .checkbox-area:before {
+        transition: all 0.3s ease-in-out;
+        content: 'ON';
+        position: absolute;
+        right: -25px;
+        top: 0;
+        bottom: 0; }
+      .funnel-dropdown-overlay .funnel-checkbox .checkbox-area:after {
+        transition: all 0.3s ease-in-out;
+        content: 'OFF';
+        position: absolute;
+        left: 11px;
+        top: 0;
+        bottom: 0; }
+      .funnel-dropdown-overlay .funnel-checkbox .checkbox-area .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: #fff;
+        width: 27px;
+        z-index: 2; }
+    .funnel-dropdown-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area {
+      background: #27c24c; }
+      .funnel-dropdown-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area:before {
+        right: 11px; }
+      .funnel-dropdown-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area:after {
+        left: -25px; }
+      .funnel-dropdown-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area .handle {
+        right: 43px; }
+  .funnel-dropdown-overlay .classic-editor__wrapper {
+    transition: all 0.15s ease;
+    box-shadow: none;
+    outline: none;
+    text-align: center;
+    border-radius: 3px; }
+    .funnel-dropdown-overlay .classic-editor__wrapper:focus, .funnel-dropdown-overlay .classic-editor__wrapper.focus {
+      border-color: #02abec !important; }
+  .funnel-dropdown-overlay .btn-value-text {
+    text-transform: none !important; }
+  .funnel-dropdown-overlay .fb-modal__row {
+    position: relative; }
+  .funnel-dropdown-overlay .select2_style {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .funnel-dropdown-overlay .advance-options-wrap .data-handler-slide {
+    padding: 0; }
+  .funnel-dropdown-overlay .advance-options-wrap.active {
+    border-bottom: none; }
+  .funnel-dropdown-overlay .label-field {
+    text-transform: uppercase !important; }
+
+.colorpicker-active .select2-dropdown {
+  z-index: 1050; }
+
+/* dropdown-option-block style */
+.dropdown-option-block {
+  position: relative;
+  border: 1px solid #cfdadd;
+  padding: 10px 0;
+  overflow: hidden;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+  min-height: 175px; }
+  .dropdown-option-block.focus {
+    border-color: #02abec; }
+  .dropdown-option-block .plceholder-text {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+    position: fixed;
+    width: 357px;
+    padding: 0 20px;
+    color: #b4c2c9;
+    z-index: 5; }
+    @media (max-width: 1800px) {
+      .dropdown-option-block .plceholder-text {
+        font-size: 14px; } }
+    .dropdown-option-block .plceholder-text p {
+      border-bottom: 1px solid #f2f3f3;
+      background: #fff;
+      padding: 0 0 10px;
+      margin: 0; }
+  .dropdown-option-block .mCSB_scrollTools {
+    right: 5px;
+    top: 50px; }
+  .dropdown-option-block .fb-options__list {
+    display: block;
+    margin-bottom: 0; }
+    .dropdown-option-block .fb-options__list.not-allowed .row-option {
+      cursor: not-allowed; }
+    .dropdown-option-block .fb-options__list.not-allowed .fb-options__delete,
+    .dropdown-option-block .fb-options__list.not-allowed .drag-row {
+      pointer-events: none; }
+
+.dropdown-option-list-holder {
+  position: relative;
+  max-height: 245px; }
+
+.dropdown-option-list-wrap {
+  position: relative;
+  padding: 0 20px; }
+
+.dropdown-option-list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 46px 0 0; }
+  .dropdown-option-list > li {
+    position: relative;
+    border-bottom: 1px solid #f2f3f3; }
+    .dropdown-option-list > li.none {
+      padding: 8px 0; }
+      .dropdown-option-list > li.none .field-holder {
+        background: #fff7f1;
+        border-radius: 3px;
+        border: 1px solid #fdd6b7;
+        padding: 0 70px 0 0; }
+      .dropdown-option-list > li.none .field-wrap {
+        padding: 0 90px 0 0; }
+        .dropdown-option-list > li.none .field-wrap .fb-form-control {
+          padding: 0 0 0 15px;
+          font-size: 15px; }
+      .dropdown-option-list > li.none .row-option a {
+        color: #ff7b10; }
+    .dropdown-option-list > li.other {
+      padding: 8px 0; }
+      .dropdown-option-list > li.other .field-holder {
+        background: #effafe;
+        border-radius: 3px;
+        border: 1px solid #beedff;
+        padding: 0 70px 0 0; }
+      .dropdown-option-list > li.other .field-wrap {
+        padding: 0 90px 0 0; }
+        .dropdown-option-list > li.other .field-wrap .fb-form-control {
+          padding: 0 0 0 15px;
+          font-size: 15px; }
+      .dropdown-option-list > li.other .sub-text {
+        color: #02abec;
+        border-color: #beedff; }
+      .dropdown-option-list > li.other .row-option a {
+        color: #02abec; }
+  .dropdown-option-list .field-holder {
+    position: relative;
+    padding: 0 75px 0 0;
+    background: #fff;
+    overflow: hidden;
+    height: 28px; }
+    .dropdown-option-list .field-holder.empty-field .row-option {
+      opacity: 0;
+      visibility: hidden; }
+    .dropdown-option-list .field-holder:hover .clear-btn, .dropdown-option-list .field-holder.hover .clear-btn {
+      opacity: 1;
+      visibility: visible; }
+  .dropdown-option-list .field-wrap {
+    position: relative;
+    height: 100%;
+    padding: 0 20px 0 0; }
+  .dropdown-option-list .clear-btn {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #707d84;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden; }
+    .dropdown-option-list .clear-btn i {
+      display: block; }
+    .dropdown-option-list .clear-btn:hover {
+      color: #01c6f7; }
+  .dropdown-option-list .sub-text {
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 700;
+    position: absolute;
+    right: 65px;
+    top: 5px;
+    bottom: 5px;
+    color: #ff7b10;
+    border-left: 1px solid #fdd6b7;
+    border-right: 1px solid #fdd6b7;
+    width: 60px;
+    text-align: center;
+    text-transform: uppercase; }
+  .dropdown-option-list .row-option {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .dropdown-option-list .row-option li {
+      position: relative;
+      padding: 0 5px; }
+    .dropdown-option-list .row-option a {
+      display: block;
+      color: #707d84; }
+      .dropdown-option-list .row-option a:hover {
+        color: #01c6f7; }
+    .dropdown-option-list .row-option .drag-row {
+      cursor: move; }
+    .dropdown-option-list .row-option .icon {
+      display: block;
+      font-size: 18px; }
+  .dropdown-option-list .fb-form-control {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    color: #707d84;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    text-overflow: ellipsis; }
+    .dropdown-option-list .fb-form-control::-webkit-input-placeholder {
+      color: #707d84 !important; }
+    .dropdown-option-list .fb-form-control::-moz-placeholder {
+      opacity: 1;
+      color: #707d84 !important; }
+    .dropdown-option-list .fb-form-control:-moz-placeholder {
+      color: #707d84 !important; }
+    .dropdown-option-list .fb-form-control:-ms-input-placeholder {
+      color: #707d84 !important; }
+    .dropdown-option-list .fb-form-control.placeholder {
+      color: #707d84 !important; }
+
+/* dropdown-setting-option style */
+.dropdown-setting-option [data-other-field] {
+  border-top: none;
+  border-bottom: 1px solid #f2f3f3; }
+
+.dropdown-setting-option [data-automatic-progress-option] {
+  border-top: 1px solid #f2f3f3; }

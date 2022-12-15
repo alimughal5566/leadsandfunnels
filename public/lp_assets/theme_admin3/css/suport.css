@@ -1,0 +1,531 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/* support content area style */
+.support-content-area {
+  position: relative;
+  margin: -4px 0 0; }
+  @media (max-width: 1600px) {
+    .support-content-area {
+      margin: 0; } }
+  .support-content-area h2 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    border-bottom: 1px solid #f2f3f3;
+    padding: 21px 0 23px;
+    margin: 0 0 28px;
+    color: #85969f; }
+    @media (max-width: 1440px) {
+      .support-content-area h2 {
+        font-size: 25px; } }
+  .support-content-area .button {
+    transition: all 0.4s ease;
+    font-weight: 700; }
+    .support-content-area .button:hover {
+      opacity: 0.8; }
+  .support-content-area .social-networks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -11px; }
+    @media (max-width: 1800px) {
+      .support-content-area .social-networks {
+        margin: 0 -7px; } }
+    @media (max-width: 1600px) {
+      .support-content-area .social-networks {
+        margin: 0 -5px; } }
+    @media (max-width: 1440px) {
+      .support-content-area .social-networks {
+        margin: 0 -4px; } }
+    .support-content-area .social-networks li {
+      position: relative;
+      padding: 0 11px; }
+      @media (max-width: 1800px) {
+        .support-content-area .social-networks li {
+          padding: 0 7px; } }
+      @media (max-width: 1600px) {
+        .support-content-area .social-networks li {
+          padding: 0 5px; } }
+      @media (max-width: 1440px) {
+        .support-content-area .social-networks li {
+          padding: 0 4px; } }
+    .support-content-area .social-networks a {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 700;
+      height: 43px;
+      text-align: center;
+      color: #fff;
+      display: block;
+      padding: 13px 28px;
+      border-radius: 3px;
+      transition: all 0.4s ease;
+      text-transform: uppercase; }
+      @media (max-width: 1800px) {
+        .support-content-area .social-networks a {
+          padding: 13px 22px; } }
+      @media (max-width: 1600px) {
+        .support-content-area .social-networks a {
+          font-size: 13px;
+          padding: 13px 17px; } }
+      @media (max-width: 1440px) {
+        .support-content-area .social-networks a {
+          padding: 13px 14px; } }
+      .support-content-area .social-networks a.facebook {
+        background: #3b5997; }
+      .support-content-area .social-networks a.twitter {
+        background: #29c5f6; }
+      .support-content-area .social-networks a.linkedin {
+        background: #006dc0; }
+      .support-content-area .social-networks a.youtube {
+        background: #de332c; }
+      .support-content-area .social-networks a .icon {
+        font-size: 24px;
+        line-height: 1px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 7px 10px 0 0; }
+        @media (max-width: 1440px) {
+          .support-content-area .social-networks a .icon {
+            font-size: 20px;
+            line-height: 1px;
+            margin: 7px 7px 0 0; } }
+      .support-content-area .social-networks a .ico-facebook {
+        top: 1px; }
+      .support-content-area .social-networks a .ico-twitter {
+        top: 1px; }
+      .support-content-area .social-networks a:hover {
+        opacity: 0.8; }
+
+/* support address area style */
+.support-block-area {
+  position: relative;
+  margin: 0 0 29px; }
+  .support-block-area__block {
+    border-bottom: 1px solid #e4e8e9;
+    padding: 0 30px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    height: 100%; }
+    .support-block-area__block label.error {
+      left: 0;
+      width: 100%;
+      bottom: -22px;
+      position: absolute; }
+  .support-block-area__head {
+    position: relative; }
+  .support-block-area__map {
+    width: 100%;
+    height: 260px;
+    position: relative; }
+    .support-block-area__map iframe {
+      width: 100%;
+      height: 100%;
+      border: none; }
+  .support-block-area__info {
+    border-bottom: 1px solid #f2f3f3;
+    position: relative;
+    padding: 15px 0 22px; }
+    @media (max-width: 1440px) {
+      .support-block-area__info {
+        padding: 15px 0; } }
+  .support-block-area .contact-info {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    position: relative;
+    color: #85969f;
+    margin: 0; }
+    @media (max-width: 1800px) {
+      .support-block-area .contact-info {
+        font-size: 18px;
+        line-height: 26px; } }
+    @media (max-width: 1600px) {
+      .support-block-area .contact-info {
+        font-size: 16px;
+        line-height: 24px; } }
+    .support-block-area .contact-info li {
+      position: relative;
+      margin: 0 0 9px; }
+      .support-block-area .contact-info li:last-child {
+        margin-bottom: 0; }
+    .support-block-area .contact-info .link-wrap {
+      position: relative;
+      display: inline-flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      transition: all 0.4s ease; }
+    .support-block-area .contact-info a {
+      color: #85969f; }
+      @media (max-width: 1440px) {
+        .support-block-area .contact-info a {
+          white-space: nowrap; } }
+      .support-block-area .contact-info a:hover {
+        color: #02abec; }
+    .support-block-area .contact-info .icon {
+      position: relative;
+      text-align: center;
+      width: 28px; }
+      .support-block-area .contact-info .icon i {
+        font-size: 28px;
+        line-height: 28px;
+        position: relative;
+        color: #cfd6d9;
+        display: block; }
+      .support-block-area .contact-info .icon .ico-smart-mail {
+        top: 3px; }
+        @media (max-width: 1800px) {
+          .support-block-area .contact-info .icon .ico-smart-mail {
+            top: 1px; } }
+        @media (max-width: 1600px) {
+          .support-block-area .contact-info .icon .ico-smart-mail {
+            top: 0; } }
+      .support-block-area .contact-info .icon .ico-Mobile {
+        top: 1px; }
+        @media (max-width: 1600px) {
+          .support-block-area .contact-info .icon .ico-Mobile {
+            top: -2px; } }
+      .support-block-area .contact-info .icon .ico-building {
+        font-size: 34px;
+        top: 7px; }
+    .support-block-area .contact-info .text {
+      width: calc(100% - 28px);
+      padding: 0 0 0 15px;
+      display: block;
+      margin: 0; }
+      @media (max-width: 1440px) {
+        .support-block-area .contact-info .text {
+          padding: 0 0 0 12px; } }
+  .support-block-area .support-chat-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 28px 0 0;
+    margin: 0 -11px; }
+    @media (max-width: 1800px) {
+      .support-block-area .support-chat-list {
+        margin: 0 -7px; } }
+    @media (max-width: 1440px) {
+      .support-block-area .support-chat-list {
+        margin: 0 -4px;
+        padding: 24px 0 0; } }
+    .support-block-area .support-chat-list li {
+      position: relative;
+      padding: 0 11px; }
+      @media (max-width: 1800px) {
+        .support-block-area .support-chat-list li {
+          padding: 0 7px; } }
+      @media (max-width: 1440px) {
+        .support-block-area .support-chat-list li {
+          padding: 0 4px; } }
+    .support-block-area .support-chat-list .button {
+      height: 43px; }
+      @media (max-width: 1900px) {
+        .support-block-area .support-chat-list .button {
+          padding: 0 26px; } }
+      @media (max-width: 1800px) {
+        .support-block-area .support-chat-list .button {
+          font-size: 13px;
+          padding: 0 14px; } }
+      @media (max-width: 1600px) {
+        .support-block-area .support-chat-list .button {
+          font-size: 12px;
+          padding: 0 12px; } }
+      @media (max-width: 1440px) {
+        .support-block-area .support-chat-list .button {
+          font-size: 12px;
+          padding: 0 10px; } }
+      .support-block-area .support-chat-list .button i {
+        font-size: 22px;
+        line-height: 22px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 12px 0 0; }
+        @media (max-width: 1600px) {
+          .support-block-area .support-chat-list .button i {
+            font-size: 18px;
+            line-height: 18px;
+            margin: 0 9px 0 0; } }
+        @media (max-width: 1440px) {
+          .support-block-area .support-chat-list .button i {
+            font-size: 15px;
+            line-height: 15px;
+            margin: 0 7px 0 0; } }
+  .support-block-area .textarea-field {
+    position: relative;
+    margin: 0 0 28px; }
+    .support-block-area .textarea-field textarea {
+      resize: none;
+      height: 310px; }
+      @media (max-width: 1440px) {
+        .support-block-area .textarea-field textarea {
+          height: 290px; } }
+  .support-block-area .btn-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    .support-block-area .btn-wrap .button {
+      width: 116px;
+      height: 43px; }
+  .support-block-area__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    position: relative;
+    color: #85969f;
+    margin: -6px 0 0;
+    padding: 0 0 10px; }
+    .support-block-area__text a {
+      color: #02abec;
+      text-decoration: underline; }
+      .support-block-area__text a:hover {
+        color: #016287;
+        text-decoration: none; }
+    .support-block-area__text .button {
+      color: #fff;
+      text-decoration: none;
+      margin-bottom: 16px; }
+      .support-block-area__text .button:hover, .support-block-area__text .button:focus {
+        color: #fff; }
+  .support-block-area .cancel-btn-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
+    .support-block-area .cancel-btn-wrap .button {
+      height: 43px; }
+
+/* subject select wrap style */
+.subject-select-wrap {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .subject-select-wrap.field .subject-select-area__title {
+    width: 91px; }
+    @media (max-width: 1600px) {
+      .subject-select-wrap.field .subject-select-area__title {
+        width: 78px; } }
+    @media (max-width: 1440px) {
+      .subject-select-wrap.field .subject-select-area__title {
+        width: 76px; } }
+  .subject-select-wrap .field-wrap {
+    position: relative;
+    width: calc(100% - 91px); }
+    @media (max-width: 1600px) {
+      .subject-select-wrap .field-wrap {
+        width: calc(100% - 78px); } }
+    @media (max-width: 1440px) {
+      .subject-select-wrap .field-wrap {
+        width: calc(100% - 76px); } }
+
+/* subject select area style */
+.subject-select-area {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 28px; }
+  .subject-select-area:only-child {
+    width: 100%; }
+  .subject-select-area__title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #707d84;
+    display: block;
+    padding: 0 16px 0 0; }
+    @media (max-width: 1440px) {
+      .subject-select-area__title {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0 10px 0 0; } }
+  .subject-select-area .select2-container .select2-selection__arrow b {
+    border-color: #707d84 transparent transparent; }
+  .subject-select-area .select2-container .select2-dropdown .select2-results__option[aria-selected='true'] {
+    display: none !important; }
+
+/* subject select parent style */
+.subject-select-parent {
+  position: relative;
+  width: 300px; }
+  @media (max-width: 1850px) {
+    .subject-select-parent {
+      width: 275px; } }
+  @media (max-width: 1800px) {
+    .subject-select-parent {
+      width: 235px; } }
+  @media (max-width: 1600px) {
+    .subject-select-parent {
+      width: 202px; } }
+  @media (max-width: 1440px) {
+    .subject-select-parent {
+      width: 185px; } }
+  @media (max-width: 1440px) {
+    .subject-select-parent .select2-container .select2-selection--single {
+      font-size: 15px; } }
+  @media (max-width: 1440px) {
+    .subject-select-parent .select2-container .select2-selection--single .select2-selection__rendered {
+      padding: 0 32px 0 12px; } }
+  @media (max-width: 1440px) {
+    .subject-select-parent .select2-container .select2-selection--single .select2-selection__arrow {
+      width: 30px; } }
+
+/* support video section style */
+.support-video-section {
+  position: relative;
+  margin: 0 0 29px; }
+  .support-video-section__wrap {
+    border-bottom: 1px solid #e4e8e9;
+    position: relative;
+    border-radius: 6px;
+    background: #fff;
+    padding: 0 30px; }
+  .support-video-section__head {
+    position: relative; }
+    .support-video-section__head h2 {
+      margin: 0; }
+  .support-video-section .video-accordion-area {
+    position: relative; }
+  .support-video-section .lp-panel {
+    border-bottom: 1px solid #f2f3f3;
+    padding: 26px 0 28px;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden; }
+    .support-video-section .lp-panel:last-child {
+      border-bottom: none; }
+  .support-video-section .card-header {
+    display: block;
+    padding: 0 175px 0 0;
+    height: auto; }
+  .support-video-section .card-title {
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: 300;
+    position: relative;
+    display: block;
+    color: #85969f; }
+  .support-video-section .lp-panel__head {
+    border: none;
+    padding: 0;
+    margin: 0; }
+  .support-video-section .expandable {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    margin: 0;
+    width: 131px;
+    padding: 20px 0 0;
+    display: block; }
+    .support-video-section .expandable.collapsed {
+      width: 174px; }
+      .support-video-section .expandable.collapsed:after {
+        content: 'expand videos'; }
+    .support-video-section .expandable span {
+      display: block; }
+      .support-video-section .expandable span:before {
+        content: '';
+        background: transparent;
+        position: absolute;
+        left: -9999px;
+        right: 0;
+        top: -12px;
+        bottom: -9px;
+        z-index: 4; }
+  .support-video-section .card-body {
+    border-top: none;
+    padding: 28px 0 0; }
+
+/* support video row style */
+.support-video-row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 -20px; }
+  @media (max-width: 1880px) {
+    .support-video-row {
+      margin: 0 -15px; } }
+  @media (max-width: 1800px) {
+    .support-video-row {
+      margin: 0 -10px; } }
+  .support-video-row__col {
+    position: relative;
+    padding: 0 20px;
+    margin: 0 0 16px;
+    width: 14.285%; }
+    @media (max-width: 1880px) {
+      .support-video-row__col {
+        padding: 0 15px; } }
+    @media (max-width: 1800px) {
+      .support-video-row__col {
+        padding: 0 10px; } }
+    @media (max-width: 1600px) {
+      .support-video-row__col {
+        padding: 0 8px;
+        width: 16.6667%; } }
+  .support-video-row__block {
+    position: relative; }
+  .support-video-row .video-wrap {
+    position: relative; }
+    .support-video-row .video-wrap a {
+      position: relative;
+      outline: none;
+      display: block; }
+  .support-video-row img {
+    display: block; }
+  .support-video-row__name {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 12px 0 0 1px;
+    color: #707d84;
+    display: block; }
+    @media (max-width: 1800px) {
+      .support-video-row__name {
+        padding: 8px 0 0 1px; } }
+    @media (max-width: 1440px) {
+      .support-video-row__name {
+        font-size: 15px;
+        padding: 6px 0 0 1px; } }

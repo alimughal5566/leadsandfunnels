@@ -1,0 +1,41 @@
+{
+    "options": {
+        "show-question": 1,
+        "question-title": "",
+        "question": "",
+        "show-description": 0,
+        "description": "",
+        "enable-field-label": 1,
+        "field-label": "ENTER YOUR ANSWER",
+        "enable-min-number": 0,
+        "min-number": "",
+        "enable-max-number": 0,
+        "max-number": "",
+        "cta-button": 1,
+        "button-text": "Continue",
+        "cta-button-settings" : {
+            "font-size" : 20,
+            "enable-hide-until-answer" : 0,
+            "enable-button-icon" : 0,
+            "button-icon" : "arrow-thick-right",
+            "button-icon-color" : "#ffffff",
+            "button-icon-position" : "LEFT",
+            "button-icon-size" : 20
+        },
+        "enable-security-message" : 0,
+        "security-message-id" : 0,
+        "enable-additional-content" : 0,
+        "additional-content" : "",
+        "data-field": "fieldname",
+        "unique-variable-name": "fieldname",
+        "formatting": {
+            "enable-format-with-comma": 1,
+            "enable-format-as-currency": 0,
+            "enable-format-as-percentage": 0
+        },
+        "enable-auto-cursor-focus" : 1,
+        "required": 1,
+        "rel" : "<span class='off-text'>Question N/A</span>"
+    },
+    "question-type": "number"
+}

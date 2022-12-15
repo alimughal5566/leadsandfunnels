@@ -1,0 +1,235 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.security-message .lp-panel__embed {
+  align-items: flex-start; }
+
+.security-message .fr-view img.fr-dii {
+  max-width: calc(100% - (2*5px)); }
+
+.security-message .select2js__icon-position-parent .select2-container .select2-selection--single .select2-selection__arrow b {
+  border-color: #707d84 transparent transparent; }
+
+.security-message .action_options-btns-list .action__link {
+  transition: color 0.4s ease; }
+  .security-message .action_options-btns-list .action__link .ico {
+    transition: color 0.4s ease; }
+  .security-message .action_options-btns-list .action__link:hover {
+    color: #02abec; }
+    .security-message .action_options-btns-list .action__link:hover .ico {
+      color: #02abec; }
+
+.security-message .lp-table__list .lp-table__item:nth-child(2) {
+  justify-content: center; }
+  .security-message .lp-table__list .lp-table__item:nth-child(2) span {
+    display: block;
+    min-width: 150px; }
+
+.security-message .question-mark {
+  margin-top: -2px;
+  background-color: #f6f8f8; }
+
+.security-message .modal-dialog {
+  margin-top: 125px; }
+
+.security-message .lp-panel {
+  padding-top: 0; }
+  .security-message .lp-panel__head {
+    margin: 0;
+    padding: 0;
+    height: 77px; }
+    .security-message .lp-panel__head .col-left,
+    .security-message .lp-panel__head .col-right {
+      margin: 0; }
+  .security-message .lp-panel_tabs .nav-item {
+    border-right: 1px solid #f2f3f3; }
+    .security-message .lp-panel_tabs .nav-item:first-child {
+      border-left: 1px solid #f2f3f3; }
+    .security-message .lp-panel_tabs .nav-item .ico-Mobile {
+      font-size: 28px !important; }
+
+.security-message .preview-panel {
+  margin: 0 -30px 0 0; }
+  .security-message .preview-panel__head {
+    border: none;
+    margin: -5px 0 0;
+    padding: 0 0 18px; }
+    .security-message .preview-panel__head .form-group {
+      margin: 0;
+      padding: 0 30px;
+      justify-content: space-between; }
+  .security-message .preview-panel__title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #85969f;
+    margin: 0; }
+    @media (max-width: 1440px) {
+      .security-message .preview-panel__title {
+        font-size: 16px; } }
+  .security-message .preview-panel__body {
+    padding: 0; }
+    .security-message .preview-panel__body .form-group {
+      padding: 0 30px; }
+      .security-message .preview-panel__body .form-group .text-color-parent {
+        width: 155px; }
+        .security-message .preview-panel__body .form-group .text-color-parent .last-selected {
+          margin: 0;
+          cursor: pointer; }
+          @media (max-width: 1600px) {
+            .security-message .preview-panel__body .form-group .text-color-parent .last-selected__box {
+              min-width: 42px; } }
+          @media (max-width: 1600px) {
+            .security-message .preview-panel__body .form-group .text-color-parent .last-selected__code {
+              font-size: 16px;
+              padding: 0 15px; } }
+      .security-message .preview-panel__body .form-group_security-message {
+        display: block; }
+        .security-message .preview-panel__body .form-group_security-message label {
+          margin: 0 0 15px; }
+      .security-message .preview-panel__body .form-group .range-slider {
+        margin: 0;
+        padding: 0;
+        width: 173px; }
+    .security-message .preview-panel__body .icon-setting {
+      display: none;
+      margin: 0 30px;
+      padding: 20px 0 0;
+      border-top: 1px solid #f2f3f3; }
+      .security-message .preview-panel__body .icon-setting .form-group {
+        padding: 0; }
+    .security-message .preview-panel__body .default-setting {
+      padding: 20px 0 0;
+      border-style: solid;
+      border-width: 1px 0;
+      border-color: #f2f3f3; }
+
+.security-message .btn-icon-wrapper {
+  width: 88px;
+  height: 50px;
+  border-radius: 3px;
+  position: relative;
+  border: 1px solid #cfdadd;
+  cursor: pointer; }
+  .security-message .btn-icon-wrapper .icon-block {
+    margin: 3px;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    color: #000;
+    font-size: 22px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f2f3f3; }
+  .security-message .btn-icon-wrapper .arrow {
+    bottom: 0;
+    top: 22px;
+    right: 15px;
+    position: absolute;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #707d84 transparent transparent transparent; }
+
+.security-message .theme__wrapper {
+  margin: 0; }
+
+.security-message .theme__body {
+  min-height: 500px;
+  display: block;
+  background: #f6f8f8; }
+
+.security-message .switcher-min .toggle.btn .toggle-handle {
+  padding: 0 26px; }
+
+.security-message .switcher-min .toggle.btn.btn-inactive {
+  border: solid 1px #c114ed;
+  background-color: #c114ed; }
+
+.security-message .switcher-min label.btn {
+  font-size: 11px;
+  width: calc(100% - 70px); }
+  .security-message .switcher-min label.btn-active {
+    background-color: #c114ed; }
+
+.security-message .icon-size-area {
+  padding-bottom: 14px !important; }
+
+.security-message .range-slider-area {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.security-message .icon-size-reset {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  color: #c7d4df;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  margin: 0 0 0 12px;
+  z-index: 4; }
+  .security-message .icon-size-reset i {
+    position: relative;
+    display: block; }
+  .security-message .icon-size-reset:hover {
+    color: #02abec; }
+
+.lp-panel__embed-preview .theme__body {
+  position: relative; }
+
+.tcpa-security-preview-iframe-holder:not(.mobile-view-active) {
+  width: 1220px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform-origin: 50% 50px;
+  margin: 0 0 0 -610px; }
+
+.tcpa-security-preview-iframe-holder.mobile-view-active {
+  transform: scale(1) !important; }
+  .tcpa-security-preview-iframe-holder.mobile-view-active .tcpa-security-preview-iframe {
+    height: 600px !important; }
+
+.tcpa-security-preview-iframe {
+  height: 500px; }
+
+/* Security info tooltip style */
+.security-info-tooltip {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700; }

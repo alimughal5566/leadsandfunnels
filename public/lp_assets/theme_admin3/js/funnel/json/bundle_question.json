@@ -1,0 +1,37 @@
+{
+    "options": {
+        "show-question": 1,
+        "question": [
+            "What make is your vehicle?",
+            "What model is your vehicle?"
+        ],
+        "show-description": 1,
+        "description": "For Vehicle One",
+        "rel": [
+            "Vehicle make (for Vehicle One)",
+            "Vehicle model (for Vehicle One)"
+        ],
+        "required": 1,
+        "scrollbar": "0",
+        "data-field": "makemodel1",
+        "cta-button": 0,
+        "button-text": "Continue",
+        "cta-button-settings" : {
+            "font-size" : 20,
+            "enable-hide-until-answer" : 0,
+            "enable-button-icon" : 0,
+            "button-icon" : "arrow-thick-right",
+            "button-icon-color" : "#ffffff",
+            "button-icon-position" : "LEFT",
+            "button-icon-size" : 20
+        },
+        "data-source": "make-model",
+        "question-ids": [
+            "make1",
+            "model1"
+        ],
+        "enable-additional-content" : 0,
+        "additional-content" : ""
+    },
+    "question-type": "bundle"
+}

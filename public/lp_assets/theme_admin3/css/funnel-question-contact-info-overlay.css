@@ -1,0 +1,358 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/* funnel contact-info overlay styling */
+.funnel-contact-info-overlay {
+  padding: 0 0 0 420px;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1030; }
+  .funnel-contact-info-overlay .panel-aside-wrap-overlay {
+    position: relative;
+    max-height: calc(100vh - 82px); }
+  .funnel-contact-info-overlay .panel-aside__head {
+    margin: 0 0 5px; }
+  .funnel-contact-info-overlay .panel-aside {
+    width: 420px; }
+    .panel-aside_closed .funnel-contact-info-overlay .panel-aside {
+      left: -340px !important; }
+    .funnel-contact-info-overlay .panel-aside .fb-modal__option {
+      font-size: 16px; }
+      .funnel-contact-info-overlay .panel-aside .fb-modal__option .step-no-text {
+        font-weight: 400; }
+  .funnel-contact-info-overlay .panel-aside__body {
+    padding: 0 30px 15px !important; }
+    .funnel-contact-info-overlay .panel-aside__body .form-group:last-child {
+      margin-bottom: 0; }
+  .funnel-contact-info-overlay .fb-tooltip {
+    margin: 0 8px; }
+  .funnel-contact-info-overlay .fb-form__caption .question-mark {
+    margin-left: 0; }
+  .funnel-contact-info-overlay .question-mark.el-tooltip {
+    margin-left: 0; }
+  .funnel-contact-info-overlay .fb-modal__handler:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 66px;
+    background: transparent; }
+  .funnel-contact-info-overlay .fb-modal__handler i {
+    transition: all 0.4s ease;
+    transform: none;
+    color: #c7d4df; }
+  .funnel-contact-info-overlay .fb-modal__handler.open > i {
+    transform: rotate(180deg); }
+  .funnel-contact-info-overlay .form-group[disabled] {
+    cursor: not-allowed;
+    opacity: 0.7; }
+    .funnel-contact-info-overlay .form-group[disabled] .fb-modal__handler {
+      cursor: not-allowed;
+      pointer-events: none; }
+  .funnel-contact-info-overlay .fb-form__group .fb-form-control {
+    text-transform: none;
+    font-size: 16px; }
+  .funnel-contact-info-overlay .fb-toggle .toggle.btn {
+    width: 72px !important;
+    min-width: 72px !important; }
+  .funnel-contact-info-overlay .fb-toggle .toggle-handle {
+    width: 54px; }
+  .funnel-contact-info-overlay .fb-toggle .toggle-group .btn {
+    font-size: 11px;
+    padding: 5px 11px 5px 9px; }
+  .funnel-contact-info-overlay .classic-editor__wrapper .fr-toolbar {
+    z-index: inherit !important; }
+    .funnel-contact-info-overlay .classic-editor__wrapper .fr-toolbar .fr-command.fr-btn {
+      width: 38px; }
+  .funnel-contact-info-overlay .hide-checkbox {
+    margin: 20px 0 0; }
+  .funnel-contact-info-overlay .slider-track-low,
+  .funnel-contact-info-overlay .slider-track-high,
+  .funnel-contact-info-overlay .slider-track {
+    border-radius: 10px; }
+  .funnel-contact-info-overlay .color-box__panel-wrapper {
+    z-index: 1050; }
+    .funnel-contact-info-overlay .color-box__panel-wrapper label {
+      margin: 0 0 14px; }
+  .funnel-contact-info-overlay .fb-tab__link {
+    height: 50px;
+    font-size: 15px;
+    transition: none; }
+    .funnel-contact-info-overlay .fb-tab__link:after {
+      transition: none; }
+    .funnel-contact-info-overlay .fb-tab__link.active {
+      color: #707d84; }
+      .funnel-contact-info-overlay .fb-tab__link.active:after {
+        border-bottom-color: #01aef0; }
+  .funnel-contact-info-overlay .pop-link .fr-popup {
+    left: auto !important;
+    right: -95px; }
+  .funnel-contact-info-overlay .fr-popup .fr-btn-wrap button:nth-child(2) {
+    width: 16px !important; }
+  .funnel-contact-info-overlay .pop-emotions .fr-popup.fr-active,
+  .funnel-contact-info-overlay .pop-fontawesome .fr-popup.fr-active {
+    top: 38px !important; }
+  .funnel-contact-info-overlay .fr-wrapper.show-placeholder {
+    min-height: 127px; }
+  .funnel-contact-info-overlay .fr-command.fr-btn.fr-disabled,
+  .funnel-contact-info-overlay .fr-popup .fr-command.fr-btn.fr-disabled {
+    color: #8e8c8c !important; }
+  .funnel-contact-info-overlay .funnel-checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .funnel-contact-info-overlay .funnel-checkbox .checkbox-label {
+      width: 72px;
+      height: 30px;
+      position: relative;
+      display: block;
+      margin: 0;
+      overflow: hidden; }
+    .funnel-contact-info-overlay .funnel-checkbox .checkbox-area {
+      font-size: 11px;
+      line-height: 30px;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: #c114ed;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: #fff;
+      cursor: pointer; }
+      .funnel-contact-info-overlay .funnel-checkbox .checkbox-area:before {
+        transition: all 0.3s ease-in-out;
+        content: 'ON';
+        position: absolute;
+        right: -25px;
+        top: 0;
+        bottom: 0; }
+      .funnel-contact-info-overlay .funnel-checkbox .checkbox-area:after {
+        transition: all 0.3s ease-in-out;
+        content: 'OFF';
+        position: absolute;
+        left: 11px;
+        top: 0;
+        bottom: 0; }
+      .funnel-contact-info-overlay .funnel-checkbox .checkbox-area .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: #fff;
+        width: 27px;
+        z-index: 2; }
+    .funnel-contact-info-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area {
+      background: #27c24c; }
+      .funnel-contact-info-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area:before {
+        right: 11px; }
+      .funnel-contact-info-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area:after {
+        left: -25px; }
+      .funnel-contact-info-overlay .funnel-checkbox .fb-field-label:checked + .checkbox-area .handle {
+        right: 43px; }
+  .funnel-contact-info-overlay .classic-editor__wrapper {
+    transition: all 0.15s ease;
+    box-shadow: none;
+    outline: none;
+    text-align: center;
+    border-radius: 3px; }
+    .funnel-contact-info-overlay .classic-editor__wrapper:focus, .funnel-contact-info-overlay .classic-editor__wrapper.focus {
+      border-color: #02abec !important; }
+  .funnel-contact-info-overlay .btn-value-text {
+    text-transform: none !important; }
+  .funnel-contact-info-overlay .fb-modal__row {
+    position: relative; }
+  .funnel-contact-info-overlay .select2_style {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .funnel-contact-info-overlay .advance-options-wrap .data-handler-slide {
+    padding: 0; }
+  .funnel-contact-info-overlay .advance-options-wrap.active {
+    border-bottom: none; }
+  .funnel-contact-info-overlay .step-field .form-control {
+    text-transform: uppercase !important; }
+  .funnel-contact-info-overlay .label-field {
+    text-transform: uppercase !important; }
+  .funnel-contact-info-overlay .select2-parent .select2-container--open .select2-selection__arrow {
+    z-index: 1050; }
+  .funnel-contact-info-overlay .step2-field {
+    display: none; }
+  .funnel-contact-info-overlay .step3-field {
+    display: none; }
+  .funnel-contact-info-overlay .edit-content-select {
+    display: none; }
+  .funnel-contact-info-overlay .tab-content.step2-active .edit-content-select {
+    display: block; }
+  .funnel-contact-info-overlay .tab-content.step2-active .step2-field {
+    display: block; }
+  .funnel-contact-info-overlay .tab-content.step2-active .step1-field,
+  .funnel-contact-info-overlay .tab-content.step2-active .step3-field {
+    display: none; }
+  .funnel-contact-info-overlay .tab-content.step3-active .edit-content-select {
+    display: block; }
+  .funnel-contact-info-overlay .tab-content.step3-active .step3-field {
+    display: block; }
+  .funnel-contact-info-overlay .tab-content.step3-active .step1-field,
+  .funnel-contact-info-overlay .tab-content.step3-active .step2-field {
+    display: none; }
+  .funnel-contact-info-overlay .data-reqired-parent {
+    display: block;
+    width: 100%; }
+    .funnel-contact-info-overlay .data-reqired-parent .fb-modal__border-row {
+      padding: 0; }
+  .funnel-contact-info-overlay .required-check-list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .funnel-contact-info-overlay .required-check-list li {
+      position: relative;
+      padding: 17px 0;
+      border-bottom: 1px solid #f2f3f3; }
+      .funnel-contact-info-overlay .required-check-list li:last-child {
+        border-bottom: none; }
+    .funnel-contact-info-overlay .required-check-list .fb-checkbox__caption {
+      font-size: 16px; }
+    .funnel-contact-info-overlay .required-check-list [type="checkbox"] + label {
+      padding-left: 42px; }
+  .funnel-contact-info-overlay .step-field .fb-modal__border-row,
+  .funnel-contact-info-overlay .step-field .fb-options {
+    border-top: none; }
+  .funnel-contact-info-overlay .step-field.active .fb-modal__row {
+    margin-bottom: -16px; }
+  .funnel-contact-info-overlay .step-field .fb-modal__border-row {
+    padding-top: 0; }
+  .funnel-contact-info-overlay .step-field .grouping-label {
+    text-align: center; }
+  .funnel-contact-info-overlay .step-field .fb-form__list {
+    list-style: none; }
+  .funnel-contact-info-overlay .step-field .fb-form__control .tag-box {
+    left: 0;
+    top: 0;
+    position: relative; }
+    .funnel-contact-info-overlay .step-field .fb-form__control .tag-box:hover {
+      color: #02abec; }
+  .funnel-contact-info-overlay .step-field .setting-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: inherit; }
+    .funnel-contact-info-overlay .step-field .setting-wrap .form-control,
+    .funnel-contact-info-overlay .step-field .setting-wrap .fb-form__input {
+      width: calc(100% - 57px); }
+
+#group-organize-pop .organize-group {
+  position: relative;
+  overflow: hidden; }
+
+#group-organize-pop .button[disabled] {
+  background: #f6f8f8 !important;
+  color: #b2c0d3 !important;
+  border-color: #f6f8f8 !important;
+  opacity: 1 !important; }
+
+#advance-setting .button[disabled] {
+  background: #f6f8f8 !important;
+  color: #b2c0d3 !important;
+  border-color: #f6f8f8 !important;
+  opacity: 1 !important; }
+
+.organize-group_sorting-row {
+  position: relative; }
+  .organize-group_sorting-row .organize-group__action:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: move; }
+  .organize-group_sorting-row.ui-sortable-helper {
+    border: 1px solid #e9ecef;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+#advance-setting .select2-parent .select2-selection__arrow {
+  z-index: 1001; }
+
+#advance-setting .select2-container.select2-container--open .select2-selection__arrow {
+  z-index: 1071; }
+  #advance-setting .select2-container.select2-container--open .select2-selection__arrow b {
+    margin-top: -4px; }
+
+.colorpicker-active .select2-dropdown {
+  z-index: 1050; }
+
+.advance-country-code-parent,
+.advance-phone-format-parent {
+  position: relative;
+  width: 100%; }
+  .advance-country-code-parent .select2_style,
+  .advance-phone-format-parent .select2_style {
+    font-size: 14px; }
+  .advance-country-code-parent .select2js-placeholder,
+  .advance-phone-format-parent .select2js-placeholder {
+    font-weight: 400 !important;
+    margin: 0 5px 0 0;
+    display: inline-block; }
+  .advance-country-code-parent .select2-container--open .select2-dropdown .select2-results__option:first-child,
+  .advance-phone-format-parent .select2-container--open .select2-dropdown .select2-results__option:first-child {
+    pointer-events: none; }
+    @media (min-width: 1600px) {
+      .advance-country-code-parent .select2-container--open .select2-dropdown .select2-results__option:first-child,
+      .advance-phone-format-parent .select2-container--open .select2-dropdown .select2-results__option:first-child {
+        text-transform: uppercase; } }
+  .advance-country-code-parent .select2-container--open .select2-dropdown .select2-results__option .select2js-placeholder,
+  .advance-phone-format-parent .select2-container--open .select2-dropdown .select2-results__option .select2js-placeholder {
+    display: none; }
+  @media (min-width: 1600px) {
+    .advance-country-code-parent .select2-container--open .select2-dropdown .select2-results__option .select2_style span:last-child,
+    .advance-phone-format-parent .select2-container--open .select2-dropdown .select2-results__option .select2_style span:last-child {
+      font-size: 15px;
+      line-height: 17px;
+      font-weight: 400; } }
+
+.advance-phone-format-parent .select2-container--open .select2-dropdown .select2-results__option:first-child {
+  pointer-events: inherit; }
+
+.advance-phone-format-parent .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow:before {
+  display: none !important; }

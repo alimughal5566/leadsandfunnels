@@ -1,0 +1,251 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.cta__message-control {
+  margin: 0 0 28px 0; }
+  .cta__message-control .action__list {
+    flex-flow: wrap;
+    margin: -15px 0 0 0; }
+  .cta__message-control .action__item {
+    margin: 15px 57px 0 0 !important; }
+    @media (max-width: 1800px) {
+      .cta__message-control .action__item {
+        margin-right: 42px !important; } }
+    @media (max-width: 1600px) {
+      .cta__message-control .action__item {
+        margin-right: 28px !important; } }
+    @media (max-width: 1440px) {
+      .cta__message-control .action__item {
+        margin-right: 10px !important; } }
+    @media (max-width: 1600px) {
+      .cta__message-control .action__item label {
+        margin-right: 20px; } }
+    @media (max-width: 1440px) {
+      .cta__message-control .action__item label {
+        margin-right: 15px; } }
+  .cta__message-control .font-type select,
+  .cta__message-control .font-type .select2__parent-font-type,
+  .cta__message-control .font-type .select2__parent-dfont-type {
+    width: 334px; }
+    @media (max-width: 1800px) {
+      .cta__message-control .font-type select,
+      .cta__message-control .font-type .select2__parent-font-type,
+      .cta__message-control .font-type .select2__parent-dfont-type {
+        width: 250px; } }
+    @media (max-width: 1600px) {
+      .cta__message-control .font-type select,
+      .cta__message-control .font-type .select2__parent-font-type,
+      .cta__message-control .font-type .select2__parent-dfont-type {
+        width: 220px; } }
+    @media (max-width: 1440px) {
+      .cta__message-control .font-type select,
+      .cta__message-control .font-type .select2__parent-font-type,
+      .cta__message-control .font-type .select2__parent-dfont-type {
+        width: 190px; } }
+  .cta__message-control .font-size select,
+  .cta__message-control .font-size .select2__parent-font-size,
+  .cta__message-control .font-size .select2__parent-dfont-size {
+    width: 152px; }
+    @media (max-width: 1800px) {
+      .cta__message-control .font-size select,
+      .cta__message-control .font-size .select2__parent-font-size,
+      .cta__message-control .font-size .select2__parent-dfont-size {
+        width: 135px; } }
+    @media (max-width: 1440px) {
+      .cta__message-control .font-size select,
+      .cta__message-control .font-size .select2__parent-font-size,
+      .cta__message-control .font-size .select2__parent-dfont-size {
+        width: 100px; } }
+  .cta__message-control .select2-selection--single .select2-selection__rendered {
+    text-transform: none;
+    font-weight: 600;
+    color: #707d84; }
+    @media (max-width: 1440px) {
+      .cta__message-control .select2-selection--single .select2-selection__rendered {
+        font-size: 15px; } }
+  .cta__message-control .select2-container.select2-container--open .select2-selection__rendered {
+    color: #fff; }
+
+.cta__message {
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #cfdadd;
+  position: relative;
+  transition: border 0.4s ease; }
+  .cta__message.focused {
+    border-color: #02abec; }
+  .cta__message textarea.text-area {
+    line-height: 1.4;
+    text-align: center;
+    padding: 25px 0;
+    min-height: 108px;
+    width: 650px;
+    margin: 0 auto;
+    font-weight: 600;
+    border: none !important; }
+    .cta__message textarea.text-area:before {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      content: ''; }
+    .cta__message textarea.text-area#desc__message {
+      line-height: 1.42; }
+    .cta__message textarea.text-area.text-area_h300 {
+      min-height: 300px; }
+    .cta__message textarea.text-area.error {
+      border-color: #cc0b0b; }
+    .cta__message textarea.text-area.old_admin_homepage_on {
+      width: 650px; }
+    .cta__message textarea.text-area.homepage_on {
+      width: 680px; }
+    .cta__message textarea.text-area.homepage_off {
+      width: 1040px; }
+  .cta__message label {
+    vertical-align: top;
+    margin: 27px 0 -27px !important; }
+    .cta__message label.error {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      bottom: 0;
+      margin: 8px 0 !important; }
+
+.font-type .select2-dropdown .select2-results__option {
+  font-weight: 400; }
+
+.button-shape,
+.font-linehight,
+.font-type,
+.font-size,
+.text-color {
+  display: flex;
+  align-items: center; }
+  .button-shape label,
+  .font-linehight label,
+  .font-type label,
+  .font-size label,
+  .text-color label {
+    margin: 0 27px 0 0;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400; }
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  height: 35px;
+  color: #fff;
+  padding: 0 15px;
+  border-radius: 3px;
+  border-color: #fff;
+  background-color: transparent; }
+  .select2-container--default .select2-search--dropdown .select2-search__field::-webkit-input-placeholder {
+    color: #fff !important; }
+  .select2-container--default .select2-search--dropdown .select2-search__field::-moz-placeholder {
+    opacity: 1;
+    color: #fff !important; }
+  .select2-container--default .select2-search--dropdown .select2-search__field:-moz-placeholder {
+    color: #fff !important; }
+  .select2-container--default .select2-search--dropdown .select2-search__field:-ms-input-placeholder {
+    color: #fff !important; }
+  .select2-container--default .select2-search--dropdown .select2-search__field.placeholder {
+    color: #fff !important; }
+
+.color-picker {
+  cursor: pointer; }
+
+.select2-linehight-mian-msg-parent,
+.select2-linehight-dsc-msg-parent {
+  width: 150px; }
+  @media (max-width: 1600px) {
+    .select2-linehight-mian-msg-parent,
+    .select2-linehight-dsc-msg-parent {
+      width: 122px; } }
+  @media (max-width: 1600px) {
+    .select2-linehight-mian-msg-parent .select2-container .select2-selection--single .select2-selection__rendered,
+    .select2-linehight-dsc-msg-parent .select2-container .select2-selection--single .select2-selection__rendered {
+      padding-left: 7px; } }
+  .select2-linehight-mian-msg-parent .select2-container .select2-selection--single .select2-selection__rendered:before,
+  .select2-linehight-dsc-msg-parent .select2-container .select2-selection--single .select2-selection__rendered:before {
+    top: 1px !important; }
+    @media (max-width: 1600px) {
+      .select2-linehight-mian-msg-parent .select2-container .select2-selection--single .select2-selection__rendered:before,
+      .select2-linehight-dsc-msg-parent .select2-container .select2-selection--single .select2-selection__rendered:before {
+        top: 3px !important; } }
+  .select2-linehight-mian-msg-parent .line-height,
+  .select2-linehight-dsc-msg-parent .line-height {
+    position: relative;
+    padding: 0 0 0 34px;
+    display: block !important; }
+  .select2-linehight-mian-msg-parent .select2-dropdown .line-height,
+  .select2-linehight-dsc-msg-parent .select2-dropdown .line-height {
+    padding: 0; }
+  .select2-linehight-mian-msg-parent .select2-container .select2-selection--single .select2-selection__arrow,
+  .select2-linehight-dsc-msg-parent .select2-container .select2-selection--single .select2-selection__arrow {
+    right: 0 !important; }
+    @media (max-width: 1600px) {
+      .select2-linehight-mian-msg-parent .select2-container .select2-selection--single .select2-selection__arrow,
+      .select2-linehight-dsc-msg-parent .select2-container .select2-selection--single .select2-selection__arrow {
+        width: 25px; } }
+  .select2-linehight-mian-msg-parent .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow b,
+  .select2-linehight-dsc-msg-parent .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    margin-top: -4px; }
+
+.select2__parent-font-size .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  margin-top: -4px; }
+
+/* color picker issue Fixed style */
+.cta-message-page .cta-color-selector {
+  position: relative; }
+  .cta-message-page .cta-color-selector:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 1px;
+    bottom: 1px;
+    background: #fff;
+    height: 1px;
+    z-index: 999; }
+  .cta-message-page .cta-color-selector.up:before {
+    bottom: auto;
+    top: 1px; }
+
+.color-box__panel-wrapper.main-message-clr.cta {
+  border-radius: 4px 0 4px 4px; }
+
+.color-box__panel-wrapper.desc-message-clr.cta {
+  border-radius: 4px 4px 0 4px; }

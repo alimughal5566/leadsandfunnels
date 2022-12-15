@@ -1,0 +1,102 @@
+{
+    "popular": {
+        "label": "Most Popular",
+        "questions": {
+            "birthday": {
+                "active": 1,
+                "label": "Birthday",
+                "icon": "birthday",
+                "quick-access-icon": "ico-birthday"
+            },
+            "contact": {
+                "active": 1,
+                "label": "Contact",
+                "icon": "contact",
+                "quick-access-icon": "ico-mail"
+            },
+            "ctamessage": {
+                "active": 1,
+                "label": "CTA Message",
+                "icon": "cta-message",
+                "quick-access-icon": "ico-message"
+            },
+            "dropdown": {
+                "active": 1,
+                "label": "Dropdown",
+                "icon": "dropdown",
+                "quick-access-icon": "ico-oc799PIto"
+            },
+            "hidden": {
+                "active": 1,
+                "label": "Hidden Field",
+                "icon": "hidden-field",
+                "quick-access-icon": "ico-hidden"
+            },
+            "menu": {
+                "active": 1,
+                "label": "Menu",
+                "icon": "menu",
+                "quick-access-icon": "ico-hamburger"
+            },
+            "number": {
+                "active": 1,
+                "label": "Number",
+                "icon": "number",
+                "quick-access-icon": "ico-hash"
+            },
+            "slider": {
+                "active": 1,
+                "label": "Slider",
+                "icon": "slider",
+                "quick-access-icon": "ico-expand"
+            },
+            "text": {
+                "active": 1,
+                "label": "Text Field",
+                "icon": "text-field",
+                "quick-access-icon": "ico-select-text"
+            },
+            "zipcode": {
+                "active": 1,
+                "label": "Zip Code",
+                "icon": "zip-code",
+                "quick-access-icon": "ico-location"
+            }
+        }
+    },
+    "more-questions": {
+        "label": "More Options",
+        "questions": {
+            "address": {
+                "active": 0,
+                "label": "Address",
+                "icon": "address",
+                "quick-access-icon": "ico-building"
+            },
+            "date-picker": {
+                "active": 0,
+                "label": "Date Picker",
+                "icon": "date-picker",
+                "quick-access-icon": "ico-calander"
+            },
+            "question_group": {
+                "active": 0,
+                "label": "Question Group",
+                "icon": "group",
+                "quick-access-icon": "ico-group"
+            },
+            "time-picker": {
+                "active": 0,
+                "label": "Time Picker",
+                "icon": "time-picker",
+                "quick-access-icon": "ico-time"
+            },
+            "vehicle": {
+                "active": 1,
+                "label": "Car Make & Model",
+                "icon": "bundle",
+                "quick-access-icon": "ico-car"
+            }
+        }
+    }
+}

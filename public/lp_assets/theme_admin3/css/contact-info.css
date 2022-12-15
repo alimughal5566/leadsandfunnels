@@ -1,0 +1,68 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.lp-contact__content {
+  border-bottom: 1px solid #dde0e1;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 0 30px;
+  padding: 13px 30px; }
+  .lp-contact__content:last-child {
+    margin: 0; }
+  .lp-contact__content .input__wrapper {
+    flex: 1; }
+
+.lp-contact__label {
+  margin: 0;
+  min-width: 160px; }
+
+.lp-contact__control {
+  position: relative;
+  min-width: 226px;
+  display: flex;
+  justify-content: flex-end; }
+  .lp-contact__control:before {
+    content: "";
+    bottom: -3px;
+    background: #f2f3f3;
+    left: 21.5%;
+    position: absolute;
+    right: 76.5%;
+    top: -3px;
+    width: 1px; }

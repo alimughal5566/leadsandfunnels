@@ -1,0 +1,568 @@
+{
+    "options": {
+        "activesteptype":3,
+        "all-step-types": [
+            {
+                "steps": [
+                    {
+                        "fields": [
+                            {
+                                "fullname": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "fullname",
+                                    "validation": "fullname",
+                                    "field-label": "Full Name",
+                                    "unique-variable-name": "fullname_contact_1"
+                                }
+                            },
+                            {
+                                "first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "first-name_contact_1"
+                                }
+                            },
+                            {
+                                "last-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "last-name",
+                                    "validation": "lastname",
+                                    "field-label": "Last Name",
+                                    "unique-variable-name": "last-name_contact_1"
+                                }
+                            },
+                            {
+                                "only-first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "only-first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "only-first-name_contact_1"
+                                }
+                            },
+                            {
+                                "email": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "primaryemail",
+                                    "validation": "email",
+                                    "field-label": "Email Address",
+                                    "unique-variable-name": "email_contact_1"
+                                }
+                            },
+                            {
+                                "phone": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "primaryphone",
+                                    "validation": "phone",
+                                    "country-code": 0,
+                                    "auto-format": 1,
+                                    "field-label": "Phone Number",
+                                    "unique-variable-name": "phone_contact_1"
+                                }
+                            }
+                        ],
+                        "show-question" : 1,
+                        "question-title": "What's the best way to reach you?",
+                        "question": "&lt;p&gt;What's the best way to reach you?&lt;&#x2F;p&gt;",
+                        "show-description" : 0,
+                        "description" : "",
+                        "cta-button": 0,
+                        "button-text": "Continue",
+                        "enable-field-label" : 1,
+                        "field-order": [
+                            0,
+                            4,
+                            5
+                        ],
+                        "cta-button-settings" : {
+                            "font-size" : 20,
+                            "enable-hide-until-answer" : 0,
+                            "enable-button-icon" : 0,
+                            "button-icon" : "arrow-thick-right",
+                            "button-icon-color" : "#ffffff",
+                            "button-icon-position" : "LEFT",
+                            "button-icon-size" : 20
+                        },
+                        "enable-security-message" : 0,
+                        "security-message-id" : 0,
+                        "enable-auto-cursor-focus" : 1,
+                        "enable-additional-content" : 0,
+                        "additional-content" : ""
+                    }
+                ],
+                "step-type": "one-step"
+            },
+            {
+                "steps": [
+                    {
+                        "fields": [
+                            {
+                                "fullname": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "fullname",
+                                    "validation": "fullname",
+                                    "field-label": "Full Name",
+                                    "unique-variable-name": "fullname_contact_1"
+                                }
+                            },
+                            {
+                                "first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "first-name_contact_1"
+                                }
+                            },
+                            {
+                                "last-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "last-name",
+                                    "validation": "lastname",
+                                    "field-label": "Last Name",
+                                    "unique-variable-name": "last-name_contact_1"
+                                }
+                            },
+                            {
+                                "only-first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "only-first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "only-first-name_contact_1"
+                                }
+                            },
+                            {
+                                "email": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "primaryemail",
+                                    "validation": "email",
+                                    "field-label": "Email Address",
+                                    "unique-variable-name": "email_contact_1"
+                                }
+                            },
+                            {
+                                "phone": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "primaryphone",
+                                    "validation": "phone",
+                                    "country-code": 0,
+                                    "auto-format": 1,
+                                    "field-label": "Phone Number",
+                                    "unique-variable-name": "phone_contact_1"
+                                }
+                            }
+                        ],
+                        "show-question" : 1,
+                        "question-title": "What's your name and email?",
+                        "question": "&lt;p&gt;What's your name and email?&lt;&#x2F;p&gt;",
+                        "show-description" : 0,
+                        "description" : "",
+                        "cta-button": 1,
+                        "button-text": "Continue",
+                        "field-order": [
+                            0,
+                            4
+                        ],
+                        "cta-button-settings" : {
+                            "font-size" : 20,
+                            "enable-hide-until-answer" : 0,
+                            "enable-button-icon" : 0,
+                            "button-icon" : "arrow-thick-right",
+                            "button-icon-color" : "#ffffff",
+                            "button-icon-position" : "LEFT",
+                            "button-icon-size" : 20
+                        },
+                        "enable-security-message" : 0,
+                        "security-message-id" : 0,
+                        "enable-auto-cursor-focus" : 1,
+                        "enable-additional-content" : 0,
+                        "additional-content" : ""
+                    },
+                    {
+                        "fields": [
+                            {
+                                "fullname": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "fullname",
+                                    "validation": "fullname",
+                                    "field-label": "Full Name",
+                                    "unique-variable-name": "fullname_contact_1"
+                                }
+                            },
+                            {
+                                "first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "first-name_contact_1"
+                                }
+                            },
+                            {
+                                "last-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "last-name",
+                                    "validation": "lastname",
+                                    "field-label": "Last Name",
+                                    "unique-variable-name": "last-name_contact_1"
+                                }
+                            },
+                            {
+                                "only-first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "only-first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "only-first-name_contact_1"
+                                }
+                            },
+                            {
+                                "email": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "primaryemail",
+                                    "validation": "email",
+                                    "field-label": "Email Address",
+                                    "unique-variable-name": "email_contact_1"
+                                }
+                            },
+                            {
+                                "phone": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "primaryphone",
+                                    "validation": "phone",
+                                    "country-code": 0,
+                                    "auto-format": 1,
+                                    "field-label": "Phone Number",
+                                    "unique-variable-name": "phone_contact_1"
+                                }
+                            }
+                        ],
+                        "show-question" : 1,
+                        "question-title": "What's your phone number?",
+                        "question": "&lt;p&gt;What's your phone number?&lt;&#x2F;p&gt;",
+                        "show-description" : 0,
+                        "description" : "",
+                        "cta-button": 1,
+                        "button-text": "Continue",
+                        "enable-field-label" : 1,
+                        "field-order": [
+                            5
+                        ],
+                        "cta-button-settings" : {
+                            "font-size" : 20,
+                            "enable-hide-until-answer" : 0,
+                            "enable-button-icon" : 0,
+                            "button-icon" : "arrow-thick-right",
+                            "button-icon-color" : "#ffffff",
+                            "button-icon-position" : "LEFT",
+                            "button-icon-size" : 20
+                        },
+                        "enable-security-message" : 0,
+                        "security-message-id" : 0,
+                        "enable-auto-cursor-focus" : 1,
+                        "enable-additional-content" : 0,
+                        "additional-content" : ""
+                    }
+                ],
+                "step-type": "two-step"
+            },
+            {
+                "steps": [
+                    {
+                        "fields": [
+                            {
+                                "fullname": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "fullname",
+                                    "validation": "fullname",
+                                    "field-label": "Full Name",
+                                    "unique-variable-name": "fullname_contact_1"
+                                }
+                            },
+                            {
+                                "first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "first-name_contact_1"
+                                }
+                            },
+                            {
+                                "last-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "last-name",
+                                    "validation": "lastname",
+                                    "field-label": "Last Name",
+                                    "unique-variable-name": "last-name_contact_1"
+                                }
+                            },
+                            {
+                                "only-first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "only-first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "only-first-name_contact_1"
+                                }
+                            },
+                            {
+                                "email": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "primaryemail",
+                                    "validation": "email",
+                                    "field-label": "Email Address",
+                                    "unique-variable-name": "email_contact_1"
+                                }
+                            },
+                            {
+                                "phone": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "primaryphone",
+                                    "validation": "phone",
+                                    "country-code": 0,
+                                    "auto-format": 1,
+                                    "field-label": "Phone Number",
+                                    "unique-variable-name": "phone_contact_1"
+                                }
+                            }
+                        ],
+                        "show-question" : 1,
+                        "question-title": "What's your full name?",
+                        "question": "&lt;p&gt;What's your full name?&lt;&#x2F;p&gt;",
+                        "show-description" : 0,
+                        "description" : "",
+                        "cta-button": 1,
+                        "button-text": "Continue",
+                        "field-order": [
+                            0
+                        ],
+                        "cta-button-settings" : {
+                            "font-size" : 20,
+                            "enable-hide-until-answer" : 0,
+                            "enable-button-icon" : 0,
+                            "button-icon" : "arrow-thick-right",
+                            "button-icon-color" : "#ffffff",
+                            "button-icon-position" : "LEFT",
+                            "button-icon-size" : 20
+                        },
+                        "enable-security-message" : 0,
+                        "security-message-id" : 0,
+                        "enable-auto-cursor-focus" : 1,
+                        "enable-additional-content" : 0,
+                        "additional-content" : ""
+                    },
+                    {
+                        "fields": [
+                            {
+                                "fullname": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "fullname",
+                                    "validation": "fullname",
+                                    "field-label": "Full Name",
+                                    "unique-variable-name": "fullname_contact_1"
+                                }
+                            },
+                            {
+                                "first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "first-name_contact_1"
+                                }
+                            },
+                            {
+                                "last-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "last-name",
+                                    "validation": "lastname",
+                                    "field-label": "Last Name",
+                                    "unique-variable-name": "last-name_contact_1"
+                                }
+                            },
+                            {
+                                "only-first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "only-first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "only-first-name_contact_1"
+                                }
+                            },
+                            {
+                                "email": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "primaryemail",
+                                    "validation": "email",
+                                    "field-label": "Email Address",
+                                    "unique-variable-name": "email_contact_1"
+                                }
+                            },
+                            {
+                                "phone": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "primaryphone",
+                                    "validation": "phone",
+                                    "country-code": 0,
+                                    "auto-format": 1,
+                                    "field-label": "Phone Number",
+                                    "unique-variable-name": "phone_contact_1"
+                                }
+                            }
+                        ],
+                        "show-question" : 1,
+                        "question-title": "What's your email address?",
+                        "question": "&lt;p&gt;What's your email address?&lt;&#x2F;p&gt;",
+                        "show-description" : 0,
+                        "description" : "",
+                        "cta-button": 1,
+                        "button-text": "Continue",
+                        "field-order": [
+                            4
+                        ],
+                        "cta-button-settings" : {
+                            "font-size" : 20,
+                            "enable-hide-until-answer" : 0,
+                            "enable-button-icon" : 0,
+                            "button-icon" : "arrow-thick-right",
+                            "button-icon-color" : "#ffffff",
+                            "button-icon-position" : "LEFT",
+                            "button-icon-size" : 20
+                        },
+                        "enable-security-message" : 0,
+                        "security-message-id" : 0,
+                        "enable-auto-cursor-focus" : 1,
+                        "enable-additional-content" : 0,
+                        "additional-content" : ""
+                    },
+                    {
+                        "fields": [
+                            {
+                                "fullname": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "fullname",
+                                    "validation": "fullname",
+                                    "field-label": "Full Name",
+                                    "unique-variable-name": "fullname_contact_1"
+                                }
+                            },
+                            {
+                                "first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "first-name_contact_1"
+                                }
+                            },
+                            {
+                                "last-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "last-name",
+                                    "validation": "lastname",
+                                    "field-label": "Last Name",
+                                    "unique-variable-name": "last-name_contact_1"
+                                }
+                            },
+                            {
+                                "only-first-name": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "only-first-name",
+                                    "validation": "firstname",
+                                    "field-label": "First Name",
+                                    "unique-variable-name": "only-first-name_contact_1"
+                                }
+                            },
+                            {
+                                "email": {
+                                    "value": 0,
+                                    "required": 0,
+                                    "data-field": "primaryemail",
+                                    "validation": "email",
+                                    "field-label": "Email Address",
+                                    "unique-variable-name": "email_contact_1"
+                                }
+                            },
+                            {
+                                "phone": {
+                                    "value": 1,
+                                    "required": 1,
+                                    "data-field": "primaryphone",
+                                    "validation": "phone",
+                                    "country-code": 0,
+                                    "auto-format": 1,
+                                    "field-label": "Phone Number",
+                                    "unique-variable-name": "phone_contact_1"
+                                }
+                            }
+                        ],
+                        "show-question" : 1,
+                        "question-title": "What's your phone number?",
+                        "question": "&lt;p&gt;What's your phone number?&lt;&#x2F;p&gt;",
+                        "show-description" : 0,
+                        "description" : "",
+                        "cta-button": 1,
+                        "button-text": "Continue",
+                        "field-order": [
+                            5
+                        ],
+                        "cta-button-settings" : {
+                            "font-size" : 20,
+                            "enable-hide-until-answer" : 0,
+                            "enable-button-icon" : 0,
+                            "button-icon" : "arrow-thick-right",
+                            "button-icon-color" : "#ffffff",
+                            "button-icon-position" : "LEFT",
+                            "button-icon-size" : 20
+                        },
+                        "enable-security-message" : 0,
+                        "security-message-id" : 0,
+                        "enable-auto-cursor-focus" : 1,
+                        "enable-additional-content" : 0,
+                        "additional-content" : ""
+                    }
+                ],
+                "step-type": "three-step"
+            }
+        ]
+    },
+    "question-type": "contact"
+}

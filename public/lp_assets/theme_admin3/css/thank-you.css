@@ -1,0 +1,630 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+.lp-custom-para {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  margin: 0; }
+
+.inline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; }
+
+.third-party__panel {
+  display: none;
+  position: relative;
+  border-top: solid 1px #f2f3f3;
+  margin: 25px 0 0;
+  padding: 28px 0 0;
+  flex-wrap: wrap;
+  min-height: 100px; }
+  .third-party__panel .select2__parent-url-prefix {
+    float: left;
+    margin-right: 13px;
+    width: 168px; }
+    .third-party__panel .select2__parent-url-prefix .select2-selection__arrow {
+      z-index: 1071 !important; }
+  .third-party__panel select {
+    width: 168px;
+    margin-right: 13px; }
+  .third-party__panel .input-holder {
+    overflow: hidden; }
+  .third-party__panel .form-control, .third-party__panel input[type='text'] {
+    color: #707d84; }
+    .third-party__panel .form-control::-webkit-input-placeholder, .third-party__panel input[type='text']::-webkit-input-placeholder {
+      color: rgba(112, 125, 134, 0.45) !important; }
+    .third-party__panel .form-control::-moz-placeholder, .third-party__panel input[type='text']::-moz-placeholder {
+      opacity: 1;
+      color: rgba(112, 125, 134, 0.45) !important; }
+    .third-party__panel .form-control:-moz-placeholder, .third-party__panel input[type='text']:-moz-placeholder {
+      color: rgba(112, 125, 134, 0.45) !important; }
+    .third-party__panel .form-control:-ms-input-placeholder, .third-party__panel input[type='text']:-ms-input-placeholder {
+      color: rgba(112, 125, 134, 0.45) !important; }
+    .third-party__panel .form-control.placeholder, .third-party__panel input[type='text'].placeholder {
+      color: rgba(112, 125, 134, 0.45) !important; }
+
+.icon.icon-back {
+  transform: rotate(269deg) !important;
+  font-size: 13px !important;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 2px; }
+
+.button-switch_en-logo {
+  width: 180px; }
+  .button-switch_en-logo .switch:before {
+    width: 180px; }
+  .button-switch_en-logo .switch:checked:after {
+    transform: translate(139px, 2px); }
+  .button-switch_en-logo label.lbl-off,
+  .button-switch_en-logo label.lbl-on {
+    padding: 0 20px; }
+
+.form-thank-you #url__text {
+  cursor: auto; }
+
+.form-thank-you .form-group {
+  display: flex;
+  align-items: center; }
+  .form-thank-you .form-group label {
+    padding: 0 10px 0 0;
+    margin: 0;
+    min-width: 310px; }
+  .form-thank-you .form-group .form-control::-webkit-input-placeholder,
+  .form-thank-you .form-group input[type='text']::-webkit-input-placeholder {
+    color: rgba(112, 125, 134, 0.45) !important; }
+  .form-thank-you .form-group .form-control::-moz-placeholder,
+  .form-thank-you .form-group input[type='text']::-moz-placeholder {
+    opacity: 1;
+    color: rgba(112, 125, 134, 0.45) !important; }
+  .form-thank-you .form-group .form-control:-moz-placeholder,
+  .form-thank-you .form-group input[type='text']:-moz-placeholder {
+    color: rgba(112, 125, 134, 0.45) !important; }
+  .form-thank-you .form-group .form-control:-ms-input-placeholder,
+  .form-thank-you .form-group input[type='text']:-ms-input-placeholder {
+    color: rgba(112, 125, 134, 0.45) !important; }
+  .form-thank-you .form-group .form-control.placeholder,
+  .form-thank-you .form-group input[type='text'].placeholder {
+    color: rgba(112, 125, 134, 0.45) !important; }
+  .form-thank-you .form-group label.error {
+    margin: 0 10px !important; }
+
+/* update the style for froala version update */
+@media (max-width: 1440px) {
+  body:not(.froala-editor-update) .terms-of-use-settings-page #bold-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #italic-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #underline-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #html-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #undo-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #redo-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #starOption-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #color-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #bold-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #italic-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #underline-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #html-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #undo-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #redo-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #starOption-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #color-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #bold-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #italic-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #underline-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #html-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #undo-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #redo-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #starOption-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #color-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #bold-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #italic-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #underline-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #html-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #undo-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #redo-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #starOption-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #color-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #bold-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #italic-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #underline-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #html-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #undo-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #redo-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #starOption-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #color-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #bold-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #italic-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #underline-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #html-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #undo-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #redo-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #starOption-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #color-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #bold-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #italic-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #underline-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #html-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #undo-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #redo-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #starOption-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #color-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #bold-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #italic-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #underline-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #html-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #undo-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #redo-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #starOption-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #color-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #bold-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #italic-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #underline-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #insertHR-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #insertCTALink-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #html-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #undo-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #redo-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #starOption-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #strikeThrough-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #color-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #insertImage-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #insertLink-1 {
+    width: 28px; }
+    body:not(.froala-editor-update) .terms-of-use-settings-page #bold-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #italic-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #underline-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #insertHR-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #html-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #undo-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #redo-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #starOption-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #color-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #insertImage-1 i,
+    body:not(.froala-editor-update) .terms-of-use-settings-page #insertLink-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #bold-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #italic-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #underline-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #insertHR-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #html-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #undo-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #redo-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #starOption-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #color-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #insertImage-1 i,
+    body:not(.froala-editor-update) .privacy-policy-settings-page #insertLink-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #bold-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #italic-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #underline-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #insertHR-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #html-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #undo-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #redo-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #starOption-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #color-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #insertImage-1 i,
+    body:not(.froala-editor-update) .licensing-info-settings-page #insertLink-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #bold-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #italic-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #underline-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #insertHR-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #html-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #undo-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #redo-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #starOption-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #color-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #insertImage-1 i,
+    body:not(.froala-editor-update) .disclosures-settings-page #insertLink-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #bold-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #italic-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #underline-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #insertHR-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #html-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #undo-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #redo-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #starOption-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #color-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #insertImage-1 i,
+    body:not(.froala-editor-update) .contact-us-settings-page #insertLink-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #bold-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #italic-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #underline-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #insertHR-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #html-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #undo-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #redo-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #starOption-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #color-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #insertImage-1 i,
+    body:not(.froala-editor-update) .footer-about-us-settings-page #insertLink-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #bold-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #italic-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #underline-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #insertHR-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #html-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #undo-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #redo-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #starOption-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #color-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #insertImage-1 i,
+    body:not(.froala-editor-update) .auto-responder-settings-page #insertLink-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #bold-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #italic-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #underline-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #insertHR-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #html-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #undo-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #redo-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #starOption-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #color-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #insertImage-1 i,
+    body:not(.froala-editor-update) .footer-option-settings-page #insertLink-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #bold-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #italic-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #underline-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #insertHR-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #insertCTALink-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #html-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #undo-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #redo-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #starOption-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #strikeThrough-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #color-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #insertImage-1 i,
+    body:not(.froala-editor-update) .funnel-thank-you-page #insertLink-1 i {
+      margin: 0 auto; } }
+
+@media (max-width: 1350px) {
+  body:not(.froala-editor-update) .terms-of-use-settings-page #bold-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #italic-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #underline-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #html-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #undo-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #redo-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #starOption-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #color-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .terms-of-use-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #bold-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #italic-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #underline-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #html-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #undo-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #redo-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #starOption-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #color-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .privacy-policy-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #bold-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #italic-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #underline-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #html-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #undo-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #redo-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #starOption-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #color-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .licensing-info-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #bold-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #italic-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #underline-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #html-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #undo-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #redo-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #starOption-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #color-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .disclosures-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #bold-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #italic-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #underline-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #html-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #undo-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #redo-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #starOption-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #color-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .contact-us-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #bold-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #italic-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #underline-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #html-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #undo-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #redo-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #starOption-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #color-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .footer-about-us-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #bold-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #italic-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #underline-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #html-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #undo-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #redo-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #starOption-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #color-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .auto-responder-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #bold-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #italic-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #underline-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #insertHR-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #insertCTALink-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #html-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #undo-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #redo-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #starOption-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #strikeThrough-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #color-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #insertImage-1,
+  body:not(.froala-editor-update) .footer-option-settings-page #insertLink-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #bold-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #italic-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #underline-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #insertHR-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #insertCTALink-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #html-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #undo-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #redo-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #starOption-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #strikeThrough-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #color-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #insertImage-1,
+  body:not(.froala-editor-update) .funnel-thank-you-page #insertLink-1 {
+    width: 27px; } }
+
+/* update the style for froala version update */
+body:not(.froala-editor-update) .funnel-thank-you-page .fr-popup .fr-command.fr-btn,
+body:not(.froala-editor-update) .funnel-thank-you-page .fr-toolbar .fr-command.fr-btn {
+  float: none;
+  display: inline-block;
+  vertical-align: top; }
+  @media (max-width: 1600px) {
+    body:not(.froala-editor-update) .funnel-thank-you-page .fr-popup .fr-command.fr-btn,
+    body:not(.froala-editor-update) .funnel-thank-you-page .fr-toolbar .fr-command.fr-btn {
+      width: 34px; }
+      body:not(.froala-editor-update) .funnel-thank-you-page .fr-popup .fr-command.fr-btn i,
+      body:not(.froala-editor-update) .funnel-thank-you-page .fr-toolbar .fr-command.fr-btn i {
+        margin: 0 auto; } }
+  @media (max-width: 1440px) {
+    body:not(.froala-editor-update) .funnel-thank-you-page .fr-popup .fr-command.fr-btn,
+    body:not(.froala-editor-update) .funnel-thank-you-page .fr-toolbar .fr-command.fr-btn {
+      width: 28px; } }
+  @media (max-width: 1350px) {
+    body:not(.froala-editor-update) .funnel-thank-you-page .fr-popup .fr-command.fr-btn,
+    body:not(.froala-editor-update) .funnel-thank-you-page .fr-toolbar .fr-command.fr-btn {
+      width: 27px; } }
+
+/* update the style for froala version update */
+body:not(.froala-editor-update).footer-option-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).thank-you-message-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).terms-of-use-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).privacy-policy-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).licensing-info-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).disclosures-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).contact-us-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).auto-responder-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).footer-about-us-settings-page > .fr-popup .fr-buttons, body:not(.froala-editor-update).funnel-thank-you-page > .fr-popup .fr-buttons {
+  width: 100%;
+  min-width: initial; }
+
+body:not(.froala-editor-update).footer-option-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).thank-you-message-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).terms-of-use-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).privacy-policy-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).licensing-info-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).disclosures-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).contact-us-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).auto-responder-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).footer-about-us-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).funnel-thank-you-page > .fr-popup .fr-command.fr-btn {
+  min-width: 37px; }
+  @media (max-width: 1440px) {
+    body:not(.froala-editor-update).footer-option-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).thank-you-message-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).terms-of-use-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).privacy-policy-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).licensing-info-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).disclosures-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).contact-us-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).auto-responder-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).footer-about-us-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).funnel-thank-you-page > .fr-popup .fr-command.fr-btn {
+      min-width: 28px; } }
+  @media (max-width: 1600px) {
+    body:not(.froala-editor-update).footer-option-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).thank-you-message-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).terms-of-use-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).privacy-policy-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).licensing-info-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).disclosures-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).contact-us-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).auto-responder-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).footer-about-us-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).funnel-thank-you-page > .fr-popup .fr-command.fr-btn {
+      min-width: 30px; } }
+  @media (max-width: 1800px) {
+    body:not(.froala-editor-update).footer-option-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).thank-you-message-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).terms-of-use-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).privacy-policy-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).licensing-info-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).disclosures-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).contact-us-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).auto-responder-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).footer-about-us-settings-page > .fr-popup .fr-command.fr-btn, body:not(.froala-editor-update).funnel-thank-you-page > .fr-popup .fr-command.fr-btn {
+      min-width: 37px; } }
+
+body:not(.froala-editor-update).footer-option-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).thank-you-message-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).terms-of-use-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).privacy-policy-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).licensing-info-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).disclosures-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).contact-us-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).auto-responder-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).footer-about-us-settings-page .lp-thankyou .lp-thankyou-head, body:not(.froala-editor-update).funnel-thank-you-page .lp-thankyou .lp-thankyou-head {
+  border-bottom: none; }
+
+body:not(.froala-editor-update).footer-option-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).thank-you-message-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).terms-of-use-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).privacy-policy-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).licensing-info-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).disclosures-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).contact-us-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).auto-responder-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).footer-about-us-settings-page .classic-editor__wrapper, body:not(.froala-editor-update).funnel-thank-you-page .classic-editor__wrapper {
+  border: none; }
+  body:not(.froala-editor-update).footer-option-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).thank-you-message-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).terms-of-use-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).privacy-policy-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).licensing-info-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).disclosures-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).contact-us-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).auto-responder-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).footer-about-us-settings-page .classic-editor__wrapper .fr-box, body:not(.froala-editor-update).funnel-thank-you-page .classic-editor__wrapper .fr-box {
+    border: solid 1px #f2f3f3; }
+
+body:not(.froala-editor-update).footer-option-settings-page .lp-froala-textbox, body:not(.froala-editor-update).thank-you-message-settings-page .lp-froala-textbox, body:not(.froala-editor-update).terms-of-use-settings-page .lp-froala-textbox, body:not(.froala-editor-update).privacy-policy-settings-page .lp-froala-textbox, body:not(.froala-editor-update).licensing-info-settings-page .lp-froala-textbox, body:not(.froala-editor-update).disclosures-settings-page .lp-froala-textbox, body:not(.froala-editor-update).contact-us-settings-page .lp-froala-textbox, body:not(.froala-editor-update).auto-responder-settings-page .lp-froala-textbox, body:not(.froala-editor-update).footer-about-us-settings-page .lp-froala-textbox, body:not(.froala-editor-update).funnel-thank-you-page .lp-froala-textbox {
+  visibility: hidden; }
+
+.lp-thankyou .lp-thankyou-head {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+@media (max-width: 1270px) {
+  .froala-editor-update .lp-panel__thankyou-editor {
+    overflow: auto; } }
+
+body:not(.froala-editor-update) .lp-panel__thankyou-editor {
+  overflow: auto; }
+
+.froala-editor-thank-you-page {
+  margin: 0 auto; }
+
+/* update the style for froala version update */
+.classic-editor__wrapper:not(.update-version) {
+  border: solid 1px #f2f3f3; }
+  .classic-editor__wrapper:not(.update-version).froala-editor-full-width {
+    margin: auto; }
+  @media (max-width: 1800px) {
+    .classic-editor__wrapper:not(.update-version) {
+      margin: 0 30px; } }
+  @media (max-width: 1600px) {
+    .classic-editor__wrapper:not(.update-version) {
+      margin: 0; } }
+  .classic-editor__wrapper:not(.update-version) .classic-editor {
+    border-radius: 3px;
+    border: 1px solid #cfdadd; }
+  .classic-editor__wrapper:not(.update-version) .fr-toolbar {
+    border: none;
+    border-bottom: 1px solid #cfdadd;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+    .classic-editor__wrapper:not(.update-version) .fr-toolbar .fr-command.fr-btn {
+      height: 48px;
+      margin: 0;
+      color: #073146; }
+    .classic-editor__wrapper:not(.update-version) .fr-toolbar .fr-separator.fr-vs {
+      height: 44px; }
+  .classic-editor__wrapper:not(.update-version) .fr-box.fr-basic.fr-top .fr-wrapper {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .classic-editor__wrapper:not(.update-version) .fr-toolbar .fr-command.fr-btn.fr-dropdown:after {
+    top: 22px;
+    border-top-color: #073146; }
+  @media (max-width: 1600px) {
+    .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor {
+      margin: auto; } }
+  .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-btn.fr-command {
+    height: 48px;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    text-align: center;
+    color: #073146; }
+    .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-btn.fr-command span {
+      min-width: initial;
+      padding: 0; }
+    .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-btn.fr-command[id^="fontFamily"] {
+      text-align: left; }
+  @media (max-width: 1440px) {
+    .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-popup .fr-command.fr-btn {
+      height: 41px; } }
+  @media (max-width: 1600px) {
+    .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-popup .fr-command.fr-btn {
+      height: 43px; } }
+  @media (max-width: 1800px) {
+    .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-popup .fr-command.fr-btn {
+      height: 45px; } }
+  .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-btn-wrap .fr-command.fr-btn {
+    margin: 0; }
+    @media (min-width: 1850px) {
+      .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-btn-wrap .fr-command.fr-btn.fr-dropdown {
+        margin-left: 0;
+        margin-right: 2px; } }
+  .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-command.fr-btn.fr-dropdown:after {
+    top: 50%;
+    transform: translateY(-50%); }
+  .classic-editor__wrapper:not(.update-version).funnel-setting-pages-editor .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-options:after {
+    right: initial;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.funnel-thank-you-page .fr-wrapper {
+  overflow: auto; }
+
+.funnel-thank-you-page .fr-element {
+  width: 1212px;
+  margin: 0 auto; }

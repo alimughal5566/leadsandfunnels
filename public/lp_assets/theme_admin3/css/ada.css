@@ -1,0 +1,114 @@
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+/**
+* Un order list Mixin
+*/
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+/* ada labels style */
+.label-ada {
+  position: relative;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+
+.box-ada {
+  position: relative; }
+  .box-ada:before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    content: '';
+    width: 1px;
+    background: #e4e8e9; }
+  .box-ada .row {
+    padding: 0 300px; }
+    @media (max-width: 1800px) {
+      .box-ada .row {
+        padding: 0 200px; } }
+    @media (max-width: 1600px) {
+      .box-ada .row {
+        padding: 0 160px; } }
+    @media (max-width: 1440px) {
+      .box-ada .row {
+        padding: 0 120px; } }
+    @media (max-width: 1280px) {
+      .box-ada .row {
+        padding: 0 100px; } }
+    @media (max-width: 1200px) {
+      .box-ada .row {
+        padding: 0 50px; } }
+  .box-ada input[type="radio"] {
+    visibility: hidden;
+    position: fixed;
+    opacity: 0; }
+    .box-ada input[type="radio"]:checked ~ .ada-sign {
+      opacity: 1;
+      visibility: visible; }
+    .box-ada input[type="radio"]:checked + .box-ada__label-box {
+      border-radius: 6px;
+      border-color: #27c24c;
+      color: #27c24c; }
+      .box-ada input[type="radio"]:checked + .box-ada__label-box.inactive-area {
+        border-color: #ec394a;
+        color: #ec394a; }
+  .box-ada__label-box {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: #fff #fff #e4e8e9 #fff;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #434343;
+    text-align: center; }
+  .box-ada__img {
+    display: block;
+    margin: 0 0 10px; }
+  .box-ada__text {
+    display: block; }
+  .box-ada .ada-sign {
+    transition: all 0.4s ease;
+    border-radius: 0 6px 0 0; }
+    .box-ada .ada-sign.inactive-area {
+      background: #ec394a; }
