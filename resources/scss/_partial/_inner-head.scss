@@ -1,0 +1,370 @@
+.main-content {
+  $parent:&;
+  padding: 30px 40px;
+
+  @include breakpoint(1440){
+    padding: 20px;
+  }
+
+  //@include min-breakpoint(1440) {
+  //  padding: 0 30px 30px;
+  //}
+  //
+  //@include min-breakpoint(1600) {
+  //  padding: 0 39px 30px;
+  //}
+
+  &__head {
+    display: flex;
+    flex-flow: wrap;
+    margin: -15px 0 30px;
+    padding: 0 0 21px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #e4e8e9;
+
+    .funnel-question-page & {
+      border-bottom-color: #eaeced;
+
+      @include min-breakpoint(1600) {
+        padding-top: 15px;
+      }
+    }
+
+    > div {
+      &:only-child {
+        width: 100%;
+      }
+    }
+    .button {
+
+      &-payment {
+
+        @include breakpoint(1300) {
+          height: 42px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    &#{$parent}__head {
+
+      &_tabs{
+        padding:0 0 8px;
+      }
+
+      .action__item {
+
+        &_separator {
+
+          &:after {
+            top: -12px;
+            right: -10px;
+            height: 40px;
+            background-color: #dbe0e2;
+
+            .account-page & {
+
+              @include breakpoint(1440) {
+                top: 0;
+              }
+            }
+          }
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .col-left,
+    .col-right {
+      display: flex;
+      margin: 15px 0 0;
+      align-items: center;
+      word-break: break-all;
+    }
+
+    .col-left {
+      flex-grow: 1;
+      flex-basis: 0;
+
+      @include min-breakpoint(1600) {
+        padding: 0 20px 0 0;
+      }
+    }
+
+    .title {
+      @include font(28, 40, 300);
+      color: #8f9da6;
+      margin: 0 15px 0 0;
+      //display: inline-block;
+      //vertical-align: top;
+      display: block;
+
+      @include breakpoint(1800) {
+        @include fontsize(24, 32);
+
+       /* .thank-you-message-settings-page & {
+          font-size: 22px;
+          margin: 0 10px 0 0
+        }*/
+      }
+
+      @include breakpoint(1600) {
+        @include fontsize(22, 30);
+
+       /* .thank-you-message-settings-page & {
+          font-size: 20px;
+          margin: 0 8px 0 0;
+        }*/
+      }
+
+      @include breakpoint(1440) {
+        @include fontsize(19, 26);
+        margin: 0 12px 0 0;
+
+        /*.thank-you-message-settings-page & {
+          font-size: 16px;
+          margin: 0 7px 0 0;
+        }*/
+      }
+
+     /* @include breakpoint(1350) {
+        .thank-you-message-settings-page & {
+          font-size: 15px;
+        }
+      }*/
+
+      .funnel-name {
+        display: inline-block;
+        vertical-align: top;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: #58666e;
+        //max-width: 415px;
+
+       /* @include breakpoint(1800) {
+          max-width: 320px;
+        }
+
+        @include breakpoint(1600) {
+          max-width: 360px;
+        }
+
+        @include breakpoint(1440) {
+          max-width: 310px;
+        }
+
+        .global-on & {
+
+          max-width: 405px;
+
+          @include breakpoint(1800) {
+            max-width: 310px;
+          }
+
+          @include breakpoint(1600) {
+            max-width: 280px;
+          }
+
+          @include breakpoint(1440) {
+            max-width: 180px;
+          }
+        }*/
+      }
+
+      .platform__name {
+        color: #58666e;
+      }
+
+      .platform__dsc {
+        font-size: 20px;
+        @include breakpoint(1400) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .funnel-plus-icon {
+      display: block;
+      color: #8f9da6;
+      font-size: 0;
+      line-height: 0;
+      margin: 0 22px 0 0;
+
+      @include breakpoint(1800) {
+        margin: 0 17px 0 0;
+      }
+
+      @include breakpoint(1600) {
+        margin: 0 14px 0 0;
+      }
+
+      @include breakpoint(1440) {
+        margin: 0 12px 0 0;
+      }
+
+      &:before {
+        font-family: 'icomoon' !important;
+        content: "\e903";
+        display: block;
+        font-size: 28px;
+        line-height: 1;
+
+        @include breakpoint(1800) {
+          font-size: 24px;
+
+          .thank-you-message-settings-page & {
+            font-size: 22px;
+          }
+        }
+
+        @include breakpoint(1600) {
+          font-size: 22px;
+
+          .thank-you-message-settings-page & {
+            font-size: 20px;
+          }
+        }
+
+        @include breakpoint(1440) {
+          font-size: 19px;
+
+          .thank-you-message-settings-page & {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .funnel-info-tag {
+      height: 32px;
+      display: flex;
+      color: $white;
+      min-width: 170px;
+      border-radius: 3px;
+      position: relative;
+      flex-flow: row wrap;
+      align-items: center;
+      background-color: #85969f;
+      margin: 0 20px 0 0;
+
+      @include breakpoint(1600) {
+        margin: 0 15px 0 0;
+      }
+
+      @include breakpoint(1440) {
+        min-width: 150px;
+      }
+
+      .global-setting-link {
+        @include fontsize(14, 18);
+        padding: 5px 30px 5px 18px;
+        color: $white;
+
+        @include breakpoint(1440) {
+          font-size: 13px;
+          padding: 5px 30px 5px 10px;
+        }
+
+        @include breakpoint(1350) {
+          .thank-you-message-settings-page & {
+            font-size: 12px;
+          }
+        }
+
+        &:before {
+          top: 7px;
+          right: 10px;
+          content: "\e938";
+          position: absolute;
+          font-family: 'icomoon' !important;
+
+          @include breakpoint(1440) {
+            top: 8px;
+          }
+        }
+      }
+
+    }
+
+    &sidebar-active {
+
+      &title {
+        background: #f00;
+      }
+    }
+    .back-link {
+      @include font(14, 16, 600);
+      color: #707d84;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 20px;
+      @include breakpoint(1600) {
+        font-size: 12px;
+      }
+      @include breakpoint(1440) {
+        padding-left: 10px;
+      }
+
+    }
+    .video-link {
+      @include font(14, 18, 600);
+      color: #707d84;
+      text-transform: uppercase;
+      position: relative;
+      padding-left: 25px;
+
+      @include breakpoint(1600) {
+        font-size: 12px;
+      }
+
+      &:hover {
+        color: #707d84;
+      }
+
+      .icon {
+        @include fontsize(19, 20);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        color: #9fa8ad;
+      }
+    }
+
+    .nav {
+
+      &__tab {
+
+        .nav-item {
+
+          &.disabled {
+            cursor: not-allowed;
+            position: relative;
+
+            .nav-link {
+              pointer-events: none;
+            }
+          }
+
+          &:before,
+          &:after {
+            background-color: #dbe0e2;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-content__head.main-content__head_tabs.qesution-head {
+  padding-bottom: 20px;
+}

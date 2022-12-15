@@ -1,0 +1,1139 @@
+/* TCA messages page style */
+.tcpa-message-content {
+
+  .theme__body {
+    position: relative;
+  }
+
+  .fr-view img.fr-dii {
+    max-width: calc(100% - (2*5px));
+  }
+
+  .main-content__head {
+
+    .col-left,
+    .col-right {
+
+      @include min-breakpoint(1800) {
+        margin: 26px 0 0;
+      }
+    }
+
+    .title {
+      @include min-breakpoint(1800) {
+        font-size: 32px;
+      }
+    }
+
+    .button {
+      font-weight: 700;
+    }
+  }
+
+  .back-link {
+    font-weight: 700;
+
+    .icon {
+
+      &.icon-back {
+        margin: 0 6px 0 0;
+      }
+    }
+  }
+
+  .lp-panel {
+    padding: 12px 30px 8px;
+
+    @include breakpoint(1600) {
+      padding: 12px 20px 8px;
+    }
+  }
+
+  .lp-panel__head {
+    margin: 0;
+    padding: 0 0 15px;
+
+    .col-left,
+    .col-right {
+      margin: 0;
+    }
+  }
+
+  .question-mark {
+
+    &.el-tooltip {
+      margin: -1px 0 0 1px;
+    }
+  }
+
+  .lp-table__item {
+    height: 58px;
+
+    .text-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &:nth-child(2) {
+      justify-content: center;
+      margin: 0 0 0 37px;
+
+      .text-wrap {
+        width: 150px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .lp-table__head {
+
+    .lp-table__item {
+      @include fontsize(18, 22);
+    }
+
+    .lp-table__list {
+      border-bottom: none;
+    }
+  }
+
+  .lp-panel__body {
+    padding: 0;
+  }
+
+  .sorting-opener-wrap {
+    @include size(10px, 10px);
+    position: relative;
+    margin: 0 0 0 7px;
+
+    .sort-down,
+    .sort-up {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-style: solid;
+      z-index: 3;
+    }
+
+    .sort-up {
+      border-width: 0 5px 5px;
+      border-color: transparent transparent #9fa8ad;
+
+      &.active {
+        border-color: transparent transparent #02abec;
+      }
+    }
+
+    .sort-down {
+      top: 8px;
+      border-width: 5px 5px 0;
+      border-color: #9fa8ad transparent transparent;
+
+      &.active {
+        border-color: #02abec transparent transparent;
+      }
+    }
+  }
+
+  .lp-table__list {
+
+    &:hover,
+    &.hover {
+
+      .options-btns {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &:only-child {
+
+      .options-btns {
+
+        .remove {
+          //display: none;
+        }
+      }
+    }
+  }
+
+  .action {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .action-wrap {
+    position: relative;
+  }
+
+  .options-btns {
+    background: $white;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    right: -3px;
+    top: -4px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+
+    li {
+      position: relative;
+      margin: 0 0 0 10px;
+    }
+
+    a {
+      position: relative;
+      color: #9fa8ad;
+      display: block;
+
+      i {
+        display: block;
+      }
+
+      &:hover {
+        color: #02abec;
+      }
+    }
+  }
+
+  .action__list {
+
+    .action__item {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 6px;
+      color: #c7d4df;
+
+      i {
+        margin: 0 1px;
+        display: block;
+      }
+    }
+  }
+
+  .tcpa-radio-btn {
+    position: relative;
+    border-left: 1px solid #f2f3f3;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 20px;
+
+    .radio-label {
+      @include size(92px, 30px);
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .radio-area {
+      @include font(11, 30, 600);
+      @include size(100%, 100%);
+      position: relative;
+      background: #ec394a;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: $white;
+      cursor: pointer;
+
+      &:before {
+        transition: all 0.3s ease-in-out;
+        content: 'active';
+        text-transform: uppercase;
+        position: absolute;
+        right: -40px;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:after {
+        transition: all 0.3s ease-in-out;
+        content: 'inactive';
+        text-transform: uppercase;
+        position: absolute;
+        left: 7px;
+        top: 0;
+        bottom: 0;
+      }
+
+      .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: $white;
+        width: 27px;
+        z-index: 2;
+      }
+    }
+
+    .field-label {
+
+      &:checked {
+
+        + .radio-area {
+          background: #27c24c;
+
+          &:before {
+            right: 13px;
+          }
+
+          &:after {
+            left: -55px;
+          }
+
+          .handle {
+            right: 63px;
+          }
+        }
+      }
+    }
+  }
+
+  .tcpa-checkbox-btn {
+    position: relative;
+
+    .checkbox-label {
+      @include size(126px, 43px);
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+    }
+
+    .checkbox-area {
+      @include font(13, 43, 600);
+      @include size(100%, 100%);
+      position: relative;
+      background: #ec394a;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: $white;
+      cursor: pointer;
+
+      &:before {
+        transition: all 0.3s ease-in-out;
+        content: 'active';
+        text-transform: uppercase;
+        position: absolute;
+        right: -50px;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:after {
+        transition: all 0.3s ease-in-out;
+        content: 'inactive';
+        text-transform: uppercase;
+        position: absolute;
+        left: 12px;
+        top: 0;
+        bottom: 0;
+      }
+
+      .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: $white;
+        width: 39px;
+        z-index: 2;
+      }
+    }
+
+    .field-label {
+
+      &:checked {
+
+        + .checkbox-area {
+          background: #27c24c;
+
+          &:before {
+            right: 20px;
+          }
+
+          &:after {
+            left: -65px;
+          }
+
+          .handle {
+            right: 85px;
+          }
+        }
+      }
+    }
+  }
+
+  .tcpa-checkbox-btn-small {
+    position: relative;
+
+    .checkbox-label {
+      @include size(72px, 30px);
+      position: relative;
+      display: block;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .checkbox-area {
+      @include font(11, 30, 600);
+      @include size(100%, 100%);
+      position: relative;
+      background: #c114ed;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: $white;
+      cursor: pointer;
+
+      &:before {
+        transition: all 0.3s ease-in-out;
+        content: 'ON';
+        position: absolute;
+        right: -25px;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:after {
+        transition: all 0.3s ease-in-out;
+        content: 'OFF';
+        position: absolute;
+        left: 11px;
+        top: 0;
+        bottom: 0;
+      }
+
+      .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: $white;
+        width: 27px;
+        z-index: 2;
+      }
+    }
+
+    .field-label {
+
+      &:checked {
+
+        + .checkbox-area {
+          background: #27c24c;
+
+          &:before {
+            right: 11px;
+          }
+
+          &:after {
+            left: -25px;
+          }
+
+          .handle {
+            right: 43px;
+          }
+        }
+      }
+    }
+  }
+
+  /* tcpa message content style */
+  .tcpa-message-pannel {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .lp-panel__body {
+      margin: 0 -15px 0 0;
+
+      @include min-breakpoint(1600) {
+        margin: 0 -30px 0 0;
+      }
+    }
+
+    .lp-panel__head {
+      padding: 8px 0;
+      margin: 0 0 28px;
+    }
+
+    .action-view-list {
+      border-left: 1px solid #f2f3f3;
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0 21px;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        border-right: 1px solid #f2f3f3;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        color: #9fa8ad;
+        cursor: pointer;
+        padding: 0 20px;
+        height: 60px;
+
+        .ico {
+          @include fontsize(29, 40);
+          display: block;
+        }
+
+        .ico-devices {
+          font-size: 38px;
+        }
+
+        .ico-Mobile,
+        .ico-mobile {
+
+          &:before {
+            content: "\e945";
+          }
+        }
+
+        &.active {
+          color: #1eb4ee;
+        }
+      }
+    }
+  }
+
+  .mCustomScrollBox {
+    max-height: inherit !important;
+  }
+
+  .classic-editor__wrapper {
+
+    &.update-version {
+
+      &.error {
+        border-color: #cc0b0b !important;
+      }
+
+      #dropdown-menu-fontFamily-1 {
+
+        .fr-dropdown-wrapper {
+          width: 158px;
+
+          @include min-breakpoint(1600) {
+            width: 190px;
+          }
+        }
+      }
+
+      .fr-box.fr-basic.fr-top .fr-wrapper {
+        min-height: inherit;
+      }
+
+      .fr-newline {
+        display: none;
+      }
+
+      .fr-toolbar {
+
+        #bold-1,
+        #italic-1,
+        #underline-1,
+        #insertHR-1,
+        #insertCTALink-1,
+        #starOption-1,
+        #color-1,
+        #insertImage-1,
+        #textColor-1,
+        #backgroundColor-1,
+        #html-1 {
+          width: 26px !important;
+
+          @include min-breakpoint(1600) {
+            width: 34px !important;
+          }
+
+          i {
+            margin: 8px 1px;
+
+            @include min-breakpoint(1600) {
+              margin: 8px 5px;
+            }
+          }
+        }
+      }
+
+      #fontSize-1,
+      #fontFamily-1 {
+        @include breakpoint(1599) {
+
+          .fa-text-height,
+          .fa-font {
+            position: relative;
+            left: -4px;
+          }
+        }
+      }
+
+      .fr-popup {
+        margin: 10px 0 0 -44px;
+        min-width: 150px;
+
+        @include min-breakpoint(1440) {
+          margin: 10px 0 0 -70px;
+          min-width: 171px;
+        }
+
+        .fr-layer {
+          @include breakpoint(1599) {
+            width: 240px;
+          }
+        }
+
+        #formatUL-1,
+        #align-1,
+        #insertLink-1,
+        #strikeThrough-1,
+        #fontAwesome-1,
+        #emoticons-1,
+        #undo-1,
+        #redo-1,
+        #html-1,
+        #lineHeight-1,
+        #underline-1 {
+          width: 36px !important;
+
+          @include min-breakpoint(1600) {
+            width: 44px !important;
+          }
+
+          i {
+            float: none !important;
+            display: block !important;
+            margin: 8px auto !important;
+          }
+        }
+
+        #formatULOptions-1 {
+          width: 16px !important;
+        }
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &.pop-fontawesome {
+
+      .fr-popup {
+        width: 290px;
+        margin: 10px 0 0;
+
+        @include min-breakpoint(1600) {
+          width: 372px;
+          margin: 10px 0 0 -50px;
+        }
+
+        @include min-breakpoint(1800) {
+          width: 372px;
+          margin: 10px 0 0 -10px;
+        }
+
+        &.fr-active {
+          top: 38px !important;
+        }
+      }
+
+      .fr-tabs-scroll {
+
+        button {
+          width: 26px !important;
+
+          @include min-breakpoint(1600) {
+            width: 34px !important;
+          }
+
+          i {
+            display: block;
+            float: none;
+            margin: 8px auto;
+          }
+        }
+      }
+    }
+
+    .fr-emoticon-container {
+
+      @include breakpoint(1599) {
+        min-width: 265px;
+      }
+    }
+  }
+}
+
+/* tcpa tooltip style */
+.tcpa-tooltip {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* tcpa index page tooltip style */
+.tcpa-page {
+
+  .tooltipster-content {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 4px 14px;
+  }
+}
+
+/* tcpa-message-delete-modal style */
+.tcpa-message-delete-modal {
+
+  .modal-msg_light {
+    margin: 0;
+  }
+
+  .button {
+    font-weight: 700;
+  }
+}
+
+/* tcpa-message-detail style */
+.tcpa-message-detail {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 30px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 30px;
+    height: 1px;
+    background: #f2f3f3;
+    width: 342px;
+
+    @include min-breakpoint(1440) {
+      width: 367px;
+    }
+
+    @include min-breakpoint(1600) {
+      width: 422px;
+      right: 0;
+    }
+  }
+
+  .background-detail__area {
+    flex-grow: 1;
+    flex-basis: 0;
+    width: auto;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 0;
+  }
+
+  .bg-controls-block {
+    overflow: visible;
+    width: 325px;
+    margin: 0;
+
+    @include min-breakpoint(1440) {
+      width: 350px;
+    }
+
+    @include min-breakpoint(1600) {
+      width: 420px;
+    }
+
+    @include breakpoint(1600) {
+      padding: 0 0 0 15px;
+    }
+
+    .mCSB_inside > .mCSB_container {
+      margin-right: 0;
+    }
+
+    .mCSB_scrollTools {
+
+      @include breakpoint(1600) {
+        width: 10px;
+
+        .mCSB_draggerRail {
+          width: 5px;
+        }
+      }
+    }
+
+    .mCSB_dragger .mCSB_dragger_bar {
+
+      @include breakpoint(1600) {
+        width: 5px !important;
+      }
+    }
+  }
+
+  .right-sidebar {
+    position: relative;
+    max-height: 608px;
+
+    &.mCS_no_scrollbar {
+
+      .mCustomScrollBox,
+      .mCSB_container {
+        overflow: visible;
+      }
+    }
+  }
+
+  .right-block-holder {
+    position: relative;
+    padding: 0 15px 0 0;
+
+    @include min-breakpoint(1600) {
+      padding: 0 30px 0 0;
+    }
+  }
+
+  .form-group {
+    position: relative;
+    display: block;
+    margin: 0;
+
+    &:first-child {
+
+      .title-holder {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .title-holder {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f3f3;
+
+    .title {
+      @include font(16, 20, 700);
+      text-transform: capitalize;
+      display: block;
+      color: #707d84;
+    }
+  }
+
+  .field-holder {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f3f3;
+  }
+
+  .form-control {
+    @include font(16, 20, 600);
+    font-family: $base-font-sans-serif;
+    padding: 8px 13px;
+    color: #707d84;
+
+    @include placeholder {
+      color: #b4bbbc !important;
+    }
+  }
+
+  .checkbox-area {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .label-text {
+    @include font(16, 20, 400);
+    color: #707d84;
+    display: block;
+    margin: 0;
+  }
+
+  .tcpa-message-froala .fr-toolbar.fr-top {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fr-popup .fr-btn-wrap button:nth-child(2) {
+    width: 16px !important;
+  }
+
+  .pop-emotions {
+
+    .fr-tabs-scroll {
+
+      img {
+
+        @include breakpoint(1599) {
+          width: 22px !important;
+          margin: 8px auto !important;
+        }
+      }
+    }
+
+    .fr-popup {
+      left: auto !important;
+      right: 0 !important;
+
+      @include min-breakpoint(1600) {
+        right: -15px !important;
+      }
+
+      &:before {
+        right: 42px;
+
+        @include breakpoint(1600) {
+          right: 38px;
+        }
+
+        @include breakpoint(1440) {
+          right: 35px;
+        }
+      }
+
+      &.fr-active {
+        top: 38px !important;
+      }
+    }
+  }
+
+  .fr-popup .fr-arrow {
+    display: none !important;
+  }
+
+  .fr-popup {
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 52px;
+      top: -11px;
+      border-style: solid;
+      border-width: 0 6px 6px;
+      border-color: transparent transparent #2f3f48;
+
+      @include breakpoint(1600) {
+        right: 45px;
+      }
+    }
+  }
+
+  .fr-wrapper {
+
+    ul,
+    ol {
+      list-style-position: inside;
+      padding: 0;
+      margin: 0;
+    }
+
+    &.show-placeholder {
+      min-height: 280px;
+    }
+  }
+
+  .fr-command.fr-btn.fr-disabled,
+  .fr-popup .fr-command.fr-btn.fr-disabled {
+    color: #8e8c8c !important;
+  }
+
+  .fr-box.fr-basic .fr-element {
+    text-align: center;
+    min-height: 210px;
+  }
+
+  .classic-editor__wrapper .fr-toolbar .fr-command.fr-btn {
+
+    @include breakpoint(1600) {
+      width: 34px;
+    }
+  }
+
+  .fr-toolbar .fr-command.fr-btn i,
+  .fr-popup .fr-command.fr-btn i,
+  .fr-toolbar .fr-command.fr-btn svg,
+  .fr-popup .fr-command.fr-btn svg {
+
+    @include breakpoint(1600) {
+      float: none !important;
+      margin: 0 auto;
+    }
+  }
+
+  .fr-popup .fr-buttons {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  #formatUL-1 {
+
+    .fa-list-ul {
+
+      @include breakpoint(1600) {
+        margin: 12px 0 12px 3px;
+      }
+    }
+  }
+
+  .fr-wrapper {
+    color: #707d84;
+
+    p {
+      color: #707d84;
+    }
+
+    @include min-breakpoint(1600) {
+      font-size: 14px;
+    }
+  }
+
+  .fr-placeholder {
+    color: #b4bbbc !important;
+  }
+
+  .fr-box.fr-basic .fr-element,
+  .fr-wrapper div,
+  .fr-wrapper h1,
+  .fr-wrapper h2,
+  .fr-wrapper h3,
+  .fr-wrapper h5,
+  .fr-wrapper h6,
+  .fr-wrapper p {
+    color: #707d84;
+  }
+
+  .classic-editor__wrapper {
+    transition: all 0.15s ease;
+    box-shadow: none;
+    outline: none;
+    text-align: center;
+    border-radius: 3px;
+    min-height: 260px;
+    height: auto;
+
+    &:focus,
+    &.focus {
+      border-color: #02abec !important;
+    }
+  }
+}
+
+/* tcpa-iframe-holder style */
+.tcpa-iframe-holder {
+  position: relative;
+  padding: 20px 15px;
+}
+
+/* tcpa iframe area style */
+.tcpa-iframe-area {
+  position: relative;
+  max-width: 752px;
+  margin: 0 auto;
+
+  &:before,
+  &:after {
+    box-shadow: 0 20px 100px rgba(#000, 0.5);
+    content: "";
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    height: 50px;
+    width: 50%;
+    max-width: 44.9%;
+    transform: rotate(-2deg);
+    z-index: -1;
+  }
+  &:after {
+    right: 5%;
+    left: auto;
+    transform: rotate(2deg);
+  }
+}
+
+/* tcpa iframe style */
+.tcpa-iframe {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border: none;
+  background: $white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* TCPA update froala version style */
+.froala-editor-update {
+
+  .tcpa-message-froala {
+
+    .fr-quick-insert {
+      display: none !important;
+    }
+
+    .fr-popup {
+
+      .fr-buttons {
+        overflow: visible;
+      }
+    }
+  }
+
+  /* Boamboo icon hide on TCPA page */
+  &.tcpa-inner-page {
+
+    .fa-bamboo-btn-wrap {
+      display: none !important;
+    }
+
+    .fr-newline {
+
+      ~ .fr-popup {
+        top: 38px !important;
+      }
+    }
+  }
+}
+
+/* Editor Error message style */
+.editor-error-message {
+  color: #cc0b0b !important;
+  font-size: 13px;
+  margin: 12px 0 0;
+}
+
+/* tcp-message-data style */
+.lp-table-item.tcp-message-data {
+  border-bottom: 1px solid #f2f3f3;
+
+  &:first-child {
+    border-top: 1px solid #f2f3f3;
+  }
+
+  &:only-child,
+  &:last-child {
+    border-bottom: none;
+  }
+}

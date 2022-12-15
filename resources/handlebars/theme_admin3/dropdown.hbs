@@ -1,0 +1,298 @@
+<script src="{{app.assets}}/js/funnel/scripts/funnel-question-dropdown-overlay.js?v={{app.LP_VERSION}}"></script>
+<div class="funnel-content funnel-dropdown-overlay funnel-overlay">
+    {{#with options}}
+    <div class="panel-aside advance-option-active">
+        <div class="panel-aside__head">
+            <div class="col-left">
+                <h4 class="panel-aside__title has-icon dropdown-icon">
+                    <span>
+                        <i class="ico ico-oc799PIto head-icon"></i>
+                        Drop Down
+                    </span>
+                </h4>
+            </div>
+            <div class="col-right">
+                <span title="Drop Down" class="ico-arrow-right back-ico"></span>
+                <!-- Funnel Feature icons -->
+                {{> funnel-feature-icons }}
+            </div>
+        </div>
+        <div class="panel-aside-wrap-overlay">
+
+            <div class="panel-aside-holder">
+                <div class="panel-aside__body">
+                    <!-- Question & Description -->
+                    {{> question-description }}
+                    <!-- Field Label -->
+                    {{> field-label }}
+                    <!-- options -->
+                    <div class="form-group" data-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option">
+                                Options
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler open" data-handler>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row pb-0 mulltiple-option-row" data-handler-slide>
+<!--                            <div class="fb-none-opt p-0 border-0">-->
+<!--                                <div class="fb-checkbox">-->
+<!--                                    <input class="fb-checkbox__input" type="checkbox" id="create-group">-->
+<!--                                    <label for="create-group" class="fb-checkbox__label">-->
+<!--                                        <div class="fb-checkbox__box">-->
+<!--                                            <div class="fb-checkbox__inner-box"></div>-->
+<!--                                        </div>-->
+<!--                                        <div class="fb-checkbox__caption">-->
+<!--                                            Create content groups-->
+<!--                                        </div>-->
+<!--                                    </label>-->
+<!--                                </div>-->
+<!--                                <span class="fb-tooltip">-->
+<!--                                    <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>-->
+<!--                                </span>-->
+<!--                            </div>-->
+                            <div class="fb-options border-0 normal-option">
+                                <div class="fb-form">
+                                    <div class="dropdown-option-block">
+                                        <div class="plceholder-text">
+                                            <p>Type in or paste your menu entries below (separated by a line break; hit enter to add 1)</p>
+                                        </div>
+                                        <div class="dropdown-option-list-holder">
+                                            <div class="dropdown-option-list-wrap">
+                                                <ul class="dropdown-option-list">
+                                                    <li class="fb-options__list question-hide none" data-question-none>
+                                                        <div class="field-holder">
+                                                            <div class="field-wrap">
+                                                            <input type="text" class="form-control fb-form-control question-none dropdown-option-clone" {{#ifCond include-none '==' 1}}data-menu-options{{/ifCond}} data-field-options="fields" value="{{extra_options.none}}" data-value="{{extra_options.none}}">
+                                                                <span class="sub-text">None</span>
+                                                                <span class="clear-btn"><i class="icon ico-cross"></i></span>
+                                                            </div>
+                                                            <ul class="row-option">
+                                                                <li><a href="#" class="drag-row"><i class="icon ico-dragging"></i></a></li>
+                                                                <li><a href="#" class="delete-row fb-options__delete"><i class="icon ico-cross"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                     {{#if fields}}
+                                                    {{#each fields}}
+
+                                                    <li class="fb-options__list {{#ifCond ../extra_options.none '==' this}} none {{/ifCond}} {{#ifCond ../extra_options.other '==' this}} other {{/ifCond}}" {{#ifCond ../extra_options.other '==' this}} data-extra-option-other data-question-other {{/ifCond}} {{#ifCond ../extra_options.none '==' this}} data-extra-option-none data-question-none {{/ifCond}}>
+                                                        <div class="field-holder">
+                                                           <div class="field-wrap">
+                                                               <input type="text" class="form-control fb-form-control dropdown-option-clone
+                                                               {{#ifCond ../extra_options.none '==' this}} question-none {{/ifCond}}
+                                                               {{#ifCond ../extra_options.other '==' this}} question-other {{/ifCond}}" data-menu-options data-field-options="fields" value="{{this}}"  {{#ifCond ../extra_options.none '==' this}} data-value="{{extra_options.none}} {{/ifCond}}" {{#ifCond ../extra_options.other '==' this}} data-value="{{extra_options.other}} {{/ifCond}}">
+                                                               {{#ifCond ../extra_options.none '==' this}} <span class="sub-text">None</span> {{/ifCond}}
+                                                               {{#ifCond ../extra_options.other '==' this}} <span class="sub-text">Other</span> {{/ifCond}}
+                                                               <span class="clear-btn"><i class="icon ico-cross"></i></span>
+                                                           </div>
+                                                            <ul class="row-option">
+                                                                <li><a href="#" class="drag-row"><i class="icon ico-dragging"></i></a></li>
+                                                                <li><a href="#" class="delete-row fb-options__delete"><i class="icon ico-cross"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+
+                                                    {{/each}}
+                                                {{/if}}
+                                                     <li class="fb-options__list question-hide clone-option">
+                                                            <div class="field-holder">
+                                                                <div class="field-wrap">
+                                                                    <input type="text" class="form-control fb-form-control dropdown-option-clone" data-field-options="fields" value="">
+                                                                    <span class="clear-btn"><i class="icon ico-cross"></i></span>
+                                                                </div>
+                                                                <ul class="row-option">
+                                                                    <li><a href="#" class="drag-row"><i class="icon ico-dragging"></i></a></li>
+                                                                    <li><a href="#" class="delete-row fb-options__delete"><i class="icon ico-cross"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                    <li class="fb-options__list question-hide other" data-question-other>
+                                                        <div class="field-holder">
+                                                            <div class="field-wrap">
+                                                                <input type="text" class="form-control fb-form-control question-other dropdown-option-clone" {{#ifCond add-other-option '==' 1}}data-menu-options{{/ifCond}} data-field-options="fields" value="{{extra_options.other}}" data-value="{{extra_options.other}}">
+                                                                <span class="sub-text">Other</span>
+                                                                <span class="clear-btn"><i class="icon ico-cross"></i></span>
+                                                            </div>
+                                                            <ul class="row-option">
+                                                                <li><a href="#" class="drag-row"><i class="icon ico-dragging"></i></a></li>
+                                                                <li><a href="#" class="delete-row fb-options__delete"><i class="icon ico-cross"></i></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fb-options fb-options_drop-down border-0 group-option">
+                                <div class="fb-options__group-clone">
+                                    <div class="grouping-label">Group 1</div>
+                                    <div class="group-head">
+                                        <div class="fb-form__group">
+                                            <input type="text" class="form-control fb-form-control">
+                                            <span class="tag-box">
+                                                <i class="fas fa-folder-open"></i>
+                                            </span>
+                                        </div>
+                                        <div class="fb-options__col">
+                                            <a href="#" class="fb-options__delete">
+                                                <i class="ico ico-cross"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="fb-options__clone">
+                                        <textarea class="form-control fb-textarea fb-textarea_option" placeholder="Type in or paste your menu entries&nbsp;here (separated&nbsp;by&nbsp;line&nbsp;break)"></textarea>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__row_creat-group">
+                                    <div class="fb-modal__row">
+                                        <a href="javascript:void(0);" class="lp-btn lp-btn_add-option_group lp-btn_drop-down button-primary">
+                                            <span class="lp-btn__icon">
+                                                <i class="ico ico-plus"></i>
+                                            </span>
+                                            Add New Group
+                                        </a>
+                                        <a data-toggle="modal" href="#group-organize-pop" class="lp-btn lp-btn_add-option_organize button-primary">
+                                            <span class="lp-btn__icon">
+                                                <i class="ico ico-plus"></i>
+                                            </span>
+                                            Organize
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--multi selection option-->
+                            {{> multiple-selections}}
+                            <!--none field-->
+                            {{> none-field}}
+                        </div>
+                    </div>
+                    {{> cta-button }}
+                    <!-- Advance Options -->
+                    <div class="form-group advance-options-wrap" data-parent data-handler-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option opener-text">
+                                Advanced Options
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler" data-handler>
+                                    <i class="fa fa-chevron-down opener-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: none">
+                            <!-- security message -->
+                            {{> security-message}}
+                            <!-- Additional -->
+                            {{> additional-content}}
+                            <!-- Fields detail -->
+                            {{> field-details}}
+                            <!-- Settings -->
+                            <div class="form-group dropdown-setting-option" data-parent>
+                                <div class="tag-row">
+                                    <div class="tag-row__title">Settings</div>
+                                </div>
+                                <!--Other field-->
+                                {{> other-field}}
+                                <!-- Alphabetize -->
+                                {{> alphabetize }}
+                                <!-- automatic progress -->
+                                {{> automatic-progress }}
+                                <!-- Randomize -->
+                                {{> randomize }}
+                                <!-- required -->
+                                {{> required }}
+                                <!-- Search Mode -->
+                                {{> search-mode }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-aside__footer">
+            <div class="action">
+                <ul class="action__list justify-content-end">
+                    <li class="action__item">
+                        <button class="button button-cancel">Close</button>
+                    </li>
+                    <li class="action__item">
+                        <button class="button button-secondary">Save</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{{/with}}
+    <input data-id="ques_id" hidden value="{{ques_id}}">
+    <!-- contain the main content of the page -->
+    <div id="content">
+
+        <!-- Question Editor Header -->
+        {{> question-header }}
+
+        <!-- iframe include for question -->
+        <div class="funnel-iframe-holder" {{#ifCond zoom '==' 1}}style="transform:scale({{zoom_value}})"{{/ifCond}}>
+            <iframe scrolling="no" src="{{app.url}}/previewbars/dropdown-preview.php?ques_id={{ques_id}}&ls_key={{ls_key}}" class="menu-iframe question-preview-iframe"></iframe>
+        </div>
+    </div>
+</div>
+<!-- organize group modal -->
+<div class="modal fade organize-pop" id="group-organize-pop">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Organize Inputs</h5>
+            </div>
+            <div class="modal-body pb-0">
+                <div class="organize-group">
+                    <ul class="organize-group__head">
+                        <span>Input Type</span>
+                        <span>Options</span>
+                    </ul>
+                    <ul class="organize-group__list">
+                        <li class="organize-group__item">
+                            <span class="organize-group__name">Name</span>
+                            <span class="organize-group__action">
+                                <i class="ico ico-dragging"></i>
+                            </span>
+                        </li>
+                        <li class="organize-group__item">
+                            <span class="organize-group__name">Email</span>
+                            <span class="organize-group__action">
+                                <i class="ico ico-dragging"></i>
+                            </span>
+                        </li>
+                        <li class="organize-group__item">
+                            <span class="organize-group__name">Phone</span>
+                            <span class="organize-group__action">
+                                <i class="ico ico-dragging"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="action">
+                    <ul class="action__list">
+                        <li class="action__item">
+                            <button type="button" class="button button-bold button-cancel" data-dismiss="modal">Cancel</button>
+                        </li>
+                        <li class="action__item">
+                            <button class="button button-bold button-primary" type="submit">Save</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--button icon list-->
+{{> button-icon-list }}
+<!-- Mobile Mode -->
+{{> mobile-mode }}

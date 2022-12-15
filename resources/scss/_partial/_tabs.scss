@@ -1,0 +1,82 @@
+/**
+*  Funnel Builder: Tabs CSS
+*/
+
+.fb-tab {
+  display: flex;
+  margin: 0 -30px;
+  display: -ms-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-bottom: solid 1px #f2f3f3;
+
+  &_plr0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__item {
+    width: 100%;
+    //border-left: 1px solid #2e3643;
+
+    &:last-child {
+      //border-right: 1px solid #2e3643;
+    }
+    //padding: 0 25px;
+  }
+
+  &__link{
+    @include font-open-sans(12px , #b4c2c9 , 700);
+    @include vertical-alignment-content(center , center);
+    height: 55px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all 0.3s ease;
+
+    @include min-breakpoint(1440) {
+      font-size: 13px;
+    }
+
+    @include min-breakpoint(1600) {
+      font-size: 15px;
+    }
+
+    &:after{
+      content: '';
+      border-bottom: 3px solid transparent;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+      transition: 0.3s ease all;
+    }
+
+    &#{&}_inner {
+      @include font-open-sans(16px , #58748a , 400);
+      text-transform: unset;
+    }
+    &#{&}_active {
+      color: #707d84;
+
+      &:after{
+        border-bottom-color: $basic-color;
+        transition: 0.3s ease all;
+      }
+    }
+
+    @include links-hover {
+      color: #707d84 !important;
+      transition: all 0.3s ease;
+
+      &:after{
+        border-bottom-color: $basic-color;
+        transition: 0.3s ease all;
+      }
+    }
+  }
+}
+
+//.fb-tab-content{
+//  padding-top: 20px;
+//}

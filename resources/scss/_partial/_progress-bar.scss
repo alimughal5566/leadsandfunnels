@@ -1,0 +1,402 @@
+.progress-bar-page {
+
+  .lp-panel {
+
+    &_tabs {
+
+      .lp-panel__head {
+
+        .col {
+          &-left,
+          &-right {
+            margin: 4px 0 0;
+
+            .action {
+
+              &__item {
+
+                &:first-child {
+                  @include font(28, 30, 300);
+                  color: #85969f;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .clr-elm {
+
+      &__wrapper {
+
+        &.clr-elm__wrapper_button {
+
+          .col-clr {
+            .inner__block {
+              display: flex;
+              position:relative;
+            }
+
+            .my-own__colorpicker {
+              display: none;
+            }
+
+            //.pull-clr__wrapper {
+            //  left: 0;
+            //  top: 49px;
+            //  z-index: 1;
+            //  display: none;
+            //  padding: 22px 24px;
+            //  background: #fff;
+            //  min-width: 314px;
+            //  border-radius: 3px;
+            //  position: absolute;
+            //  border: solid 1px #cfdadd;
+            //  border-top-left-radius: 0;
+            //  span {
+            //    display: block;
+            //    margin: 0 0 12px;
+            //    color: #8d979d;
+            //    @include font(16,23,400);
+            //  }
+            //  .color__wrapper {
+            //    margin: 0;
+            //  }
+            //}
+            //.last-selected {
+            //  &.open {
+            //    position: relative;
+            //    border-bottom-left-radius: 0;
+            //    border-bottom-right-radius: 0;
+            //    &:before {
+            //      top: 0;
+            //      left: 0;
+            //      right: 0;
+            //      z-index: 12;
+            //      content: '';
+            //      bottom: -1px;
+            //      position: absolute;
+            //      border-bottom: solid 1px #fff;
+            //    }
+            //  }
+            //  &.clr-picker {
+            //    //display: none;
+            //  }
+            //}
+          }
+        }
+      }
+    }
+
+  .form-group {
+
+    label {
+      margin: 0 30px 0 0;
+    }
+  }
+
+  [type="radio"] {
+
+    + label {
+      @include font(24, 26, 300);
+      color: #95a4ac;
+
+      &:before {
+        top: 1px;
+      }
+
+      &:after {
+        top: 6px;
+      }
+    }
+
+    &:checked {
+
+      + label {
+        color: #58666e;
+      }
+    }
+  }
+
+  .horizontal-bar .slider .tooltip-inner {
+    background: #01c6f7;
+  }
+
+  .horizontal-bar .slider .tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #01c6f7;
+  }
+
+  .nav__tab {
+    margin: 0 -18px;
+  }
+
+  .lp-panel {
+    padding-bottom: 25px;
+  }
+
+  .col-clr label {
+    margin: 0 18px 0 0;
+  }
+
+  .clr-elm__wrapper {
+    margin: 0;
+  }
+
+  .clr-elm__wrapper.clr-elm__wrapper_button .col-clr {
+    margin: 0 20px 0 0;
+
+    @include min-breakpoint(1600) {
+      margin: 0 73px 0 0;
+    }
+  }
+
+  .col-clr .last-selected {
+    width: 120px;
+
+    @include min-breakpoint(1600) {
+      width: 155px;
+    }
+  }
+
+  .last-selected {
+    z-index: 999 !important;
+  }
+
+  .header .info-bar {
+    z-index: 100;
+  }
+}
+
+.bar_style {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 26px;
+  width: 100%;
+}
+
+.bar_style span {
+  font-weight: 400;
+}
+
+.lp-panel-circle-bar {
+  display: none;
+}
+
+.progress-bar__wrapper {
+  padding: 25px 0;
+  height: 118px;
+  position: relative;
+  border: 1px solid #f2f3f3;
+
+  &:after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #eaeaea;
+    right: 0;
+    top: 49%;
+    bottom: 47%;
+    left: 0;
+  }
+}
+
+.progress {
+  //display: none;
+  border: 2px solid #ebeff2;
+  max-width: 221px;
+  width: 100%;
+  height: 66px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  //left: 41.4%;
+  //top: 70px;
+  //transform: scale(0);
+  background-color: $white;
+  border-radius: 50px;
+  overflow: visible;
+  position: absolute;
+  box-shadow: 3px 9px 10px -3px rgba(201, 211, 223, 0.75);
+
+  &.steps {
+    max-width: 246px;
+  }
+
+  .sign {
+    &-steps{display: none}
+    &-percentage{}
+  }
+}
+
+.progress__wrapper {
+  @include size(100%, 66px);
+  position: relative;
+}
+
+.progress__text {
+  font-size: 16px;
+  color: #b2b1be;
+  text-align: center;
+  position: absolute;
+  top: 47%;
+  left: 21px;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.progress__text--percentage {
+  width: 100%;
+  left: 0;
+  top: 32px;
+  text-align: center;
+  color: #6a51d2;
+}
+
+.progress__progress_meter {
+  position: absolute;
+  top: -1px;
+  right: 0;
+}
+
+.progress svg {
+  height: 64px;
+  width: 64px;
+  overflow: visible !important;
+}
+
+.progress__progress_bar {
+  fill: none;
+  stroke-width: 4;
+  stroke: #ebeff2;
+}
+
+.progress__js_progress {
+  fill: none;
+  stroke: #6a51d2;
+  stroke-width: 4;
+  stroke-dasharray: 100px 100px;
+  visibility: hidden;
+}
+
+.progress__overlay {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background: #70dd8d;
+  border-radius: 50%;
+  transform: scale(0);
+  overflow: hidden;
+  top: -1;
+  left: -1;
+}
+
+.progress__overlay i {
+  text-align: center;
+  position: relative;
+  font-size: 32px;
+  color: $white;
+  line-height: 68px;
+  width: 68px;
+  display: block;
+  font-weight: normal;
+}
+
+.progress__overlay i .progress__overlay_icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #70dd8d;
+}
+
+.horizontal-bar {
+  //padding: 0 8px;
+  height: 120px;
+  background-color: #f6f8f8;
+  border: 1px solid #f2f3f3;
+
+  .tooltip {
+    top: 17px !important;
+  }
+
+  &-bg {
+    background-color: $white;
+    padding: 0 8px;
+  }
+
+  &__wrapper {
+    padding: 0 85px;
+    //background: #fff;
+    position: relative;
+    margin: 0 13px -8px;
+    //border: solid 1px #f2f3f3;
+    //border-radius: 4px;
+
+    @include breakpoint(1600) {
+      padding: 0 25px;
+    }
+  }
+
+  .slider {
+
+    &-horizontal {
+      width: 100%;
+      height: 22px;
+    }
+
+    &-handle {
+      display: none;
+    }
+
+    &-track {
+      border: none;
+      background: #ebebeb;
+      box-shadow: none;
+      height: 4px !important;
+      border-radius: 0;
+      margin-top: -2px !important;
+    }
+
+    .slider-selection {
+      background: #01c6f7;
+    }
+
+    .tooltip {
+      transform: translate(-40px , 5px);
+
+      &-arrow {
+        top: -5px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin-left: -5px;
+        position: absolute;
+        border-style: solid;
+        border-width: 0 5px 5px;
+        border-color: transparent;
+      }
+
+      &.bottom {
+
+        .tooltip-arrow {
+          border-bottom-color: #000;
+        }
+      }
+
+      &-inner {
+        @include font(15, 18, 700);
+        @include size(67px, 27px);
+        background: #073146;
+        padding: 0;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

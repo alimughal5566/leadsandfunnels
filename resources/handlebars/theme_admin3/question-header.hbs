@@ -1,0 +1,107 @@
+<header class="header">
+    <div class="info-bar">
+        <div class="row justify-content-between">
+            <div class="col-6 funnel-left-col">
+                <div class="funnels-info">
+                    <div class="action action_dresponsive">
+                        <ul class="action__list">
+                            <li class="action__item view-link desktop-view-link active">
+                                <i class="ico ico-devices"></i>
+                            </li>
+                            <li class="action__item view-link mobile-view-link">
+                                <i class="ico ico-Mobile"></i>
+                            </li>
+                            <li class="action__item full-screen-link">
+                                <i class="ico ico-full-screen el-tooltip" title='<div class="full-screen-tooltip">Full screen preview <span class="sub-text">(press esc to exit)</span></div>'></i>
+                            </li>
+                            <li class="action__item zoom-slider-item{{#ifCond zoom '==' 1}} zoom-slider-disable{{/ifCond}}">
+                                <div class="range-slider range-slider-overlay el-tooltip" title='<div class="slider-zoom-tooltip">Click the lock icon on the right<br> to unlock this setting.</div>'>
+                                    <div class="input__wrapper">
+                                        <input class="form-control size-range-bar-slide" data-slider-id='ex1Slider' type="text"/>
+                                        <input type="hidden" class="size-range-bar-val" value="100">
+                                    </div>
+                                </div>
+                                <div class="lock-zoom-view-wrap">
+                                    <span class="lock-zoom-view el-tooltip" title='<div class="lock-zoom-tooltip">Lock this preview % setting across <br>all questions on this Funnel.</div>'>
+                                        <i class="ico-unlock"></i>
+                                    </span>
+                                    <span class="unlock-zoom-view el-tooltip" title='<div class="lock-zoom-tooltip">Unlock this preview % setting across other<br> questions. The default setting for previews <br>is 100% unless you lock it at another setting.</div>'>
+                                        <i class="ico-lock-5"></i>
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="action__item tour-btn-item">
+                                <span class="take-tour-btn funnel-overlay-tour-btn">take a tour</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="client-setting">
+                    <div class="client-setting__button">
+                        <ul class="actions-button">
+                            <li class="actions-button__list">
+                                <a href="#question-confirmation-delete" data-toggle="modal" class="actions-button__link actions-button__link_close-funnels el-button-tooltip"
+                                    title="Close Question" question-preview-close>
+                                    <span class="actions-button__icon ico-cross"></span>
+                                    <span class="actions-button__text">Close</span>
+                                </a>
+                            </li>
+                            <li class="actions-button__list">
+                                <a class="actions-button__link actions-button__link_view-funnels el-button-tooltip" href="{{header_funnel_url}}"
+                                   title="View My Funnel" target="_blank">
+                                    <span class="actions-button__icon ico-view"></span>
+                                    <span class="actions-button__text">view my funnel</span>
+                                </a>
+                            </li>
+                            <li class="actions-button__list">
+                                <button class="button button-secondary" data-id="main-submit" disabled data-lpkeys="{{ls_key}}">Save</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="client-setting__quick">
+                        <div class="quick-opener-wrap">
+                            <a href="#" class="client-setting__opener">
+                                <span class="ico ico-order-list"></span>
+                                Quick Access
+                                <span class="client-setting__arrow-wrap">
+                                        <span class="ico ico-arrow-down"></span>
+                                    </span>
+                            </a>
+                        </div>
+                        <div class="quick-dropdown">
+                            <div class="quick-head">
+                                <span class="quick-head__heading">{{funnel-name}}</span>
+                                <span class="quick-head__questions">Total Questions: <span
+                                        class="quick-head__num">{{funnel-total-questions}}</span></span>
+                            </div>
+                            <div class="quick-scroll">
+                                <ul class="quick-links">
+                                    {{#each quick_access_links}}
+                                        <li class="quick-links__item">
+                                            <a href="javascript:void(0);" onclick="FunnelActions.editQuestion(null,{{question_id}})" class="quick-links__link">
+                                                <span class="quick-links__item-num"></span>
+                                                <div class="quick-links__heading">
+                                                    <i class="ico {{icon}}"></i>
+                                                    {{question_type}}
+                                                </div>
+                                                <div class="quick-links__description">
+                                                {{#ifCond question_type '==' 'Contact'}}
+                                                    <div class="description-contact-info" data-quick-access-title="{{question_id}}">{{{question_title}}}</div>
+                                                {{else}}
+                                                    <span class="text" data-quick-access-title="{{question_id}}">{{{question_title}}}</span>
+                                                {{/ifCond}}
+                                                </div>
+                                            </a>
+                                        </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,240 @@
+{{#ifCond @root/question-type '==' 'ctamessage'}}
+    <div class="form-group {{#ifCond automatic-progress '==' 1}}question-hide{{/ifCond}}" data-parent data-cta-button-menu>
+        <div class="fb-modal__row">
+            <div class="fb-modal__option">
+                CTA Button
+            </div>
+            <div class="fb-modal__control">
+                <span class="el-tooltip cta-settings" title='<div class="reset-tooltip">Advanced (coming soon!)</div>'><i class="ico ico-settings"></i></span>
+                <div class="funnel-checkbox d-none">
+                    <label class="checkbox-label">
+                        <input class="fb-field-label" data-opener data-opener-cta type="checkbox" data-field-name="cta-button" {{#ifCond cta-button '==' 1}}checked{{/ifCond}}>
+                        <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                    </label>
+                </div>
+                    <div class="fb-modal__handler {{#ifCond edit '==' 1}}open{{/ifCond}}" data-handler>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+            </div>
+        </div>
+        <div class="fb-modal__border-row " data-handler-slide data-slide style="display: {{#ifCond edit '==' 1}}block{{else}}none{{/ifCond}};">
+            <div class="fb-form">
+                <div class="fb-form__group-holder">
+                    <div class="fb-form__group">
+                        <input type="text" class="form-control fb-form-control btn-value-text" data-field-name="button-text" data-change-text value="{{button-text}}" placeholder="CTA Button" maxlength="22">
+                        <span class="tag-box"> <i class="fa fa-tag"></i> </span>
+                    </div>
+                    <a href="#" class="undo-btn el-tooltip" title='<div class="reset-tooltip">Reset to Default</div>' data-reset data-field-name="" data-value=""><i class="ico-undo"></i></a>
+                </div>
+                <div class="cta-button-section">
+                    <div class="cta-link-text-parent select2-parent">
+                        <select class="cta-link-text" data-field-name="cta-button-settings.link-destination" data-selected-option="{{cta-button-settings.link-destination}}"></select>
+                    </div>
+                    <div class="outside-url-slide" {{#ifCond cta-button-settings.link-destination '==' "outside-url"}}style="display: block;" {{/ifCond}}>
+                        <div class="outside-url-field">
+                            <input type="text" class="form-control" value="{{cta-button-settings.outside-url}}" data-change-text data-field-name="cta-button-settings.outside-url">
+                        </div>
+                        <div class="open-url-checkbox">
+                            <input class="fb-checkbox__input" type="checkbox" id="link-url" data-opener-checkbox data-field-name="cta-button-settings.open-new-tab" {{#ifCond cta-button-settings.open-new-tab '=='  1}}checked{{/ifCond}}>
+                            <label for="link-url" class="fb-checkbox__label">
+                                <div class="fb-checkbox__box">
+                                    <div class="fb-checkbox__inner-box"></div>
+                                </div>
+                                <div class="fb-checkbox__caption">
+                                    Open link in new tab
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="select-funnel-slide" {{#ifCond cta-button-settings.link-destination '==' 'leadpops-lead-funnel'}}style="display: block;" {{/ifCond}}>
+                        <a class="select-funnel-opener {{#ifCond cta-button-settings.leadpops-funnel-name '!==' 'Select Funnel'}}selected{{/ifCond}}" data-toggle="modal" href="#global-setting-funnel-list-pop" data-domain-id="{{cta-button-settings.leadpops-domain-id}}" onclick="globalModalObj.initFunnelList('funnel-builder')">
+                            <span>{{cta-button-settings.leadpops-funnel-name}}</span> <i class="arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="fb-modal__border-box fb-modal__border-box_pb-15">
+                    <div class="fb-modal__row">
+                        <div class="fb-modal__option fb-modal__option_light">
+                            <span class="fb-modal__middle">Font Size</span>
+                        </div>
+                        <div class="fb-modal__control font-slider-disable">
+                            <input id="zip-code-font-slider" class="form-control" type="text" data-silder-ranger data-field-name="cta-button-settings.font-size-slider-control" data-field-default="20" />
+                            <input type="hidden" class="zip-code-font" data-silder-value data-field-name="cta-button-settings.font-size" value="{{cta-button-settings.font-size}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="fb-modal__border-box fb-modal__border-box_plr0 fb-modal__border-box_plr0-top" data-parent>
+                    <div class="fb-modal__row">
+                        <div class="fb-modal__option fb-modal__option_light">
+                            <span class="fb-modal__middle">Button Icon</span>
+                        </div>
+                        <div class="fb-modal__control">
+                            <div class="funnel-checkbox">
+                                <label class="checkbox-label">
+                                    <input class="fb-field-label" data-icon-opener type="checkbox" data-field-name="cta-button-settings.enable-button-icon" {{#ifCond cta-button-settings.enable-button-icon '==' 1}}checked{{/ifCond}}>
+                                    <span class="checkbox-area">
+                                        <span class="handle"></span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-icon-slide">
+                        <div class="fb-modal__border-row {{#ifCond cta-button-settings.button-icon-size '==' cta-button-settings.font-size}} slider-disabled {{/ifCond}} " data-icon-slide style="display: {{#ifCond cta-button-settings.enable-button-icon '==' 1}}block{{else}}none{{/ifCond}}">
+                            <div class="fb-modal__row icon-select-row">
+                                <div class="icon-select">
+                                    <a href="#select-icon-modal" data-toggle="modal" class="select-icon-opener icon-select__wrapper" data-field-name="cta-button-settings.button-icon" data-text-icon>
+                                        <div class="list-icon-item">
+                                            <span class="icon-wrap">
+                                                <i class="ico-{{cta-button-settings.button-icon}}"></i>
+                                            </span>
+                                            <span class="text-icon-wrap">
+                                                <span class="icon-title">Icon:</span>
+                                                <span class="text-icon">{{button-icon-name}}</span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="icon-color questions-button-color-picker color-picker-parent-wrap">
+                                    <div class="last-selected" button-icon-color data-field-name="cta-button-settings.button-icon-color">
+                                        <div class="last-selected__box custom-color-bg" style="background: {{cta-button-settings.button-icon-color}}"></div>
+                                        <div class="last-selected__code custom-color-code">{{cta-button-settings.button-icon-color}}</div>
+                                        <input type="hidden" class="custom-color-value" name="button-icon-color" value="{{cta-button-settings.button-icon-color}}" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fb-modal__row position-row">
+                                <div class="fb-form__group">
+                                    <div class="alignment-icon-parent select2-parent icon-parent">
+                                        <select class="alignment-icon-type" data-field-name="cta-button-settings.button-icon-position"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fb-modal__row">
+                                <div class="fb-modal__option fb-modal__option_light">
+                                    <span class="fb-modal__middle">Icon Size</span>
+                                </div>
+                                <span title='<div class="button-size-tooltip">This locks the icon size to <br>the button text font size. </div>' class="icon ico-lock {{#ifCond cta-button-settings.button-icon-size '==' cta-button-settings.font-size}} selected {{/ifCond}} el-tooltip"  data-lock-slider></span>
+                                <div class="fb-modal__control font-slider font-slider-disable">
+                                    <input id="zip-code-icon-size-slider" class="form-control" type="text" data-silder-ranger-icon>
+                                    <input type="hidden" class="zip-code-icon-size" data-slider-icon data-field-name="cta-button-settings.button-icon-size" value="{{cta-button-settings.button-icon-size}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{else}}
+        <div class="form-group {{#ifCond automatic-progress '==' 1}}question-hide{{/ifCond}}" data-parent data-cta-button-menu>
+            <div class="fb-modal__row">
+                <div class="fb-modal__option">
+                    CTA Button
+                </div>
+                <div class="fb-modal__control">
+                    <span class="el-tooltip cta-settings" title='<div class="reset-tooltip">Advanced (coming soon!)</div>'><i class="ico ico-settings"></i></span>
+                    <div class="fb-modal__handler {{#ifCond edit '==' 1}}open{{/ifCond}}" data-handler>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="fb-modal__border-row" data-handler-slide style="display: {{#ifCond edit '==' 1}}block{{else}}none{{/ifCond}};">
+                <div class="fb-form">
+                    <div class="fb-form__group-holder">
+                        <div class="fb-form__group">
+                            <input type="text" class="form-control fb-form-control btn-value-text" data-field-name="button-text" data-change-text value="{{button-text}}" placeholder="CTA Button" maxlength="22">
+                            <span class="tag-box"> <i class="fa fa-tag"></i> </span>
+                        </div>
+                        <a href="#" class="undo-btn el-tooltip" title='<div class="reset-tooltip">Reset to Default</div>' data-reset data-field-name="" data-value=""><i class="ico-undo"></i></a>
+                    </div>
+                    <div class="fb-modal__border-box fb-modal__border-box_pb-15">
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option fb-modal__option_light">
+                                <span class="fb-modal__middle">Font Size</span>
+                            </div>
+                            <div class="fb-modal__control font-slider-disable">
+                                <input id="zip-code-font-slider" class="form-control" type="text" data-silder-ranger data-field-name="cta-button-settings.font-size-slider-control" data-field-default="20" />
+                                <input type="hidden" class="zip-code-font" data-silder-value data-field-name="cta-button-settings.font-size" value="{{cta-button-settings.font-size}}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fb-modal__border-box fb-modal__border-box_plr0 fb-modal__border-box_plr0-top" data-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option fb-modal__option_light">
+                                <span class="fb-modal__middle">Button Icon</span>
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="funnel-checkbox">
+                                    <label class="checkbox-label">
+                                        <input class="fb-field-label" data-icon-opener type="checkbox" data-field-name="cta-button-settings.enable-button-icon" {{#ifCond cta-button-settings.enable-button-icon '==' 1}}checked{{/ifCond}}>
+                                        <span class="checkbox-area">
+                                        <span class="handle"></span>
+                                    </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-icon-slide">
+                            <div class="fb-modal__border-row   {{#ifCond cta-button-settings.button-icon-size '==' cta-button-settings.font-size}} slider-disabled {{/ifCond}} " data-icon-slide style="display: {{#ifCond cta-button-settings.enable-button-icon '==' 1}}block{{else}}none{{/ifCond}}">
+                                <div class="fb-modal__row icon-select-row">
+                                    <div class="icon-select">
+                                        <a href="#select-icon-modal" data-toggle="modal" class="select-icon-opener icon-select__wrapper" data-field-name="cta-button-settings.button-icon" data-text-icon>
+                                            <div class="list-icon-item">
+                                                <span class="icon-wrap">
+                                                    <i class="ico-{{cta-button-settings.button-icon}}"></i>
+                                                </span>
+                                                    <span class="text-icon-wrap">
+                                                    <span class="icon-title">Icon:</span>
+                                                    <span class="text-icon">{{button-icon-name}}</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="icon-color questions-button-color-picker color-picker-parent-wrap">
+                                        <div class="last-selected" button-icon-color data-field-name="cta-button-settings.button-icon-color">
+                                            <div class="last-selected__box custom-color-bg" style="background: {{cta-button-settings.button-icon-color}}"></div>
+                                            <div class="last-selected__code custom-color-code">{{cta-button-settings.button-icon-color}}</div>
+                                            <input type="hidden" class="custom-color-value" name="button-icon-color" value="{{cta-button-settings.button-icon-color}}" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__row position-row">
+                                    <div class="fb-form__group">
+                                        <div class="alignment-icon-parent select2-parent icon-parent">
+                                            <select class="alignment-icon-type" data-field-name="cta-button-settings.button-icon-position"></select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__row">
+                                    <div class="fb-modal__option fb-modal__option_light">
+                                        <span class="fb-modal__middle">Icon Size</span>
+                                    </div>
+                                    <span title='<div class="button-size-tooltip">This locks the icon size to <br>the button text font size. </div>' class="icon ico-lock {{#ifCond cta-button-settings.button-icon-size '==' cta-button-settings.font-size}} selected {{/ifCond}} el-tooltip"  data-lock-slider></span>
+                                    <div class="fb-modal__control font-slider font-slider-disable">
+                                        <input id="zip-code-icon-size-slider" class="form-control" type="text" data-silder-ranger-icon>
+                                        <input type="hidden" class="zip-code-icon-size" data-slider-icon data-field-name="cta-button-settings.button-icon-size" value="{{cta-button-settings.button-icon-size}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{#ifCond @root/question-type '!==' 'slider'}}
+                        <div class="fb-checkbox hide-checkbox {{#ifCond required '==' 0}} d-none {{/ifCond}}" data-cta-button >
+                            <input class="fb-checkbox__input hide-checkbox-field" type="checkbox" id="zip-code-showonly-option" data-field-name="cta-button-settings.enable-hide-until-answer" {{#ifCond cta-button-settings.enable-hide-until-answer '==' 1}}checked{{/ifCond}}>
+                            <label for="zip-code-showonly-option" class="fb-checkbox__label">
+                                <div class="fb-checkbox__box">
+                                    <div class="fb-checkbox__inner-box"></div>
+                                </div>
+                                <div class="fb-checkbox__caption">
+                                    Hide CTA button until the question is&nbsp;answered
+                                </div>
+                            </label>
+                        </div>
+                    {{/ifCond}}
+                </div>
+            </div>
+        </div>
+{{/ifCond}}

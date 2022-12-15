@@ -1,0 +1,187 @@
+<script src="{{app.assets}}/js/funnel/scripts/funnel-question-birthday-overlay.js"></script>
+<div class="funnel-content funnel-birthday-overlay funnel-overlay">
+    {{#with options}}
+    <div class="panel-aside advance-option-active">
+        <div class="panel-aside__head">
+            <div class="col-left">
+                <h4 class="panel-aside__title has-icon birthday-icon">
+                <span>
+                    <i class="ico ico-birthday head-icon"></i>
+                    Birthday
+                </span>
+                </h4>
+            </div>
+            <div class="col-right">
+                <span title="Birthday" class="ico-arrow-right back-ico"></span>
+                <!-- Funnel Feature icons -->
+                {{> funnel-feature-icons }}
+            </div>
+        </div>
+        <div class="panel-aside-wrap-overlay">
+
+            <div class="panel-aside-holder">
+                <div class="panel-aside__body">
+                    <!-- Question & Description -->
+                    {{> question-description }}
+                    <!-- Field Label -->
+                    <div class="form-group" data-parent style="display:none;">
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option">Field label</div>
+                            <div class="fb-modal__control">
+                                <div class="funnel-checkbox">
+                                    <label class="checkbox-label">
+                                        <input class="fb-field-label" data-opener type="checkbox" disabled>
+                                        <span class="checkbox-area">
+                                            <span class="handle"></span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row" data-slide style="display: none">
+                            <div class="fb-form">
+                                <div class="fb-form__group">
+                                    <input type="text" class="form-control fb-form-control label-form-control" value="Birthday">
+                                    <span class="tag-box">
+                                        <i class="fa fa-tag"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- options -->
+                    <div class="form-group" data-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option">
+                                Options
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler" data-handler>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row" data-handler-slide style="display: none">
+                            <div class="birthday-option-wrap el-tooltip" disabled title='<div class="tooltip-answer-message">Additional answer styles are coming soon!</div>'>
+                                <div class="select-answer-style-parent select2-parent">
+                                    <select class="select-answer-style" name="select-answer-style"></select>
+                                </div>
+                            </div>
+                            <div class="birthday-option-wrap">
+                                <div class="birthday-select2js">
+                                    <a href="#" class="birthday-select2js__opener">
+                                        How far back you want to display?
+                                        <span class="birthday-select2js__opener__text-val"><span class="birthday-select2js__slide__current-year">{{year-start}}</span><span data-slider-year-text > {{#ifCond year-start '<=' 1 }} year{{/ifCond}}{{#ifCond year-start '>=' 2 }} years{{/ifCond}}</span></span>
+                                    </a>
+                                    <div class="birthday-select2js__slide">
+                                        <div class="birthday-select2js__slide__wrap">
+                                            <div class="birthday-select2js__slide__label">How far back you want to display?</div>
+                                            <div class="birthday-select2js__slide__body-area">
+                                                <div class="birthday-select2js__slide__range-wrap">
+                                                    <div class="birthday-select2js__slide__year"><div class="birthday-select2js__slide__current-year range-text-val">{{year-start}}</div><span data-slider-year-text > {{#ifCond year-start '<=' 1 }}year{{/ifCond}}{{#ifCond year-start '>=' 2 }}years{{/ifCond}}</span></div>
+                                                    <div class="birthday-select2js__slide__range-holder">
+                                                        <input class="birthday-year-slider" type="text" data-year-slider-value data-field-name="year-start" value="{{year-start}}">
+                                                        <div class="birthday-select2js__slide__info-wrap">
+                                                            <span class="birthday-select2js__slide__info-text">0 year</span>
+                                                            <span class="birthday-select2js__slide__info-text">110 years</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="birthday-option-wrap">
+                                <div class="birthday-select2js">
+                                    <a href="#" class="birthday-select2js__opener">
+                                        Set minimum required age: <span class="birthday-select2js__opener__text-val"><span class="birthday-select2js__slide__minimum-val">{{minimum-age}}</span></span>
+                                    </a>
+                                    <div class="birthday-select2js__slide">
+                                        <div class="birthday-select2js__slide__wrap">
+                                            <div class="birthday-select2js__slide__label">Set minimum required age</div>
+                                            <div class="birthday-select2js__slide__body-area">
+                                                <div class="birthday-select2js__slide__range-wrap">
+                                                    <div class="birthday-select2js__slide__year"><div class="birthday-select2js__slide__minimum-val range-text-val">{{minimum-age}}</div><span data-years-old>years old</span></div>
+                                                    <div class="birthday-select2js__slide__range-holder">
+                                                        <input class="birthday-year-old" type="text" data-year-old-slider-value data-field-name="minimum-age" value="{{minimum-age}}">
+                                                        <div class="birthday-select2js__slide__info-wrap">
+                                                            <span class="birthday-select2js__slide__info-text">1 year old</span>
+                                                            <span class="birthday-select2js__slide__info-text">100 years old</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CTA Button -->
+                    {{> cta-button }}
+                    <!-- Advance options -->
+                    <div class="form-group advance-options-wrap" data-parent data-handler-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option opener-text">
+                                Advanced Options
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler" data-handler>
+                                    <i class="fa fa-chevron-down opener-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: none">
+                            <!-- security message -->
+                            {{> security-message}}
+                            <!-- Additional -->
+                            {{> additional-content}}
+                            <!-- Fields detail -->
+                            {{> field-details}}
+                            <!-- Settings -->
+                            <div class="form-group" data-parent>
+                                <div class="tag-row">
+                                    <div class="tag-row__title">Settings</div>
+                                </div>
+                                <!-- automatic progress -->
+                                {{> automatic-progress }}
+                                <!-- required -->
+                                {{> required}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-aside__footer">
+            <div class="action">
+                <ul class="action__list justify-content-end">
+                    <li class="action__item">
+                        <button class="button button-cancel">Close</button>
+                    </li>
+                    <li class="action__item">
+                        <button class="button button-secondary">Save</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {{/with}}
+    <input data-id="ques_id" hidden value="{{ques_id}}">
+    <!-- contain the main content of the page -->
+    <div id="content">
+
+        <!-- Question Editor Header -->
+        {{> question-header }}
+
+        <!-- iframe include for question -->
+        <div class="funnel-iframe-holder" {{#ifCond zoom '==' 1}}style="transform:scale({{zoom_value}})"{{/ifCond}}>
+            <iframe scrolling="no" src="{{app.url}}/previewbars/birthday-preview.php?ques_id={{ques_id}}&ls_key={{ls_key}}" class="birthday-iframe question-preview-iframe"></iframe>
+        </div>
+    </div>
+</div>
+<!--button icon list-->
+{{> button-icon-list }}
+<!-- Mobile Mode -->
+{{> mobile-mode }}

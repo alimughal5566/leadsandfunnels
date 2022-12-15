@@ -1,0 +1,107 @@
+<!-- Question -->
+{{#ifCond @root/question-type '==' 'ctamessage'}}
+    <div class="form-group" data-parent>
+        <div class="fb-modal__row">
+            <div class="fb-modal__option">Call-to-Action</div>
+            <div class="fb-modal__control">
+                <span class="froala-clear-text" data-delete-content>Delete default text</span>
+                <div class="funnel-checkbox">
+                    <label class="checkbox-label">
+                        <input class="fb-field-label" data-opener type="checkbox" data-field-name="show-question" {{#ifCond show-question '==' 1}}checked{{/ifCond}}>
+                        <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="fb-modal__border-row" data-slide style="display: {{#ifCond show-question '==' 1}}block{{else}}none{{/ifCond}}">
+            <div class="fb-form">
+                <div class="fb-froala classic-editor__wrapper question-editor update-version">
+                    <div class="fb-froala__init question-heading" data-custom-font-size="28px" data-field-name="call-to-action">{{{call-to-action}}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{else}}
+    <div class="form-group active" data-parent>
+        <div class="fb-modal__row">
+            <div class="option-wrap">
+                <div class="fb-modal__option">Question</div>
+            </div>
+            <div class="fb-modal__control fb-modal__control_middle">
+                <div class="funnel-checkbox">
+                    <label class="checkbox-label">
+                        <input class="fb-field-label" data-opener type="checkbox" data-field-name="show-question" {{#ifCond show-question '==' 1}}checked{{/ifCond}}>
+                        <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="fb-modal__border-row" data-slide style="display: {{#ifCond show-question '==' 1}}block{{else}}none{{/ifCond}}">
+            <div class="fb-form">
+                <div class="fb-froala classic-editor__wrapper question-editor update-version">
+                    <div class="fb-froala__init question-heading" data-custom-font-size="28px" data-field-name="question">
+                        {{{question}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/ifCond}}
+
+<!-- Description -->
+{{#ifCond @root/question-type '==' 'ctamessage'}}
+    <div class="form-group" data-parent>
+        <div class="fb-modal__row">
+            <div class="fb-modal__option">Description</div>
+            <div class="fb-modal__control">
+                <span class="froala-clear-text description" data-delete-content>Delete default text</span>
+                <div class="funnel-checkbox">
+                    <label class="checkbox-label">
+                        <input class="fb-field-label" data-opener type="checkbox" data-field-name="show-description" {{#ifCond show-description '==' 1}}checked{{/ifCond}}>
+                        <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="fb-modal__border-row" data-slide style="display: {{#ifCond show-description '==' 1}}block{{else}}none{{/ifCond}}">
+            <div class="fb-form">
+                <div class="fb-froala classic-editor__wrapper description-editor update-version">
+                    <div class="fb-froala__init description-text" data-custom-font-size="18px" data-field-name="description">
+                        {{{description}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{else}}
+    <div class="form-group" data-parent>
+        <div class="fb-modal__row">
+            <div class="fb-modal__option">Description</div>
+            <div class="fb-modal__control">
+                <div class="funnel-checkbox">
+                    <label class="checkbox-label">
+                        <input class="fb-field-label" data-opener type="checkbox" data-field-name="show-description" {{#ifCond show-description '==' 1}}checked{{/ifCond}}>
+                        <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="fb-modal__border-row" data-slide style="display: {{#ifCond show-description '==' 1}}block{{else}}none{{/ifCond}}">
+            <div class="fb-form">
+                <div class="fb-froala classic-editor__wrapper description-editor update-version">
+                    <div class="fb-froala__init description-text" data-custom-font-size="18px" data-field-name="description">
+                        {{{description}}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/ifCond}}

@@ -1,0 +1,431 @@
+// mixin for custom fonts mixin
+@mixin min-breakpoint($point) {
+  @media (min-width: #{$point}px) { @content; }
+}
+
+@mixin breakpoint($point) {
+  @media (max-width: #{$point}px) { @content; }
+}
+
+@mixin max-height-breakpoint($point) {
+  @media (max-height: #{$point}px) { @content; }
+}
+
+@mixin min-height-breakpoint($point) {
+  @media (min-height: #{$point}px) { @content; }
+}
+
+// mixin for custom fonts mixin
+@mixin fontface ($fontfamily, $filename, $weight: normal, $style: normal) {
+  font-family: $fontfamily;
+  src: url('../fonts/#{$filename}.oet'),
+  url('../fonts/#{$filename}.otf') format('opentype'),
+  url('../fonts/#{$filename}.svg') format('svg'),
+  url('../fonts/#{$filename}.ttf') format('truetype'),
+  url('../fonts/#{$filename}.woff2') format('woff2'),
+  url('../fonts/#{$filename}.woff') format('woff');
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// mixin for fonts style mixin
+@mixin fontsize($size: 16, $lineheight: 16) {
+  font-size: $size + px;
+  line-height: $lineheight + px;
+}
+
+@mixin font($size: 16, $lineheight: 16, $weight:400) {
+  font-size: $size + px;
+  line-height: $lineheight + px;
+  font-weight: $weight;
+}
+
+// mixin for color transition
+@mixin color($color){
+  color: $color;
+  transition: color 0.3s linear;
+  &:hover{
+    color: darken($color, 15%);
+  }
+}
+
+// mixin for link color
+@mixin link-color($color) {
+  color: $color;
+  &:hover, &:focus {
+    opacity:0.80;
+    text-decoration: none;
+    &:after, &:before {
+      opacity:0.80;
+    }
+  }
+}
+
+// mixin for listreset
+@mixin listreset() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// responsive image styles
+@mixin img-responsive(){
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+// mixin for vertical alignment
+@mixin vertical($vertical: top) {
+  display: inline-block;
+  vertical-align: $vertical;
+}
+
+// mixin helping defining both `width` and `height` simultaneously.
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// mixin for hides the text in an element
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+// mixin for extent background
+@mixin bg-color($element, $bg-color){
+  position: relative;
+  &:#{$element} {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -9999px;
+    bottom: 0;
+    left: -9999px;
+    background: $bg-color;
+    display: block;
+    z-index: -1;
+  }
+}
+
+// mixin for pseudo-element (after and/or before) 
+@mixin pseudo-element($element, $top, $right, $bottom, $left){
+  &:#{$element} {
+    content: "";
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+    display: block;
+  }
+}
+
+// mixin for position properties
+@mixin position($position, $top, $right, $bottom, $left){
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+// mixin for flex properties
+@mixin flex($display, $flex-direction, $flex-wrap, $align-items, $justify-content, $align-content) {
+  display: $display;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  align-content: $align-content;
+}
+
+// animate css properties
+// or @include animate(color width);
+// or @include animate(color width, 1s, linear);
+
+$animation-speed: .3s !default;
+
+@mixin animate($properties, $duration: $animation-speed, $easing: linear) {
+  $list:();
+  @each $prop in $properties {
+    $str: #{$prop} #{$animation-speed} #{$easing};
+    $list: join($list, $str, comma);
+  }
+  transition: $list;
+}
+
+// creates a visual triangle. 
+// mixin takes ($size, $color, $direction)
+
+// $direction:
+// up, down, left, right, up-right, up-left, down-right, down-left
+// @include triangle(12px, gray, down);
+// @include triangle(12px 6px, gray blue, up-left);
+
+@mixin triangle($size, $color, $direction) {
+  $width: nth($size, 1);
+  $height: nth($size, length($size));
+  $foreground-color: nth($color, 1);
+  $background-color: if(length($color) == 2, nth($color, 2), transparent);
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    $width: $width / 2;
+    $height: if(length($size) > 1, $height, $height/2);
+
+    @if $direction == up {
+      border-bottom: $height solid $foreground-color;
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+    } @else if $direction == right {
+      border-bottom: $width solid $background-color;
+      border-left: $height solid $foreground-color;
+      border-top: $width solid $background-color;
+    } @else if $direction == down {
+      border-left: $width solid $background-color;
+      border-right: $width solid $background-color;
+      border-top: $height solid $foreground-color;
+    } @else if $direction == left {
+      border-bottom: $width solid $background-color;
+      border-right: $height solid $foreground-color;
+      border-top: $width solid $background-color;
+    }
+  } @else if ($direction == up-right) or ($direction == up-left) {
+    border-top: $height solid $foreground-color;
+
+    @if $direction == up-right {
+      border-left:  $width solid $background-color;
+    } @else if $direction == up-left {
+      border-right: $width solid $background-color;
+    }
+  } @else if ($direction == down-right) or ($direction == down-left) {
+    border-bottom: $height solid $foreground-color;
+
+    @if $direction == down-right {
+      border-left:  $width solid $background-color;
+    } @else if $direction == down-left {
+      border-right: $width solid $background-color;
+    }
+  } @else if ($direction == inset-up) {
+    border-color: $background-color $background-color $foreground-color;
+    border-style: solid;
+    border-width: $height $width;
+  } @else if ($direction == inset-down) {
+    border-color: $foreground-color $background-color $background-color;
+    border-style: solid;
+    border-width: $height $width;
+  } @else if ($direction == inset-right) {
+    border-color: $background-color $background-color $background-color $foreground-color;
+    border-style: solid;
+    border-width: $width $height;
+  } @else if ($direction == inset-left) {
+    border-color: $background-color $foreground-color $background-color $background-color;
+    border-style: solid;
+    border-width: $width $height;
+  }
+}
+
+// mixin for btn-close
+@mixin btn-close($cross-size, $line-width, $cross-color, $position-top, $position-right){
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  position: absolute;
+  top: $position-top;
+  right:$position-right;
+  width: $cross-size;
+  height: $cross-size;
+  text-indent: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    background: $cross-color;
+    display: block;
+    height: $line-width;
+    margin-top: -$line-width / 2;
+    transform: rotate(45deg);
+  }
+
+  &:after{
+    transform: rotate(-45deg);
+  }
+}
+
+// mixin for btn-plus
+@mixin btn-plus($plus-size, $line-width, $plus-color, $position-top, $position-right){
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  position: absolute;
+  top: $position-top;
+  right:$position-right;
+  height: $plus-size;
+  width: $plus-size;
+  text-indent: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+
+  &:before,
+  &:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    left: 5%;
+    background: $plus-color;
+    display: block;
+    height: $line-width;
+    margin-top: -$line-width / 2;
+    transition: all 0.3s ease;
+  }
+
+  &:after{
+    transform: rotate(90deg);
+  }
+}
+
+/// mixin for styling form-placeholders
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &::-moz-placeholder {opacity: 1; @content}
+  &:-moz-placeholder {@content}
+  &:-ms-input-placeholder {@content}
+  &.placeholder {@content}
+}
+
+/// mixin for transition cross platform
+
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+
+
+// funnel builder
+@mixin breakpoint-height($point) {
+  @media (max-height: #{$point}px) { @content; }
+}
+
+@mixin font-open-sans($size: false, $colour: false, $weight: false , $text-align: false) {
+  font-family: "Open Sans" , sans-serif;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $text-align { text-align: $text-align; }
+}
+
+@mixin margin-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin links-hover{
+  &:hover,
+  &:active,
+  &:focus{
+    @content;
+  }
+}
+@mixin crossBrowser($property, $css) {
+  -webkit-#{$property} : $css;
+  -moz-#{$property} : $css;
+  -ms-#{$property}: $css;
+  -o-#{$property} : $css;
+  #{$property} : $css;
+}
+
+
+/**
+*    Background Image Mixin
+*
+*    @param {string}          [$file-name]
+*    @param {number}          [$height]
+*    @param {number}          [$width]
+*    @param {number number}   [$position]
+*
+*    returns  Returns background-image, height, width
+*/
+
+@mixin background-image($file-name , $height , $width ,$position:0 0) {
+  background: url(#{$file-name}) $position;
+  height: $height;
+  width: $width;
+}
+
+
+/**
+*    Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+@mixin vertical-alignment-content($align-item:center , $justify-content:null) {
+  display: flex;
+  display: -ms-flex;
+  align-items: $align-item;
+  @if($justify-content != null){
+    justify-content: $justify-content;
+  }
+}
+
+
+/**
+*    Inline Vertical And Horizontal Alignment Mixin
+*
+*    @param {string}          [$align-item]
+*    @param {string}          [$justify-content]
+*
+*    Returns display and optional align-items and justify-content
+*/
+@mixin inline-vertical-alignment-content($align-item:center , $justify-content:null) {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  align-items: $align-item;
+  @if($justify-content != null){
+    justify-content: $justify-content;
+  }
+}
+
+/**
+* Un order list Mixin
+*/
+
+@mixin list-contents(){
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+
+/**
+*    Add ellipsis in the element
+*
+*    @param {string}          [$max-width]
+*
+*    Returns overflow, text-overflow, white-space and optional max-width
+*/
+
+@mixin ellipsis($max-width: false){
+  @if $max-width {max-width: $max-width;}
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

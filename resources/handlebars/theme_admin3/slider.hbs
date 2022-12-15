@@ -1,0 +1,168 @@
+<script src="{{app.assets}}/js/funnel/scripts/funnel-question-slider-overlay.js"></script>
+<div class="funnel-content funnel-slider-overlay funnel-overlay">
+{{#with options}}
+    <div class="panel-aside advance-option-active">
+        <div class="panel-aside__head">
+            <div class="col-left">
+                <h4 class="panel-aside__title has-icon slider-icon">
+                    <span>
+                        <i class="ico ico-expand head-icon"></i>
+                        Slider
+                    </span>
+                </h4>
+            </div>
+            <div class="col-right">
+                <span title="Zip Code" class="ico-arrow-right back-ico"></span>
+                <!-- Funnel Feature icons -->
+                {{> funnel-feature-icons }}
+            </div>
+        </div>
+        <div class="panel-aside-wrap-overlay">
+            <div class="panel-aside-holder">
+                <div class="panel-aside__body">
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs fb-tab" role="tablist">
+                        <li class="nav-item fb-tab__item">
+                            <a href="#" class="fb-tab__link slider-tab-link numeric {{#ifCond slider-numeric.value '==' 1}}active{{/ifCond}}">
+                                numeric
+                            </a>
+                        </li>
+                        <li class="nav-item fb-tab__item">
+                            <a href="#" class="fb-tab__link slider-tab-link non-numeric {{#ifCond slider-non-numeric.value '==' 1}}active{{/ifCond}}">
+                                non-numeric
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content {{#ifCond slider-non-numeric.value '==' 1}}non-numeric-active{{/ifCond}}">
+                        <div class="tab-pane-wrap">
+                            <!-- Question & Description -->
+                            {{> question-description }}
+                            <!-- slider setup -->
+                            <div class="form-group numeric-field" data-parent>
+                                <div class="fb-modal__row">
+                                    <div class="fb-modal__option">
+                                        Slider Setup
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="fb-modal__handler open" data-handler>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__border-row pb-0" data-handler-slide>
+                                    <ul class="nav nav-tabs fb-tab fb-tab_plr0" role="tablist">
+                                        <li class="fb-tab__item">
+                                            <a href="#puck1" data-toggle="tab" class="fb-tab__link fb-tab__link_inner {{#ifCond slider-numeric.one-puck.value '==' 1}}active{{/ifCond}}" data-active-tab="{{slider-numeric.one-puck.value}}">
+                                                1-Puck Slider
+                                            </a>
+                                        </li>
+                                        <li class="fb-tab__item">
+                                            <a href="#puck2" data-toggle="tab" class="fb-tab__link fb-tab__link_inner {{#ifCond slider-numeric.two-puck.value '==' 1}}active{{/ifCond}}" data-active-tab="{{slider-numeric.two-puck.value}}">
+                                                2-Puck Slider
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <!--Puck 1 Content-->
+                                        <div role="tabpanel" id="puck1" class="tab-pane fb-tab__tab-pane fade {{#ifCond slider-numeric.one-puck.value '==' 1}}active show{{/ifCond}}" data-field-name="slider-numeric.one-puck.range" data-range-type="slider-numeric.one-puck.range-type">
+                                            {{> one-puck }}
+                                        </div>
+                                        <!--Puck 2 Content-->
+                                        <div role="tabpanel" id="puck2" class="tab-pane fb-tab__tab-pane fade {{#ifCond slider-numeric.two-puck.value '==' 1}}active show{{/ifCond}}"  data-field-name="slider-numeric.two-puck.range" data-range-type="slider-numeric.two-puck.range-type">
+                                            {{> two-puck }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- slider setup -->
+                            <div class="form-group non-numeric-field" data-parent>
+                                <div class="fb-modal__row">
+                                    <div class="fb-modal__option">
+                                        Slider Setup Non Numeric
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="fb-modal__handler open" data-handler>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__border-row pb-0" data-handler-slide>
+                                    <div class="tab-content">
+                                    {{> non-numeric }}
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CTA Button -->
+                            {{> cta-button }}
+                            <!-- Advance options -->
+                            <div class="form-group advance-options-wrap" data-parent>
+                                <div class="fb-modal__row">
+                                    <div class="fb-modal__option opener-text">
+                                        Advanced Options
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="fb-modal__handler" data-handler>
+                                            <i class="fa fa-chevron-down opener-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: none">
+                                    <!-- security message -->
+                                    {{> security-message}}
+                                    <!-- Additional -->
+                                    {{> additional-content}}
+                                    <!-- Fields detail -->
+                                    {{> field-details}}
+                                    <!-- Settings -->
+                                    <div class="form-group slider-setting-option-area numeric-field" data-parent>
+                                        <div class="tag-row">
+                                            <div class="tag-row__title">Settings</div>
+                                        </div>
+                                    </div>
+                                    <!-- Show Billions -->
+                                    {{> slider-billions-format }}
+                                    <!-- Show Millions -->
+                                    {{> slider-millions-format }}
+                                    <!-- Show Thousands -->
+                                    {{> slider-thousands-format }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-aside__footer">
+            <div class="action">
+                <ul class="action__list justify-content-end">
+                    <li class="action__item">
+                        <button class="button button-cancel">Close</button>
+                    </li>
+                    <li class="action__item">
+                        <button class="button button-secondary">Save</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{{/with}}
+    <input data-id="ques_id" hidden value="{{ques_id}}">
+    <!-- contain the main content of the page -->
+    <div id="content">
+
+        <!-- Question Editor Header -->
+        {{> question-header }}
+
+        <!-- iframe include for question -->
+        <div class="funnel-iframe-holder" {{#ifCond zoom '==' 1}}style="transform:scale({{zoom_value}})"{{/ifCond}}>
+            <iframe scrolling="no" src="{{app.url}}/previewbars/slider-preview.php?ques_id={{ques_id}}&ls_key={{ls_key}}" class="slider-iframe question-preview-iframe"></iframe>
+        </div>
+     </div>
+ </div>
+
+<!--button icon list-->
+{{> button-icon-list }}
+
+<!-- Mobile Mode -->
+{{> mobile-mode }}

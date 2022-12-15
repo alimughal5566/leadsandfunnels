@@ -1,0 +1,18 @@
+<div class="fb-modal__row fb-modal__row_tb {{#ifCond automatic-progress '==' 1}}question-hide{{/ifCond}}" data-required-option>
+    <div class="fb-modal__option fb-modal__option_light">
+        <span class="fb-modal__middle">Required</span>
+        <span class="fb-tooltip">
+            <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+        </span>
+    </div>
+    <div class="fb-modal__control">
+        <div class="funnel-checkbox">
+            <label class="checkbox-label">
+                <input class="fb-field-label" data-opener-checkbox type="checkbox" data-field-name="required" {{#ifCond required '==' 1}}checked{{/ifCond}}>
+                <span class="checkbox-area">
+                    <span class="handle"></span>
+                </span>
+            </label>
+        </div>
+    </div>
+</div>

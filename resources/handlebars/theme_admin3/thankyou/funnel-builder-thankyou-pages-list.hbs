@@ -1,0 +1,67 @@
+{{#each data}}
+    <div class="fb-question-item fb-question-item_lock {{set_class}}" id="{{insertId}}">
+    <div class="question-item single-question-slide">
+        <div class="fb-question-item__serial"></div>
+        <div class="fb-question-item__detail">
+            <div class="fb-question-item__col">
+                <div class="question-text thankyou">
+                    <span class="sub-text">{{type}}</span>
+                </div>
+            </div>
+            <div class="fb-question-item__col">
+                <div class="tu-url">
+                    <div class="tu-url__url">{{#ifCond thirdparty_active '==' 'y'}}{{thankyou_url}} {{else}}{{thank_you_title}}{{/ifCond}}</div>
+                </div>
+            </div>
+            <div class="fb-question-item__col fb-question-item__col_control">
+                <a href="#" class="hover-hide">
+                    <i class="fbi fbi_dots">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                    </i>
+                </a>
+                <ul class="lp-control">
+                    <li class="lp-control__item">
+                        <span class="conditional-logic-link-wrap fb-tooltip fb-tooltip_control" title="<div class='thankyou-tooltip'> Conditional Logic is a feature that is<br> in development and will be coming soon.</div>" >
+                            <a class="conditional-logic-link lp-control__link" href="#">
+                            <i class="lp-icon-conditional-logic ico-back"></i>
+                        </a>
+                        </span>
+                    </li>
+                    <li class="lp-control__item lp-control__item_edit">
+                        <a title="Edit" class="lp-control__link fb-tooltip fb-tooltip_control" data-thankyou-edit data-href="/lp/popadmin/thankyou/{{hash}}?id={{insertId}}" data-url="{{thankyou_url}}" data-http-flag="{{https_flag}}" data-id="{{insertId}}" href="javascript:;" >
+                            <i class="ico-edit"></i>
+                        </a>
+                    </li>
+                    <li class="lp-control__item">
+
+                        <span class="copy-page-link-wrap fb-tooltip fb-tooltip_control" title="<div class='thankyou-tooltip'>Duplicate Thank You page a feature that is<br> in development and coming soon.</div>">
+                        <a class="copy-page-link lp-control__link lp-control__link__copy" href="javascript:;" data-submission-id="{{insertId}}">
+                            <i class="ico-copy"></i>
+                        </a>
+                        </span>
+                    </li>
+                    {{#ifCond ../data.length '>' 1 }}
+                    <li class="lp-control__item" data-hide>
+                        <a title="Move" class="lp-control__link lp-control__link_cursor_move fb-tooltip fb-tooltip_control" href="#">
+                            <i class="ico-dragging"></i>
+                        </a>
+                    </li>
+                    <li class="lp-control__item" data-hide>
+                        <a title="Delete" class="lp-control__link fb-tooltip delete-page  fb-tooltip_control" href="#confirmation-delete-funnel" data-existing="1" data-submission-id="{{insertId}}" data-toggle="modal">
+                            <i class="ico-cross"></i>
+                        </a>
+                    </li>
+                    {{/ifCond}}
+                </ul>
+            </div>
+            <div class="fb-question-item__col fb-question-item__col_lock">
+                <a href="#">
+                    <i class="lp-icon-lock ico-lock"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}

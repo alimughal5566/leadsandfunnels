@@ -1,0 +1,336 @@
+/* text field question style */
+.text-field-questions-wrap {
+  font: 16px/1.2 "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  background: $white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #6e7c81;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* text area style */
+.question_answer {
+
+  .step-holder {
+    max-width: 381px;
+    margin: 0 auto;
+
+    &.textarea-active {
+
+      .text-field {
+        display: none;
+      }
+
+      .textarea-field {
+        display: block;
+      }
+    }
+  }
+
+  .input-label {
+    position: absolute;
+    left: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    right: 26px;
+
+    &.error-message {
+      text-align: left;
+    }
+  }
+
+  .form-control {
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+    text-align: left;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 28px 30px 12px 26px;
+    border-radius: 6px;
+    box-shadow: none;
+    font-weight: 600;
+    width: 100%;
+    outline: none;
+    border: 1px solid #cfdadd;
+    transition: all 0.4s ease;
+    color: #58666e;
+    height: 70px;
+
+    &:focus,
+    &.filled {
+      border-width: 2px;
+      border-color: #00ccff;
+      box-shadow: 0 6px 13px 0 rgba(#000, 0.15);
+      outline: none;
+    }
+
+    &.filled {
+
+      + .input-label {
+        @include fontsize(11, 15);
+        top: 2px;
+        transform: none;
+      }
+    }
+  }
+
+  textarea {
+
+    &.form-control {
+      resize: none;
+      padding-top: 37px;
+      height: 230px;
+
+      + .input-label {
+        transform: none;
+        top: 22px;
+      }
+    }
+  }
+
+  &__fields {
+    position: relative;
+  }
+
+  .form-group {
+    justify-content: center;
+    margin-bottom: 17px;
+
+    &.without-label {
+
+      .form-control {
+        padding-top: 12px;
+      }
+
+      .input-wrap {
+
+        &:before {
+          top: 23px;
+          bottom: 23px;
+        }
+      }
+    }
+  }
+
+  .textarea-field {
+    display: none;
+
+    .input-wrap {
+
+      &._focused_ {
+
+        &:before {
+          top: 37px;
+          height: 24px;
+          bottom: auto;
+        }
+      }
+    }
+  }
+
+  .input-wrap {
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.4s ease;
+    width: 100%;
+
+    &._focused_ {
+
+      .form-control {
+        border-width: 2px;
+        border-color: #00ccff;
+        box-shadow: 0 6px 13px 0 rgba(#000, 0.15);
+        outline: none;
+      }
+
+      &:before {
+        visibility: visible;
+      }
+
+      .input-label {
+        @include fontsize(11, 15);
+        top: 3px;
+        padding: 12px 0 5px;
+        transform: none;
+      }
+
+      &.focused {
+
+        &:before {
+          visibility: hidden;
+        }
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 28px;
+      top: 31px;
+      bottom: 15px;
+      background: #0f101a;
+      width: 1px;
+      animation: blink_cursor 1s infinite;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    &.focused {
+
+      .input-label {
+        @include fontsize(11, 15);
+        top: 3px;
+        padding: 12px 0 5px;
+        transform: none;
+      }
+    }
+
+    &.validate {
+
+      .form-control {
+        border-color: #dcdddd;
+        border-width: 1px;
+        box-shadow: none;
+      }
+
+      .icon-valid {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &.error {
+
+      .icon-invalid {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .input-label {
+      @include font(14, 18, 700);
+      color: #b4bbbc;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+      transition: all 0.4s ease-in-out;
+      background: $white;
+
+      &.error-message {
+        @include font(12, 16, 700);
+        color: #f00;
+        text-align: center;
+        display: block;
+        text-transform: none;
+        transform: none;
+        top: 14px;
+      }
+    }
+
+    .icon-valid {
+      @include fontsize(16, 20);
+      color: #27c602;
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .icon-invalid {
+      @include fontsize(20, 24);
+      color: #f00;
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .icon-search {
+      @include fontsize(20, 24);
+      color: #949da2;
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.question_answer {
+
+  &.mobile-view {
+
+    textarea.form-control {
+      height: 194px;
+    }
+
+    .step-holder {
+      max-width: 320px;
+    }
+
+    .input-label {
+      left: 21px;
+      right: 21px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    .form-control {
+      padding-left: 21px;
+      padding-right: 21px;
+      font-size: 12px;
+    }
+
+    .input-wrap {
+
+      &._focused_ {
+
+        .input-label {
+          @include fontsize(10, 14);
+        }
+      }
+
+      &.focused {
+
+        .input-label {
+          @include fontsize(10, 14);
+        }
+      }
+
+      .input-label {
+        @include font(12, 16, 700);
+
+        &.error-message {
+          @include font(10, 14, 700);
+          top: 10px;
+        }
+      }
+
+      .icon-valid {
+        @include fontsize(12, 16);
+      }
+
+      .icon-invalid {
+        @include fontsize(14, 18);
+      }
+
+      .icon-search {
+        @include fontsize(16, 20);
+      }
+    }
+  }
+}

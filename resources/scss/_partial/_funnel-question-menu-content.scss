@@ -1,0 +1,470 @@
+/* Menu wrap question style */
+.funnel-menu-wrap {
+  font: 16px/1.2 "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  box-sizing: border-box;
+  color: #6e7c81;
+  border-radius: 8px;
+  background: $white;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* Menu question style */
+.question_menu {
+
+  .form-group {
+    margin-bottom: 8px;
+    justify-content: center;
+
+    &.other-parent {
+      align-items: flex-start;
+    }
+  }
+
+  .question_radio-question,
+  .question_single-question-checkbox {
+    max-width: 381px;
+    margin: 0 auto;
+  }
+
+  .question_single-question-checkbox {
+
+    .btn {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.4px;
+      padding: 26px 16px;
+      margin-top: 8px;
+    }
+  }
+
+  .question_single-question-checkbox-group {
+    max-width: 780px;
+    margin: 0 auto;
+
+    .question__fields {
+      margin-bottom: 8px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 -8px;
+    }
+
+    .input-wrap {
+      min-width: 395px;
+      max-width: 395px;
+      padding: 0 4px;
+    }
+  }
+
+  .question_radio-question-group {
+      max-width: 780px;
+      margin: 0 auto;
+
+    .question__fields {
+      width: auto;
+      margin-bottom: 8px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 -8px;
+    }
+
+    .input-wrap {
+      min-width: 395px;
+      max-width: 395px;
+      padding: 0 4px;
+    }
+  }
+
+  .radio-button {
+    @include font(18, 22, 600);
+    background-color: #01c6f7;
+    border: 1px solid #01c6f7;
+    border-radius: 3px;
+    color: #fff;
+    letter-spacing: 0.6px;
+    padding: 21px 36px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:hover {
+      box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &.active {
+      background-color: #fff;
+      box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.15);
+      color: #01c6f7;
+
+      .icon-valid {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .icon-valid {
+      color: #01c6f7;
+      transition-delay: 0.3s;
+      right: 12px;
+    }
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .checkbox-button {
+    @include font(18, 22, 600);
+    background-color: #01c6f7;
+    border: 1px solid #01c6f7;
+    border-radius: 3px;
+    color: #fff;
+    letter-spacing: 0.6px;
+    padding: 21px 55px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &.active {
+      background-color: #fff;
+      box-shadow: 0 6px 13px 0 rgba(0, 0, 0, 0.15);
+      color: #01c6f7;
+
+      .fake-input {
+        border-color: rgba(#01c6f7, 1);
+
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .fake-input {
+      @include size(22px);
+      background-color: transparent;
+      border: 1px solid rgba(#fff, 0.65);
+      border-radius: 2px;
+      position: absolute;
+      top: 50%;
+      right: 22px;
+      transform: translateY(-50%);
+      transition: all 0.3s ease;
+
+      &:before {
+        font-family: 'icomoon';
+        content: "\e909";
+        position: absolute;
+        top: -1px;
+        left: 4px;
+        font-size: 12px;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .other-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-wrap {
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.4s ease;
+    height: 100%;
+
+    .icon-valid {
+      @include fontsize(16, 20);
+      color: #01c6f7;
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+    }
+  }
+
+  .input-wrap-other {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    margin: 0 auto;
+
+    &.focused {
+
+    .input-label {
+      @include fontsize(11, 15);
+      transform: none;
+      top: 11px;
+    }
+
+    .form-control {
+      border: 1px solid #00ccff;
+      color: #58666e;
+      text-align: center;
+    }
+  }
+
+  .other-input {
+    position: relative;
+    height: 100%;
+
+    label {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #b4bbbc;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 600;
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      text-align: center;
+      top: 10px;
+      transition: all 0.4s ease;
+    }
+  }
+
+  .form-control {
+      font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+      text-align: left;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 23px 16px 12px;
+      border-radius: 3px;
+      box-shadow: none;
+      font-weight: 600;
+      transition: all 0.4s ease;
+      width: 100%;
+      outline: none;
+      border: 1px solid #cfdadd;
+      color: #58666e;
+      background: $white;
+      height: 100%;
+    }
+  }
+
+  .question_radio-question-group {
+
+    .input-wrap-other {
+      left: 4px;
+      right: 4px;
+    }
+  }
+}
+
+.menu-steps-wrap {
+  position: relative;
+
+  &.question-radio-group-active {
+
+    .question_radio-question {
+      display: none;
+    }
+
+    .question_radio-question-group {
+      display: block;
+    }
+  }
+
+  &.question-check-active {
+
+    .question_radio-question {
+      display: none;
+    }
+
+    .question_single-question-checkbox {
+      display: block;
+    }
+  }
+
+  &.question-check-group-active {
+
+    .question_radio-question {
+      display: none;
+    }
+
+    .question_single-question-checkbox-group {
+      display: block;
+    }
+  }
+
+  .question {
+    display: none;
+    padding: 0;
+  }
+
+  .question_radio-question,
+  .question_single-question-checkbox,
+  .question_radio-question-group,
+  .question_single-question-checkbox-group {
+    display: block;
+  }
+}
+
+.row {
+
+  &.with-image {
+
+    .question_single-question-checkbox-group {
+
+      .input-wrap {
+        max-width: 265px;
+        min-width: 265px;
+      }
+    }
+  }
+}
+
+.question_menu {
+
+  &.mobile-view {
+    max-width: 375px;
+    margin: 0 auto;
+
+    .question {
+      padding: 0 0 6px;
+    }
+
+    .input-wrap {
+
+      .icon-valid {
+        right: 8px;
+      }
+    }
+
+    .question_radio-question,
+    .question_single-question-checkbox {
+      max-width: 320px;
+    }
+
+    .question_radio-question-group {
+      .form-group {
+        margin: 0;
+      }
+      .question__fields {
+        width: 100%;
+        margin: 0 0 3px;
+      }
+
+      .input-wrap {
+        max-width: 270px;
+        min-width: 270px;
+        width: 100%;
+      }
+    }
+
+    .question_single-question-checkbox-group {
+
+      .form-group {
+        margin: 0;
+      }
+      .question__fields {
+        width: 100%;
+        margin: 0 0 3px;
+      }
+
+      .input-wrap {
+        max-width: 270px;
+        min-width: 270px;
+        width: 100%;
+      }
+    }
+
+    .form-group {
+      margin: 0 0 3px;
+    }
+
+    .radio-button,
+    .checkbox-button {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 12px 30px;
+    }
+
+    .checkbox-button {
+      padding: 12px 40px;
+
+      .fake-input {
+        width: 18px;
+        height: 18px;
+        right: 11px;
+
+        &:before {
+          font-size: 9px;
+          line-height: 9px;
+          width: auto;
+          height: auto;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .other-button {
+      height: auto !important;
+
+      &.focus {
+        height: 66px !important;
+      }
+    }
+
+    .other-parent {
+
+      .checkbox-button {
+
+        &.active {
+          height: 66px !important;
+        }
+      }
+    }
+
+    .checkbox-button {
+      height: auto !important;
+    }
+
+    .input-wrap-other {
+
+      &.focused {
+
+        .input-label {
+          left: 16px;
+        }
+      }
+    }
+  }
+}

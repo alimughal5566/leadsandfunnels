@@ -1,0 +1,45 @@
+.lp-contact {
+
+  &__content {
+    border-bottom: 1px solid #dde0e1;
+    align-items: center;
+    border-radius: 3px;
+    background-color: $white;
+    display: flex;
+    flex-flow:row wrap;
+    margin: 0 0 30px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    padding: 13px 30px;
+
+    .input__wrapper {
+      flex: 1;
+    }
+  }
+
+  &__label {
+    margin: 0;
+    min-width: 160px;
+  }
+
+  &__control {
+    position: relative;
+    min-width: 226px;
+    display: flex;
+    justify-content: flex-end;
+
+    &:before {
+      content: "";
+      bottom: -3px;
+      background: #f2f3f3;
+      left: 21.5%;
+      position: absolute;
+      right: 76.5%;
+      top: -3px;
+      width: 1px;
+    }
+  }
+}

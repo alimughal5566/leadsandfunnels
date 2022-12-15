@@ -1,0 +1,81 @@
+<script src="{{app.assets}}/js/funnel/scripts/funnel-question-cta-overlay.js"></script>
+<div class="funnel-content funnel-cta-overlay funnel-overlay">
+    {{#with options}}
+    <div class="panel-aside advance-option-active">
+        <div class="panel-aside__head">
+            <div class="col-left">
+                <h4 class="panel-aside__title has-icon ctamessage-icon">
+                    <span>
+                        <i class="ico ico-message head-icon"></i>
+                        CTA Message
+                    </span>
+                </h4>
+            </div>
+            <div class="col-right">
+                <span title="Zip Code" class="ico-arrow-right back-ico"></span>
+                <!-- Funnel Feature icons -->
+                {{> funnel-feature-icons }}
+            </div>
+        </div>
+        <div class="panel-aside-wrap-overlay">
+
+            <div class="panel-aside-holder">
+                <div class="panel-aside__body">
+                    <!-- Question & Description -->
+                    {{> question-description }}
+                    <!-- CTA Button -->
+                    {{> cta-button }}
+                    <!-- Advance options -->
+                    <div class="form-group advance-options-wrap {{#ifCond edit '==' 1}}active{{/ifCond}}" data-parent data-handler-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option opener-text">
+                                Advanced Options
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler {{#ifCond edit '==' 1}}open{{/ifCond}}" data-handler>
+                                    <i class="fa fa-chevron-down opener-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: {{#ifCond edit '==' 1}}block{{else}}none{{/ifCond}}">
+                            <!-- security message -->
+                            {{> security-message}}
+                            <!-- Additional -->
+                            {{> additional-content}}
+                            <!-- Fields detail -->
+                            {{> field-details}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-aside__footer">
+            <div class="action">
+                <ul class="action__list justify-content-end">
+                    <li class="action__item">
+                        <button class="button button-cancel">Close</button>
+                    </li>
+                    <li class="action__item">
+                        <button class="button button-secondary">Save</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {{/with}}
+    <input data-id="ques_id" hidden value="{{ques_id}}">
+    <!-- contain the main content of the page -->
+    <div id="content">
+
+        <!-- Question Editor Header -->
+        {{> question-header }}
+        <!-- iframe include for question -->
+        <div class="funnel-iframe-holder" {{#ifCond zoom '==' 1}}style="transform:scale({{zoom_value}})"{{/ifCond}}>
+            <iframe scrolling="no" src="{{app.url}}/previewbars/CTA-preview.php?ques_id={{ques_id}}&ls_key={{ls_key}}" class="cta-message-iframe question-preview-iframe"></iframe>
+        </div>
+     </div>
+ </div>
+<!--button icon list-->
+{{> button-icon-list }}
+<!-- Mobile Mode -->
+{{> mobile-mode }}

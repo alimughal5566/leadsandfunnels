@@ -1,0 +1,12 @@
+<div class="funnel-feature-btns-list">
+     <span class="cta-pop-btn-wrap {{#ifCond @root/enable-cta-class '==' 0}}inactive{{/ifCond}}" data-enable-cta-feature-icon style="display: {{#ifCond @root/show_home_cta_icon '==' 1}}block{{else}}none{{/ifCond}}">
+        <a href="#homepage-cta-message-pop" data-edit-cta-popup data-toggle="modal" class="cta-pop-btn el-tooltip" title="Edit Homepage CTA">
+            <i class="icon ico-pointer"></i>
+        </a>
+    </span>
+    <span class="feature-icon-btn-wrap {{#ifCond @root/enable-featured-image '==' 0}}inactive{{/ifCond}}" data-enable-featured-class style="display: {{#ifCond @root/show_home_cta_icon '==' 1}}block{{else}}none{{/ifCond}}">
+        <a href="#feature-image-modal" data-edit-featured-image data-toggle="modal" class="feature-icon-btn el-tooltip" title="Featured Image">
+            <i class="icon ico-image"></i>
+        </a>
+    </span>
+</div>

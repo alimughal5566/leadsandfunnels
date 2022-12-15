@@ -1,0 +1,113 @@
+{{#with options}}
+        <div class="panel-aside advance-option-active">
+            <div class="panel-aside__head">
+                <div class="col-left">
+                    <h4 class="panel-aside__title has-icon vehicle-icon">
+                    <span>
+                        <i class="ico ico-car head-icon"></i>
+                        Car Make & Model
+                    </span>
+                    </h4>
+                </div>
+                <div class="col-right">
+                    <span class="ico-arrow-right back-ico"></span>
+                    <!-- Funnel Feature icons -->
+                    {{> funnel-feature-icons }}
+                </div>
+            </div>
+            <div class="panel-aside-wrap-overlay">
+                <div class="panel-aside-holder">
+                    <div class="panel-aside__body">
+                        <!-- Tabs -->
+                        <ul class="nav nav-tabs fb-tab">
+                            <li class="nav-item fb-tab__item">
+                                <a href="#" class="fb-tab__link vehicle-tab-link vehicle-make">Car Make</a>
+                            </li>
+                            <li class="nav-item fb-tab__item">
+                                <a href="#" class="fb-tab__link vehicle-tab-link vehicle-model">Car Model</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane-wrap">
+                                <!-- Question & Description -->
+                                {{> question-description }}
+                                <!-- Field Label -->
+                                {{> field-label }}
+                                <!-- Question options -->
+                                <div class="form-group fb-modal__border-box fb-modal__border-box_dropdown vehicle-make-content">
+                                    <div class="fb-modal__row">
+                                        <div class="fb-modal__option">
+                                            Options
+                                        </div>
+                                    </div>
+                                    <div class="fb-modal__border-row">
+                                        <div class="fb-form">
+                                            <p class="mb-0">Answers for "Car Make & Model" are hard-coded and not editable. This list is maintained and kept up-to-date by leadPops.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group fb-modal__border-box fb-modal__border-box_dropdown vehicle-model-content">
+                                    <div class="fb-modal__row">
+                                        <div class="fb-modal__option">
+                                            Options
+                                        </div>
+                                    </div>
+                                    <div class="fb-modal__border-row">
+                                        <div class="fb-form">
+                                            <p class="mb-0">Answers for "Car Make & Model" are hard-coded and not editable. This list is maintained and kept up-to-date by leadPops.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- CTA Button -->
+                                {{> cta-button }}
+                                <!-- More Options -->
+                                <div class="form-group advance-options-wrap" data-parent data-handler-parent>
+                                    <div class="fb-modal__row">
+                                        <div class="fb-modal__option opener-text">
+                                            Advanced Options
+                                        </div>
+                                        <div class="fb-modal__control">
+                                            <div class="fb-modal__handler" data-handler>
+                                                <i class="fa fa-chevron-down opener-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: {{#ifCond edit '==' 1}}block{{else}}none{{/ifCond}}">
+                                        <!-- security message -->
+                                        {{> security-message}}
+                                        <!-- Additional -->
+                                        {{> additional-content}}
+                                        <!-- Fields detail -->
+                                        {{> field-details}}
+                                        <!-- Settings -->
+                                        <div class="form-group" data-parent>
+                                            <div class="tag-row">
+                                                <div class="tag-row__title">Settings</div>
+                                            </div>
+                                            <!-- automatic progress -->
+                                            {{> automatic-progress }}
+                                            <!-- required -->
+                                            {{> required}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-aside__footer">
+                <div class="action">
+                    <ul class="action__list justify-content-end">
+                        <li class="action__item">
+                            <button class="button button-cancel">Close</button>
+                        </li>
+                        <li class="action__item">
+                            <button class="button button-secondary">Save</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {{/with}}

@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'app-icomoon';
+  src:  url('../fonts/app-icomoon.eot?cv8h0f');
+  src:  url('../fonts/app-icomoon.eot?cv8h0f#iefix') format('embedded-opentype'),
+  url('../fonts/app-icomoon.ttf?cv8h0f') format('truetype'),
+  url('../fonts/app-icomoon.woff?cv8h0f') format('woff'),
+  url('../fonts/app-icomoon.svg?cv8h0f#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="app-ico-"], [class*=" app-ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'app-icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-ico-question-mark:before {
+  content: "\e910";
+}
+.app-ico-add-image:before {
+  content: "\e91c";
+}
+.app-ico-avatar:before {
+  content: "\e91d";
+}
+.app-ico-minus:before {
+  content: "\e91e";
+}
+.app-ico-add-plus:before {
+  content: "\e91f";
+}
+.app-ico-delete:before {
+  content: "\e920";
+}
+.app-ico-upload:before {
+  content: "\e921";
+}
+.app-ico-phone-arrow:before {
+  content: "\e914";
+}
+.app-ico-call:before {
+  content: "\e915";
+}
+.app-ico-lock-person:before {
+  content: "\e916";
+}
+.app-ico-email-plus:before {
+  content: "\e917";
+}
+.app-ico-success:before {
+  content: "\e918";
+}
+.app-ico-close-with-cricle:before {
+  content: "\e919";
+}
+.app-ico-show:before {
+  content: "\e91a";
+}
+.app-ico-hide:before {
+  content: "\e91b";
+}
+.app-ico-profile-fill:before {
+  content: "\e912";
+}
+.app-ico-team-fill:before {
+  content: "\e913";
+}
+.app-ico-plus:before {
+  content: "\e911";
+}
+.app-ico-help:before {
+  content: "\e90f";
+}
+.app-ico-resend:before {
+  content: "\e90e";
+}
+.app-ico-arrow-up:before {
+  content: "\e900";
+}
+.app-ico-team:before {
+  content: "\e901";
+}
+.app-ico-dashboard:before {
+  content: "\e902";
+}
+.app-ico-profile:before {
+  content: "\e903";
+}
+.app-ico-logout:before {
+  content: "\e904";
+}
+.app-ico-arrow-down:before {
+  content: "\e905";
+}
+.app-ico-clear:before {
+  content: "\e906";
+}
+.app-ico-video:before {
+  content: "\e907";
+}
+.app-ico-back:before {
+  content: "\e908";
+}
+.app-ico-close:before {
+  content: "\e909";
+}
+.app-ico-check-circle:before {
+  content: "\e90a";
+}
+.app-ico-search:before {
+  content: "\e90b";
+}
+.app-ico-tick:before {
+  content: "\e90c";
+}
+.app-ico-edit:before {
+  content: "\e90d";
+}
+.app-ico-alert:before {
+  content: "\e922";
+}
+.app-ico-warning:before {
+  content: "\e923";
+}

@@ -1,0 +1,20 @@
+<div class="question-standard">
+    <ul class="custom-accordion">
+        {{#each this}}
+            {{#if questions}}
+                <li class="custom-accordion__list">
+                    <a href="#" class="custom-accordion__opener {{#ifCond @key '==' 'popular'}}active{{/ifCond}}">{{label}} <i class="ico ico-arrow-down"></i></a>
+                    <div class="custom-accordion__slide" {{#ifCond @key '==' 'popular'}}style="display: block"{{/ifCond}}>
+                        <div class="question-option-list">
+                            {{#each questions}}
+                                <div class="{{icon}}-item question-list-item" {{#ifCond active '==' '0'}}disabled{{/ifCond}} data-question-type="{{@key}}" data-question-section="{{@../key}}" data-icon="{{icon}}">
+                                    <span class="question-text {{icon}}"><span class="sub-text">{{label}}</span></span>
+                                </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </li>
+            {{/if}}
+        {{/each}}
+    </ul>
+</div>

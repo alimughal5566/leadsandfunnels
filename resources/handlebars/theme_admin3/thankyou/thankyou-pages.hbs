@@ -1,0 +1,60 @@
+{{#each data}}
+<div class="fb-question-item {{set_class}}" id="{{insertId}}">
+    <div class="fb-question-item__serial"></div>
+    <div class="fb-question-item__detail">
+        <div class="fb-question-item__col">
+            <div class="icon-text icon-text_link">
+                {{type}}
+            </div>
+        </div>
+        <div class="fb-question-item__col">
+            <div class="tu-url">
+                <div class="tu-url__url">{{#ifCond thirdparty_active '==' 'y'}}{{thankyou_url}} {{else}}{{thank_you_title}}{{/ifCond}}</div>
+            </div>
+        </div>
+        <div class="fb-question-item__col fb-question-item__col_control">
+                                                <span class="tooltip-info-wrap">
+                                                    <span class="question-mark el-tooltip" title="TOOLTIP CONTENT">
+                                                        <span class="ico ico-question"></span>
+                                                    </span>
+                                                </span>
+            <a href="#" class="hover-hide">
+                <i class="fbi fbi_dots">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                </i>
+            </a>
+            <ul class="lp-control">
+                <li class="lp-control__item">
+                    <a title="Conditional Logic is a feature that is in development and will be coming soon." class="lp-control__link el-tooltip" href="#">
+                        <i class="lp-icon-conditional-logic ico-back"></i>
+                    </a>
+                </li>
+                <li class="lp-control__item lp-control__item_edit">
+                    <a title="Edit" class="lp-control__link el-tooltip" href="/lp/popadmin/thankyou/{{hash}}?id={{insertId}}">
+                    <i class="ico-edit"></i>
+                    </a>
+                </li>
+                <li class="lp-control__item">
+                    <a title="Clone" class="lp-control__link el-tooltip lp-control__link__copy" href="javascript:;" data-submission-id="{{insertId}}">
+                        <i class="ico-copy"></i>
+                    </a>
+                </li>
+                {{#ifCond ../data.length '>' 1 }}
+                <li class="lp-control__item" data-hide>
+                    <a title="Move" class="lp-control__link lp-control__link_cursor_move el-tooltip" href="#">
+                        <i class="ico-dragging"></i>
+                    </a>
+                </li>
+                <li class="lp-control__item" data-hide>
+                    <a title="Delete" class="lp-control__link delete-page el-tooltip" href="#confirmation-delete-funnel" data-existing="1" data-submission-id="{{insertId}}" data-toggle="modal">
+                        <i class="ico-cross"></i>
+                    </a>
+                </li>
+                {{/ifCond}}
+            </ul>
+        </div>
+    </div>
+</div>
+{{/each}}

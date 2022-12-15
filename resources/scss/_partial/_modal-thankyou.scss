@@ -1,0 +1,279 @@
+/**
+*  Funnel Builder: Thank you page CSS
+*/
+
+
+.tk-bar{
+  min-height: 63px;
+  border-bottom: 1px solid #e9ecef;
+  padding: 7px 0;
+  @include vertical-alignment-content(center , space-between);
+  &__title{
+    @include font-open-sans(22px , #707d84 , 300);
+  }
+  .action__item {
+    margin: 15px 15px 0 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .lp-dropdown {
+    max-width: 430px;
+    &__item {
+      max-width: 430px;
+    }
+  }
+}
+
+.tk-clist{
+  $parent:&;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  display: -ms-flex;
+  &__item{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 20px;
+    border-left: 1px solid #e9ecef;
+    height: 60px;
+    @include vertical-alignment-content;
+    &:last-child{
+      padding-right: 0;
+    }
+  }
+  &_button{
+    #{$parent}__item{
+      padding: 0 16px 0 0;
+      border-left: 0 none;
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.tk-note{
+  border-bottom: 1px solid #e9ecef;
+  height: 94px;
+  padding: 20px 0;
+  @include vertical-alignment-content;
+  width: 100%;
+  &__description{
+    @include font-open-sans(16px , #acbdc9 , 300);
+    line-height: 1.2;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.fb-toggle-button{
+  @include font-open-sans(14px , #707d84 , 700);
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 22px;
+  @include links-hover{
+    color: #707d84;
+  }
+  &:before{
+    speak: none;
+    line-height: 1;
+    content: "\e944";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-family: 'icomoon' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    //background: url('#{$image-base-path}/fb-sprite.png') center center;
+    width: 16px;
+    height: 16px;
+    background-position: -155px -312px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+  }
+  &_open{
+    &:before{
+      content: "\e91b";
+    }
+  }
+}
+.tk-field-wrap{
+  display: none;
+}
+.tk-field{
+  height: 95px;
+  @include vertical-alignment-content;
+  border-bottom: 1px solid #e9ecef;
+  &__caption{
+    @include font-open-sans(16px, #707d84 , 400);
+    padding-right: 16px;
+    &_ptitle{
+      width: 312px;
+    }
+  }
+  &__input{
+    flex-grow: 1;
+      position: relative;
+
+      input[type="text"] {
+          padding-right: 35px;
+      }
+
+      &:hover {
+          .tk-field__reset {
+              opacity: 1;
+              visibility: visible;
+          }
+      }
+  }
+  &_detail-page{
+    height: auto;
+    border-bottom: 0 none;
+    &:first-child{
+      margin-bottom: 22px;
+    }
+  }
+
+  &__reset {
+      position: absolute;
+      right: 15px;
+      top: 18px;
+      color: #58666e;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+  }
+}
+
+
+/**
+*  Funnel Builder: Thank You Page Detail
+*/
+.tk-field-detail{
+  padding: 22px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+.tk-page-head{
+  padding: 0 30px;
+  @include vertical-alignment-content(center , space-between);
+  flex-grow: 1;
+  &__back-link{
+    @include font-open-sans(14px , #707d84 , 700);
+    &:before{
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 5.5px solid transparent;
+      border-right: 6px solid #7d8b95;
+      border-bottom: 5.5px solid transparent;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    @include links-hover{
+      color: #707d84;
+    }
+  }
+}
+
+
+.tk-froala-wrap{
+  padding: 22px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+#fb-thank-you {
+
+  .modal-dialog {
+    margin: 50px auto;
+  }
+}
+
+#fb-thank-you-detail {
+
+  .modal-dialog {
+    margin: 50px auto;
+  }
+
+  .action__item.action__item_en-logo {
+
+    .toggle {
+
+      &.btn {
+        width: 155px !important;
+        height: 48px !important;
+
+        .toggle-handle {
+          padding: 0 38px;
+        }
+      }
+    }
+
+    .btn-active,
+    .btn-inactive {
+      font-size: 12px;
+    }
+  }
+
+  .fb-modal__body_plr30 {
+    padding: 0;
+  }
+
+  .tk-bar__control {
+    padding: 12px 0;
+  }
+
+  .tk-bar-field {
+    position: relative;
+    padding: 0 30px;
+  }
+
+  .quick-scroll .mCSB_inside > .mCSB_container {
+    margin-right: 0 !important;
+  }
+
+  .tk-page-head {
+    padding: 0;
+  }
+
+  .fb-modal__footer {
+    border-top: none;
+  }
+
+  .close {
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    padding: 0;
+    opacity: 1 !important;
+    text-shadow: none;
+    outline: none !important;
+    box-shadow: none;
+    border: none;
+    background: none;
+    color: $white;
+    font-size: 29px;
+
+    &:hover,
+    &:focus {
+      color: $white !important;
+    }
+  }
+}
+.thankyou-modal-editor {
+
+    &.update-version {
+
+        .fr-wrapper {
+
+            p {
+
+                color: inherit;
+            }
+        }
+    }
+}

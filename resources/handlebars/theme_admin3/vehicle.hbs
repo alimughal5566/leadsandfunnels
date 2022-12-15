@@ -1,0 +1,22 @@
+<script src="{{app.assets}}/js/funnel/scripts/vehicle-field-overlay.js"></script>
+<div class="funnel-content funnel-vehicle-overlay funnel-overlay">
+    <!-- sidebar partial -->
+    <div data-hbs="vehicleForm"></div>
+    <input data-id="ques_id" hidden value="{{ques_id}}">
+    <!-- contain the main content of the page -->
+    <div id="content">
+
+        <!-- Question Editor Header -->
+        {{> question-header }}
+
+        <!-- iframe include for question -->
+        <div class="funnel-iframe-holder" {{#ifCond zoom '==' 1}}style="transform:scale({{zoom_value}})"{{/ifCond}}>
+            <iframe scrolling="no" src="{{app.url}}/previewbars/vehicle-preview.php?ques_id={{ques_id}}&ls_key={{ls_key}}&bundle_question_step={{bundle_question_step}}" class="vehicle-iframe question-preview-iframe"></iframe>
+        </div>
+    </div>
+</div>
+<!--button icon list-->
+{{> button-icon-list }}
+
+<!-- Mobile Mode -->
+{{> mobile-mode }}

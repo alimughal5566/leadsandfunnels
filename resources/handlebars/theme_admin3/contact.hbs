@@ -1,0 +1,405 @@
+<script src="{{app.assets}}/js/funnel/scripts/funnel-question-contact-info-overlay.js?v={{app.LP_VERSION}}"></script>
+<div class="funnel-content funnel-contact-info-overlay funnel-overlay">
+{{#with step-form.steps.[0]}}
+    <div class="panel-aside advance-option-active">
+        <div class="panel-aside__head">
+            <div class="col-left">
+                <h4 class="panel-aside__title has-icon contact-icon">
+                    <span>
+                        <i class="ico ico-mail head-icon"></i>
+                        Contact Info
+                    </span>
+                </h4>
+            </div>
+            <div class="col-right">
+                <span title="Contact Info" class="ico-arrow-right back-ico"></span>
+                <!-- Funnel Feature icons -->
+                {{> funnel-feature-icons }}
+            </div>
+        </div>
+        <div class="panel-aside-wrap-overlay">
+
+            <div class="panel-aside-holder">
+                <div class="panel-aside__body">
+                    <!-- Tabs -->
+                    <ul class="nav nav-tabs fb-tab" role="tablist">
+                        <li class="nav-item fb-tab__item">
+                            <a href="#" data-contact-nav-id="1" class="fb-tab__link step-1">
+                                1 step
+                            </a>
+                        </li>
+                        <li class="nav-item fb-tab__item">
+                            <a href="#" data-contact-nav-id="2" class="fb-tab__link step-2">
+                                2 step
+                            </a>
+                        </li>
+                        <li class="nav-item fb-tab__item">
+                            <a href="#" data-contact-nav-id="3" class="fb-tab__link step-3">
+                                3 step
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane-wrap">
+                            <!-- Edit Content Select -->
+                            <div class="form-group edit-content-select" data-parent>
+                                <div class="fb-modal__border-row">
+                                    <div class="edit-content-step3-parent select2-parent">
+                                        <select name="edit-content-step3" class="edit-content-step3"></select>
+                                    </div>
+                                </div>
+                            </div>
+                           <!-- Question & Description -->
+                           {{> question-description }}
+                            <!-- Contact Form Setup -->
+                            <div class="form-group step-field step1-field step-parent-active active" data-contact-form data-parent>
+                                <div class="fb-modal__row">
+                                    <div class="fb-modal__option" data-contact-form-setup>
+                                        Contact Form Setup
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="fb-modal__handler open" data-handler>
+                                            <i class="fa fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__border-row" data-handler-slide>
+                                    <!-- Contact Step 1/2/3 Form -->
+                                    <div data-hbs="contactFormEditor"></div>
+                                </div>
+                            </div>
+                            <!-- CTA Button -->
+                            {{> cta-button }}
+                            <!-- Advance Options -->
+                            <div class="form-group advance-options-wrap" data-parent data-handler-parent>
+                                <div class="fb-modal__row">
+                                    <div class="fb-modal__option opener-text">
+                                        Advanced Options
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="fb-modal__handler" data-handler>
+                                            <i class="fa fa-chevron-down opener-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: none">
+                                    <!-- security message -->
+                                    {{> security-message}}
+                                    <!-- Additional -->
+                                    {{> additional-content}}
+                                    <!-- Fields detail -->
+                                    <div class="form-group" data-parent>
+                                        <div class="fb-modal__row">
+                                            <div class="fb-modal__option">
+                                                Field Details
+                                            </div>
+                                            <div class="fb-modal__control">
+                                                <div class="fb-modal__handler" data-handler>
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fb-modal__border-row" data-handler-slide style="display: none">
+                                            <div class="fb-form">
+                                                <div class="fb-form__caption">
+                                                    <span class="fb-form__middle">Unique Variable Name</span>
+                                                    <span class="fb-tooltip">
+                                                        <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                                                    </span>
+                                                </div>
+                                                <div class="fb-form__group-holder">
+                                                    <div class="fb-form__group">
+                                                        <input type="text" data-change-unique-variable value="{{fields.[0].fullname.unique-variable-name}}" data-field-name="fullname" class="form-control fb-form-control">
+                                                        <span class="tag-box">
+                                                            <i class="ico-close-bracket"></i>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" data-field="fullname" data-default="fullname_step" data-btn-unique-variable data-value="{{fields.[0].fullname.unique-variable-name}}" class="undo-btn el-tooltip"  title='<div class="reset-tooltip">Reset to Default</div>'><i class="ico-undo"></i></a>
+                                                </div>
+                                                <div class="fb-form__group-holder">
+                                                    <div class="fb-form__group">
+                                                        <input type="text" data-change-unique-variable value="{{fields.[1].first-name.unique-variable-name}}" data-field-name="first-name" class="form-control fb-form-control">
+                                                        <span class="tag-box">
+                                                            <i class="ico-close-bracket"></i>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" data-default="first-name_step" data-btn-unique-variable  data-field="first-name"  data-value="{{fields.[1].first-name.unique-variable-name}}" class="undo-btn el-tooltip" title='<div class="reset-tooltip">Reset to Default</div>'><i class="ico-undo"></i></a>
+                                                </div>
+                                                <div class="fb-form__group-holder">
+                                                    <div class="fb-form__group">
+                                                        <input type="text" data-change-unique-variable value="{{fields.[2].last-name.unique-variable-name}}" data-field-name="last-name" class="form-control fb-form-control">
+                                                        <span class="tag-box">
+                                                            <i class="ico-close-bracket"></i>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" data-default="last-name_step" data-btn-unique-variable  data-field="last-name" data-value="{{fields.[2].last-name.unique-variable-name}}" class="undo-btn el-tooltip" title='<div class="reset-tooltip">Reset to Default</div>'><i class="ico-undo"></i></a>
+                                                </div>
+                                                <div class="fb-form__group-holder">
+                                                    <div class="fb-form__group">
+                                                        <input type="text" data-change-unique-variable value="{{fields.[3].only-first-name.unique-variable-name}}" data-field-name="only-first-name" class="form-control fb-form-control">
+                                                        <span class="tag-box">
+                                                            <i class="ico-close-bracket"></i>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" data-default="only-first-name_step" data-btn-unique-variable data-field="only-first-name" data-value="{{fields.[3].only-first-name.unique-variable-name}}" class="undo-btn el-tooltip" title='<div class="reset-tooltip">Reset to Default</div>'><i class="ico-undo"></i></a>
+                                                </div>
+                                                <div class="fb-form__group-holder">
+                                                    <div class="fb-form__group">
+                                                        <input type="email" data-change-unique-variable value="{{fields.[4].email.unique-variable-name}}" data-field-name="email" class="form-control fb-form-control">
+                                                        <span class="tag-box">
+                                                            <i class="ico-close-bracket"></i>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" data-default="email_step" data-btn-unique-variable data-field="email" data-value="{{fields.[4].email.unique-variable-name}}" class="undo-btn el-tooltip" title='<div class="reset-tooltip">Reset to Default</div>'><i class="ico-undo"></i></a>
+                                                </div>
+                                                <div class="fb-form__group-holder">
+                                                    <div class="fb-form__group">
+                                                        <input type="tel" data-change-unique-variable value="{{fields.[5].phone.unique-variable-name}}" data-field-name="phone" class="form-control fb-form-control">
+                                                        <span class="tag-box">
+                                                            <i class="ico-close-bracket"></i>
+                                                        </span>
+                                                    </div>
+                                                    <a href="#" data-default="phone_step" data-btn-unique-variable data-field="phone" data-value="{{fields.[5].phone.unique-variable-name}}" class="undo-btn el-tooltip" title='<div class="reset-tooltip">Reset to Default</div>'><i class="ico-undo"></i></a>
+                                                </div>
+                                                <span class="zip-text">If you're not sure what you're doing, leave this as is!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Settings -->
+                                    <div class="form-group" data-parent>
+                                        <div class="tag-row">
+                                            <div class="tag-row__title">Settings</div>
+                                        </div>
+                                        {{> auto-cursor-focus}}
+                                        <div class="data-reqired-parent" data-required-parent>
+                                            <div class="fb-modal__row fb-modal__row_tb">
+                                                <div class="fb-modal__option fb-modal__option_light">
+                                                    <span class="fb-modal__middle">Required</span>
+                                                    <span class="fb-tooltip">
+                                                        <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                                                    </span>
+                                                </div>
+                                                <div class="fb-modal__control">
+                                                    <div class="funnel-checkbox">
+                                                        <label class="checkbox-label">
+                                                            <input class="fb-field-label" data-required-opener type="checkbox">
+                                                            <span class="checkbox-area">
+                                                                <span class="handle"></span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fb-modal__border-row" data-required-slide style="display: none">
+                                                <ul class="required-check-list">
+                                                    <li>
+                                                        <div class="fb-checkbox">
+                                                            <input class="fb-checkbox__input hide-checkbox-field" data-field-name="fullname.required" {{#ifCond fields.[0].fullname.required '==' 1}}checked{{/ifCond}} type="checkbox" id="fullname-checkbox">
+                                                            <label for="fullname-checkbox" class="fb-checkbox__label">
+                                                                <div class="fb-checkbox__box">
+                                                                    <div class="fb-checkbox__inner-box"></div>
+                                                                </div>
+                                                                <div class="fb-checkbox__caption">
+                                                                    Full Name
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="fb-checkbox">
+                                                            <input class="fb-checkbox__input hide-checkbox-field" data-field-name="first-name.required" {{#ifCond fields.[1].first-name.required '==' 1}}checked{{/ifCond}} type="checkbox" id="first-name-checkbox">
+                                                            <label for="first-name-checkbox" class="fb-checkbox__label">
+                                                                <div class="fb-checkbox__box">
+                                                                    <div class="fb-checkbox__inner-box"></div>
+                                                                </div>
+                                                                <div class="fb-checkbox__caption">
+                                                                    First Name
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="fb-checkbox">
+                                                            <input class="fb-checkbox__input hide-checkbox-field" data-field-name="last-name.required" {{#ifCond fields.[2].last-name.required '==' 1}}checked{{/ifCond}} type="checkbox" id="last-name-checkbox">
+                                                            <label for="last-name-checkbox" class="fb-checkbox__label">
+                                                                <div class="fb-checkbox__box">
+                                                                    <div class="fb-checkbox__inner-box"></div>
+                                                                </div>
+                                                                <div class="fb-checkbox__caption">
+                                                                    Last Name
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="fb-checkbox">
+                                                            <input class="fb-checkbox__input hide-checkbox-field" data-field-name="only-first-name.required" {{#ifCond fields.[3].only-first-name.required '==' 1}}checked{{/ifCond}} type="checkbox" id="only-first-name-checkbox">
+                                                            <label for="only-first-name-checkbox" class="fb-checkbox__label">
+                                                                <div class="fb-checkbox__box">
+                                                                    <div class="fb-checkbox__inner-box"></div>
+                                                                </div>
+                                                                <div class="fb-checkbox__caption">
+                                                                    First Name
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="fb-checkbox">
+                                                            <input class="fb-checkbox__input hide-checkbox-field" data-field-name="email.required" {{#ifCond fields.[4].email.required '==' 1}}checked{{/ifCond}} type="checkbox" id="email-checkbox">
+                                                            <label for="email-checkbox" class="fb-checkbox__label">
+                                                                <div class="fb-checkbox__box">
+                                                                    <div class="fb-checkbox__inner-box"></div>
+                                                                </div>
+                                                                <div class="fb-checkbox__caption">
+                                                                    Email Address
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="fb-checkbox">
+                                                            <input class="fb-checkbox__input hide-checkbox-field" data-field-name="phone.required" {{#ifCond fields.[5].phone.required '==' 1}}checked{{/ifCond}} type="checkbox" id="phone-checkbox">
+                                                            <label for="phone-checkbox" class="fb-checkbox__label">
+                                                                <div class="fb-checkbox__box">
+                                                                    <div class="fb-checkbox__inner-box"></div>
+                                                                </div>
+                                                                <div class="fb-checkbox__caption">
+                                                                    Phone Number
+                                                                </div>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-aside__footer">
+            <div class="action">
+                <ul class="action__list justify-content-end">
+                    <li class="action__item">
+                        <button class="button button-cancel">Close</button>
+                    </li>
+                    <li class="action__item">
+                        <button class="button button-secondary">Save</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{{/with}}
+    <input data-id="ques_id" hidden value="{{ques_id}}">
+    <input data-id="active_step" hidden value="{{options.activesteptype}}">
+    <input data-id="active_slide" hidden value="0">
+    <input data-id="active_dropdowns" hidden value="3">
+    <input data-id="hide_dropdown_2" hidden value="0">
+    <input data-id="hide_dropdown_3" hidden value="0">
+    <!-- contain the main content of the page -->
+    <div id="content">
+
+        <!-- Question Editor Header -->
+        {{> question-header }}
+
+        <!-- iframe include for question -->
+        <div class="funnel-iframe-holder" {{#ifCond zoom '==' 1}}style="transform:scale({{zoom_value}})"{{/ifCond}}>
+            <iframe scrolling="no" src="{{app.url}}/previewbars/contact-preview.php?ques_id={{ques_id}}&ls_key={{ls_key}}" class="contact-info-question-iframe question-preview-iframe"></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- button icon list modal -->
+{{> button-icon-list }}
+<!-- Mobile Mode -->
+{{> mobile-mode }}
+<!-- organize group modal -->
+<div class="modal fade organize-pop" id="group-organize-pop">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Organize Inputs</h5>
+            </div>
+            <div class="modal-body pb-0">
+                <div class="organize-group">
+                    <ul class="organize-group__head">
+                        <span>Input Type</span>
+                        <span>Options</span>
+                    </ul>
+                    <ul class="organize-group__list">
+                        <li class="organize-group__item organize-group_sorting-row">
+                            <span class="organize-group__name" data-id="1">Name</span>
+                            <span class="organize-group__action">
+                                <i class="ico ico-dragging"></i>
+                            </span>
+                        </li>
+                        <li class="organize-group__item organize-group_sorting-row">
+                            <span class="organize-group__name" data-id="2">Email</span>
+                            <span class="organize-group__action">
+                                <i class="ico ico-dragging"></i>
+                            </span>
+                        </li>
+                        <li class="organize-group__item organize-group_sorting-row">
+                            <span class="organize-group__name" data-id="3">Phone</span>
+                            <span class="organize-group__action">
+                                <i class="ico ico-dragging"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="action">
+                    <ul class="action__list">
+                        <li class="action__item">
+                            <button type="button" class="button button-bold button-cancel" data-dismiss="modal">Cancel</button>
+                        </li>
+                        <li class="action__item">
+                            <button class="button button-bold button-primary" data-organize-save type="button" data-dismiss="modal">Save</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Advance settings modal -->
+<div class="modal fade" id="advance-setting">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Advanced Settings</h5>
+            </div>
+            <div class="modal-body pb-0">
+                <div class="form-group">
+                    <div class="advance-country-code-parent select2-parent">
+                        <select data-content-number-format name="country-code" class="country-code"></select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="advance-phone-format-parent select2-parent">
+                        <select data-content-number-format name="phone-format" class="phone-format"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="action">
+                    <ul class="action__list">
+                        <li class="action__item">
+                            <button type="button" class="button button-bold button-cancel" data-dismiss="modal">Cancel</button>
+                        </li>
+                        <li class="action__item">
+                            <button disabled class="button button-bold button-primary" data-phone-settings-save type="button" data-dismiss="modal">Save</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,147 @@
+<div class="fb-options fb-modal_form-setup fb-options_drop-down contact-fields-wrap">
+    <div class="fb-options__group-clone" data-input-one-parent style="display: block">
+        <div class="grouping-label">Input 1</div>
+        <div class="fb-form__group">
+            <div class="input-type-step1-parent select2-parent">
+                <select name="input-type-step1" class="input-type-step1"></select>
+            </div>
+        </div>
+        <div class="fb-form__group contact-variation-step1-dropdown">
+            <div class="contact-variation-step1-parent select2-parent">
+                <select name="contact-variation-step1" class="contact-variation-step1"></select>
+            </div>
+        </div>
+        <div class="fb-form__group first-name" style="display: none">
+            <input type="text" class="form-control" value="{{fields.[1].first-name.field-label}}" data-change-contact-fields="1" data-field-mapping="first-name" placeholder="First Name">
+        </div>
+        <div class="fb-form__group last-name" style="display: none">
+            <input type="text" class="form-control" value="{{fields.[2].last-name.field-label}}" data-change-contact-fields="1" data-field-mapping="last-name" placeholder="Last Name">
+        </div>
+        <div class="fb-form__group full-name" style="display: block">
+            <input type="text" class="form-control" value="{{fields.[0].fullname.field-label}}" data-change-contact-fields="1" data-field-mapping="fullname" placeholder="Full Name">
+        </div>
+        <div class="fb-form__group email-field" style="display: none">
+            <input type="text" class="form-control" value="{{fields.[4].email.field-label}}" data-change-contact-fields="1" data-field-mapping="email" placeholder="Email Address">
+        </div>
+        <div class="fb-form__group setting-wrap number-field" style="display: none">
+            <input type="text" class="form-control" value="{{fields.[5].phone.field-label}}" data-change-contact-fields="1" data-field-mapping="phone" placeholder="Phone">
+            <div class="fb-form__control">
+                <a href="#advance-setting" data-load-phone-settings data-toggle="modal" class="tag-box tag-box_lg el-tooltip" title='<div class="overlay-tooltip">Advanced Settings</div>'>
+                    <i class="ico ico-settings"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="fb-options__group-clone input2-field" data-input-two-parent>
+        <div class="grouping-label">Input 2</div>
+        <ul class="fb-form__list">
+            <li class="fb-form__group setting-wrap">
+                <div class="fb-form__input">
+                    <div class="input-type1-step1-parent select2-parent">
+                        <select name="input-type-step1" class="input-type1-step1"></select>
+                    </div>
+                </div>
+                <div class="fb-form__control hide-button-2" data-delete-dropdown="2">
+                    <span class="tag-box tag-box_lg">
+                        <i class="ico ico-cross"></i>
+                    </span>
+                </div>
+            </li>
+            <li class="fb-form__group contact-variation-step2-dropdown" style="display: none;">
+                <div class="fb-form__group">
+                    <div class="contact-variation-step2-parent select2-parent">
+                        <select name="contact-variation-step2" class="contact-variation-step2"></select>
+                    </div>
+                </div>
+            </li>
+            <li class="fb-form__group first-name" style="display: none">
+                <div class="fb-form__group">
+                    <input type="text" class="form-control" value="{{fields.[1].first-name.field-label}}" data-change-contact-fields="2" data-field-mapping="first-name" placeholder="First Name">
+                </div>
+             </li>
+             <li class="fb-form__group last-name" style="display: none">
+                <div class="fb-form__group">
+                    <input type="text" class="form-control" value="{{fields.[2].last-name.field-label}}" data-change-contact-fields="2" data-field-mapping="last-name" placeholder="Last Name">
+                </div>
+             </li>
+             <li class="fb-form__group full-name" style="display: none">
+                <div class="fb-form__group">
+                    <input type="text" class="form-control" value="{{fields.[0].fullname.field-label}}" data-change-contact-fields="2" data-field-mapping="fullname" placeholder="Full Name">
+                </div>
+             </li>
+             <li class="fb-form__group email-field" style="display: block">
+                <div class="fb-form__group">
+                    <input type="text" class="form-control" value="{{fields.[4].email.field-label}}" data-change-contact-fields="2" data-field-mapping="email" placeholder="Email Address">
+                </div>
+             </li>
+             <li class="fb-form__group setting-wrap number-field" style="display: none">
+                <input type="text" class="form-control" value="{{fields.[5].phone.field-label}}" data-change-contact-fields="2" data-field-mapping="phone" placeholder="Phone">
+                <div class="fb-form__control">
+                    <a href="#advance-setting" data-load-phone-settings data-toggle="modal" class="tag-box tag-box_lg el-tooltip" title='<div class="overlay-tooltip">Advanced Settings</div>'>
+                        <i class="ico ico-settings"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="fb-options__group-clone input3-field" data-input-three-parent>
+        <div class="grouping-label">Input 3</div>
+        <ul class="fb-form__list">
+            <li class="fb-form__group setting-wrap">
+                <div class="fb-form__input">
+                    <div class="input-type2-step1-parent select2-parent">
+                        <select name="input-type-step1" class="input-type2-step1"></select>
+                    </div>
+                </div>
+                <div class="fb-form__control hide-button-3" data-delete-dropdown="3">
+                    <span class="tag-box tag-box_lg">
+                        <i class="ico ico-cross"></i>
+                    </span>
+                </div>
+            </li>
+            <li class="fb-form__group contact-variation-step3-dropdown" style="display: none;">
+                <div class="fb-form__group">
+                    <div class="contact-variation-step3-parent select2-parent">
+                        <select name="contact-variation-step3" class="contact-variation-step3"></select>
+                    </div>
+                </div>
+            </li>
+            <li class="fb-form__group first-name" style="display: none">
+                <input type="text" class="form-control" value="{{fields.[1].first-name.field-label}}" data-change-contact-fields="3" data-field-mapping="first-name" placeholder="First Name">
+             </li>
+             <li class="fb-form__group last-name" style="display: none">
+                <input type="text" class="form-control" value="{{fields.[2].last-name.field-label}}" data-change-contact-fields="3" data-field-mapping="last-name" placeholder="Last Name">
+             </li>
+             <li class="fb-form__group full-name" style="display: none">
+                <input type="text" class="form-control" value="{{fields.[0].fullname.field-label}}" data-change-contact-fields="3" data-field-mapping="fullname" placeholder="Full Name">
+             </li>
+             <li class="fb-form__group email-field" style="display: none">
+                 <input type="text" class="form-control" value="{{fields.[4].email.field-label}}" data-change-contact-fields="3" data-field-mapping="email" placeholder="Email">
+             </li>
+            <li class="fb-form__group setting-wrap number-field" style="display: flex">
+                <input type="text" class="form-control" value="{{fields.[5].phone.field-label}}" data-change-contact-fields="3" data-field-mapping="phone" placeholder="Phone Number">
+                <div class="fb-form__control">
+                    <a href="#advance-setting" data-load-phone-settings data-toggle="modal" class="tag-box tag-box_lg el-tooltip" title='<div class="overlay-tooltip">Advanced Settings</div>'>
+                        <i class="ico ico-settings"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="fb-modal__row_creat-group">
+        <div class="fb-modal__row">
+            <a href="javascript:void();" class="lp-btn lp-btn_new-input button-primary add-input-button" data-add-dropdown style="display: none">
+                <span class="lp-btn__icon">
+                    <i class="ico ico-plus"></i>
+                </span>
+                Add New Input
+            </a>
+            <a data-toggle="modal" href="#group-organize-pop" data-organize class="lp-btn lp-btn_new-input lp-btn_organize button-primary" style="display: none">
+                <span class="lp-btn__icon">
+                    <i class="ico ico-dragging"></i>
+                </span>
+                Organize
+            </a>
+        </div>
+    </div>
+</div>

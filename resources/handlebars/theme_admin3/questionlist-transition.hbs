@@ -1,0 +1,29 @@
+<div class="question-transition">
+    <div class="placeholder">
+        <p>You have not created any kind of transition&nbsp;yet.</p>
+        <div class="create-question">
+            <a class="btn-create" href="#create-transition-pop" data-toggle="modal">
+                create your first transition
+            </a>
+        </div>
+    </div>
+    <div class="question-option-list">
+        {{#each this}}
+            {{#if active}}
+                <div class="{{icon}}-item question-list-item" data-icon="{{icon}}">
+                    <span class="question-text {{icon}}"><span class="sub-text">{{label}}</span></span>
+                </div>
+            {{/if}}
+        {{/each}}
+    </div>
+    <div class="create-question">
+        <a class="btn-create" href="#create-transition-pop" data-toggle="modal">
+            create new transition
+        </a>
+    </div>
+    <div class="manage-question">
+        <a class="btn-manage" href="#manage-transition-pop" data-toggle="modal">
+            manage global transition
+        </a>
+    </div>
+</div>

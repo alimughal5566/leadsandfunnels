@@ -1,0 +1,211 @@
+<script src="{{app.assets}}/js/funnel/scripts/funnel-question-number-overlay.js?v={{app.LP_VERSION}}"></script>
+<div class="funnel-content funnel-number-overlay funnel-overlay">
+    {{#with options}}
+    <div class="panel-aside advance-option-active">
+        <div class="panel-aside__head">
+            <div class="col-left">
+                <h4 class="panel-aside__title has-icon number-icon">
+                    <span>
+                        <i class="ico ico-hash head-icon"></i>
+                        Number
+                    </span>
+                </h4>
+            </div>
+            <div class="col-right">
+                <span title="Number" class="ico-arrow-right back-ico"></span>
+                <!-- Funnel Feature icons -->
+                {{> funnel-feature-icons }}
+            </div>
+        </div>
+        <div class="panel-aside-wrap-overlay">
+
+            <div class="panel-aside-holder">
+                <div class="panel-aside__body">
+                    <!-- Question & Description -->
+                    {{> question-description }}
+                    <!-- Field Label -->
+                    {{> field-label }}
+                    <!-- Options -->
+                    <div class="form-group" data-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option">
+                                Options
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler" data-handler>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row p-0" data-handler-slide style="display: none;">
+                            <div class="fb-form">
+                                <div class="fb-modal__border-box fb-modal__border-box_plr0 fb-modal__border-box_plr0-top border-0" data-parent>
+                                    <div class="fb-modal__row">
+                                        <div class="fb-modal__option fb-modal__option_light">
+                                            <span class="fb-modal__option">Minimum Number</span>
+                                        </div>
+                                        <div class="fb-modal__control">
+                                            <div class="funnel-checkbox">
+                                                <label class="checkbox-label">
+                                                    <input class="fb-field-label" data-opener data-field-name="enable-min-number" type="checkbox" {{#ifCond enable-min-number '==' 1}}checked{{/ifCond}}>
+                                                    <span class="checkbox-area">
+                                                        <span class="handle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-icon-slide" data-slide style="display: {{#ifCond enable-min-number '==' 1}}block{{else}}none{{/ifCond}}">
+                                        <div class="fb-modal__border-row">
+                                            <div class="fb-modal__row">
+                                                <input type="text" data-change-min-max data-allow-digits-only class="form-control fb-form-control" data-field-name="min-number" value="{{min-number}}" placeholder="Enter minimum value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__border-box fb-modal__border-box_plr0 fb-modal__border-box_plr0-top border-bottom-0" data-parent>
+                                    <div class="fb-modal__row">
+                                        <div class="fb-modal__option fb-modal__option_light">
+                                            <span class="fb-modal__option">Maximum Number</span>
+                                        </div>
+                                        <div class="fb-modal__control">
+                                            <div class="funnel-checkbox">
+                                                <label class="checkbox-label">
+                                                    <input class="fb-field-label" data-opener data-field-name="enable-max-number" type="checkbox" {{#ifCond enable-max-number '==' 1}}checked{{/ifCond}}>
+                                                    <span class="checkbox-area">
+                                                        <span class="handle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button-icon-slide" data-slide style="display: {{#ifCond enable-max-number '==' 1}}block{{else}}none{{/ifCond}}">
+                                        <div class="fb-modal__border-row">
+                                            <div class="fb-modal__row">
+                                                <input type="text" data-change-min-max data-allow-digits-only class="form-control fb-form-control" data-field-name="max-number" value="{{max-number}}" placeholder="Enter maximum value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CTA Button -->
+                    {{> cta-button }}
+                    <!-- Advance Options -->
+                    <div class="form-group advance-options-wrap" data-parent data-handler-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option opener-text">
+                                Advanced Options
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler" data-handler>
+                                    <i class="fa fa-chevron-down opener-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: none">
+                            <!-- security message -->
+                            {{> security-message}}
+                            <!-- Additional -->
+                            {{> additional-content}}
+                            <!-- Fields detail -->
+                            {{> field-details}}
+                            <!-- Settings -->
+                            <div class="form-group number-setting-option-area" data-parent>
+                                <div class="tag-row">
+                                    <div class="tag-row__title">Settings</div>
+                                </div>
+                                {{> auto-cursor-focus}}
+                                <div class="fb-modal__row fb-modal__row_tb">
+                                    <div class="fb-modal__option fb-modal__option_light">
+                                        <span class="fb-modal__middle">Auto-Format with Commas</span>
+                                        <span class="fb-tooltip">
+                                            <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                                        </span>
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="funnel-checkbox">
+                                            <label class="checkbox-label">
+                                                <input class="fb-field-label" type="checkbox" data-toggle-format data-opener-checkbox data-field-name="formatting.enable-format-with-comma" {{#ifCond formatting.enable-format-with-comma '==' 1}}checked{{/ifCond}}>
+                                                <span class="checkbox-area">
+                                                    <span class="handle"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__row fb-modal__row_tb">
+                                    <div class="fb-modal__option fb-modal__option_light">
+                                        <span class="fb-modal__middle">Format as Currency ($)</span>
+                                        <span class="fb-tooltip">
+                                            <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                                        </span>
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="funnel-checkbox">
+                                            <label class="checkbox-label">
+                                                <input class="fb-field-label" data-toggle-format data-opener-checkbox data-field-name="formatting.enable-format-as-currency" type="checkbox" data-currency {{#ifCond formatting.enable-format-as-currency '==' 1}}checked{{/ifCond}}>
+                                                <span class="checkbox-area">
+                                                    <span class="handle"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fb-modal__row fb-modal__row_tb">
+                                    <div class="fb-modal__option fb-modal__option_light">
+                                        <span class="fb-modal__middle">Format as Percentage (%)</span>
+                                        <span class="fb-tooltip">
+                                            <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                                        </span>
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="funnel-checkbox">
+                                            <label class="checkbox-label">
+                                                <input class="fb-field-label" data-toggle-format data-opener-checkbox data-field-name="formatting.enable-format-as-percentage" type="checkbox" data-percentage {{#ifCond formatting.enable-format-as-percentage '==' 1}}checked{{/ifCond}}>
+                                                <span class="checkbox-area">
+                                                    <span class="handle"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{> required}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-aside__footer">
+            <div class="action">
+                <ul class="action__list justify-content-end">
+                    <li class="action__item">
+                        <button class="button button-cancel">Close</button>
+                    </li>
+                    <li class="action__item">
+                        <button class="button button-secondary">Save</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {{/with}}
+    <input data-id="ques_id" hidden value="{{ques_id}}">
+    <!-- contain the main content of the page -->
+    <div id="content">
+
+        <!-- Question Editor Header -->
+        {{> question-header }}
+
+        <!-- iframe include for question -->
+        <div class="funnel-iframe-holder" {{#ifCond zoom '==' 1}}style="transform:scale({{zoom_value}})"{{/ifCond}}>
+            <iframe scrolling="no" src="{{app.url}}/previewbars/number-preview.php?ques_id={{ques_id}}&ls_key={{ls_key}}" class="number-iframe question-preview-iframe"></iframe>
+        </div>
+    </div>
+</div>
+<!-- button icon list modal -->
+{{> button-icon-list }}
+<!-- Mobile Mode -->
+{{> mobile-mode }}

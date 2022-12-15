@@ -1,0 +1,25 @@
+<div class="form-group" data-parent>
+    <div class="fb-modal__row">
+        <div class="fb-modal__option">Security Message</div>
+        <div class="fb-modal__control">
+            <div class="funnel-checkbox">
+                <label class="checkbox-label">
+                    <input class="fb-field-label" data-opener type="checkbox" data-field-name="enable-security-message" {{#ifCond enable-security-message '==' 1}}checked{{/ifCond}}>
+                    <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="fb-modal__border-row" data-slide style="display: {{#ifCond enable-security-message '==' 1}}block{{else}}none{{/ifCond}}">
+        <div class="fb-form__group-holder">
+            <div class="security-message-parent-wrap el-tooltip" title='<div class="security-message-tooltip">You only have 1 Security Message at<br> this time. You can create more in the <br>Security Messages section, or edit this<br> one using the edit icon to the right. </div>'>
+                <div class="security-message-parent select2-parent message-parent">
+                    <select class="security-message-type" data-field-name="security-message-id"></select>
+                </div>
+            </div>
+            <a href="#security-message-modal" data-add-edit-security-message data-toggle="modal" class="edit-btn el-tooltip" title='<div class="security-tooltip">Edit Security Message</div>'><i class="ico-edit"></i></a>
+        </div>
+    </div>
+</div>

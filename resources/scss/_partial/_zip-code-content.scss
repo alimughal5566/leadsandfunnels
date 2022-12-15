@@ -1,0 +1,411 @@
+/* zip code question wrap style */
+.zip-code-questions-wrap {
+  font: 16px/1.2 "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  box-sizing: border-box;
+  background: $white;
+  border-radius: 8px;
+  color: #6e7c81;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* zip code question style */
+.question_zip-code {
+
+  .input-label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+
+  .form-control {
+    @include font(35, 39, 800);
+    @include size(100%, 72px);
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+    padding: 28px 16px 12px;
+    border-radius: 6px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #cfdadd;
+    transition: all 0.4s ease;
+    text-align: center;
+    color: #0f101a;
+    height: 88px;
+
+    &.filled, &:focus {
+      border-width: 3px;
+      border-color: #00ccff;
+      box-shadow: 0 6px 13px 0 rgba(#000, 0.15);
+      outline: none;
+    }
+  }
+
+  &__fields {
+    position: relative;
+  }
+
+  .form-group {
+    margin-bottom: 17px;
+    justify-content: center;
+
+    &.without-label {
+
+      .form-control {
+        padding-top: 12px;
+      }
+    }
+  }
+
+  .input-wrap {
+    max-width: 175px;
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.4s ease;
+    width: 100%;
+
+    &.focused {
+
+      .input-label {
+        @include fontsize(11, 15);
+
+        top: 14px;
+        transform: none;
+      }
+    }
+
+    &.validate {
+
+      .form-control {
+        border-color: #dcdddd;
+        border-width: 1px;
+        box-shadow: none;
+      }
+
+      .icon-valid {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &.error {
+
+      .icon-invalid {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    .input-label {
+      @include font(14, 18, 700);
+      color: #b4bbbc;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+      transition: all 0.4s ease-in-out;
+      cursor: inherit;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 0 10px;
+      width: 100%;
+
+      &.error-message {
+        @include font(12, 16, 700);
+        color: #f00;
+        text-align: center;
+        display: block;
+        text-transform: none;
+        transform: none;
+        top: 14px;
+      }
+    }
+
+    .icon-valid {
+      @include fontsize(16, 20);
+      color: #27c602;
+      position: absolute;
+      top: 50%;
+      right: 14px;
+      transform: translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .icon-invalid {
+      @include fontsize(20, 24);
+      color: #f00;
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translateY(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease;
+    }
+  }
+
+  .zip-code-wtih-city-code {
+    .input-wrap {
+      max-width: 381px;
+    }
+
+    .form-control {
+      height: 70px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+
+      &.filled, &:focus {
+        border-width: 2px;
+      }
+    }
+  }
+
+  &.city-code-active {
+
+    h1 {
+      color: #394651;
+      font-weight: 400;
+    }
+
+    .btn-secondary {
+      font-size: 20px;
+      min-height: 76px;
+    }
+
+    .zip-code {
+      display: none;
+    }
+
+    .zip-code-wtih-city-code {
+      display: block;
+    }
+  }
+
+  .states-box {
+    background: #01c6f7;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 15px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+
+    &.scrollActive {
+      padding: 15px 10px 15px 15px;
+    }
+
+    &__title {
+      @include font(13, 17, 700);
+      border-bottom: 1px solid #01bae8;
+      display: block;
+      color: $white;
+      text-transform: uppercase;
+      padding: 5px 0 12px;
+      letter-spacing: 1.4px;
+      margin: 0 10px 10px;
+    }
+
+    .scroll-bar {
+      padding: 0 5px 0 0;
+      max-height: 275px;
+    }
+
+    .states {
+      @include font(18, 22, 600);
+      color: $white;
+      border-radius: 4px;
+      display: block;
+      padding: 8px 0;
+      transition: all 0.3s ease;
+      position: relative;
+      text-decoration: none;
+
+      &:hover, &.hover {
+        color: #01c6f7;
+        background: $white;
+        padding: 8px 12px;
+      }
+
+      &.selected {
+        color: #01c6f7;
+        background: $white;
+        padding: 8px 12px 8px 33px;
+
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        &:hover {
+          padding: 8px 12px 8px 33px;
+        }
+      }
+
+      &:after {
+        @include fontsize(15, 20);
+        font-family: 'icomoon' !important;
+        content: "\e909";
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        color: #01c6f7;
+      }
+    }
+
+    .mCSB_scrollTools {
+      background: #01b6e4 !important;
+      right: 5px;
+      width: 3px;
+      opacity: 1;
+
+      .mCSB_draggerContainer {
+        background: none;
+        border-radius: 0;
+      }
+
+      .mCSB_dragger {
+
+        .mCSB_dragger_bar {
+          background: $white !important;
+          left: -2px;
+          width: 7px;
+        }
+      }
+
+      .mCSB_draggerRail {
+        background: #01b6e4 !important;
+        width: 3px;
+      }
+    }
+
+    .mCSB_inside {
+
+      > .mCSB_container {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .scroll-bar-wrap {
+    position: relative;
+    padding: 0 16px 0 0;
+  }
+}
+
+.question_zip-code {
+
+  &.mobile-view {
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    .form-control {
+      font-size: 30px;
+      height: 72px;
+    }
+
+    .zip-code-wtih-city-code {
+
+      .input-wrap {
+        max-width: 320px;
+      }
+
+      .form-control {
+        font-size: 15px;
+        height: 60px;
+      }
+    }
+
+    .input-wrap {
+      max-width: 150px;
+
+      &.focused {
+
+        .input-label {
+          @include fontsize(10, 14);
+          top: 10px;
+        }
+      }
+
+      .input-label {
+        @include font(12, 16, 700);
+
+        &.error-message {
+          @include font(10, 14, 700);
+          top: 10px;
+        }
+      }
+
+      .icon-valid {
+        @include fontsize(12, 16);
+      }
+
+      .icon-invalid {
+        @include fontsize(14, 18);
+      }
+
+      .icon-search {
+        @include fontsize(16, 20);
+      }
+    }
+
+    .scroll-bar {
+      max-height: 170px;
+    }
+
+    .states-box {
+      margin-top: 5px;
+      padding: 10px 15px;
+
+      &.scrollActive {
+        padding: 10px 10px 10px 15px;
+      }
+
+      &__title {
+        @include font(11, 15, 700);
+        margin: 0 0 10px;
+      }
+
+      .states {
+        @include font(16, 20, 600);
+        padding: 6px 0;
+
+        &:hover, &.hover {
+          padding: 6px 12px;
+        }
+
+        &.selected {
+          padding: 6px 12px 6px 27px;
+
+          &:after {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          &:hover {
+            padding: 6px 12px 6px 27px;
+          }
+        }
+
+        &:after {
+          @include fontsize(12, 16);
+        }
+      }
+    }
+  }
+}

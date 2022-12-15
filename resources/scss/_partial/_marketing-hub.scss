@@ -1,0 +1,101 @@
+.grid {
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    &__item {
+      width: 20%;
+      padding: 15px;
+
+      @include breakpoint(1800) {
+        padding: 10px;
+      }
+
+      @include breakpoint(1440) {
+        padding: 8px;
+      }
+    }
+  }
+
+  &-panel {
+    height: 100%;
+    padding: 20px 30px;
+    border-radius: 4px;
+    background: $white;
+    border-bottom: 1px solid #dde0e1;
+
+    @include breakpoint(1600) {
+      padding: 20px;
+    }
+
+    &__head {
+      padding: 0 0 16px;
+      border-bottom: 1px solid #f2f3f3;
+    }
+
+    &__body {
+      @include font(13, 15, 700);
+      height: 150px;
+      margin: 23px 0;
+      text-transform: uppercase;
+      background-color: #f6f8f8;
+      border: 1px solid #e8e8e8;
+
+      .pdf-link {
+        @include size(100%, 100%);
+        display: flex;
+        color: #707d844d;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+      .pdf-thumbnial {
+        @include size(100%, 100%);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &__footer {
+      @include font(14, 16, 400);
+      color: #304351;
+      overflow: hidden;
+      padding: 17px 0 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      border-top: 1px solid #f2f3f3;
+
+      img {
+        margin: 0 8px 0 0;
+      }
+    }
+
+    &__title {
+      @include font(19, 28, 300);
+      //white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #58666e;
+      margin: 0;
+
+      @include breakpoint(1900) {
+        @include fontsize(17, 22);
+      }
+
+      @include breakpoint(1700) {
+        @include fontsize(16, 20);
+      }
+
+      @include breakpoint(1550) {
+        @include fontsize(14, 19);
+      }
+
+      @include breakpoint(1440) {
+        @include fontsize(13, 18);
+      }
+    }
+  }
+}

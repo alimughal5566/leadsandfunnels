@@ -1,0 +1,390 @@
+.funnel-share{
+  .form {
+    &-group {
+      label {
+        min-width: 108px;
+      }
+    }
+  }
+  .hide-btns {
+    .link-swatcher,
+    .button {
+      display: none;
+    }
+
+    .input__wrapper {
+      margin-right: 0;
+    }
+  }
+  .input {
+    &__wrapper {
+      flex-grow: 1;
+    }
+    &-holder {
+      &.disable {
+        color: #b3c0c7;
+        border-radius: 3px;
+        position: relative;
+        background: #f6f8f8;
+        cursor: not-allowed;
+
+        .input-holder_icon span {
+          background: #fff;
+        }
+
+        .form-control {
+          border-color: transparent;
+        }
+        span.ico {
+          background: #fff;
+        }
+        .lp-controls__item_copy-url {
+          display: block;
+        }
+      }
+      &_icon {
+        span {
+          position: absolute;
+          left: 4px;
+          top: 4px;
+          display: flex;
+          color: #b2c0d3;
+          align-items: center;
+          justify-content: center;
+          width: 42px;
+          height: 42px;
+          border-radius: 4px;
+          background: #f6f8f8;
+          z-index: 3;
+        }
+      }
+    }
+  }
+  .img-frame__content {
+    height: auto;
+    width: auto;
+  }
+  .form-control,
+  .shortUrl{
+    border-radius: 4px;
+    position: relative;
+
+    &:hover {
+      .hover-hide{
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .lp-controls {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &.d-flex {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .input-holder {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0 0 0 60px;
+      border-radius: 4px;
+      border:1px solid #cfdadd;
+    }
+  }
+  .hover-hide {
+    position: absolute;
+    padding: 14px 0 0;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+  }
+
+  .fbi_dots {
+    font-size: 4px;
+  }
+
+  .pl-6 {
+    padding-left: 60px;
+  }
+
+  .lp-controls {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+
+    li {
+      height: 100%;
+      padding: 0;
+    }
+
+    a {
+      position: relative;
+      padding: 17px 5px 0;
+      display: block;
+      height: 100%;
+    }
+
+    .ico-copy {
+      position: relative;
+      font-size: 15px;
+      font-weight: 600;
+      top: 0.5px;
+    }
+  }
+
+  .inner-text {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .url-expand {
+    .url-text {
+      @include font(16,20,600);
+      //position: absolute;
+      //left: 60px;
+      color: #58666e;
+      //top: 50%;
+      //transform: translate(0, -50%);
+    }
+
+    input.form-control {
+      border-radius: 0;
+      background: none !important;
+      width: 100%;
+      padding: 0;
+      border: none !important;
+      outline: none !important;
+      flex-grow: 1;
+      flex-basis: 0;
+      &:read-only {
+        background: none;
+        border: none;
+        color: #58666e;
+        cursor: default;
+      }
+      &:focus {
+        border: none;
+      }
+    }
+
+    .pl-6 {
+      padding-left: 173px;
+    }
+
+    .input-holder_icon span {
+      height: 44px;
+    }
+  }
+
+  .link-swatcher {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 7px;
+    color: #9fa8ad;
+
+    &:hover {
+      color: #02abec;
+    }
+  }
+
+  .url-expand {
+    padding: 7px 0 0;
+  }
+
+  .url-expand {
+    display: none;
+  }
+}
+.social {
+  &-media {
+    li {
+      margin-right: 48px;
+    }
+  }
+  &-share {
+  color: #fff;
+  height: 43px;
+  display: flex;
+  padding: 0 18px;
+  border-radius: 3px;
+  align-items: center;
+  @include font(14,16,700);
+  i {
+    font-size: 16px;
+    margin: 0 15px 0 0;
+  }
+  &.facebook {
+    background-color: #3b5997;
+  }
+  &.twitter {
+    background-color: #29c5f6;
+  }
+  &.linkedin {
+    background-color: #006dc0;
+  }
+  &.buffer {
+    background-color: #363e41;
+  }
+  &.email {
+    background-color: #6759ba;
+  }
+}
+}
+.browse {
+  &__desc {
+    p {
+      margin: 0;
+    }
+  }
+  &__content {
+    &_upload-social {
+      border: none;
+
+      .img-frame__preview {
+        max-height: 250px;
+      }
+    }
+  }
+}
+
+.lp-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 -5px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+
+  &__item {
+    padding: 0 5px;
+  }
+
+  &__link {
+    color: #9fa8ad;
+  }
+}
+
+.lp-controls__item_copy-url {
+  display: none;
+  .ico {
+    &-copy {
+      display: block;
+      font-size: 14px;
+      margin: 1px 0 0;
+    }
+  }
+}
+
+.funnel-share-advance {
+
+  .link-swatcher {
+    cursor: pointer;
+  }
+}
+
+.funnel-share #funnelUrl {
+  color: #b3c0c7;
+  cursor: not-allowed;
+}
+
+.url-expand {
+
+  .hover-hide {
+    top: 3px;
+  }
+
+  .lp-controls {
+    top: 3px;
+  }
+}
+
+.shortUrl {
+
+  .option_list {
+    list-style: none;
+    position: absolute;
+    background: $white;
+    top: 1px;
+    right: 2px;
+    bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+
+    li {
+      position: relative;
+      padding: 0 10px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 2px;
+        bottom: 1px;
+        width: 1px;
+        background: #cfdadd;
+      }
+
+      &:first-child {
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    a {
+      font-weight: 700;
+      display: block;
+      text-transform: uppercase;
+    }
+  }
+
+  &.active {
+
+    .option_list {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.shortUrl {
+
+  .input-holder {
+    padding-right: 145px !important;
+  }
+}
+
+.main-content {
+
+  &.funnel-share {
+
+    .button {
+
+      @include breakpoint(1440) {
+        padding: 0 22px;
+      }
+    }
+  }
+}

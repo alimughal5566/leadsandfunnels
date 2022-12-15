@@ -1,0 +1,128 @@
+<div class="fb-form">
+    <div class="fb-form__caption">
+        <span class="fb-form__middle">Custom Values</span>
+    </div>
+</div>
+<div class="fb-options mulltiple-option-row">
+    <div class="fb-options__clone mulltiple-option-row" data-option-sort>
+{{#if slider-non-numeric.range}}
+    {{#each slider-non-numeric.range}}
+        <div class="fb-options__list">
+            <div class="fb-options__col fb-options__col_field">
+                <input type="text" class="form-control fb-form-control" data-non-numeric-options value="{{this}}">
+                <span class="clear-btn"><i class="ico ico-cross"></i></span>
+            </div>
+            <div class="fb-options__col col-handler-wrap">
+                <div class="fb-options__col_handler"><span class="tag-box tag-box_move tag-box_lg"><i class="ico ico-dragging"></i></span>
+                </div>
+            </div>
+            <div class="fb-options__col col-delete">
+                <a href="#" class="fb-options__delete slider-non-numeric-delete"><span class="tag-box tag-box_lg"><i class="ico ico-cross"></i></span>
+                </a>
+            </div>
+        </div>
+    {{/each}}
+{{else}}
+    <div class="fb-options__list empty-field">
+        <div class="fb-options__col fb-options__col_field">
+            <input type="text" class="form-control fb-form-control" data-non-numeric-options value="">
+            <span class="clear-btn"><i class="ico ico-cross"></i></span>
+        </div>
+        <div class="fb-options__col col-handler-wrap">
+            <div class="fb-options__col_handler"><span class="tag-box tag-box_move tag-box_lg"><i class="ico ico-dragging"></i></span>
+            </div>
+        </div>
+        <div class="fb-options__col col-delete">
+            <a href="#" class="fb-options__delete slider-non-numeric-delete"><span class="tag-box tag-box_lg"><i class="ico ico-cross"></i></span>
+            </a>
+        </div>
+    </div>
+{{/if}}
+    </div>
+    <div class="fb-options__add-more">
+        <a href="#" class="lp-btn lp-btn_add-option"><span class="lp-btn__icon"> <i class="ico ico-plus"></i> </span>
+            Add New Value
+        </a>
+    </div>
+</div>
+<!-- Customize Slider Labels -->
+<div class="fb-modal__border-box fb-modal__border-box_plr0 fb-modal__border-box_sub-dropdown" data-parent>
+    <div class="fb-modal__row">
+        <div class="fb-modal__option fb-modal__option_light">
+            <span class="fb-modal__middle">Customize Slider Labels</span>
+            <span class="fb-tooltip"><span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span> </span>
+        </div>
+        <div class="fb-modal__control">
+            <div class="funnel-checkbox">
+                <label class="checkbox-label">
+                    <input class="fb-field-label" type="checkbox" data-opener data-field-name="slider-non-numeric.customize-slider-labels.value" {{#ifCond slider-non-numeric.customize-slider-labels.value '==' 1}}checked{{/ifCond}}>
+                    <span class="checkbox-area"> <span class="handle"></span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="fb-modal__border-row fb-modal__border-row_sub-menu" data-slide {{#ifCond slider-non-numeric.customize-slider-labels.value '==' 1}}style="display:block;"{{/ifCond}}>
+        <div class="slider-label">
+            <div class="slider-label__col-6">
+                <div class="slider-label-wrap {{#ifCond slider-non-numeric.customize-slider-labels.left_label '!==' "" }} filled {{/ifCond}}">
+                    <label>Left Label</label>
+                    <input type="text" class="form-control fb-form-control" placeholder="" data-change-text data-field-name="slider-non-numeric.customize-slider-labels.left_label" value="{{slider-non-numeric.customize-slider-labels.left_label}}">
+                    <span class="arrow-wrap"><i class="icon ico-arrow-down"></i></span>
+                </div>
+            </div>
+            <div class="slider-label__col-6">
+                <div class="slider-label-wrap {{#ifCond slider-non-numeric.customize-slider-labels.right_label '!==' "" }} filled {{/ifCond}}">
+                    <label>Right Label</label>
+                    <input type="text" class="form-control fb-form-control" placeholder="" data-change-text data-field-name="slider-non-numeric.customize-slider-labels.right_label" value="{{slider-non-numeric.customize-slider-labels.right_label}}">
+                    <span class="arrow-wrap"><i class="icon ico-arrow-down"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-label">
+            <div class="slider-label__col-6">
+                <div class="slider-label-wrap {{#ifCond slider-non-numeric.customize-slider-labels.left '!==' "" }} filled {{/ifCond}}">
+                    <label>Slider Shows</label>
+                    <input type="text" class="form-control fb-form-control" placeholder="" data-change-text data-field-name="slider-non-numeric.customize-slider-labels.left" value="{{slider-non-numeric.customize-slider-labels.left}}">
+                </div>
+            </div>
+            <div class="slider-label__col-6">
+                <div class="slider-label-wrap {{#ifCond slider-non-numeric.customize-slider-labels.right '!==' "" }} filled {{/ifCond}}">
+                    <label>Slider Shows</label>
+                    <input type="text" class="form-control fb-form-control" placeholder="" data-change-text data-field-name="slider-non-numeric.customize-slider-labels.right" value="{{slider-non-numeric.customize-slider-labels.right}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slider Starting Point -->
+<div class="fb-modal__border-box_plr0 fb-modal__border-box_sub-dropdown" data-parent>
+    <div class="fb-modal__row">
+        <div class="fb-modal__option fb-modal__option_light">
+            <span class="fb-modal__middle">Slider Starting Point</span>
+            <span class="fb-tooltip"><span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span></span>
+        </div>
+        <div class="fb-modal__control">
+            <div class="funnel-checkbox">
+                <label class="checkbox-label">
+                    <input class="fb-field-label" type="checkbox"  data-opener data-field-name="slider-non-numeric.slider-starting-point.value" {{#ifCond slider-non-numeric.slider-starting-point.value '==' 1}}checked{{/ifCond}}>
+                    <span class="checkbox-area"><span class="handle"></span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="fb-modal__border-row fb-modal__border-row_sub-menu" data-slide  {{#ifCond slider-non-numeric.slider-starting-point.value '==' 1}}style="display:block;"{{/ifCond}}>
+        <div class="bs-slider">
+            <div class="bs-slider__label-wrapper">
+                <span class="bs-slider__label"></span>
+                <span class="bs-slider__label non-numeric-starting-point"></span>
+                <span class="bs-slider__label"></span>
+            </div>
+            <input type="text" class="non-numeric-slider" data-slider-non-numeric-point-value data-field-name="slider-non-numeric.slider-starting-point.starting-value" data-slider-min="0" data-slider-max="" data-slider-step="1"  data-slider-value="{{#ifCond slider-non-numeric.slider-starting-point.value '==' 1}}{{slider-non-numeric.slider-starting-point.starting-value}}{{/ifCond}}" data-slider-tooltip="hide">
+            <div class="bs-slider__label-wrapper">
+                <span class="bs-slider__label non-numeric-puck-left">{{slider-non-numeric.customize-slider-labels.left_label}}</span>
+                <span class="bs-slider__label"></span>
+                <span class="bs-slider__label non-numeric-puck-right">{{slider-non-numeric.customize-slider-labels.right_label}}</span>
+            </div>
+        </div>
+    </div>
+</div>

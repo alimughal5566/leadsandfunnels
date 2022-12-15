@@ -1,0 +1,660 @@
+/* funnel datepicker overlay styling */
+.funnel-datepicker-overlay {
+  padding: 0 0 0 420px;
+  visibility: visible;
+  opacity: 1;
+  z-index: 1030;
+
+  .panel-aside-wrap-overlay {
+    position: relative;
+    max-height: calc(100vh - 82px);
+  }
+
+  .panel-aside__head {
+    margin: 0 0 5px;
+  }
+
+  .panel-aside {
+    width: 420px;
+
+    .panel-aside_closed & {
+      left: -340px !important;
+    }
+
+    .fb-modal__option {
+      font-size: 16px;
+    }
+
+    &__title {
+      &.has-icon {
+        padding: 0 0 0 35px;
+      }
+    }
+  }
+
+  .panel-aside__body {
+    padding: 0 30px 15px !important;
+
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .fb-tooltip {
+    margin: 0 8px;
+  }
+
+  .fb-form__caption {
+
+    .question-mark {
+      margin-left: 0;
+    }
+  }
+
+  .question-mark {
+
+    &.el-tooltip {
+      margin-left: 0;
+    }
+  }
+
+  .fb-modal__handler {
+
+    i {
+      transition: all 0.4s ease;
+      transform: none;
+      color: #c7d4df;
+    }
+
+    &.open {
+
+      i {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .form-group {
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.7;
+
+      .fb-modal__handler {
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .toggle {
+
+    &[disabled] {
+      background: #f6f8f8;
+      border-color: #f6f8f8;
+
+      .toggle-group {
+
+        .btn-off {
+          background: #f6f8f8;
+        }
+
+        .btn {
+          cursor: not-allowed;
+          color: #b2c0d3;
+        }
+      }
+    }
+  }
+
+  .fb-form__group {
+
+    .fb-form-control {
+      font-size: 16px;
+        text-transform: none;
+    }
+  }
+
+  .fb-toggle {
+
+    .toggle.btn {
+      width: 72px !important;
+      min-width: 72px !important;
+    }
+
+    .toggle-handle {
+      width: 54px;
+    }
+
+    .toggle-group {
+
+      .btn {
+        font-size: 11px;
+        padding: 5px 11px 5px 9px;
+      }
+    }
+  }
+
+  .classic-editor__wrapper {
+
+    .fr-toolbar {
+
+      .fr-command.fr-btn {
+        width: 38px;
+      }
+    }
+  }
+
+  .hide-checkbox {
+    margin: 20px 0 0;
+  }
+
+  .slider-track-low,
+  .slider-track-high,
+  .slider-track {
+    border-radius: 10px;
+  }
+
+  .color-box__panel-wrapper {
+    z-index: 1050;
+
+    label {
+      margin: 0 0 14px;
+    }
+  }
+
+  .fb-tab__link {
+    height: 50px;
+    font-size: 15px;
+
+    &.active {
+      color: #707d84;
+
+      &:after {
+        border-bottom-color: $basic-color;
+      }
+    }
+  }
+
+  .pop-link {
+
+    .fr-popup {
+      left: auto !important;
+      width: 240px;
+      right: -95px;
+
+      .fr-layer {
+        width: 218px;
+      }
+    }
+  }
+
+  .fr-popup .fr-btn-wrap button:nth-child(2) {
+    width: 16px !important;
+  }
+
+  .pop-emotions {
+
+    .fr-popup {
+      left: auto !important;
+      width: 240px;
+      right: -95px;
+
+      &.fr-active {
+        top: 38px !important;
+      }
+    }
+  }
+
+  .fr-wrapper {
+
+    &.show-placeholder {
+      min-height: 127px;
+    }
+  }
+
+  .fr-command.fr-btn.fr-disabled,
+  .fr-popup .fr-command.fr-btn.fr-disabled {
+    color: #8e8c8c !important;
+  }
+
+  .funnel-checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .checkbox-label {
+      @include size(72px, 30px);
+      position: relative;
+      display: block;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .checkbox-area {
+      @include font(11, 30, 600);
+      @include size(100%, 100%);
+      position: relative;
+      background: #c114ed;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: block;
+      color: $white;
+      cursor: pointer;
+
+      &:before {
+        transition: all 0.3s ease-in-out;
+        content: 'ON';
+        position: absolute;
+        right: -25px;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:after {
+        transition: all 0.3s ease-in-out;
+        content: 'OFF';
+        position: absolute;
+        left: 11px;
+        top: 0;
+        bottom: 0;
+      }
+
+      .handle {
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        bottom: 2px;
+        border-radius: 2px;
+        background: $white;
+        width: 27px;
+        z-index: 2;
+      }
+    }
+
+    .fb-field-label {
+
+      &[disabled] {
+        + .checkbox-area {
+          background: #f6f8f8;
+          color: #b2c0d3;
+        }
+      }
+
+      &:checked {
+
+        + .checkbox-area {
+          background: #27c24c;
+
+          &:before {
+            right: 11px;
+          }
+
+          &:after {
+            left: -25px;
+          }
+
+          .handle {
+            right: 43px;
+          }
+        }
+      }
+    }
+  }
+
+  .datepicker-option-wrap {
+    position: relative;
+  }
+
+  .datepicker-option-wrap {
+    position: relative;
+
+    + .datepicker-option-wrap {
+      padding-top: 8px;
+    }
+
+    &.has-tooltip {
+      padding-right: 30px;
+
+      .fb-tooltip {
+        position: absolute;
+        right: 0;
+        top: 22px;
+        margin: 0;
+      }
+    }
+  }
+
+  .select-title {
+    font-weight: 400;
+  }
+
+  .select2-results {
+    .select-title {
+      display: none;
+    }
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .fb-modal__disable-date {
+    margin: 20px 0 -20px;
+    border-bottom: none;
+    border-top: 1px solid #f2f3f3;
+  }
+
+  .btn-calendar {
+    min-width: 168px;
+    position: relative;
+    padding-left: 66px;
+    text-align: left;
+
+    .img {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      bottom: 4px;
+      width: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid #4ec4f2;
+    }
+
+    .ico {
+      font-size: 20px;
+    }
+  }
+}
+
+.colorpicker-active .select2-dropdown {
+  z-index: 1050;
+}
+
+.select-date-style-parent {
+  .select2-results__options {
+    .select-title {
+      display: none;
+    }
+
+    span {
+      font-weight: 400;
+    }
+
+    .date {
+      position: relative;
+      min-width: 133px;
+      padding: 0 20px 0 0;
+      display: inline-block;
+      vertical-align: top;
+
+      &:after {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        width: 3px;
+        height: 1px;
+        content: '';
+        background: #fff;
+      }
+    }
+  }
+
+  .select2-selection__rendered {
+    .date {
+      display: none;
+    }
+
+    .select-title {
+      font-weight: 400;
+    }
+  }
+}
+
+.calendar-popup {
+    .modal-body {
+        margin: 0 -20px;
+    }
+
+    .quick-scroll .mCSB_inside > .mCSB_container {
+        margin: 0;
+    }
+
+    .btn-reset {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 700;
+        color: #707d84;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #02abec;
+
+            .ico {
+                color: #02abec;
+            }
+        }
+
+        .ico {
+            display: inline-block;
+            margin: 0 5px 0 0;
+            vertical-align: middle;
+            color: #9fa8ad;
+        }
+    }
+
+    .modal-dialog {
+        max-width: 400px;
+        min-width: 400px;
+    }
+
+    .calendar-selector {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .flatpickr-calendar {
+        width: 100%;
+        box-shadow: none;
+        padding: 0 0 2px;
+    }
+
+    .calendar-wrap {
+        padding: 20px;
+    }
+
+    .rangeMode .flatpickr-day {
+        margin: 0 0 2px;
+    }
+
+    .range-selector-holder {
+        border-top: 1px solid #f2f3f3;
+        padding: 20px 0 0;
+        margin: 4px 0 0;
+
+        label {
+            display: inline-block;
+            vertical-align: top;
+            padding: 0 0 0 32px;
+            position: relative;
+            margin: 0;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        input[type="checkbox"] {
+            &:checked {
+                +.fake-check {
+                    &:after {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+
+        .fake-check {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 21px;
+            height: 21px;
+            border: 1px solid #cfdadd;
+            border-radius: 1px;
+
+            &:after {
+                position: absolute;
+                left: 3px;
+                top: 0;
+                content: "\e909";
+                font-family: 'icomoon';
+                font-size: 14px;
+                line-height: 18px;
+                color: #02abec;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s ease;
+            }
+        }
+    }
+
+    .flatpickr-weekdays {
+        margin: 0 0 10px;
+    }
+
+    .flatpickr-days,
+    .flatpickr-weekdays,
+    .flatpickr-rContainer,
+    .dayContainer {
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .flatpickr-current-month {
+        width: calc(100% - 30px);
+        left: 15px;
+        height: auto;
+        padding: 0;
+    }
+
+    .flatpickr-monthDropdown-months {
+        width: 150px;
+        height: 38px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 1px solid #cfdadd;
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 700;
+        border-radius: 4px;
+        color: #707D84;
+    }
+
+    .numInputWrapper {
+        padding: 0;
+        margin: 0 0 0 8px;
+        width: 88px;
+
+        input {
+            width: 100%;
+            height: 38px;
+            border: 1px solid #cfdadd;
+            padding: 0 15px;
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 700;
+            border-radius: 4px;
+            color: #707D84;
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    .flatpickr-months {
+        position: relative;
+
+        .flatpickr-month {
+            height: 60px;
+        }
+
+        .flatpickr-prev-month,
+        .flatpickr-next-month{
+            padding: 0;
+            top: 7px;
+
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    span.flatpickr-weekday,
+    .flatpickr-day{
+        font-size: 19px;
+    }
+
+    .flatpickr-day {
+        height: 49px;
+        max-width: 49px;
+        line-height: 49px;
+        border-radius: 6px;
+        margin: 0 0 2px;
+        box-shadow: none !important;
+    }
+
+    .flatpickr-day.inRange,
+    .flatpickr-day.prevMonthDay.inRange,
+    .flatpickr-day.nextMonthDay.inRange,
+    .flatpickr-day.today.inRange,
+    .flatpickr-day.prevMonthDay.today.inRange,
+    .flatpickr-day.nextMonthDay.today.inRange,
+    .flatpickr-day:hover,
+    .flatpickr-day.prevMonthDay:hover,
+    .flatpickr-day.nextMonthDay:hover,
+    .flatpickr-day:focus,
+    .flatpickr-day.prevMonthDay:focus,
+    .flatpickr-day.nextMonthDay:focus,
+    .flatpickr-day.selected,
+    .flatpickr-day.today{
+        background: #02abec;
+        color: #fff;
+        border-color: #02abec;
+    }
+
+    .flatpickr-current-month .flatpickr-monthDropdown-months:hover,
+    .numInputWrapper:hover {
+        background: none;
+    }
+
+    .flatpickr-months .flatpickr-prev-month:hover svg,
+    .flatpickr-months .flatpickr-next-month:hover svg {
+        color: #02abec;
+    }
+
+    .flatpickr-day.inRange {
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+.flatpickr-day.selected.startRange,
+.flatpickr-day.startRange.startRange,
+.flatpickr-day.endRange.startRange {
+    border-radius: 6px 0 0 6px;
+}
+
+.flatpickr-day.selected.endRange,
+.flatpickr-day.startRange.endRange,
+.flatpickr-day.endRange.endRange {
+    border-radius: 0 6px 6px 0;
+}

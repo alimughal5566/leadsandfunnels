@@ -1,0 +1,25 @@
+/* cta message question wrap style */
+.cta-message-wrap {
+  font: 16px/1.2 "Open Sans", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  background: $white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #6e7c81;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* cta message question style */
+.question_cta {
+
+  &__fields {
+    position: relative;
+  }
+
+  .form-group {
+    margin-bottom: 17px;
+    justify-content: center;
+  }
+}

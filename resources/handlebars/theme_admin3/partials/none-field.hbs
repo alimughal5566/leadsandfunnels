@@ -1,0 +1,18 @@
+<div class="fb-none-wrap" data-none-field {{#ifCond select-multiple '==' 0}}style="display: none"{{/ifCond}}>
+    <div class="fb-none-opt">
+        <div class="fb-checkbox">
+            <input class="fb-checkbox__input" type="checkbox" data-include-option data-field-name="include-none" value="None" id="none-option08" {{#ifCond include-none '==' 1}}checked{{/ifCond}}>
+            <label for="none-option08" class="fb-checkbox__label">
+                <div class="fb-checkbox__box">
+                    <div class="fb-checkbox__inner-box"></div>
+                </div>
+                <div class="fb-checkbox__caption">
+                    Include "None" as an option
+                </div>
+            </label>
+        </div>
+        <span class="fb-tooltip">
+            <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+        </span>
+    </div>
+</div>

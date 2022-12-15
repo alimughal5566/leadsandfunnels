@@ -1,0 +1,87 @@
+.lp-panel {
+
+  $parent:&;
+
+  &_partial {
+
+    &-leads {
+      padding: 20px 30px;
+
+      #{$parent}__content {
+        display: flex;
+        height: 207px;
+        padding: 12px 0 0;
+        align-items: center;
+        flex-flow: column wrap;
+        justify-content: center;
+        border-top: solid 1px #f2f3f3;
+
+        p {
+          @include font(19,22,400)
+          color: #707d84;
+          margin: 0 0 22px;
+          text-align: center;
+
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+      #{$parent}__checkbox {
+        height: 189px;
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        p {
+          @include font(20,25,700);
+          color: #445158;
+          margin: 0 0 30px;
+        }
+
+        .radio {
+
+          &__item {
+
+            margin: 0 40px 0 0;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+
+        [type="radio"] {
+
+          + label {
+            color: #85969f;
+            padding-left: 50px;
+            font-size: 24px;
+            line-height: 30px;
+
+            &:before {
+              top: 0;
+              height: 34px;
+              width: 34px;
+            }
+
+            &:after {
+              top: 7px;
+              left: 7px;
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          &:checked {
+
+            + label {
+              color: #58666e;
+            }
+          }
+        }
+      }
+    }
+  }
+}

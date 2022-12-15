@@ -1,0 +1,414 @@
+.lp-custom-para {
+
+  @include font(16, 19, 300);
+  margin: 0;
+
+}
+
+.inline-list {
+  @include listreset;
+  display: flex;
+  align-items: center;
+}
+
+.third-party__panel {
+  display: none;
+  position: relative;
+  border-top: solid 1px #f2f3f3;
+  margin: 25px 0 0;
+  padding: 28px 0 0;
+  flex-wrap: wrap;
+  min-height: 100px;
+
+  .select2__parent-url-prefix {
+    float: left;
+    margin-right: 13px;
+    width: 168px;
+
+    .select2-selection__arrow{
+        z-index: 1071 !important;
+    }
+  }
+
+  select {
+    width: 168px;
+    margin-right: 13px;
+  }
+
+  .input-holder {
+    overflow: hidden;
+  }
+
+  .form-control, input[type='text']  {
+    color: #707d84;
+
+      @include placeholder {
+          color: rgba(112, 125, 134, 0.45) !important;
+      }
+  }
+}
+
+.icon {
+
+  &.icon-back {
+    transform: rotate(269deg) !important;
+    font-size: 13px !important;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 2px;
+  }
+}
+
+.button-switch_en-logo {
+  width: 180px;
+
+  .switch {
+
+    &:before {
+      width: 180px;
+    }
+
+    &:checked {
+
+      &:after {
+        transform: translate(139px, 2px);
+      }
+    }
+  }
+
+  label.lbl-off,
+  label.lbl-on {
+    padding: 0 20px;
+  }
+}
+
+
+.form {
+
+  &-thank-you {
+
+    #url__text {
+      cursor: auto;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+
+      label {
+        padding: 0 10px 0 0;
+        margin: 0;
+        min-width: 310px;
+      }
+        .form-control,
+        input[type='text']  {
+            @include placeholder {
+                color: rgba(112, 125, 134, 0.45) !important;
+            }
+        }
+        label.error{
+            margin: 0 10px !important;
+        }
+    }
+  }
+}
+
+/* update the style for froala version update */
+body:not(.froala-editor-update) {
+  .terms-of-use-settings-page,
+  .privacy-policy-settings-page,
+  .licensing-info-settings-page,
+  .disclosures-settings-page,
+  .contact-us-settings-page,
+  .footer-about-us-settings-page,
+  .auto-responder-settings-page,
+  .footer-option-settings-page,
+  .funnel-thank-you-page {
+    #bold-1,
+    #italic-1,
+    #underline-1,
+    #insertHR-1,
+    #insertCTALink-1,
+    #html-1,
+    #undo-1,
+    #redo-1,
+    #starOption-1,
+    #strikeThrough-1,
+    #color-1,
+    #insertImage-1,
+    #insertLink-1 {
+      @include breakpoint(1440) {
+        width: 28px;
+        i {
+          margin: 0 auto;
+        }
+      }
+      @include breakpoint(1350) {
+        width: 27px;
+      }
+    }
+  }
+}
+
+/* update the style for froala version update */
+body:not(.froala-editor-update) {
+  .funnel-thank-you-page {
+
+    .fr-popup .fr-command.fr-btn,
+    .fr-toolbar .fr-command.fr-btn {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+
+      @include breakpoint(1600) {
+        width: 34px;
+        i {
+          margin: 0 auto;
+        }
+      }
+
+      @include breakpoint(1440) {
+        width: 28px;
+      }
+
+      @include breakpoint(1350) {
+        width: 27px;
+      }
+    }
+  }
+}
+
+/* update the style for froala version update */
+body:not(.froala-editor-update) {
+  &.footer-option-settings-page,
+  &.thank-you-message-settings-page,
+  &.terms-of-use-settings-page,
+  &.privacy-policy-settings-page,
+  &.licensing-info-settings-page,
+  &.disclosures-settings-page,
+  &.contact-us-settings-page,
+  &.auto-responder-settings-page,
+  &.footer-about-us-settings-page,
+  &.funnel-thank-you-page {
+
+    > .fr-popup{
+
+      .fr-buttons{
+        width: 100%;
+        min-width: initial;
+      }
+
+      .fr-command.fr-btn {
+        min-width: 37px;
+
+        @include breakpoint(1440){
+          min-width: 28px;
+        }
+
+        @include breakpoint(1600){
+          min-width: 30px;
+        }
+
+        @include breakpoint(1800){
+          min-width: 37px;
+        }
+      }
+    }
+
+
+    .lp-thankyou .lp-thankyou-head {
+      border-bottom: none;
+    }
+
+    .classic-editor__wrapper {
+      border: none;
+
+      .fr-box {
+        border: solid 1px #f2f3f3;
+      }
+    }
+
+    .lp-froala-textbox {
+      visibility: hidden;
+    }
+  }
+}
+
+.lp-thankyou .lp-thankyou-head {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.froala-editor-update {
+
+  .lp-panel__thankyou-editor {
+
+    @include breakpoint(1270) {
+      overflow: auto;
+    }
+  }
+}
+
+body:not(.froala-editor-update) {
+  .lp-panel__thankyou-editor {
+    overflow: auto;
+  }
+}
+
+.froala-editor-thank-you-page {
+    //max-width: 1080px;
+    //min-width: 1080px;
+    margin: 0 auto;
+}
+
+
+/* update the style for froala version update */
+.classic-editor__wrapper:not(.update-version) {
+
+  border: solid 1px #f2f3f3;
+  //margin: 0 100px;
+
+  &.froala-editor-full-width {
+    margin: auto;
+  }
+
+  @include breakpoint(1800) {
+    margin: 0 30px;
+  }
+
+  @include breakpoint(1600) {
+    margin: 0;
+  }
+
+  .classic-editor {
+    border-radius: 3px;
+    border:1px solid #cfdadd;
+  }
+
+  .fr-toolbar {
+    border: none;
+    border-bottom:1px solid #cfdadd;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    .fr-command.fr-btn {
+      height: 48px;
+      margin: 0;
+      color: #073146;
+    }
+
+    .fr-separator.fr-vs {
+      height: 44px;
+    }
+  }
+
+  .fr-box.fr-basic.fr-top .fr-wrapper {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .fr-toolbar .fr-command.fr-btn.fr-dropdown {
+
+    &:after {
+      top: 22px;
+      border-top-color: #073146;
+    }
+  }
+
+  &.funnel-setting-pages-editor {
+
+    @include breakpoint(1600){
+      margin: auto;
+    }
+
+    .fr-toolbar {
+
+      .fr-btn {
+
+        &.fr-command {
+          height: 48px;
+          margin: 0;
+          display: inline-block;
+          vertical-align: top;
+          float: none;
+          text-align: center;
+
+          color: #073146;
+
+          span {
+            min-width: initial;
+            padding: 0;
+          }
+
+          &[id^="fontFamily"] {
+            text-align: left;
+          }
+
+        }
+      }
+
+      .fr-popup {
+
+        .fr-command.fr-btn {
+          @include breakpoint(1440){
+            height: 41px;
+          }
+
+          @include breakpoint(1600){
+            height: 43px;
+          }
+
+          @include breakpoint(1800){
+            height: 45px;
+          }
+        }
+      }
+
+      .fr-btn-wrap {
+
+        .fr-command.fr-btn {
+          margin: 0;
+
+          &.fr-dropdown {
+            @include min-breakpoint(1850){
+              margin-left: 0;
+              margin-right: 2px;
+            }
+          }
+        }
+      }
+
+      .fr-command.fr-btn.fr-dropdown {
+
+        &:after {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &.fr-options {
+
+          &:after {
+            right: initial;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.funnel-thank-you-page {
+
+  .fr-wrapper {
+    overflow: auto;
+  }
+
+  .fr-element {
+    width: 1212px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="form-group" data-parent>
+    <div class="fb-modal__row">
+        <div class="fb-modal__option">Additional Content</div>
+        <div class="fb-modal__control">
+            <div class="funnel-checkbox">
+                <label class="checkbox-label">
+                    <input class="fb-field-label" data-opener type="checkbox" data-field-name="enable-additional-content" {{#ifCond enable-additional-content '==' 1}}checked{{/ifCond}}>
+                    <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="fb-modal__border-row" data-slide style="display: {{#ifCond enable-additional-content '==' 1}}block{{else}}none{{/ifCond}}">
+        <div class="fb-form">
+            <div class="fb-froala classic-editor__wrapper addtional-content-editor update-version">
+                <div class="fb-froala__init" data-custom-font-size="12px" data-field-name="additional-content">{{{additional-content}}}</div>
+            </div>
+        </div>
+    </div>
+</div>

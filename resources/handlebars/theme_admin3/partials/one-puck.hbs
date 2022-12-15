@@ -1,0 +1,186 @@
+<div class="fb-form segment-grid-area">
+{{#if slider-numeric.one-puck.range}}
+    {{#each slider-numeric.one-puck.range}}
+    <div class="slider-range-clone__item">
+         <span class="slider-range-clone__del {{#ifCond @index '==' 0 }}question-hide{{/ifCond}}"><i class="ico ico-cross"></i></span>
+        <div class="fb-form__caption">
+            <span class="fb-form__middle">Slider Range</span>
+        </div>
+        <div class="segment-grid">
+            <div class="segment-grid__item segment-grid__item_17">
+                <div class="fb-select-wrap fb-select_unit-wrap {{#ifCond @index '==' 0 }}select-unit{{/ifCond}}">
+                    <select class="fb-select fb-select_unit fb-select_slider" data-field-name="slider-numeric.one-puck.unit" data-value="{{../slider-numeric.one-puck.unit}}" {{#ifCond @index '!==' 0 }}disabled{{/ifCond}}></select>
+                </div>
+            </div>
+            <div class="segment-grid__item segment-grid__item_41">
+                <input type="number" class="form-control fb-form-control"  value="{{this.start}}" placeholder="From" data-range data-segment data-slider-start="{{@index}}">
+            </div>
+            <div class="segment-grid__item segment-grid__item_41">
+                <input type="number" class="form-control fb-form-control" value="{{this.end}}" placeholder="To" data-segment data-slider-end="{{@index}}">
+            </div>
+        </div>
+        <div class="segment-grid">
+            <div class="segment-grid__item segment-grid__item_43">
+                <div class="fb-select-wrap fb-select_by-wrap fb-select2-group {{#ifCond @index '==' 0 }}select-by{{/ifCond}}">
+                    <select class="fb-select fb-select_by fb-select_slider" data-field-name="slider-numeric.one-puck.range-type" data-value="{{../slider-numeric.one-puck.range-type}}" {{#ifCond @index '!==' 0 }}disabled{{/ifCond}}></select>
+                </div>
+            </div>
+            <div class="segment-grid__item segment-grid__item_56">
+                <input type="number" class="form-control fb-form-control" value="{{this.by}}" placeholder="Of" data-segment data-slider-by="{{@index}}">
+            </div>
+        </div>
+        <div class="segment-grid">
+            <div class="segment-grid__item segment-grid__item_94">
+                <div class="fb-select-wrap fb-select_start-wrap fb-select2-group fb-select2-group_space {{#ifCond @index '==' 0 }}select-start{{/ifCond}}">
+                    <select class="fb-select fb-select_start fb-select_slider" data-field-name="slider-numeric.one-puck.starting-number-ends" data-value="{{../slider-numeric.one-puck.starting-number-ends}}" {{#ifCond @index '!==' 0 }}disabled{{/ifCond}}></select>
+                </div>
+            </div>
+            <div class="segment-grid__item segment-grid__item_6">
+               <span class="fb-tooltip">
+                   <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                 </span>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <div class="slider-range-clone__item">
+        <span class="slider-range-clone__del question-hide"><i class="ico ico-cross"></i></span>
+        <div class="fb-form__caption">
+            <span class="fb-form__middle">Slider Range</span>
+        </div>
+        <div class="segment-grid">
+            <div class="segment-grid__item segment-grid__item_17">
+                <div class="fb-select-wrap fb-select_unit-wrap select-unit">
+                    <select class="fb-select fb-select_unit fb-select_slider" data-field-name="slider-numeric.one-puck.unit"></select>
+                </div>
+            </div>
+            <div class="segment-grid__item segment-grid__item_41">
+                <input type="number" class="form-control fb-form-control"  value="" placeholder="From" data-range data-segment data-slider-start="1">
+            </div>
+            <div class="segment-grid__item segment-grid__item_41">
+                <input type="number" class="form-control fb-form-control" value="" placeholder="To" data-segment data-slider-end="1">
+            </div>
+        </div>
+        <div class="segment-grid">
+            <div class="segment-grid__item segment-grid__item_43">
+                <div class="fb-select-wrap fb-select_by-wrap fb-select2-group select-by">
+                    <select class="fb-select fb-select_by fb-select_slider" data-field-name="slider-numeric.one-puck.range-type"></select>
+                </div>
+            </div>
+            <div class="segment-grid__item segment-grid__item_56">
+                <input type="number" class="form-control fb-form-control" value="" placeholder="Of" data-segment data-slider-by="1">
+            </div>
+        </div>
+        <div class="segment-grid">
+            <div class="segment-grid__item segment-grid__item_94">
+                <div class="fb-select-wrap fb-select_start-wrap fb-select2-group fb-select2-group_space select-start">
+                    <select class="fb-select fb-select_start fb-select_slider" data-field-name="slider-numeric.one-puck.starting-number-ends"></select>
+                </div>
+            </div>
+            <div class="segment-grid__item segment-grid__item_6">
+                <span class="fb-tooltip">
+                    <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                </span>
+            </div>
+        </div>
+    </div>
+{{/if}}
+</div>
+<div class="fb-options__add-more fb-options__add-more_h84">
+    <a href="#" id="add-slider-range" class="lp-btn lp-btn_add-option button-primary border-0" data-slider-segment data-parent="puck1">
+        <span class="lp-btn__icon">
+            <i class="ico ico-plus"></i>
+        </span>
+        Add New Segment
+    </a>
+</div>
+<!-- Customize Slider Labels -->
+<div class="fb-modal__border-box fb-modal__border-box_plr0 fb-modal__border-box_sub-dropdown" data-parent>
+    <div class="fb-modal__row">
+        <div class="fb-modal__option fb-modal__option_light">
+            <span class="fb-modal__middle">Customize Slider Labels</span>
+            <span class="fb-tooltip">
+                 <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+             </span>
+        </div>
+        <div class="fb-modal__control">
+            <div class="funnel-checkbox">
+                <label class="checkbox-label">
+                    <input class="fb-field-label" type="checkbox" data-opener data-field-name="slider-numeric.one-puck.customize-slider-labels.value" {{#ifCond slider-numeric.one-puck.customize-slider-labels.value '==' 1}}checked{{/ifCond}}>
+                    <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="fb-modal__border-row fb-modal__border-row_sub-menu" data-slide {{#ifCond slider-numeric.one-puck.customize-slider-labels.value '==' 1}}style="display:block;"{{/ifCond}}>
+        <div class="slider-label">
+            <div class="slider-label__col-6">
+                <div class="slider-label-wrap {{#ifCond slider-numeric.one-puck.customize-slider-labels.left_label '!==' "" }} filled {{/ifCond}}">
+                    <label>Left Label</label>
+                    <input type="text" class="form-control fb-form-control" placeholder="" data-change-text data-field-name="slider-numeric.one-puck.customize-slider-labels.left_label" value="{{slider-numeric.one-puck.customize-slider-labels.left_label}}">
+                    <span class="arrow-wrap"><i class="icon ico-arrow-down"></i></span>
+                </div>
+            </div>
+            <div class="slider-label__col-6">
+                <div class="slider-label-wrap {{#ifCond slider-numeric.one-puck.customize-slider-labels.right_label '!==' "" }} filled {{/ifCond}}">
+                    <label>Right Label</label>
+                    <input type="text" class="form-control fb-form-control" placeholder="" data-change-text data-field-name="slider-numeric.one-puck.customize-slider-labels.right_label" value="{{slider-numeric.one-puck.customize-slider-labels.right_label}}">
+                    <span class="arrow-wrap"><i class="icon ico-arrow-down"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-label">
+            <div class="slider-label__col-6">
+                <div class="slider-label-wrap {{#ifCond slider-numeric.one-puck.customize-slider-labels.left '!==' "" }} filled {{/ifCond}}">
+                    <label>Slider Shows</label>
+                    <input type="text" class="form-control fb-form-control" placeholder="" data-change-text data-field-name="slider-numeric.one-puck.customize-slider-labels.left" value="{{slider-numeric.one-puck.customize-slider-labels.left}}">
+                </div>
+            </div>
+            <div class="slider-label__col-6">
+                <div class="slider-label-wrap {{#ifCond slider-numeric.one-puck.customize-slider-labels.right '!==' "" }} filled {{/ifCond}}">
+                    <label>Slider Shows</label>
+                    <input type="text" class="form-control fb-form-control" placeholder="" data-change-text data-field-name="slider-numeric.one-puck.customize-slider-labels.right" value="{{slider-numeric.one-puck.customize-slider-labels.right}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Slider Starting Point -->
+<div class="fb-modal__border-box_plr0 fb-modal__border-box_sub-dropdown" data-parent>
+    <div class="fb-modal__row">
+        <div class="fb-modal__option fb-modal__option_light">
+            <span class="fb-modal__middle">Slider Starting Point</span>
+            <span class="fb-tooltip">
+                 <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+             </span>
+        </div>
+        <div class="fb-modal__control">
+            <div class="funnel-checkbox">
+                <label class="checkbox-label">
+                    <input class="fb-field-label" data-opener type="checkbox" data-field-name="slider-numeric.one-puck.slider-starting-point.value" {{#ifCond slider-numeric.one-puck.slider-starting-point.value '==' 1}}checked{{/ifCond}}>
+                    <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="fb-modal__border-row fb-modal__border-row_sub-menu" data-slide {{#ifCond slider-numeric.one-puck.slider-starting-point.value '==' 1}}style="display:block;"{{/ifCond}}>
+        <div class="bs-slider">
+            <div class="bs-slider__label-wrapper">
+                <span class="bs-slider__label"></span>
+                <span class="bs-slider__label starting-point"></span>
+                <span class="bs-slider__label"></span>
+            </div>
+            <input type="text" class="fb-slider" data-slider-one-puck-point-value data-field-name="slider-numeric.one-puck.slider-starting-point.starting-value" data-slider-min="0" data-slider-max="" data-slider-step="1"  data-slider-value="{{#ifCond slider-numeric.one-puck.slider-starting-point.value '==' 1}}{{slider-numeric.one-puck.slider-starting-point.starting-value}}{{/ifCond}}" data-slider-tooltip="hide">
+            <div class="bs-slider__label-wrapper">
+                <span class="bs-slider__label one-puck-left">{{slider-numeric.one-puck.customize-slider-labels.left_label}}</span>
+                <span class="bs-slider__label"></span>
+                <span class="bs-slider__label one-puck-right">{{slider-numeric.one-puck.customize-slider-labels.right_label}}</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+/**
+*  Funnel Builder: Slider Segment Grid
+*/
+
+.segment-grid{
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 10px;
+  display: flex;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &__item{
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    &_17{
+      width: auto;
+      padding-top: 1px;
+    }
+    &_41{
+      width: 41.5%;
+    }
+    &_43{
+      width: 48.5%;
+      padding-top: 1px;
+    }
+    &_56{
+      width: 56.56%;
+    }
+    &_94{
+      width: calc(100% - 30px);
+    }
+    &_6{
+      width: 30px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.slider-range-clone{
+  $parent:&;
+  &__item{
+    padding-top: 20px;
+    position: relative;
+  }
+  &__del{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+  }
+}
+
+
+.slider-label{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &__col-6{
+    width: 48%;
+  }
+}

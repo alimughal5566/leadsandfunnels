@@ -1,0 +1,161 @@
+<script src="{{app.assets}}/js/funnel/scripts/zip-code-overlay.js"></script>
+<div class="funnel-content funnel-zipcode-overlay funnel-overlay">
+{{#with options}}
+    <div class="panel-aside advance-option-active">
+        <div class="panel-aside__head">
+            <div class="col-left">
+                <h4 class="panel-aside__title has-icon zip-icon">
+                <span>
+                    <i class="ico ico-location head-icon"></i>
+                    <span class="head-text">Zip Code</span>
+                </span>
+                </h4>
+            </div>
+            <div class="col-right">
+                <span title="Zip Code" class="ico-arrow-right back-ico"></span>
+                <!-- Funnel Feature icons -->
+                {{> funnel-feature-icons }}
+            </div>
+        </div>
+        <div class="panel-aside-wrap-overlay">
+            <div class="panel-aside-holder">
+                <div class="panel-aside__body">
+                    <!-- Question & Description -->
+                  {{> question-description }}
+                    <!-- Field Label -->
+                    {{> field-label }}
+                    <!-- input option -->
+                    <div class="form-group input-option-parent" data-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option">
+                                <span class="fb-modal__middle">Input Options</span>
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler" data-handler>
+                                    <i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: none">
+                            <ul class="input-options-list">
+                                <li>
+                                    <label class="radio-btn-wrap">
+                                        <input type="radio" name="zipcode-input" data-opener-checkbox  data-field-name="zip-code-only" {{#ifCond zip-code-only '==' 1}}checked{{/ifCond}}>
+                                        <span class="radio-btn-text"><i class="icon"></i>Zip Code Only</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-btn-wrap">
+                                        <input type="radio" name="zipcode-input" data-opener-checkbox  data-field-name="city-or-zip-code" {{#ifCond city-or-zip-code '==' 1}}checked{{/ifCond}}>
+                                        <span class="radio-btn-text"><i class="icon"></i>City or Zip Code</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CTA Button -->
+                    {{> cta-button }}
+                    <!-- Advance options -->
+                    <div class="form-group advance-options-wrap" data-parent data-handler-parent>
+                        <div class="fb-modal__row">
+                            <div class="fb-modal__option opener-text">
+                                Advanced Options
+                            </div>
+                            <div class="fb-modal__control">
+                                <div class="fb-modal__handler" data-handler>
+                                    <i class="fa fa-chevron-down opener-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fb-modal__border-row data-handler-slide" data-handler-slide style="display: none">
+                            <!-- security message -->
+                            {{> security-message}}
+                            <!-- Additional -->
+                            {{> additional-content}}
+                            <!-- Fields detail -->
+                           {{> field-details}}
+                            <!-- Settings -->
+                            <div class="form-group setting-option-area" data-parent>
+                                <div class="tag-row">
+                                    <div class="tag-row__title">Settings</div>
+                                </div>
+                                <!-- automatic progress -->
+                                {{> automatic-progress }}
+                                <!-- required -->
+                                {{> required }}
+                                <!-- required US Zip Code -->
+                                <div class="fb-modal__row fb-modal__row_tb {{#ifCond city-or-zip-code '==' 1}}question-hide{{/ifCond}}" required-zip-code-field>
+                                    <div class="fb-modal__option fb-modal__option_light">
+                                        <span class="fb-modal__middle">Require U.S. Zip Code</span>
+                                        <span class="fb-tooltip">
+                                            <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                                        </span>
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="funnel-checkbox">
+                                            <label class="checkbox-label">
+                                                <input class="fb-field-label" type="checkbox" data-opener-checkbox data-field-name="required-us-zip" {{#ifCond required-us-zip '==' 1}}checked{{/ifCond}}>
+                                                <span class="checkbox-area">
+                                                    <span class="handle"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- required Conadian postal code -->
+                                <div class="fb-modal__row fb-modal__row_tb {{#ifCond city-or-zip-code '==' 1}}question-hide{{/ifCond}}" cannadian-postal-code-field>
+                                    <div class="fb-modal__option fb-modal__option_light">
+                                        <span class="fb-modal__middle">Require Canadian Postal Code </span>
+                                        <span class="fb-tooltip">
+                                            <span class="question-mark el-tooltip" title='<div class="overlay-tooltip">Tooltip Content</div>'>?</span>
+                                        </span>
+                                    </div>
+                                    <div class="fb-modal__control">
+                                        <div class="funnel-checkbox">
+                                            <label class="checkbox-label">
+                                                <input class="fb-field-label" type="checkbox" data-opener-checkbox data-field-name="required-canadian-zip" {{#ifCond required-canadian-zip '==' 1}}checked{{/ifCond}}>
+                                                <span class="checkbox-area">
+                                                    <span class="handle"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-aside__footer">
+            <div class="action">
+                <ul class="action__list justify-content-end">
+                    <li class="action__item">
+                        <button class="button button-cancel">Close</button>
+                    </li>
+                    <li class="action__item">
+                        <button class="button button-secondary">Save</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{{/with}}
+    <input data-id="ques_id" hidden value="{{ques_id}}">
+    <!-- contain the main content of the page -->
+    <div id="content">
+
+        <!-- Question Editor Header -->
+        {{> question-header }}
+
+        <!-- iframe include for question -->
+        <div class="funnel-iframe-holder" {{#ifCond zoom '==' 1}}style="transform:scale({{zoom_value}})"{{/ifCond}}>
+            <iframe scrolling="no" src="{{app.url}}/previewbars/zipcode-preview.php?ques_id={{ques_id}}&ls_key={{ls_key}}" class="zip-code-iframe question-preview-iframe"></iframe>
+        </div>
+    </div>
+</div>
+<!--button icon list-->
+{{> button-icon-list }}
+<!-- Mobile Mode -->
+{{> mobile-mode }}
+

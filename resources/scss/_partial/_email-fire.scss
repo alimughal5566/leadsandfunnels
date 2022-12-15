@@ -1,0 +1,44 @@
+.lp-panel {
+  .select-holder {
+    max-width: 240px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .heading-bar__sorting-list.has-border {
+    width: 240px;
+    .select2-container {
+      .select2-selection--single {
+        border: 1px solid #cfdadd;
+      }
+    }
+  }
+}
+
+.selection-area {
+  padding: 4px 0 0 5px;
+}
+
+.list-selection {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0 0 4px;
+  }
+
+  [type="checkbox"] {
+    &:checked {
+      + label {
+        font-weight: 600;
+      }
+    }
+    + label {
+      font-weight: 400;
+      padding-left: 41px;
+    }
+  }
+}

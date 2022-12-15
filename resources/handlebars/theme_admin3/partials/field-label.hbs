@@ -1,0 +1,25 @@
+<div class="form-group" data-parent>
+    <div class="fb-modal__row">
+        <div class="fb-modal__option">Field Label</div>
+        <div class="fb-modal__control">
+            <div class="funnel-checkbox">
+                <label class="checkbox-label">
+                    <input class="fb-field-label" data-opener type="checkbox"  data-field-name="enable-field-label" {{#ifCond enable-field-label '==' 1}}checked{{/ifCond}}>
+                    <span class="checkbox-area">
+                        <span class="handle"></span>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="fb-modal__border-row" data-slide style="display: {{#ifCond enable-field-label '==' 1}}block{{else}}none{{/ifCond}}">
+        <div class="fb-form">
+            <div class="fb-form__group">
+                <input type="text" class="form-control fb-form-control label-form-control label-field"  data-change-text data-field-name="field-label"  value="{{field-label}}" placeholder="Field Label">
+                <span class="tag-box">
+                    <i class="fa fa-tag"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

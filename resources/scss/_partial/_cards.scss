@@ -1,0 +1,166 @@
+.card {
+
+  padding:0 30px;
+  margin: 0 0 30px;
+  border-radius: 3px;
+  border: none;
+  border-bottom: solid 1px #dde0e1;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &-header {
+    padding:0;
+    height: 74px;
+    border: none;
+    display: flex;
+    background: #ffffff;
+    align-items: center;
+  }
+
+  &-body {
+    border-top:solid 1px #f2f3f3;
+    padding:0;
+    &__row{
+      border-bottom: solid 1px #f2f3f3;
+      padding: 30px 0;
+      &:last-child{
+        border: none;
+      }
+    }
+  }
+
+  &-link {
+    display: inline-flex;
+    cursor: pointer;
+    &.collapsed{
+      .card-circle{
+        border-color: #cfdadd;
+        &:before{
+          opacity: 0;
+          visibility: hidden;
+          transform: scale(0);
+        }
+      }
+    }
+    .card-circle {
+      height: 34px;
+      width: 34px;
+      position: relative;
+      margin: 0 16px 0 0;
+      border-radius: 100%;
+      background: #ffffff;
+      display: inline-block;
+      border: solid 1px #02abec;
+      @include transition(all, 0.2s, ease);
+      &:before{
+        content: "";
+        opacity: 1;
+        transform: scale(1);
+        @include transition(all, 0.2s, ease);
+        visibility: visible;
+        top: 7px;
+        bottom: 7px;
+        left: 7px;
+        right: 7px;
+        background: #02abec;
+        border-radius: 100%;
+        position: absolute;
+      }
+    }
+  }
+
+  &-title {
+    display: inline-block;
+    margin: 0;
+    color:#85969f;
+    span{
+      font-weight: 300;
+      &.new {
+        @include font(18, 20, 400);
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.background-card {
+
+  .card-link-wrap {
+    position: relative;
+  }
+
+  .card-link {
+    margin: 0;
+
+    .card-circle {
+      border-color: #cfdadd;
+      margin-top: 2px;
+
+      &:before {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &.active {
+
+    .card-link {
+
+      .card-circle {
+        border-color: #02abec;
+
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.domain-card {
+
+  .card-link-wrap {
+    position: relative;
+  }
+
+  .card-link {
+    margin: 0;
+
+    .card-circle {
+      border-color: #cfdadd;
+      margin-top: 2px;
+
+      &:before {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &.active {
+
+    .card-link {
+
+      .card-circle {
+        border-color: #02abec;
+
+        &:before {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.background-slide {
+  display: none;
+}
+
+.domain-slide {
+  display: none;
+}
