@@ -1,0 +1,34 @@
+Tables Usage Removed
+--------------------------
+- salesman
+- sales_clients
+- use_old_admin
+
+
+Tables Add (Missing in DB) - Verify we need these Tables for not
+--------------------------
+- client_funnel_sticky_3rd_party_website
+- leadpops_client_tags
+- leadpops_client_tags_mapping
+- clients_logins
+
+
+Missing Columns
+--------------------------
+- client_funnel_sticky (New Columns added)
+
+
+Data Migration
+--------------------------
+- Edit > Content > Call-to-Action
+        leadpops_templates_placeholders_values -> placeholder_sixtynine     ==>   clients_leadpops -> lead_line
+        leadpops_templates_placeholders_values -> placeholder_seventy       ==>   clients_leadpops -> second_line_more
+
+- Edit > Content > Autoresponder
+        Removed leadpops_templates_placeholders_values -> placeholder_seventyone
+        Removed leadpops_templates_placeholders_values -> placeholder_seventytwo
+
+- Edit > Content > SEO
+        leadpops_templates_placeholders_values -> placeholder_seventythree   ==>   clients_leadpops -> funnel_variables::titletag_option
+        leadpops_templates_placeholders_values -> placeholder_seventyfour    ==>   clients_leadpops -> funnel_variables::description_option
+        leadpops_templates_placeholders_values -> placeholder_seventyfive    ==>   clients_leadpops -> funnel_variables::metatag_option

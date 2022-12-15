@@ -1,0 +1,143 @@
+ASSET_VERSION=3.0.21.5
+APP_NAME="leadPops™ Marketing Admin Panel"
+APP_ENV=production
+APP_KEY=base64:qzf3TIN/pR/RhRoqME5NcCPxRK8wtqUVBfkbbXsOtI0=
+APP_DEBUG=false
+APP_URL=https://app.leadpops.com
+APP_THEME=theme_admin3
+APP_SKELETON=leadpopsspopdael
+RACKSPACE_API="fa82cd10a5b44e909be6740fb0f10ca2"
+RACKSPACE_TMP_DIR="rs_tmp"
+GEARMAN_ENABLE=1
+GEARMAN_SERVER="10.183.250.92"
+GEARMAN_PORT="4730"
+SUBMIT_SURVEY_HUBSPOT=true
+TINIFY_API_KEY="QFhFNcGRcPnDwqpgYwmWXD1jBJw7NYtb"
+
+LOG_CHANNEL=stack
+
+DB_CONNECTION=mysql
+DB_HOST=fca9ad8f97fc4927803a34ccb7d692e0.publb.rackspaceclouddb.com
+DB_PORT=3306
+DB_DATABASE=leadpops
+DB_USERNAME=leadpops_leadpop
+DB_PASSWORD=DorisElaine1925
+
+SESSION_DRIVER=database
+SESSION_CONNECTION=mysql_sess
+SESSION_LIFETIME=120
+SESSION_HOST=fca9ad8f97fc4927803a34ccb7d692e0.publb.rackspaceclouddb.com
+SESSION_PORT=3306
+SESSION_DATABASE=leadpops_session_staging
+SESSION_USERNAME=leadpops_leadpop
+SESSION_PASSWORD=DorisElaine1925
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+
+REDIS_HOST=10.183.253.68
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+REDIS_PREFIX=leadpops
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
+## Constants from version 2.0 ##
+
+constants.LP_VERSION=${ASSET_VERSION}
+constants.LP_PATH="/lp"
+constants.LP_ASSETS_PATH="/lp_assets"
+constants.MYLEAD_SRC=keydb
+constants.RESULT_PER_PAGE=10
+constants.CHUNKS_SIZE=1000
+constants.LP_BASE_URL=${APP_URL}
+constants.LP_BASE_DIR="/var/www/vhosts/app.leadpops.com"
+constants.ENCRYPTION_SECRET="leadpop_secret"
+constants.ENCRYPTION_IV="leadpop_encription_iv"
+constants.LP_ADMIN_EMAIL="support@leadpops.zendesk.com"
+constants.LP_ADMIN_NAME="leadPops"
+constants.LP_FUNNEL_DATA_RESULT_TTL=3600
+constants.LP_SCHEDULE_APPOINMENT="https://leadpops.com/consult"
+constants.LP_SM_FB_LINK="https://www.facebook.com/leadPops"
+constants.LP_SM_TWITTER_LINK="https://twitter.com/leadpops"
+constants.LP_SM_LINKEDIN_LINK="https://www.linkedin.com/company/leadpops-llc"
+constants.LP_SM_GOOGLEPLUS_LINK="https://plus.google.com/+LeadpopsInc"
+constants.LP_SM_YOUTUBE_LINK="https://www.youtube.com/c/leadpopsinc"
+constants.LP_SM_INSTAGRAM_LINK="https://instagram.com/leadpops_inc"
+constants.AUTH_TOKEN_ZAPIER="http://zapier.leadpops.com/api/v1/create-token/"
+constants.AUTH_TOKEN_LPAPI="http://api.leadpops.com/api/v1/token/create/"
+constants.WEBSITE_LAUNCHER="http://mortgagesetup.leadpops.com/wp_installer.php"
+constants.LEADPOPS_USER="admin@leadpops.com"
+constants.LEADPOPS_PASSWORD="wfjg3726!!*$$@8265gdhgf"
+constants.MOVEMENT_USER="admin@movement.com"
+constants.MOVEMENT_PASSWORD="$Mhm$$xRr6rEr9smd5D6b55"
+constants.FAIRWAY_USER="admin@fairway.com"
+constants.FAIRWAY_PASSWORD="&raGd465ktNcHmEK^snm3ur"
+constants.MOVEMENT_PORTAL="https://movement.leadpops.com"
+constants.FAIRWAY_PORTAL="https://fairway.leadpops.com"
+constants.STICKY_BAR_THIRD_PARTY_DOMAIN="http://clix.ly"
+constants.STICKY_BAR_DOMAIN="https://app.leadpops.com/"
+constants.STICKY_BAR_IMAGES_PATH="/var/www/vhosts/app.leadpops.com"
+constants.RADIS_LEAD_UPDATE = true
+constants.LP_ADMIN_EMAIL="support@leadpops.com"
+constants.RACKSPACE_DEFAULT_IMAGES_URI="https://images.lp-images1.com/default/app"
+
+SUPPORT_EMAILS="sal@leadpops.com,jaz@leadpops.com"
+DEMO_LINK="https://book-demo.leadpops.com/"
+FREE_TRIAL_LINK="https://free-trial.leadpops.com/"
+LP_API_ENDPOINT_BASE_URL="https://hooks.leadpops.com"
+WRITE_LOG=0
+SHOW_ADVANCE=true
+SCREENSHOT_SERVICE_URL=/rs_tmp/screenshots
+PENDO_ACCESS=1
+
+BOOK_NOW_LINK="https://book-demo.leadpops.com/"
+BOOK_NOW_TEXT="Schedule your FREE 1:1 Digital Marketing Assessment!"
+BOOK_NOW_CTA="Book Now"
+
+STICKY_BAR_SCRIPT_DOMAIN=https://embed.clix.ly
+STICKY_BAR_DEFAULT_TEXT="I am you sticky bar and I am being awesome"
+
+SHORTENER_APP_BASE_URL="https://lynx.ly"
+FUNNEL_CLONE_LIMIT=2
+
+# DISABLED SCOUT Service
+SCOUT_MONITOR=true
+SCOUT_KEY="Z5XtSURyN8P6RBt8qfUM"
+SCOUT_NAME="app.leadpops.com"
+
+# ############################### #
+#    Temporary ENV Variables
+# ############################### #
+
+TBL_SUPPORT_VIDEOS="support_videos_3"
+
+#Lead Content Table Strucute Migration
+TBL_LEAD_CONTENT_v2=1
+TBL_LEAD_CONTENT=lead_content
+
+#To Enable extra content
+SUPER_FOOTER=0
+
+# Theme v1 Rackspace Featured image & logo path
+RS_FEATURED_IMAGE_DIR=stockimages/classicimages/
+RS_STOCK_IMAGE_DIR=images/

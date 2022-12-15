@@ -1,0 +1,1927 @@
+
+$basic-color: #01aef0;
+$primary-color: #073146;
+$panel-border-color: #ebeded;
+$danger-color: #ec394a;
+$success-color: #27c24c;
+
+$image-base-path: '../fbimages';
+/**
+*  Funnel Builder: Funnel Question List CSS
+*/
+
+.fb-question-item{
+  $parent:&;
+  width: 100%;
+  padding-bottom: 10px;
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &__serial{
+    float: left;
+    height: 59px;
+    width: 59px;
+    margin-right: 10px;
+    @include vertical-alignment-content(center , center);
+    @include font-open-sans(18px , #95a5ae , 400);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  &__detail{
+    float: left;
+    height: 59px;
+    width: calc(100% - 69px);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 7px 0;
+    &:after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  &__col{
+    float: left;
+    padding: 0 35px;
+    border-left: 1px solid #e9eaeb;
+    @include vertical-alignment-content;
+    height: 100%;
+    @include breakpoint(1800) {
+      padding: 0 16px;
+    }
+    &:first-child{
+      border-left: 0 none;
+    }
+    &:nth-last-child(2){
+      border-left: 0 none;
+    }
+    &_control{
+      padding: 0 25px;
+      float: right;
+      @include breakpoint(1450) {
+        padding: 0 15px;
+      }
+    }
+    &#{$parent}__col{
+      &_icon {
+        float: right;
+        padding: 0 14px;
+        font-size: 20px;
+        color: #02abec;
+        border-left: 1px solid #e9eaeb;
+      }
+    }
+    &_lock{
+      border-right: 1px solid #e9eaeb;
+      padding: 4px 14px 0;
+      float: right;
+      display: none;
+      .lp-icon-lock{
+        color: #7394af;
+        font-size: 16px;
+      }
+      a{
+        cursor: default;
+      }
+    }
+    &_border_right{
+      border-right: 1px solid #e9eaeb;
+    }
+    &_plr14{
+      padding: 0 14px;
+    }
+    &_plr25{
+      padding: 0 25px;
+    }
+    &_plr22{
+      padding: 0 22px;
+    }
+  }
+
+  &_lock {
+    #{$parent}__col{
+      &_lock {
+        display: flex;
+        display: -ms-flex;
+      }
+    }
+    .lp-control__item:not(.lp-control__item_edit){
+      display: none;
+    }
+    .question-detail{
+      max-width: 630px;
+    }
+  }
+
+  &:hover{
+    #{$parent}__serial{
+      background-color: $basic-color;
+      color: #fff;
+    }
+    #{$parent}__detail{
+      background-color: $basic-color;
+    }
+    .question-detail{
+      color: #fff;
+      max-width: 460px;
+    }
+    .fb-step-label{
+      color: #fff;
+      background-color: #079bd4;
+      border-top: 1px solid #0794cb;
+      border-left: 1px solid #0794cb;
+    }
+    #{$parent}__col{
+      &_icon {
+        display: none;
+      }
+      border-left-color: #35bcf0;
+      &_border_right{
+        border-right-color: #35bcf0;
+      }
+      &_lock{
+        border-right-color: #35bcf0;
+        .lp-icon-lock{
+          color: #fff;
+        }
+      }
+      &_hover_pl3{
+        padding-left: 3px;
+      }
+    }
+    .tu-url{
+      &__caption{
+        color: #fff;
+        &:after{
+          background-color: #35bcf0;
+        }
+      }
+      &__url{
+        color: #fff;
+      }
+    }
+    .icon-text{
+      color: #fff;
+      &:before {
+        color: #fff;
+      }
+
+      .ico {
+        color: #fff !important;
+      }
+    }
+    .fb-step{
+      &__title{
+        color: #fff;
+      }
+      &__caption{
+        color: #fff;
+      }
+    }
+    .fbi_lock{
+      background-position: -142px -175px;
+    }
+    .hover-hide{
+      display: none;
+    }
+    .lp-control{
+      display: block;
+    }
+    &#{$parent}_lock {
+      #{$parent}__col{
+        &_control{
+          padding-left: 3px;
+        }
+      }
+      .question-detail{
+        max-width: 630px;
+      }
+    }
+  }
+  &__highlight{
+    @include font-open-sans(16px , $basic-color , 400);
+    @include vertical-alignment-content(center , center);
+    text-transform: capitalize;
+    height: 59px;
+    border: 2px dashed $basic-color;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #eaf4f8;
+  }
+  &_transition {
+    #{$parent}__detail {
+      width: 100%;
+      background-color: #e3f5fc;
+      box-shadow: 0 1px 0 #b1e5f9;
+    }
+    .icon-text {
+      color: #02abec;
+      width: auto;
+    }
+  }
+}
+.question-detail{
+  line-height: initial;
+  @include font-open-sans(18px , #304351 , 400);
+  @include ellipsis(670px);
+}
+.icon-text{
+  text-transform: capitalize;
+  @include font-open-sans(18px , #9aaab3 , 400);
+  position: relative;
+  padding-left: 21px;
+  width: 144px;
+  @include breakpoint(1399) {
+    font-size: 14px;
+  }
+  &:before{
+    font-family: 'icomoon' !important;
+    color: #7394af;
+    font-size: 22px;
+    position: absolute;
+  }
+  &_contact{
+    &:before{
+      position: absolute;
+      content: "\e942";
+      left: -13px;
+      top: -4px;
+      @include breakpoint(1720) {
+        left: -4px;
+      }
+    }
+  }
+  &_zipcode{
+    &:before{
+      content: "\e90f";
+      position: absolute;
+      left: -12px;
+      top: -2px;
+    }
+  }
+  &_menu{
+    &:before{
+      content: "\e922";
+      position: absolute;
+      left: -14px;
+      top: -3px;
+    }
+  }
+  &_slider{
+    &:before{
+      content: "\e941";
+      left: -15px;
+      top: -2px;
+      font-size: 24px;
+    }
+  &_textfield{
+    &:before{
+      content: "\e92f";
+      left: -18px;
+      top: -5px;
+      font-size: 30px;
+    }
+  }
+  }
+  &_textfield {
+    &:before {
+      content: "\e92f";
+      left: -16px;
+      font-size: 28px;
+      top: -5px;
+    }
+  }
+  &_dropdown{
+    &:before {
+      content: "\e906";
+      top: -2px;
+      left: -12px;
+    }
+  }
+  &_cta{
+    &:before {
+      left: -12px;
+      content: "\e93b";
+    }
+  }
+  &_car {
+    &:before {
+      left: -12px;
+      content: "\e90b";
+    }
+  }
+  &_transition {
+    &:before {
+      color: #02abec;
+      left: -16px;
+      content: "\e949";
+    }
+  }
+  &_calendar{
+    &:before {
+      top: -2px;
+      left: -12px;
+      content: "\e934";
+    }
+  }
+  &_third-party {
+    &:before {
+      top: -2px;
+      left: -12px;
+      content: "\e93a";
+    }
+  }
+  &_ty-page {
+    &:before {
+      top: -2px;
+      left: -12px;
+      content: "\e948";;
+    }
+  }
+}
+
+.fb-step-label{
+  @include font-open-sans(14px , #95a5ae , 700);
+  height: 35px;
+  border-top: 1px solid #ebeded;
+  border-left: 1px solid #ebeded;
+  border-radius: 4px;
+  background-color: #f6f8f8;
+  padding: 7px 25px 0;
+  margin-bottom: 0;
+
+  @include breakpoint(1399) {
+    font-size: 12px;
+    height: 30px;
+  }
+}
+
+.fb-step{
+  &__title{
+    @include font-open-sans(13px , #304351 , 700);
+    text-transform: uppercase;
+    line-height: 15px;
+
+    @include breakpoint(1399) {
+      font-size: 11px;
+    }
+  }
+  &__caption{
+    @include font-open-sans(18px , #304351 , 400);
+    line-height: 20px;
+  }
+}
+
+
+
+.fb-options{
+  &__list{
+    display: flex;
+    margin-bottom: 9px;
+    .tag-box {
+      height: 100%;
+      border: solid 1px #cfdadd;
+      background-color: transparent;
+      .ico {
+        font-size: 22px;
+        color: #c7d4df;
+      }
+      &_move {
+        //margin: 0 7px;
+      }
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    //&:after{
+    //  content: '';
+    //  display: table;
+    //  clear: both;
+    //}
+  }
+  &__col{
+    float: left;
+    margin-left: 9px;
+    &_field{
+      //max-width: 404px;
+      //width: calc(100% - 114px);
+      flex-grow: 1;
+      margin-left: 0;
+    }
+  }
+  &__add-more{
+    @include vertical-alignment-content;
+    border-bottom: 1px solid #f2f3f3;
+    padding: 9px 0 21px;
+    //height: 90px;
+    //border-top: 1px solid #f2f3f3;
+    //border-bottom: 1px solid #f2f3f3;
+    //margin-top: 20px;
+    &_h84{
+      height: 84px;
+    }
+  }
+  &__highlight{
+    height: 50px;
+    width: 100%;
+    @include vertical-alignment-content(center , center);
+    @include font-open-sans(14px , $basic-color , 400);
+    border: 2px dashed $basic-color;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    //background-color: rgba(1,174,240,0.3);
+  }
+}
+.fb-none-opt{
+  border-top: 1px solid #f2f3f3;
+  padding-top: 19px;
+  display: flex;
+  flex: -ms-flex;
+}
+
+.tu-url{
+  &__caption{
+    @include font-open-sans(18px , #707d84 , 400);
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+    &:after{
+      content: '';
+      height: 18px;
+      width: 1px;
+      background-color: #707d84;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+
+  }
+  &__url{
+    @include font-open-sans(18px , #304351 , 400);
+    display: inline-block;
+
+    @include breakpoint(1399) {
+      font-size: 14px;
+    }
+  }
+}
+
+.add-box{
+  $parent:&;
+  @include vertical-alignment-content(center , center);
+  @include font-open-sans(15px , #fff , 700);
+  text-transform: uppercase;
+  height: 54px;
+  width: 54px;
+  background-color: #acbdc9;
+  border-radius: 4px;
+  border-bottom: 1px solid #a0b0bb;
+  margin: 10px auto 20px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+  @include ellipsis(220px);
+
+  &__text{
+    display: none;
+  }
+  &:hover{
+    width: 227px;
+    padding: 0 20px;
+    background-color: $basic-color;
+    border-bottom-color: #029cd7;
+    transition: 0.5s ease all;
+    #{$parent}__text{
+      display: inline-block;
+    }
+    #{$parent}__fbi{
+      display: none;
+    }
+    .lp-icon-plus{
+      display: none;
+      &_large {
+        &:before {
+          font-size: 34px;
+        }
+      }
+    }
+
+  }
+  &_page{
+    @include ellipsis(188px);
+    &:hover{
+      width: 188px;
+
+    }
+  }
+  .lp-icon-plus{
+    &_large {
+      &:before {
+        font-size: 34px;
+      }
+    }
+  }
+}
+
+
+/**
+*  Funnel Builder: Question Control List
+*/
+
+
+.lp-control{
+  margin: 0;
+  padding: 0;
+  //right: -12px;
+  right: 0;
+  display: none;
+  position: relative;
+  &__item{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__link{
+    height: 43px;
+    width: 43px;
+    @include vertical-alignment-content(center , center);
+    border-radius: 3px;
+    @include links-hover{
+      background-color: #029ad4;
+    }
+    &_cursor_move{
+      cursor: move;
+    }
+    i{
+      color: #fff;
+      font-size: 20px;
+    }
+    @include links-hover{
+      i{
+        color: #fff;
+      }
+    }
+  }
+}
+
+/**
+*  Funnel Builder: Add Question Option
+*/
+
+.question {
+  &-option{
+    padding: 23px 0;
+    &__list {
+      margin: 0;
+      padding: 0;
+    }
+    &__item{
+      $parent:&;
+      height: 54px;
+      color: #707d84;
+      cursor: pointer;
+      border-radius: 3px;
+      position: relative;
+      padding-left: 58px;
+      margin-bottom: 10px;
+      @include font(14,16,700);
+      text-transform: uppercase;
+      border: 1px solid #cfdadd;
+      //transition: 0.3s ease all;
+      @include vertical-alignment-content;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      &:before{
+        content: '';
+        font-family: 'icomoon' !important;
+        color: $basic-color;
+        font-size: 24px;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        top: 0;
+        display: flex;
+        align-items: center;
+        bottom: 0;
+        position: absolute;
+      }
+      &_zipcode{
+        &:before{
+          content: "\e90f";
+          left: 16px;
+        }
+      }
+      &_menu{
+        &:before{
+          content: "\e922";
+          left: 16px;
+        }
+      }
+      &_slider{
+        &:before{
+          content: "\e941";
+          left: 16px;
+        }
+      }
+      &_textfield{
+        &:before{
+          content: "\e92f";
+          font-size: 30px;
+          left: 14px;
+        }
+      }
+      &_dropdown{
+        &:before{
+          content: "\e906";
+          left: 18px;
+        }
+      }
+      &_cta{
+        &:before{
+          content: "\e93b";
+          left: 19px;
+        }
+      }
+      &_calendar {
+        &:before {
+          left: 19px;
+          content: "\e934";
+        }
+      }
+      &_car {
+        &:before {
+          content: "\e90b";
+          left: 17px;
+        }
+      }
+      &_transition {
+        &:before {
+          left: 16px;
+          content: "\e949";
+        }
+      }
+      &_active{
+        border-color: transparent;
+        background-color: $basic-color !important;
+        color: #fff;
+        &#{$parent}_zipcode{
+          &:before{
+            color: #fff;
+            //background-position: -10px -175px;
+          }
+        }
+        &#{$parent}_menu{
+          &:before{
+            color: #fff;
+            //background-position: -76px -175px;
+          }
+        }
+        &#{$parent}_slider{
+          &:before{
+            color: #fff;
+            //background-position: -138px -136px;
+          }
+        }
+        &#{$parent}_textfield{
+          &:before{
+            color: #fff;
+            //background-position: -53px -136px;
+          }
+        }
+        &#{$parent}_dropdown{
+          &:before{
+            color: #fff;
+            //background-position: -87px -247px;
+          }
+        }
+        &#{$parent}_cta{
+          &:before{
+            color: #fff;
+            //background-position: -48px -247px;
+          }
+        }
+      }
+      //&:hover{
+      //  border-color: $basic-color;
+      //  background-color: transparent;
+      //  transition: 0.3s ease all;
+      //}
+      &.ui-draggable-dragging {
+        width: 272px;
+        color: #ffffff;
+        border-radius: 3px;
+        background-color: #01aef0;
+        &:before {
+          color: #ffffff;
+        }
+      }
+    }
+    .create-question {
+      height: 54px;
+      display: flex;
+      align-items: center;
+      .btn-create {
+        color: #02abec;
+        @include font(14,16,700);
+        text-transform: uppercase;
+      }
+    }
+    .manage-question {
+      border-top: 1px solid #f2f3f3;
+      padding: 22px 0 0;
+      .btn-manage {
+        display: flex;
+        height: 56px;
+        color: #ffffff;
+        border-radius: 3px;
+        align-items: center;
+        background: #02abec;
+        justify-content: center;
+        text-transform: uppercase;
+        @include font(14,16,700);
+      }
+    }
+  }
+  &-global {
+    display: none;
+    span.dnd {
+      padding: 0 0 0 33px;
+    }
+    .placeholder {
+      color: #acbdc9;
+      margin: 0;
+      @include font(16,16,300);
+      .create-question {
+        height: auto;
+      }
+    }
+  }
+  &-pre-made {
+    display: none;
+    span.dnd {
+      padding: 0 0 0 33px;
+    }
+  }
+  &-transition {
+   display: none;
+    .placeholder {
+      margin: 0;
+    }
+  }
+}
+
+
+
+/**
+*  Funnel Builder: Question Page CSS
+*/
+
+
+.funnel-panel{
+  $parent:&;
+  background-color: #f6f8f8;
+  padding: 0 22px 12px;
+  border-radius: 4px;
+  border-bottom: 1px solid #e8eaea;
+  border-top: 1px solid #fbfcfc;
+  margin-bottom: 30px;
+  &__head{
+    height: 83px;
+    @include vertical-alignment-content(center , space-between);
+    &_thank-you{
+      border-bottom: 0 none;
+    }
+  }
+  &__body{
+    .dropable-funnel-option {
+      height: 205px;
+      overflow: hidden;
+      margin: 0 0 20px;
+      &.placeholder {
+        &.ui-droppable {
+          &-active {
+            &:before {
+              background-color: #eaf4f8;
+              border: dashed 1px $basic-color;
+            }
+          }
+          &-hover {
+            &:before {
+
+            }
+          }
+        }
+      }
+    }
+  }
+  &__placeholder {
+    z-index: 2;
+    display: flex;
+    position: relative;
+    border-style: solid;
+    border-width: 1px 0;
+    align-items: center;
+    border-color: #ebeded;
+    flex-flow: column wrap;
+    justify-content: center;
+    &:before {
+      content: '';
+      left: 0;
+      right: 0;
+      top: 19px;
+      z-index: -1;
+      bottom: 19px;
+      position: absolute;
+    }
+    &-title {
+      color: #707d84;
+      font-weight: 300;
+      margin: 0 0 5px;
+
+    }
+  }
+  &__sortable {
+    //display: none;
+  }
+  &__empty-list{
+    height: 275px;
+    @include vertical-alignment-content(center , center);
+    border-bottom: 1px solid $panel-border-color;
+    border-top: 1px solid $panel-border-color;
+    margin-bottom: 20px;
+  }
+  &__title{
+    @include font-open-sans(24px , #445158 , 700);
+    margin: 0;
+    line-height: 22px;
+  }
+  &__options{
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+  }
+  &__item{
+    display: inline-block;
+    margin-left: 14px;
+    vertical-align: middle;
+    position: relative;
+    transition: 0.5s ease all;
+
+    &:first-child{
+      margin-left: 0;
+    }
+    &:hover{
+      transition: 0.5s ease all;
+      /*.fb-btn-group_absolute{
+        padding: 0 19px;
+        visibility: visible;
+        width: auto;
+        opacity: 1;
+        overflow: auto;
+        transition: 0.3s ease all;
+      }*/
+    }
+    .hover-hide i{
+      display: block;
+      font-size: 24px;
+      color: $basic-color;
+      @include breakpoint(1400) {
+        font-size: 20px;
+      }
+    }
+    .hover-show i{
+      font-size: 24px;
+      margin-right: 12px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .opt-text{
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &__caption{
+    @include font-open-sans(28px , #707d84 , 300);
+    padding-bottom: 23px;
+  }
+  &__footer{
+    height: 102px;
+    @include vertical-alignment-content;
+  }
+  &__lock {
+    .fb-question {
+      &-item {
+        &__serial {
+          //@include breakpoint(1500) {
+          //  width: 45px;
+          //}
+        }
+        &__col {
+         @include breakpoint(1599) {
+           padding: 0 9px;
+         }
+          .icon-text {
+            width: 120px;
+            /* AB change */
+            @include breakpoint(1800) {
+              width: 80px;
+              font-size: 16px;
+            }
+          }
+          .fb-step__caption {
+            @include breakpoint(1620) {
+              font-size: 15px;
+            }
+
+            @include breakpoint(1399) {
+              font-size: 12px;
+            }
+          }
+          .fb-step-label {
+            @include breakpoint(1620) {
+              padding: 7px 20px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  & {
+    &#{$parent}_thankyou {
+      .fb-question {
+        &-item {
+          &__detail {
+            padding: 7px 0 7px 22px;
+          }
+          &__col {
+
+            &:first-child,
+            &:nth-child(2){
+              padding: 0;
+              border: none;
+            }
+            .icon-text {
+              width: auto;
+              margin: 0 8px 0 0;
+              padding: 0 8px 0 0 !important;
+              border-right: solid 2px #a0a8ad;
+
+              .ico {
+                display: inline-block;
+                vertical-align: top;
+                color: #7394af;
+                margin: -5px 10px 0 0;
+                font-size: 22px;
+
+                @include min-breakpoint(1440) {
+                  margin: 0 10px 0 0;
+                }
+              }
+            }
+            .fb-question-item__col_lock {
+              border-right: 1px solid #e9eaeb;
+              padding: 4px 14px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.hover-show{
+  display: none;
+}
+.panel-button__btn{
+  height: 43px;
+  width: 62px;
+  border: 1px solid #e6e8e9;
+  border-radius: 4px;
+  //transition: 0.5s ease all;
+  @include vertical-alignment-content(center , center);
+  @include font-open-sans(13px , #fff , 700);
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover{
+    @include font-open-sans(13px , #fff , 700);
+    //transition: 0.5s ease all;
+    background-color: $basic-color;
+    padding: 0 19px;
+    border-color: transparent;
+    border-bottom: 1px solid #029fdb;
+    text-transform: uppercase;
+    width: auto;
+    .hover-hide{
+      display: none;
+    }
+    .hover-show{
+      display: inline;
+      line-height: 23px;
+    }
+  }
+  @include breakpoint(1400) {
+    width: 45px;
+  }
+}
+
+
+
+/**
+*  Funnel Builder: Button CSS
+*/
+
+.lp-btn{
+  $parent:&;
+  padding: 0 30px;
+  margin-bottom: 0;
+  @include font-open-sans(14px , #fff , 700);
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 43px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  &_danger{
+    background-color: $danger-color;
+  }
+  &_success{
+    background-color: $success-color;
+  }
+  &_primary{
+    background-color: $basic-color;
+  }
+  @include links-hover{
+    color: #fff;
+  }
+  &_disable{
+    border-top-color:#2a313d;
+    background-color: #212730;
+    color: #58748a;
+    pointer-events: none;
+    @include links-hover{
+      color: #58748a;
+    }
+  }
+  &_mr20{
+    margin-right: 20px;
+  }
+  &_add-option{
+    @include font-open-sans(14px , #707d84 , 400);
+    text-transform: none;
+    border: solid 1px #cfdadd;
+    height: 42px;
+    position: relative;
+    padding-left: 65px;
+    padding-right: 16px;
+    @include links-hover{
+      color: #707d84;
+    }
+    &.button {
+      &-primary {
+        color: #ffffff;
+        #{$parent}__icon {
+          i {
+            color: #ffffff;
+          }
+          &:after {
+            background-color: #4ec4f2;
+          }
+        }
+      }
+    }
+    &_organize {
+      display: none;
+    }
+    &_group,
+    &_organize {
+      @include font-open-sans(14px , #ffffff , 400);
+      text-transform: none;
+      border: solid 1px #cfdadd;
+      height: 42px;
+      position: relative;
+      padding-left: 65px;
+      padding-right: 16px;
+      #{$parent}__icon {
+       i {
+         color: #ffffff;
+       }
+      }
+      @include breakpoint(1380) {
+        padding-left: 40px;
+        #{$parent}__icon {
+          left: 10px;
+          &:after {
+            right: -5px;
+          }
+        }
+      }
+    }
+  }
+  &__icon{
+    position: absolute;
+    left: 16px;
+    //top: 8px;
+    top: 12px;
+    &:after{
+      content: '';
+      height: 34px;
+      width: 1px;
+      background-color: #cfdadd;
+      position: absolute;
+      /*top: -5px;
+      right: -18px;*/
+      top: -8px;
+      right: -15px;
+    }
+    i{
+      font-size: 18px;
+      color: #27c24c;
+    }
+  }
+
+}
+
+.fb-from-group{
+  @include vertical-alignment-content(center , center);
+}
+.fb-btn{
+  height: 54px;
+  padding: 0 37px;
+  @include font-open-sans(15px , #fff , 700);
+  @include vertical-alignment-content(center , center);
+  background-color: $basic-color;
+  border-bottom: 1px solid #029fdb;
+  text-transform: uppercase;
+  @include links-hover{
+    color: #fff;
+  }
+}
+.fb-btn-group{
+  @include font-open-sans(13px , #fff , 700);
+  height: 43px;
+  background-color: $basic-color;
+  padding: 0 19px;
+  border-bottom: 1px solid #029fdb;
+  @include vertical-alignment-content;
+  &__fbi{
+    margin-right: 12px;
+  }
+  @include links-hover{
+    color: #fff;
+  }
+  &_absolute{
+    display: none;
+    transition: 0.3s ease all;
+  }
+  /* &_absolute{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 0;
+     padding: 0;
+     opacity: 0;
+     overflow: hidden;
+     transition: 0.3s ease all;
+   }*/
+}
+.panel-button{
+  height: 43px;
+  width: 62px;
+  border: 1px solid #e6e8e9;
+  border-radius: 4px;
+  @include vertical-alignment-content(center , center);
+  cursor: pointer;
+}
+
+
+
+.fb {
+  &-alert-note{
+    @include font-open-sans(18px , #acbdc9 , 300);
+    min-height: 82px;
+    @include vertical-alignment-content;
+    padding: 27px 0 29px 0;
+    line-height: 1.2;
+  }
+  &-checkbox__caption {
+   @include font(14,22,400);
+  }
+}
+.partial-lead-checkbox{
+  min-height: 73px;
+  @include vertical-alignment-content;
+  border-top: 1px solid #2e3643;
+}
+
+
+/**
+*  Funnel Builder Sprite
+*/
+
+.fbi{
+  //background: url('#{$image-base-path}/fb-sprite.png') center center;
+  display: inline-block;
+  vertical-align: middle;
+  &_announcement{
+    width: 23px;
+    height: 22px;
+    background-position:  -10px -10px;
+
+  }
+  &_announcement-white{
+    width: 23px;
+    height: 22px;
+    background-position:  -53px -10px;
+  }
+  &_back{
+    width: 16px;
+    height: 20px;
+    background-position: -180px -10px;
+  }
+  &_users{
+    width: 22px;
+    height: 16px;
+    background-position: -138px -52px;
+  }
+  &_reset{
+    width: 22px; height: 22px;
+    background-position:  -96px -10px;;
+  }
+  &_back-white{
+    width: 16px;
+    height: 20px;
+    background-position: -180px -90px;
+  }
+  &_users-white{
+    width: 22px;
+    height: 18px;
+    background-position: -138px -88px;
+  }
+  &_reset-white{
+    width: 22px; height: 22px;
+    background-position:  -96px -52px;
+  }
+  &_dots{
+    font-size: 6px;
+    color: #c7d4df;
+    //width: 21px; height: 6px;
+    //background-position: -174px -175px;
+  }
+  &_lock{
+    width: 12px; height: 14px;
+    background-position: -110px -175px;
+  }
+  &_plus{
+    width: 22px; height: 22px;
+    background-position: -52px -52px;
+  }
+  &_back-white{
+    width: 16px; height: 20px;
+    background-position: -180px -50px;
+  }
+  &_edit-white{
+    width: 22px; height: 22px;
+    background-position: -138px -10px;
+  }
+  &_edit-sm{
+    width: 16px; height: 16px;
+    background-position: -155px -312px;
+  }
+  &_copy-white{
+    width: 22px; height: 22px;
+    background-position:  -94px -94px;
+  }
+  &_drag-white{
+    width: 22px; height: 22px;
+    background-position: -10px -52px;
+  }
+  &_cross-white{
+    width: 16px; height: 16px;
+    background-position: -10px -210px;
+  }
+
+
+  &_edit-light{
+    width: 22px; height: 22px;
+    background-position: -143px -334px;
+  }
+  &_copy-light{
+    width: 22px; height: 22px;
+    background-position:  -114px -337px;
+  }
+  &_drag-light{
+    width: 22px; height: 22px;
+    background-position: -85px -337px;
+  }
+  &_cross-light{
+    width: 16px; height: 16px;
+    background-position: -62px -340px;
+  }
+
+
+  &_cross-sm-dark{
+    width: 10px; height: 10px;
+    background-position: -176px -314px;
+  }
+  &_drag-dark{
+    width: 22px; height: 22px;
+    background-position: -99px -308px;
+  }
+  &_cross-dark{
+    width: 16px; height: 16px;
+    background-position: -130px -311px;
+  }
+  &_plus-sm{
+    width: 12px; height: 12px;
+    background-position: -78px -313px;
+  }
+  &_arrow{
+    width: 16px; height: 10px;
+    background-position: -144px -285px;
+  }
+  &_tag{
+    width: 16px; height: 16px;
+    background-position: -171px -282px;
+  }
+  &_plus-green{
+    width: 16px; height: 16px;
+    background-position: -6px -340px;
+  }
+  &_cross-red{
+    width: 16px; height: 16px;
+    background-position: -34px -340px;
+  }
+}
+
+.standard-question-option-parent {
+  margin: 0 0 22px;
+  padding: 0 0 22px;
+  border-style: solid;
+  border-color: #f2f3f3;
+  border-width: 0 0 1px 0;
+  .select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+    //pointer-events: none;
+  }
+  /*.select2-results__option[aria-selected='true']{
+    //background-color: #03c3f2;
+    display: none;
+  }*/
+}
+.manage-question {
+  .lp-table {
+    margin: 0;
+    padding: 0;
+    max-height: 250px;
+    &__list {
+      &:last-child {
+        border: none;
+      }
+    }
+    &__head {
+      .lp-table__list {
+        border-style: solid;
+        border-color: #f2f3f3;
+        border-width: 0 0 1px;
+      }
+      .lp-table__item {
+        @include font(18,20,300);
+      }
+    }
+    &__item {
+      font-size: 16px;
+      .action_nav {
+        padding: 0;
+        display: none;
+        li {
+          display: inline-block;
+          a {
+            color: #707d84;
+            padding-left: 15px;
+            @include font(14,16,700);
+            text-transform: uppercase;
+            i {
+
+              padding-right: 10px;
+              color: #9fa8ad;
+            }
+          }
+        }
+      }
+      .show_nav {
+        i {
+          color: #9fa8ad;
+          font-size: 7px;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+
+.sorting {
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  &__item {
+    width: 36px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    margin: 0 6px 0 0;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #cfdadd;
+    i {
+      color: #707d84;
+    }
+    &.active {
+      background: #02abec;
+      border-color: #02abec;
+      i {
+        color: #ffffff;
+      }
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.pop-create-funnel,
+.pop-create-question,
+.pop-transition-question {
+  margin: 14px 0;
+  display: inline-block;
+  @include font(14,16,700);
+  text-transform: uppercase;
+}
+.cta-msg {
+  &__head {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #e9ecef;
+    justify-content: space-between;
+    .action {
+      &__item_separator {
+        &:after,
+        &:before {
+          top: -18px;
+          height: 54px;
+        }
+      }
+    }
+  }
+  &__title {
+    margin: 0;
+    @include font(24,26,300);
+  }
+  &__body {
+    padding: 22px 0;
+  }
+}
+
+.fb-form{
+  &__caption{
+    @include font-open-sans(16px , #707d84 , 400);
+    padding-bottom: 15px;
+    margin-top: -4px;
+    .question-mark{
+      margin-top: -4px;
+    }
+  }
+  &__middle{
+    //vertical-align: middle;
+  }
+  &__group{
+    flex-grow: 1;
+    position: relative;
+    .fb-form-control{
+      padding-left: 60px;
+    }
+    .tag-box{
+      position: absolute;
+      top: 4px;
+      left: 4px;
+    }
+  }
+  .select2js {
+    margin: 0 0 8px;
+    &.select2js__age-required_parent {
+      display: none;
+    }
+  }
+}
+.tag-box {
+  height: 42px;
+  width: 42px;
+  background-color: #f6f8f8;
+  border-radius: 3px;
+  display: flex;
+  display: -ms-flex;
+  align-items: center;
+  justify-content: center;
+  .fa-tag {
+    color: #b2c0d3;
+    transform: rotate(95deg);
+  }
+}
+
+
+.fb-options {
+  $parent:&;
+  padding: 20px 0 0;
+  border-top: 1px solid #f2f3f3;
+  position: relative;
+  .grouping-label {
+    top: -12px;
+    left: 0;
+    right: 0;
+    width: 82px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 4px 15px;
+    position: absolute;
+    border-radius: 3px;
+    border: 1px solid #f2f3f3;
+    @include font(11,13,400);
+    //display: none;
+  }
+  &__group {
+    &-clone {
+      position: relative;
+      padding: 22px 0 0;
+      &:first-child {
+        border-top: 1px solid #f2f3f3;
+      }
+    }
+  }
+  &.group-option {
+    display: none;
+  }
+  &_drop-down {
+   #{$parent}__group {
+     &-clone {
+       padding-bottom: 20px;
+       border-bottom: solid 1px #f2f3f3;
+       &:last-child {
+         border: none;
+       }
+     }
+   }
+  }
+}
+.group-head {
+  display: flex;
+  margin: 0 0 9px;
+  .fb-options__delete {
+    width: 42px;
+    height: 100%;
+    display: flex;
+    color: #c7d4df;
+    font-size: 23px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #c7d4df;
+  }
+}
+.partial-leads {
+  border-top: 1px solid #e9ecef;
+  padding: 24px 0 8px;
+  [type="checkbox"] {
+    + label {
+      font-weight: 300;
+    }
+  }
+}
+.fb-form-control {
+  @include placeholder {
+    font-weight: 400;
+    color: rgba(88, 102, 110, 0.45) !important;
+  }
+}
+/**
+*   Bootstrap Slider CSS
+*/
+
+.bs-slider{
+  .slider.slider-horizontal {
+    width: 100%;
+  }
+  .slider-track {
+    box-shadow: none;
+    background-image: none;
+  }
+  .slider-track-low{
+    background: #ffffff;
+  }
+  .slider-track-high {
+    background: #ffffff;
+    border-radius: 4px;
+  }
+  .slider.slider-horizontal .slider-track {
+    height: 6px;
+    border: 1px solid #f2f3f3;
+  }
+  .slider-selection {
+    background: $basic-color;
+    box-shadow: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .slider-handle {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    top: -1px;
+  }
+  &__label-wrapper {
+    display: flex;
+    display: -ms-flex;
+    justify-content: space-between;
+  }
+  &__label {
+    @include font-open-sans(14px , #acbdc9 , 400);
+    &_white {
+      color: #fff;
+    }
+  }
+}
+/**
+*   Funnel Builder: Froala Editor
+*/
+
+.fr-popup {
+  .fr-btn-wrap {
+    .fa.fa-list-ul {
+      margin: 12px 0 12px 8px;
+    }
+    button {
+      &:nth-child(2){
+        right: 0;
+        top: 0;
+        position: absolute;
+      }
+    }
+    .fr-command.fr-btn.fr-options.fr-btn-hover,
+    .fr-command.fr-btn.fr-options:hover,
+    .fr-command.fr-btn.fr-options:focus {
+      border: none;
+    }
+  }
+}
+.fb-froala {
+  &__init {
+    .fr-toolbar.fr-top {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .fr-box.fr-basic.fr-top {
+    .fr-wrapper {
+      min-height: 130px;
+    }
+  }
+}
+/**
+*  CTA Message Second Window CSS
+*/
+
+.cta-select{
+  padding: 9px 0;
+}
+.cta-checkbox-pt{
+  padding-top: 20px;
+}
+
+.select2_style {
+  span {
+    font-weight: 600;
+  }
+}
+
+.state {
+  padding: 16px;
+  height: 360px;
+  border: 1px solid #f2f3f3;
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    max-height: 323px;
+    flex-flow: column wrap;
+  }
+  &__name {
+    padding: 0 0 3px;
+  }
+}
+
+
+.organize-group {
+  &__head {
+    display: flex;
+    padding: 0 0 20px;
+    margin: -8px 0 23px;
+    justify-content: space-between;
+  }
+  &__list {
+    padding: 0;
+    margin: -22px 0 -8px;
+  }
+  &__item {
+    display: flex;
+    padding: 17px 0;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-top: 1px solid #e9ecef;
+    background-color: $white;
+  }
+  &__action {
+    cursor:move;
+  }
+}
+
+textarea {
+  &.fb-textarea_option {
+    height: 205px;
+    resize: none;
+    font-weight: 400;
+    @include placeholder {
+      font-weight: 400;
+      color: rgba(88, 102, 110, 0.45);
+    }
+  }
+}
+
+.funnel {
+  $parent:&;
+  &-search {
+    display: flex;
+    flex-flow: row wrap;
+    &__category {
+      width: 250px;
+      margin: 0 15px 0 0;
+    }
+    &__input {
+      flex-grow: 1;
+      flex-basis: 0;
+      &-tag {
+        display: none;
+      }
+      .modal__funnel-search {
+        input {
+          @include placeholder {
+            font-weight: 400;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+  &__list {
+    li {
+      display: flex;
+      span {
+        &:first-child {
+          flex: 0 0 385px;
+        }
+      }
+    }
+    .tags-list {
+      padding: 0;
+      display: flex;
+      margin: 0 -3px;
+      flex-flow: row wrap;
+      li {
+        padding: 0 3px;
+        span {
+          flex: auto;
+          padding: 9px;
+          font-size: 13px;
+          border-radius: 3px;
+          background-color: #f6f8f8;
+        }
+      }
+    }
+  }
+  &__wrapper {
+    #{$parent}__list {
+      max-height: 400px;
+    }
+    #{$parent}__list-head {
+      margin: 23px 0 0;
+      list-style: none;
+      border-bottom: none;
+      border-top: 1px solid #e9ecef;
+      li {
+        display: flex;
+        span {
+          flex-grow: 1;
+          &:first-child {
+            flex: 0 0 385px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.gl-funnel {
+  &__head {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e9ecef;
+    }
+  }
+  &__body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      height: 55px;
+      display: flex;
+      overflow: hidden;
+      flex-flow: column nowrap;
+      border-bottom: 1px solid #e9ecef;
+      &:last-child {
+        border: none;
+      }
+    }
+    .funnel__action {
+      display: none;
+    }
+  }
+  &__item {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_confirmation {
+      p {
+        margin: 0;
+        color: #707d84;
+        @include font(16,18,600)
+      }
+    }
+    .control {
+      padding: 0;
+      display: flex;
+      margin: 0 -15px;
+      &__item {
+        height: auto;
+        border: none;
+        color: #02abec;
+        margin: 0 15px;
+        overflow: inherit;
+        position: relative;
+        @include font(14,16,700);
+        text-transform: uppercase;
+        &:first-child {
+          &:before {
+            content: "";
+            right: -14px;
+            height: 17px;
+            position: absolute;
+            border-right: 1px solid #e9ecef;
+          }
+        }
+      }
+    }
+    .del-funnel {
+      cursor: pointer;
+    }
+  }
+}

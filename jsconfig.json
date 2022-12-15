@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["resources/js/sticky/*"],
+        "@components/*": ["resources/js/sticky/components/*"]
+      }
+    },
+    "exclude": ["node_modules"]
+  }

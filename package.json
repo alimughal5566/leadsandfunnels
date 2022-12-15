@@ -1,0 +1,53 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "dev:sticky": "cross-env NODE_ENV=development webpack --watch --progress --config=resources/js/sticky/webpack.config.js",
+        "build:sticky": "cross-env NODE_ENV=production webpack --progress --config=resources/js/sticky/webpack.config.js"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.11.6",
+        "@babel/core": "^7.11.6",
+        "@babel/preset-env": "^7.11.5",
+        "axios": "^0.19",
+        "babel-loader": "^8.1.0",
+        "babel-plugin-lodash": "^3.3.4",
+        "browserlist": "^1.0.1",
+        "cogo-toast": "^4.2.3",
+        "cross-env": "^5.1",
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-csso": "^4.0.1",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "gulp-watch": "^5.0.1",
+        "laravel-mix": "^5.0.5",
+        "lodash": "^4.17.20",
+        "prop-types": "^15.7.2",
+        "query-string": "^6.13.8",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.4.0",
+        "core-js": "^3.6.5",
+        "gulp-declare": "^0.3.0",
+        "gulp-handlebars": "^5.0.2",
+        "gulp-wrap": "^0.15.0",
+        "imagesloaded": "^4.1.4",
+        "reduce-reducers": "^1.0.4",
+        "regenerator-runtime": "^0.13.7"
+    },
+    "browserslist": "ie 10, > 0.25%"
+}
