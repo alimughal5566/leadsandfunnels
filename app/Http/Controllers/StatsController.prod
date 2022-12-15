@@ -1,0 +1,183 @@
+<?php
+
+namespace App\Http\Controllers;
+use App\Repositories\LpAdminRepository;
+use App\Repositories\StatsRepository;
+use App\Services\DataRegistry;
+use Illuminate\Http\Request;
+use LP_Helper;
+use Session;
+
+class StatsController extends BaseController {
+
+    private $stats;
+    public function __construct(LpAdminRepository $lpAdmin, StatsRepository $stats){
+        $this->middleware(function($request, $next) use ($lpAdmin,$stats) {
+            $this->stats = $stats;
+            $this->registry = DataRegistry::getInstance();
+            $this->registry->_initProperties(Session::get('leadpops'));
+            $this->init($lpAdmin);
+            $this->check_session();
+            return $next($request);
+        });
+    }
+
+    function index(Request $request) {
+        if(isset($request)){
+            LP_Helper::getInstance()->getCurrentHashData($request->input('hash'));
+            $funnel = LP_Helper::getInstance()->getFunnelData();
+            if(@$_COOKIE['db_stats'] == 1) {
+                $params = [
+                    'hash' => $funnel['funnel']['hash'],
+                    'client_id' => $funnel['funnel']['client_id'],
+                    'domain_id' => $funnel['funnel']['domain_id'],
+                    'domain_name' => $funnel['funnel']['domain_name'],
+                    'start_date' => $request->input('start_date'),
+                    'end_date' => $request->input('end_date')
+                ];
+
+                $data = $this->stats->getStats($params);
+            }
+            else {
+                $params = [
+                    'hash' => $funnel['funnel']['hash'],
+                    'client_id' => $funnel['funnel']['client_id'],
+                    'domain_id' => $funnel['funnel']['domain_id'],
+                    'client_leadpop_id' => $funnel['funnel']['client_leadpop_id'],
+                    'leadpop_vertical_id' => $funnel['funnel']['leadpop_vertical_id'],
+                    'leadpop_vertical_sub_id' => $funnel['funnel']['leadpop_vertical_sub_id'],
+                    'leadpop_template_id' => $funnel['funnel']['leadpop_template_id'],
+                    'leadpop_version_id' => $funnel['funnel']['leadpop_version_id'],
+                    'leadpop_version_seq' => $funnel['funnel']['leadpop_version_seq'],
+                    'domain_name' => $funnel['funnel']['domain_name'],
+                    'start_date' => $request->input('start_date'),
+                    'end_date' => $request->input('end_date')
+                ];
+
+                $data = $this->stats->getStatsRedis($params);
+
+            }
+
+            echo json_encode($data);
+            exit;
+        }
+    }
+
+    public function blockipaddresslist(Request $request){
+        if(isset($request)){
+            LP_Helper::getInstance()->getCurrentHashData($request->input('hash'));
+            $funnel = LP_Helper::getInstance()->getFunnelData();
+            $params = [
+                'client_id' => $funnel['funnel']['client_id'],
+                'client_leadpop_id' => $funnel['funnel']['client_leadpop_id'],
+                'leadpop_id' => $funnel['funnel']['leadpop_id'],
+                'leadpop_vertical_id' => $funnel['funnel']['leadpop_vertical_id'],
+                'leadpop_vertical_sub_id' => $funnel['funnel']['leadpop_vertical_sub_id'],
+                'leadpop_template_id' => $funnel['funnel']['leadpop_template_id'],
+                'leadpop_version_id' => $funnel['funnel']['leadpop_version_id'],
+                'leadpop_version_seq' => $funnel['funnel']['leadpop_version_seq'],
+                'domain_id' => $funnel['funnel']['domain_id']
+            ];
+            $ip_lists =  $this->stats->getIpAddressList($params);
+            $html = "<div class=\"lead-alert-col ip-block-col\">\n";
+            $html .= "<div class=\"row\">\n";
+            $html .= "<div class=\"col-sm-4\"><h3 class=\"lead-alert-caption lead-alert-email-address\">IP Name</h3></div>\n";
+            $html .= "<div class=\"col-sm-4\"><h3 class=\"lead-alert-caption lead-alert-cell\" >IP Address</h3></div>\n";
+            $html .= "<div class=\"col-sm-4\"><h3 class=\"lead-alert-caption lead-alert-option\">Options</h3></div>\n";
+            $html .= "</div>\n";
+            $html .= "</div>\n";
+            foreach($ip_lists as $list){
+                $html .= '<div class="lead-alert-col lead-alert-data ip_row_'.$list['id'].'">'."\n".'
+                    <div class="row">'."\n".'
+                        <div class="col-sm-4"><h4 class="lead-alert-email-address ip_name">'.$list['ip_name'].'</h4></div>'."\n".'
+                        <div class="col-sm-4"><h4 class="lead-alert-cell ip_address" >'.$list['ip_address'].'</h4></div>'."\n".'
+                        <div class="col-sm-4"><h5 class="lead-alert-action"><a href="#" data-id="'.$list['id'].'"  data-text="Edit" class="edit-form edit_ip"><i class="glyphicon glyphicon-pencil"></i>EDIT</a><a href="#" class="del delete_ip" data-id="'.$list['id'].'"><i class="fa fa-remove"></i>DELETE</a></h5></div>'."\n".'
+                    </div>'."\n".'
+                </div>';
+            }
+            echo json_encode(array('html'=>$html));
+        }
+    }
+
+    function blockipaddress(Request $request) {
+        if(isset($request)){
+            if($request->input('action') == 'add'){
+                LP_Helper::getInstance()->getCurrentHashData($request->input('hash'));
+                $funnel = LP_Helper::getInstance()->getFunnelData();
+                $params = [
+                    'client_id' => $funnel['funnel']['client_id'],
+                    'client_leadpop_id' => $funnel['funnel']['client_leadpop_id'],
+                    'leadpop_id' => $funnel['funnel']['leadpop_id'],
+                    'leadpop_vertical_id' => $funnel['funnel']['leadpop_vertical_id'],
+                    'leadpop_vertical_sub_id' => $funnel['funnel']['leadpop_vertical_sub_id'],
+                    'leadpop_template_id' => $funnel['funnel']['leadpop_template_id'],
+                    'leadpop_version_id' => $funnel['funnel']['leadpop_version_id'],
+                    'leadpop_version_seq' => $funnel['funnel']['leadpop_version_seq'],
+                    'domain_id' => $funnel['funnel']['domain_id'],
+                    'ip_name' => $request->input('ip_name'),
+                    'ip_address' => $request->input('ip_address')
+                ];
+                $id = $this->stats->addIpAddress($params);
+                $html = '<div class="lead-alert-col lead-alert-data ip_row_'.$id.'">
+                    <div class="row">
+                        <div class="col-sm-4"><h4 class="lead-alert-email-address ip_name">'.$request->input('ip_name').'</h4></div>
+                        <div class="col-sm-4"><h4 class="lead-alert-cell ip_address" >'.$request->input('ip_address').'</h4></div>
+                        <div class="col-sm-4"><h5 class="lead-alert-action"><a href="#" data-id="'.$id.'"  data-text="Edit" class="edit-form edit_ip"><i class="glyphicon glyphicon-pencil"></i>EDIT</a><a href="#" class="del delete_ip" data-id="'.$id.'"><i class="fa fa-remove"></i>DELETE</a></h5></div>
+                    </div>
+                </div>';
+                echo json_encode(array('id'=>$id, 'response'=>'added', 'html'=>$html));
+            }
+
+            else if($request->input('action') == 'update'){
+                $params = [
+                    'ip_name' => $request->input('ip_name'),
+                    'ip_address' => $request->input('ip_address')
+                ];
+                $this->stats->updateIpAddress($params, $request->input('id'));
+                echo json_encode(array('id'=>$request->input('id'), 'response'=>'updated'));
+            }
+
+            exit;
+        }
+    }
+
+    public function deleteblockipaddress(Request $request){
+        if(isset($request) && $request->input('id')!=""){
+            LP_Helper::getInstance()->getCurrentHashData($request->input('hash'));
+            $funnel = LP_Helper::getInstance()->getFunnelData();
+            $this->stats->deleteIpAddress($request->input('id'), $funnel['funnel']['client_id'], $funnel['funnel']['domain_id']);
+            echo json_encode(array('response'=>'deleted'));
+        }
+    }
+
+    function savegoogleanalytics(Request $request){
+        if(isset($request)){
+            $post = $request;
+            $post['gaactive'] = 'y';
+            $this->stats->updateKey($post);
+            echo "ok";
+            exit;
+        }
+    }
+
+    function deletegoogleanalytics(Request $request){
+        if(isset($request)){
+            $post = $request;
+            $this->stats->deleteKey($post);
+            echo "ok";
+            exit;
+        }
+    }
+    //==========================================================================//
+
+
+    public function updatestatsprocess($id){
+        if(isset($id) && $id){
+            $client_id=$id;
+        }else{
+            $client_id=$this->registry->leadpops->client_id;
+        }
+        $this->stats->updateStatsProcess(array($client_id));
+    }
+
+}
